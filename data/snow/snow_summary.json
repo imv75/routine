@@ -1,0 +1,19 @@
+{
+  "university": "snow",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 1150,
+  "progressive_count": 40,
+  "progressive_pct": 3.48,
+  "canon_count": 10,
+  "canon_pct": 0.87,
+  "by_area": {
+    "Social Sciences": 11,
+    "Other": 815,
+    "Humanities": 66,
+    "Professional": 31,
+    "STEM": 201,
+    "Medical Sciences": 26
+  },
+  "failed_depts": []
+}

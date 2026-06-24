@@ -1,0 +1,23 @@
+{
+  "university": "marshall",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 3216,
+  "progressive_count": 18,
+  "progressive_pct": 0.56,
+  "canon_count": 35,
+  "canon_pct": 1.09,
+  "climate_narrow_count": 3,
+  "climate_narrow_pct": 0.09,
+  "climate_broad_count": 49,
+  "climate_broad_pct": 1.52,
+  "by_area": {
+    "Professional": 250,
+    "Other": 1988,
+    "Social Sciences": 279,
+    "STEM": 269,
+    "Humanities": 344,
+    "Medical Sciences": 86
+  },
+  "failed_depts": []
+}

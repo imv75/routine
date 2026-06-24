@@ -1,0 +1,14 @@
+{
+  "university": "washburn",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 2746,
+  "progressive_count": 203,
+  "progressive_pct": 7.39,
+  "canon_count": 60,
+  "canon_pct": 2.18,
+  "by_area": {
+    "Other": 2746
+  },
+  "failed_depts": []
+}

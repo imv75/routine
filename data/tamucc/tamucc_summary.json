@@ -1,0 +1,23 @@
+{
+  "university": "tamucc",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 2043,
+  "progressive_count": 36,
+  "progressive_pct": 1.76,
+  "canon_count": 14,
+  "canon_pct": 0.69,
+  "climate_narrow_count": 5,
+  "climate_narrow_pct": 0.24,
+  "climate_broad_count": 47,
+  "climate_broad_pct": 2.3,
+  "by_area": {
+    "Social Sciences": 246,
+    "Professional": 180,
+    "Other": 1120,
+    "Humanities": 226,
+    "STEM": 223,
+    "Medical Sciences": 48
+  },
+  "failed_depts": []
+}

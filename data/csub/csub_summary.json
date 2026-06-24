@@ -1,0 +1,19 @@
+{
+  "university": "csub",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 2461,
+  "progressive_count": 365,
+  "progressive_pct": 14.83,
+  "canon_count": 72,
+  "canon_pct": 2.93,
+  "by_area": {
+    "Professional": 122,
+    "Other": 998,
+    "Social Sciences": 226,
+    "Humanities": 323,
+    "STEM": 547,
+    "Medical Sciences": 245
+  },
+  "failed_depts": []
+}

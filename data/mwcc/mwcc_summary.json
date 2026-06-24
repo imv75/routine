@@ -1,0 +1,18 @@
+{
+  "university": "mwcc",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 448,
+  "progressive_count": 74,
+  "progressive_pct": 16.52,
+  "canon_count": 12,
+  "canon_pct": 2.68,
+  "by_area": {
+    "Humanities": 32,
+    "Other": 298,
+    "Professional": 26,
+    "STEM": 80,
+    "Social Sciences": 12
+  },
+  "failed_depts": []
+}

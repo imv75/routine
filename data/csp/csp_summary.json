@@ -1,0 +1,18 @@
+{
+  "university": "csp",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 1575,
+  "progressive_count": 244,
+  "progressive_pct": 15.49,
+  "canon_count": 40,
+  "canon_pct": 2.54,
+  "by_area": {
+    "Humanities": 51,
+    "STEM": 148,
+    "Other": 1337,
+    "Professional": 29,
+    "Social Sciences": 10
+  },
+  "failed_depts": []
+}
