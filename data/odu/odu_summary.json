@@ -1,0 +1,28 @@
+{
+  "university": "odu",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 7543,
+  "progressive_count": 582,
+  "progressive_pct": 7.72,
+  "canon_count": 140,
+  "canon_pct": 1.86,
+  "climate_narrow_count": 30,
+  "climate_narrow_pct": 0.4,
+  "climate_broad_count": 165,
+  "climate_broad_pct": 2.19,
+  "by_area": {
+    "Other": 4688,
+    "Professional": 182,
+    "Humanities": 703,
+    "Social Sciences": 677,
+    "STEM": 1135,
+    "Medical Sciences": 158
+  },
+  "failed_depts": [
+    "mscm",
+    "paup",
+    "phil",
+    "port"
+  ]
+}

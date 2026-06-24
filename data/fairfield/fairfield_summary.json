@@ -1,0 +1,20 @@
+{
+  "university": "fairfield",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 2631,
+  "progressive_count": 497,
+  "progressive_pct": 18.89,
+  "canon_count": 139,
+  "canon_pct": 5.28,
+  "climate_narrow_count": 11,
+  "climate_narrow_pct": 0.42,
+  "climate_broad_count": 72,
+  "climate_broad_pct": 2.74,
+  "by_area": {
+    "Other": 2631
+  },
+  "failed_depts": [
+    "as"
+  ]
+}

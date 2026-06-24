@@ -1,0 +1,27 @@
+{
+  "university": "biola",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 2754,
+  "progressive_count": 166,
+  "progressive_pct": 6.03,
+  "canon_count": 496,
+  "canon_pct": 18.01,
+  "climate_narrow_count": 2,
+  "climate_narrow_pct": 0.07,
+  "climate_broad_count": 27,
+  "climate_broad_pct": 0.98,
+  "by_area": {
+    "Other": 2294,
+    "Social Sciences": 76,
+    "Humanities": 262,
+    "STEM": 84,
+    "Medical Sciences": 38
+  },
+  "failed_depts": [
+    "ttce",
+    "comm",
+    "blhe",
+    "knes"
+  ]
+}

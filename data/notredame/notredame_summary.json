@@ -1,0 +1,27 @@
+{
+  "university": "notredame",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 9536,
+  "progressive_count": 3154,
+  "progressive_pct": 33.07,
+  "canon_count": 1069,
+  "canon_pct": 11.21,
+  "climate_narrow_count": 319,
+  "climate_narrow_pct": 3.35,
+  "climate_broad_count": 678,
+  "climate_broad_pct": 7.11,
+  "by_area": {
+    "Professional": 260,
+    "Other": 5534,
+    "Humanities": 1962,
+    "STEM": 1009,
+    "Social Sciences": 610,
+    "Medical Sciences": 161
+  },
+  "failed_depts": [
+    "anth",
+    "cslc",
+    "ibms"
+  ]
+}

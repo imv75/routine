@@ -1,0 +1,26 @@
+{
+  "university": "utahtech",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 2117,
+  "progressive_count": 344,
+  "progressive_pct": 16.25,
+  "canon_count": 47,
+  "canon_pct": 2.22,
+  "climate_narrow_count": 7,
+  "climate_narrow_pct": 0.33,
+  "climate_broad_count": 49,
+  "climate_broad_pct": 2.31,
+  "by_area": {
+    "Professional": 145,
+    "Other": 1248,
+    "Social Sciences": 53,
+    "Humanities": 384,
+    "STEM": 175,
+    "Medical Sciences": 112
+  },
+  "failed_depts": [
+    "biol",
+    "chem"
+  ]
+}

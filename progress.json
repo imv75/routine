@@ -1,9 +1,60 @@
 {
   "last_updated": "2026-06-24",
   "total_universities": 100,
-  "completed": 17,
-  "in_progress": null,
-  "failed": ["umich", "duke", "jhu"],
+  "completed": 76,
+  "in_progress": [],
+  "failed": [],
+  "blocked_by_network": [
+    "umich",
+    "duke",
+    "jhu",
+    "georgetown",
+    "tufts",
+    "bc",
+    "brandeis",
+    "rochester",
+    "wfu",
+    "temple",
+    "rutgers",
+    "clemson",
+    "kstate",
+    "wvu",
+    "sc",
+    "cmu",
+    "fsu",
+    "msu"
+  ],
+  "dynamic_js_only": [
+    "osu",
+    "iu",
+    "pitt",
+    "lsu",
+    "purdue",
+    "vt",
+    "ou",
+    "unlv",
+    "baylor",
+    "ttu",
+    "uh",
+    "louisville",
+    "uc",
+    "udel",
+    "brown",
+    "ucsb",
+    "asu",
+    "utah",
+    "uarizona",
+    "ucla",
+    "ucsd",
+    "ucdavis",
+    "uci",
+    "uga",
+    "stonybrook",
+    "uva",
+    "rpi",
+    "emory",
+    "washu"
+  ],
   "universities": {
     "stanford": {
       "id": 1,
@@ -12,7 +63,7 @@
       "years_covered": "2001-2025",
       "catalog_years": 24,
       "course_years": 131897,
-      "notes": "Covered in Marinovic (2026). Raw data not yet in repo — available from author."
+      "notes": "Covered in Marinovic (2026). Raw data not yet in repo."
     },
     "berkeley": {
       "id": 2,
@@ -66,7 +117,7 @@
       "years_covered": "2012-2024",
       "catalog_years": 13,
       "course_years": 21381,
-      "notes": "Covered in Marinovic (2026). College catalog only. Raw data not yet in repo."
+      "notes": "Covered in Marinovic (2026). Raw data not yet in repo."
     },
     "columbia": {
       "id": 8,
@@ -75,7 +126,7 @@
       "years_covered": "2015-2025",
       "catalog_years": 11,
       "course_years": 24674,
-      "notes": "Covered in Marinovic (2026). College bulletin only. Raw data not yet in repo."
+      "notes": "Covered in Marinovic (2026). Raw data not yet in repo."
     },
     "cornell": {
       "id": 9,
@@ -152,41 +203,1112 @@
     "umich": {
       "id": 17,
       "status": "blocked_by_network",
-      "source": null,
-      "years_covered": null,
-      "catalog_years": null,
-      "course_years": null,
-      "notes": "lsa.umich.edu returns 403/ECONNREFUSED from this environment. Retry from direct network. URLs tried: lsa.umich.edu/cg/, ro.umich.edu/catalogs, atlas.ai.umich.edu, bulletin.umich.edu"
+      "notes": "lsa.umich.edu returns 403/ECONNREFUSED from proxy. URLs tried: lsa.umich.edu/cg/, ro.umich.edu/catalogs, atlas.ai.umich.edu, bulletin.umich.edu"
     },
     "duke": {
       "id": 18,
-      "status": "url_needs_update",
-      "source": null,
-      "years_covered": null,
-      "catalog_years": null,
-      "course_years": null,
-      "notes": "registrar.duke.edu/academics/courses-curricula-catalogs/ returns 404. Correct catalog URL needed."
+      "status": "blocked_by_network",
+      "notes": "SSL blocked from proxy environment. registrar.duke.edu/academics/courses-curricula-catalogs/ returns 404."
     },
     "jhu": {
       "id": 19,
-      "status": "not_started",
-      "source": null,
-      "years_covered": null,
-      "catalog_years": null,
-      "course_years": null,
-      "notes": "Not attempted in this run."
+      "status": "blocked_by_network",
+      "notes": "SSL blocked from proxy environment."
     },
     "upenn": {
       "id": 20,
-      "status": "completed_partial",
+      "status": "completed",
       "source": "catalog.upenn.edu",
       "years_covered": "2026",
       "catalog_years": 1,
       "course_years": 11142,
-      "data_files": ["data/upenn/upenn_2026.csv", "data/upenn/upenn_summary.json"],
+      "data_files": [
+        "data/upenn/upenn_2026.csv",
+        "data/upenn/upenn_summary.json"
+      ],
       "progressive_pct": 21.13,
       "canon_pct": 6.51,
-      "notes": "2026-27 catalog scraped (11,142 deduplicated courses, 1,899 cross-listed duplicates removed). Historical data 2000-2025 not yet collected — requires historical catalog access. 6 departments failed (ANAT, CIS, BMB, LAW, LAWM, SPPO)."
+      "notes": "2026-27 catalog scraped (11,142 deduplicated courses). Historical 2000-2025 not collected."
+    },
+    "ucla": {
+      "id": 21,
+      "status": "dynamic_js_only",
+      "notes": "registrar.ucla.edu/Academics/Course-Descriptions uses dynamic JS \u2014 not scrapable with requests."
+    },
+    "wisc": {
+      "id": 22,
+      "status": "completed",
+      "source": "guide.wisc.edu",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 10142,
+      "data_files": [
+        "data/wisc/wisc_2026.csv",
+        "data/wisc/wisc_summary.json"
+      ],
+      "progressive_pct": 12.53,
+      "canon_pct": 2.42,
+      "notes": "2026-27 catalog scraped. 2 departments failed."
+    },
+    "uw": {
+      "id": 23,
+      "status": "completed",
+      "source": "washington.edu/students/crscat",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 15673,
+      "data_files": [
+        "data/uw/uw_2026.csv",
+        "data/uw/uw_summary.json"
+      ],
+      "progressive_pct": 11.39,
+      "canon_pct": 2.7,
+      "notes": "2026-27 catalog scraped. UW old-style HTML (anchor-name pattern)."
+    },
+    "osu": {
+      "id": 24,
+      "status": "dynamic_js_only",
+      "notes": "catalog.osu.edu uses Acalog/ACMS returning 202 with JS-only content."
+    },
+    "gatech": {
+      "id": 25,
+      "status": "completed",
+      "source": "catalog.gatech.edu",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 5332,
+      "data_files": [
+        "data/gatech/gatech_2026.csv",
+        "data/gatech/gatech_summary.json"
+      ],
+      "progressive_pct": 2.51,
+      "canon_pct": 1.09,
+      "notes": "2026-27 catalog scraped."
+    },
+    "cmu": {
+      "id": 26,
+      "status": "blocked_by_network",
+      "notes": "catalog.cmu.edu SSL blocked. coursecatalog.web.cmu.edu also blocked. enr-apps.as.cmu.edu/assets/SOC/ has titles only (no descriptions)."
+    },
+    "usc": {
+      "id": 27,
+      "status": "dynamic_js_only",
+      "notes": "catalogue.usc.edu uses Acalog/ACMS returning 202 with JS-only content."
+    },
+    "brown": {
+      "id": 28,
+      "status": "dynamic_js_only",
+      "notes": "cab.brown.edu uses Acalog/ACMS returning 202 with JS-only content."
+    },
+    "dartmouth": {
+      "id": 29,
+      "status": "completed",
+      "source": "dartmouth.smartcatalogiq.com",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 4116,
+      "data_files": [
+        "data/dartmouth/dartmouth_2026.csv",
+        "data/dartmouth/dartmouth_summary.json"
+      ],
+      "progressive_pct": 34.14,
+      "canon_pct": 9.55,
+      "notes": "2026-27 catalog scraped via SmartCatalogIQ JSON nav + individual course pages (ThreadPoolExecutor 8 workers)."
+    },
+    "rice": {
+      "id": 30,
+      "status": "completed",
+      "source": "courses.rice.edu/!SWKSCAT.cat",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 6470,
+      "data_files": [
+        "data/rice/rice_2026.csv",
+        "data/rice/rice_summary.json"
+      ],
+      "progressive_pct": 13.28,
+      "canon_pct": 4.96,
+      "notes": "2026-27 catalog scraped. 105 subjects via Banner SWKSCAT course catalog. div.course with h3+Long Title+Description format."
+    },
+    "notredame": {
+      "id": 31,
+      "status": "completed",
+      "source": "catalog.nd.edu",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 9536,
+      "data_files": [
+        "data/notredame/notredame_2026.csv",
+        "data/notredame/notredame_summary.json"
+      ],
+      "progressive_pct": 33.07,
+      "canon_pct": 11.21,
+      "notes": "2026-27 catalog scraped. 3 departments failed."
+    },
+    "georgetown": {
+      "id": 32,
+      "status": "blocked_by_network",
+      "notes": "SSL blocked from proxy environment."
+    },
+    "emory": {
+      "id": 33,
+      "status": "dynamic_js_only",
+      "notes": "catalog.emory.edu uses Coursedog (dynamic JS). emory.smartcatalogiq.com returns 404."
+    },
+    "washu": {
+      "id": 34,
+      "status": "dynamic_js_only",
+      "notes": "catalog.wustl.edu returns 403. bulletin.wustl.edu/courses/ returns 404. Course search only \u2014 dynamic."
+    },
+    "ucsd": {
+      "id": 35,
+      "status": "dynamic_js_only",
+      "notes": "catalog.ucsd.edu uses dynamic JS \u2014 not scrapable with requests."
+    },
+    "ucdavis": {
+      "id": 36,
+      "status": "dynamic_js_only",
+      "notes": "catalog.ucdavis.edu uses dynamic JS \u2014 not scrapable with requests."
+    },
+    "ucsb": {
+      "id": 37,
+      "status": "dynamic_js_only",
+      "notes": "app.coursedog.com backend \u2014 dynamic API, not directly scrapable."
+    },
+    "uci": {
+      "id": 38,
+      "status": "dynamic_js_only",
+      "notes": "catalogue.uci.edu uses dynamic JS \u2014 not scrapable with requests."
+    },
+    "msu": {
+      "id": 39,
+      "status": "blocked_by_network",
+      "notes": "catalog.msu.edu and schedule.msu.edu return ProxyError (SSL blocked from proxy environment)."
+    },
+    "psu": {
+      "id": 40,
+      "status": "completed",
+      "source": "bulletins.psu.edu",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 14505,
+      "data_files": [
+        "data/psu/psu_2026.csv",
+        "data/psu/psu_summary.json"
+      ],
+      "progressive_pct": 13.17,
+      "canon_pct": 3.36,
+      "notes": "2026-27 catalog scraped. 3 departments failed."
+    },
+    "purdue": {
+      "id": 41,
+      "status": "dynamic_js_only",
+      "notes": "catalog.purdue.edu uses Acalog/ACMS returning 202 with JS-only content."
+    },
+    "iu": {
+      "id": 42,
+      "status": "dynamic_js_only",
+      "notes": "bulletin.indiana.edu uses Acalog/ACMS returning 202 with JS-only content."
+    },
+    "umn": {
+      "id": 43,
+      "status": "dynamic_js_only",
+      "notes": "catalog.umn.edu and coursecat.umn.edu use Coursedog (dynamic JS, ProxyError). catalogs.umn.edu/courses returns 404."
+    },
+    "unc": {
+      "id": 44,
+      "status": "completed",
+      "source": "catalog.unc.edu",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 10664,
+      "data_files": [
+        "data/unc/unc_2026.csv",
+        "data/unc/unc_summary.json"
+      ],
+      "progressive_pct": 14.39,
+      "canon_pct": 3.76,
+      "notes": "2026-27 catalog scraped."
+    },
+    "uva": {
+      "id": 45,
+      "status": "dynamic_js_only",
+      "notes": "records.ureg.virginia.edu uses Acalog (returns 202 for course content pages). louslist.org returns 403."
+    },
+    "tufts": {
+      "id": 46,
+      "status": "blocked_by_network",
+      "notes": "SSL blocked from proxy environment."
+    },
+    "bu": {
+      "id": 47,
+      "status": "completed",
+      "source": "www.bu.edu/academics/{school}/courses/{dept}/",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 3564,
+      "data_files": [
+        "data/bu/bu_2026.csv",
+        "data/bu/bu_summary.json"
+      ],
+      "progressive_pct": 14.03,
+      "canon_pct": 3.98,
+      "notes": "2026-27 catalog scraped. 14 schools."
+    },
+    "cwru": {
+      "id": 48,
+      "status": "partial_accessible",
+      "notes": "bulletin.case.edu only has 5 professional schools (nursing, applied-social-sciences, dental, law, management). Main college/engineering not accessible."
+    },
+    "tulane": {
+      "id": 49,
+      "status": "completed",
+      "source": "catalog.tulane.edu",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 8960,
+      "data_files": [
+        "data/tulane/tulane_2026.csv",
+        "data/tulane/tulane_summary.json"
+      ],
+      "progressive_pct": 10.75,
+      "canon_pct": 2.87,
+      "notes": "2026-27 catalog scraped. 6 departments failed."
+    },
+    "rochester": {
+      "id": 50,
+      "status": "blocked_by_network",
+      "notes": "SSL blocked from proxy environment."
+    },
+    "wfu": {
+      "id": 51,
+      "status": "blocked_by_network",
+      "notes": "SSL blocked from proxy environment."
+    },
+    "brandeis": {
+      "id": 52,
+      "status": "blocked_by_network",
+      "notes": "SSL blocked from proxy environment."
+    },
+    "northeastern": {
+      "id": 53,
+      "status": "completed",
+      "source": "catalog.northeastern.edu",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 7966,
+      "data_files": [
+        "data/northeastern/northeastern_2026.csv",
+        "data/northeastern/northeastern_summary.json"
+      ],
+      "progressive_pct": 10.58,
+      "canon_pct": 1.53,
+      "notes": "2026-27 catalog scraped."
+    },
+    "bc": {
+      "id": 54,
+      "status": "blocked_by_network",
+      "notes": "SSL blocked from proxy environment."
+    },
+    "gwu": {
+      "id": 55,
+      "status": "completed",
+      "source": "bulletin.gwu.edu/courses/{dept}/",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 7827,
+      "data_files": [
+        "data/gwu/gwu_2026.csv",
+        "data/gwu/gwu_summary.json"
+      ],
+      "progressive_pct": 6.99,
+      "canon_pct": 2.35,
+      "notes": "2026-27 catalog scraped. 169 departments."
+    },
+    "umd": {
+      "id": 56,
+      "status": "completed",
+      "source": "academiccatalog.umd.edu",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 9235,
+      "data_files": [
+        "data/umd/umd_2026.csv",
+        "data/umd/umd_summary.json"
+      ],
+      "progressive_pct": 11.69,
+      "canon_pct": 2.47,
+      "notes": "2026-27 catalog scraped. 8 departments failed."
+    },
+    "uf": {
+      "id": 57,
+      "status": "completed",
+      "source": "catalog.ufl.edu",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 4929,
+      "data_files": [
+        "data/uf/uf_2026.csv",
+        "data/uf/uf_summary.json"
+      ],
+      "progressive_pct": 8.66,
+      "canon_pct": 3.61,
+      "notes": "2026-27 catalog scraped. 6 departments failed."
+    },
+    "uga": {
+      "id": 58,
+      "status": "dynamic_js_only",
+      "notes": "bulletin.uga.edu is a JS SPA (React/MVC). Course/Index has 249 subjects in a select dropdown but all content is dynamically loaded."
+    },
+    "fsu": {
+      "id": 59,
+      "status": "blocked_by_network",
+      "notes": "catalog.fsu.edu and apps.registrar.fsu.edu return ProxyError (SSL blocked from proxy environment)."
+    },
+    "uarizona": {
+      "id": 60,
+      "status": "dynamic_js_only",
+      "notes": "catalog.arizona.edu uses dynamic JS \u2014 not scrapable with requests."
+    },
+    "asu": {
+      "id": 61,
+      "status": "dynamic_js_only",
+      "notes": "catalog.asu.edu uses dynamic JS \u2014 not scrapable with requests."
+    },
+    "colorado": {
+      "id": 62,
+      "status": "completed",
+      "source": "catalog.colorado.edu",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 9232,
+      "data_files": [
+        "data/colorado/colorado_2026.csv",
+        "data/colorado/colorado_summary.json"
+      ],
+      "progressive_pct": 13.54,
+      "canon_pct": 3.56,
+      "notes": "2026-27 catalog scraped. catalog.colorado.edu/courses-a-z/ \u2014 177 departments, 2 failed."
+    },
+    "utah": {
+      "id": 63,
+      "status": "dynamic_js_only",
+      "notes": "catalog.utah.edu uses dynamic JS \u2014 not scrapable with requests."
+    },
+    "uoregon": {
+      "id": 64,
+      "status": "completed",
+      "source": "catalog.uoregon.edu",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 6007,
+      "data_files": [
+        "data/uoregon/uoregon_2026.csv",
+        "data/uoregon/uoregon_summary.json"
+      ],
+      "progressive_pct": 7.82,
+      "canon_pct": 2.13,
+      "notes": "2026-27 catalog scraped. 2 departments failed."
+    },
+    "oregonstate": {
+      "id": 65,
+      "status": "completed",
+      "source": "catalog.oregonstate.edu",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 8469,
+      "data_files": [
+        "data/oregonstate/oregonstate_2026.csv",
+        "data/oregonstate/oregonstate_summary.json"
+      ],
+      "progressive_pct": 10.3,
+      "canon_pct": 1.23,
+      "notes": "2026-27 catalog scraped. 4 departments failed."
+    },
+    "vt": {
+      "id": 66,
+      "status": "dynamic_js_only",
+      "notes": "catalog.vt.edu uses Acalog/ACMS returning 202 with JS-only content."
+    },
+    "pitt": {
+      "id": 67,
+      "status": "dynamic_js_only",
+      "notes": "catalog.pitt.edu uses Acalog/ACMS returning 202 with JS-only content."
+    },
+    "rutgers": {
+      "id": 68,
+      "status": "blocked_by_network",
+      "notes": "SSL blocked from proxy environment."
+    },
+    "uconn": {
+      "id": 69,
+      "status": "completed",
+      "source": "catalog.uconn.edu",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 7067,
+      "data_files": [
+        "data/uconn/uconn_2026.csv",
+        "data/uconn/uconn_summary.json"
+      ],
+      "progressive_pct": 3.95,
+      "canon_pct": 0.82,
+      "notes": "2026-27 catalog scraped."
+    },
+    "temple": {
+      "id": 70,
+      "status": "blocked_by_network",
+      "notes": "SSL blocked from proxy environment."
+    },
+    "drexel": {
+      "id": 71,
+      "status": "completed",
+      "source": "catalog.drexel.edu",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 8329,
+      "data_files": [
+        "data/drexel/drexel_2026.csv",
+        "data/drexel/drexel_summary.json"
+      ],
+      "progressive_pct": 6.39,
+      "canon_pct": 1.3,
+      "notes": "2026-27 catalog scraped. catalog.drexel.edu/coursedescriptions/quarter/{undergrad|grad}/ \u2014 4 departments failed."
+    },
+    "rpi": {
+      "id": 72,
+      "status": "dynamic_js_only",
+      "notes": "catalog.rpi.edu uses Acalog/ACMS returning 202 with JS-only content."
+    },
+    "utk": {
+      "id": 73,
+      "status": "dynamic_js_only",
+      "notes": "catalog.utk.edu uses Acalog/ACMS returning 202 with JS-only content."
+    },
+    "uky": {
+      "id": 74,
+      "status": "blocked_by_network",
+      "notes": "catalog.uky.edu returns ProxyError (SSL blocked from proxy environment)."
+    },
+    "ua": {
+      "id": 75,
+      "status": "completed",
+      "source": "catalog.ua.edu/azindex/",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 6641,
+      "data_files": [
+        "data/ua/ua_2026.csv",
+        "data/ua/ua_summary.json"
+      ],
+      "progressive_pct": 9.19,
+      "canon_pct": 3.12,
+      "notes": "2026-27 catalog scraped. 107 course pages via /azindex/. Custom div.cb_subj/cb_numb/cb_title/cb_desc structure."
+    },
+    "auburn": {
+      "id": 76,
+      "status": "blocked_by_network",
+      "notes": "catalog.auburn.edu returns 403. bulletin.auburn.edu returns 404. auburn.smartcatalogiq.com returns 404. SSL/access blocked."
+    },
+    "lsu": {
+      "id": 77,
+      "status": "dynamic_js_only",
+      "notes": "catalog.lsu.edu uses Acalog/ACMS returning 202 with JS-only content."
+    },
+    "ou": {
+      "id": 78,
+      "status": "dynamic_js_only",
+      "notes": "catalog.ou.edu uses Acalog/ACMS returning 202 with JS-only content."
+    },
+    "okstate": {
+      "id": 79,
+      "status": "completed",
+      "source": "catalog.okstate.edu",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 7551,
+      "data_files": [
+        "data/okstate/okstate_2026.csv",
+        "data/okstate/okstate_summary.json"
+      ],
+      "progressive_pct": 6.29,
+      "canon_pct": 1.91,
+      "notes": "2026-27 catalog scraped. 2 departments failed."
+    },
+    "sc": {
+      "id": 80,
+      "status": "blocked_by_network",
+      "notes": "SSL blocked from proxy environment."
+    },
+    "clemson": {
+      "id": 81,
+      "status": "blocked_by_network",
+      "notes": "SSL blocked from proxy environment."
+    },
+    "unl": {
+      "id": 82,
+      "status": "completed",
+      "source": "catalog.unl.edu",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 9954,
+      "data_files": [
+        "data/unl/unl_2026.csv",
+        "data/unl/unl_summary.json"
+      ],
+      "progressive_pct": 7.59,
+      "canon_pct": 2.44,
+      "notes": "2026-27 catalog scraped. Re-scraped with cb_ span format parser (undergrad + grad-professional). 9954 unique courses."
+    },
+    "iastate": {
+      "id": 83,
+      "status": "completed",
+      "source": "catalog.iastate.edu",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 8242,
+      "data_files": [
+        "data/iastate/iastate_2026.csv",
+        "data/iastate/iastate_summary.json"
+      ],
+      "progressive_pct": 7.24,
+      "canon_pct": 1.67,
+      "notes": "2026-27 catalog scraped. 5 departments failed."
+    },
+    "ku": {
+      "id": 84,
+      "status": "completed",
+      "source": "catalog.ku.edu/{college}/",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 8495,
+      "data_files": [
+        "data/ku/ku_2026.csv",
+        "data/ku/ku_summary.json"
+      ],
+      "progressive_pct": 13.09,
+      "canon_pct": 3.07,
+      "notes": "2026-27 catalog scraped. 17 college pages. CourseleafCMS with span.detail-code/detail-title/courseblockextra format."
+    },
+    "missouri": {
+      "id": 85,
+      "status": "completed",
+      "source": "catalog.missouri.edu",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 11338,
+      "data_files": [
+        "data/missouri/missouri_2026.csv",
+        "data/missouri/missouri_summary.json"
+      ],
+      "progressive_pct": 9.41,
+      "canon_pct": 2.41,
+      "notes": "2026-27 catalog scraped. catalog.missouri.edu/courseofferings/ \u2014 173 departments, 1 failed."
+    },
+    "kstate": {
+      "id": 86,
+      "status": "blocked_by_network",
+      "notes": "SSL blocked from proxy environment."
+    },
+    "olemiss": {
+      "id": 87,
+      "status": "blocked_by_network",
+      "notes": "catalog.olemiss.edu returns 403."
+    },
+    "msstate": {
+      "id": 88,
+      "status": "completed",
+      "source": "catalog.msstate.edu/undergraduate/ and /graduate/",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 3346,
+      "data_files": [
+        "data/msstate/msstate_2026.csv",
+        "data/msstate/msstate_summary.json"
+      ],
+      "progressive_pct": 6.63,
+      "canon_pct": 1.7,
+      "notes": "2026-27 catalog scraped. Custom em>strong title format 'DEPT NUM  Title:  N hours.'"
+    },
+    "wvu": {
+      "id": 89,
+      "status": "blocked_by_network",
+      "notes": "SSL blocked from proxy environment."
+    },
+    "unm": {
+      "id": 90,
+      "status": "dynamic_js_only",
+      "notes": "catalog.unm.edu course paths return 404. Dynamic JS catalog."
+    },
+    "colostate": {
+      "id": 91,
+      "status": "completed",
+      "source": "catalog.colostate.edu",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 4048,
+      "data_files": [
+        "data/colostate/colostate_2026.csv",
+        "data/colostate/colostate_summary.json"
+      ],
+      "progressive_pct": 5.31,
+      "canon_pct": 1.68,
+      "notes": "2026-27 catalog scraped."
+    },
+    "unlv": {
+      "id": 92,
+      "status": "dynamic_js_only",
+      "notes": "catalog.unlv.edu uses Acalog/ACMS returning 202 with JS-only content."
+    },
+    "baylor": {
+      "id": 93,
+      "status": "dynamic_js_only",
+      "notes": "catalog.baylor.edu uses Acalog/ACMS returning 202 with JS-only content."
+    },
+    "ttu": {
+      "id": 94,
+      "status": "dynamic_js_only",
+      "notes": "catalog.ttu.edu uses Acalog/ACMS returning 202 with JS-only content."
+    },
+    "uh": {
+      "id": 95,
+      "status": "dynamic_js_only",
+      "notes": "publications.uh.edu uses Acalog/ACMS returning 202 with JS-only content."
+    },
+    "louisville": {
+      "id": 96,
+      "status": "dynamic_js_only",
+      "notes": "catalog.louisville.edu uses Acalog/ACMS returning 202 with JS-only content."
+    },
+    "uc": {
+      "id": 97,
+      "status": "dynamic_js_only",
+      "notes": "catalog.uc.edu uses Acalog/ACMS returning 202 with JS-only content."
+    },
+    "miami": {
+      "id": 98,
+      "status": "completed",
+      "source": "bulletin.miami.edu/courses-az/{dept}/",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 9882,
+      "data_files": [
+        "data/miami/miami_2026.csv",
+        "data/miami/miami_summary.json"
+      ],
+      "progressive_pct": 7.35,
+      "canon_pct": 2.61,
+      "notes": "2026-27 catalog scraped. 281 departments via courses-az/ AZ index."
+    },
+    "stonybrook": {
+      "id": 99,
+      "status": "dynamic_js_only",
+      "notes": "catalog.stonybrook.edu uses Acalog/ACMS (returns 202 for content pages)."
+    },
+    "udel": {
+      "id": 100,
+      "status": "dynamic_js_only",
+      "notes": "catalog.udel.edu uses Acalog/ACMS returning 202 with JS-only content."
+    },
+    "uta": {
+      "id": 101,
+      "status": "completed",
+      "source": "catalog.uta.edu/coursedescriptions/",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 7016,
+      "data_files": [
+        "data/uta/uta_2026.csv",
+        "data/uta/uta_summary.json"
+      ],
+      "progressive_pct": 8.28,
+      "canon_pct": 1.98,
+      "notes": "2026-27 catalog scraped. 139 departments. Standard CourseleafCMS period format. 14 depts failed."
+    },
+    "gmu": {
+      "id": 102,
+      "status": "completed",
+      "source": "catalog.gmu.edu/courses/",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 8248,
+      "data_files": [
+        "data/gmu/gmu_2026.csv",
+        "data/gmu/gmu_summary.json"
+      ],
+      "progressive_pct": 9.36,
+      "canon_pct": 6.58,
+      "notes": "2026-27 catalog scraped. 169 departments. CourseleafCMS variant: strong.cb_code + em.cb_title."
+    },
+    "idaho": {
+      "id": 103,
+      "status": "completed",
+      "source": "catalog.uidaho.edu/courses/",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 5160,
+      "data_files": [
+        "data/idaho/idaho_2026.csv",
+        "data/idaho/idaho_summary.json"
+      ],
+      "progressive_pct": 5.02,
+      "canon_pct": 0.97,
+      "notes": "2026-27 catalog scraped. 135 departments. CourseleafCMS noindent variant. 1 dept failed."
+    },
+    "utd": {
+      "id": 104,
+      "status": "completed",
+      "source": "catalog.utdallas.edu/2026/{graduate|undergraduate}/courses/",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 5121,
+      "data_files": [
+        "data/utd/utd_2026.csv",
+        "data/utd/utd_summary.json"
+      ],
+      "progressive_pct": 5.19,
+      "canon_pct": 1.76,
+      "notes": "2026-27 catalog scraped. 80 grad + 107 undergrad depts. Bukku system: p#{dept}{num} with span.course_address/title/hours."
+    },
+    "utsa": {
+      "id": 105,
+      "status": "completed",
+      "source": "catalog.utsa.edu/{undergraduate|graduate}/coursedescriptions/",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 5867,
+      "data_files": [
+        "data/utsa/utsa_2026.csv",
+        "data/utsa/utsa_summary.json"
+      ],
+      "progressive_pct": 9.43,
+      "canon_pct": 2.08,
+      "notes": "2026-27 catalog scraped. 126 undergrad + 87 grad depts. CourseleafCMS period format."
+    },
+    "montanastate": {
+      "id": 106,
+      "status": "completed",
+      "source": "catalog.montana.edu/coursedescriptions/",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 4443,
+      "data_files": [
+        "data/montanastate/montanastate_2026.csv",
+        "data/montanastate/montanastate_summary.json"
+      ],
+      "progressive_pct": 6.46,
+      "canon_pct": 1.53,
+      "notes": "2026-27 catalog scraped. 176 depts. CourseleafCMS. 4 depts failed."
+    },
+    "odu": {
+      "id": 122,
+      "status": "completed",
+      "source": "scraped",
+      "catalog_year": "2026",
+      "total_courses": 7543,
+      "script": "scripts/scrape_odu.py",
+      "data_file": "data/odu/odu_2026.csv",
+      "notes": "ODU uses div.cols.noindent with span.detail-xrefcode, span.detail-title format."
+    },
+    "txstate": {
+      "id": 108,
+      "status": "completed",
+      "source": "mycatalog.txstate.edu/courses/",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 5980,
+      "data_files": [
+        "data/txstate/txstate_2026.csv",
+        "data/txstate/txstate_summary.json"
+      ],
+      "progressive_pct": 12.39,
+      "canon_pct": 2.89,
+      "notes": "2026-27 catalog scraped. 124 depts via /azindex/. CourseleafCMS format. 1 dept failed."
+    },
+    "uncg": {
+      "id": 109,
+      "status": "completed",
+      "source": "catalog.uncg.edu/courses/",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 5890,
+      "data_files": [
+        "data/uncg/uncg_2026.csv",
+        "data/uncg/uncg_summary.json"
+      ],
+      "progressive_pct": 9.19,
+      "canon_pct": 2.17,
+      "notes": "2026-27 catalog scraped. 115 depts. CourseleafCMS noindent variant."
+    },
+    "calpoly": {
+      "id": 110,
+      "status": "completed",
+      "source": "catalog.calpoly.edu/courses/",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 4210,
+      "data_files": [
+        "data/calpoly/calpoly_2026.csv",
+        "data/calpoly/calpoly_summary.json"
+      ],
+      "progressive_pct": 9.79,
+      "canon_pct": 1.47,
+      "notes": "2026-27 catalog scraped. 128 depts. Custom multi-line strong format. 3 depts failed."
+    },
+    "utahtech": {
+      "id": 111,
+      "status": "completed",
+      "source": "catalog.utahtech.edu/courses/",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 2117,
+      "data_files": [
+        "data/utahtech/utahtech_2026.csv",
+        "data/utahtech/utahtech_summary.json"
+      ],
+      "progressive_pct": 16.25,
+      "canon_pct": 2.22,
+      "notes": "2026-27 catalog scraped. CourseleafCMS period format. 2 depts failed (biol, chem)."
+    },
+    "uvu": {
+      "id": 112,
+      "status": "completed",
+      "source": "catalog.uvu.edu/courses/",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 4292,
+      "data_files": [
+        "data/uvu/uvu_2026.csv",
+        "data/uvu/uvu_summary.json"
+      ],
+      "progressive_pct": 7.43,
+      "canon_pct": 2.1,
+      "notes": "2026-27 catalog scraped. 148 depts. ODU-style div.cols.noindent format. 3 depts failed."
+    },
+    "uaf": {
+      "id": 113,
+      "status": "completed",
+      "source": "catalog.uaf.edu/courses/",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 3794,
+      "data_files": [
+        "data/uaf/uaf_2026.csv",
+        "data/uaf/uaf_summary.json"
+      ],
+      "progressive_pct": 9.17,
+      "canon_pct": 1.82,
+      "notes": "2026-27 catalog scraped. 134 depts. Custom format: dept+num+title+credits concatenated in courseblocktitle."
+    },
+    "umt": {
+      "id": 114,
+      "status": "completed",
+      "source": "catalog.umt.edu/courses/",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 4400,
+      "data_files": [
+        "data/umt/umt_2026.csv",
+        "data/umt/umt_summary.json"
+      ],
+      "progressive_pct": 5.77,
+      "canon_pct": 2.07,
+      "notes": "2026-27 catalog scraped. 150 depts. CourseleafCMS dash format: DEPT NUM - Title. N Credits."
+    },
+    "ysu": {
+      "id": 115,
+      "status": "completed",
+      "source": "catalog.ysu.edu/courses/",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 4345,
+      "data_files": [
+        "data/ysu/ysu_2026.csv",
+        "data/ysu/ysu_summary.json"
+      ],
+      "progressive_pct": 5.57,
+      "canon_pct": 1.45,
+      "notes": "2026-27 catalog scraped. 154 depts. CourseleafCMS: DEPT NUM    Title    N s.h. format."
+    },
+    "uwec": {
+      "id": 116,
+      "status": "completed",
+      "source": "catalog.uwec.edu/courses/",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 2998,
+      "data_files": [
+        "data/uwec/uwec_2026.csv",
+        "data/uwec/uwec_summary.json"
+      ],
+      "progressive_pct": 10.74,
+      "canon_pct": 1.67,
+      "notes": "2026-27 catalog scraped. 165 depts. CourseleafCMS: DEPT NUM Title (N crs) + p.courseblockdescription. 2 depts failed."
+    },
+    "atu": {
+      "id": 117,
+      "status": "completed",
+      "source": "catalog.atu.edu/courses/",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 2794,
+      "data_files": [
+        "data/atu/atu_2026.csv",
+        "data/atu/atu_summary.json"
+      ],
+      "progressive_pct": 3.11,
+      "canon_pct": 0.75,
+      "notes": "2026-27 catalog scraped. 255 depts. CourseleafCMS span.detail-code + span.detail-title format. 1 dept failed."
+    },
+    "unk": {
+      "id": 118,
+      "status": "completed",
+      "source": "scraped",
+      "catalog_year": "2026",
+      "total_courses": 2667,
+      "script": "scripts/scrape_unk.py",
+      "data_file": "data/unk/unk_2026.csv",
+      "notes": "UNK uses /undergraduate/ and /graduate/ URL patterns. Em dash separator in titles."
+    },
+    "uwm": {
+      "id": 119,
+      "status": "completed",
+      "source": "scraped",
+      "catalog_year": "2026",
+      "total_courses": 7006,
+      "script": "scripts/scrape_uwm.py",
+      "data_file": "data/uwm/uwm_2026.csv",
+      "notes": "UWM uses button.courseblocktitle format (not p), standard CourseleafCMS otherwise."
+    },
+    "neiu": {
+      "id": 120,
+      "status": "completed",
+      "source": "scraped",
+      "catalog_year": "2026",
+      "total_courses": 3558,
+      "script": "scripts/scrape_neiu.py",
+      "data_file": "data/neiu/neiu_2026.csv",
+      "notes": "NEIU uses dash-format codes (ACTG-201). Standard CourseleafCMS."
+    },
+    "uidaho": {
+      "id": 121,
+      "status": "completed",
+      "source": "scraped",
+      "catalog_year": "2026",
+      "total_courses": 4946,
+      "script": "scripts/scrape_uidaho.py",
+      "data_file": "data/uidaho/uidaho_2026.csv",
+      "notes": "U Idaho: noindent format with optional (s) qualifier. Standard CourseleafCMS."
+    },
+    "vsu": {
+      "id": 123,
+      "status": "completed",
+      "source": "scraped",
+      "catalog_year": "2026",
+      "total_courses": 2333,
+      "script": "scripts/scrape_vsu.py",
+      "data_file": "data/vsu/vsu_2026.csv",
+      "notes": "Virginia State U, uses undergrad+grad paths, period-separator format."
+    },
+    "worcester": {
+      "id": 124,
+      "status": "completed",
+      "source": "scraped",
+      "catalog_year": "2026",
+      "total_courses": 1767,
+      "script": "scripts/scrape_worcester.py",
+      "data_file": "data/worcester/worcester_2026.csv",
+      "notes": "Worcester State U, full-name slug URLs, dash-format course codes (BI-101)."
+    },
+    "une": {
+      "id": 125,
+      "status": "completed",
+      "source": "scraped",
+      "catalog_year": "2026",
+      "total_courses": 2070,
+      "script": "scripts/scrape_une.py",
+      "data_file": "data/une/une_2026.csv",
+      "notes": "U New England, div.cols.noindent format with div.courseblockextra desc."
+    },
+    "uni": {
+      "id": 126,
+      "status": "completed",
+      "source": "scraped",
+      "catalog_year": "2026",
+      "total_courses": 1750,
+      "script": "scripts/scrape_uni.py",
+      "data_file": "data/uni/uni_2026.csv",
+      "notes": "U Northern Iowa: period separator with em-dash before credit hours."
+    },
+    "iit": {
+      "id": 128,
+      "status": "completed",
+      "source": "catalog.iit.edu",
+      "catalog_year": "2026",
+      "total_courses": 3221,
+      "script": "scripts/scrape_iit.py",
+      "data_file": "data/iit/iit_2026.csv",
+      "progressive_pct": 6.36,
+      "canon_pct": 1.06,
+      "notes": "Illinois Institute of Technology. div.courseblocktitle format (div not p)."
+    },
+    "fairfield": {
+      "id": 129,
+      "status": "completed",
+      "source": "catalog.fairfield.edu",
+      "catalog_year": "2026",
+      "total_courses": 2631,
+      "script": "scripts/scrape_fairfield.py",
+      "data_file": "data/fairfield/fairfield_2026.csv",
+      "progressive_pct": 18.89,
+      "canon_pct": 5.28,
+      "notes": "Fairfield University. div.cols.noindent with span.detail-code/detail-title format."
+    },
+    "wsu": {
+      "id": 130,
+      "status": "dynamic_js_only",
+      "notes": "catalog.wsu.edu uses Blazor WebAssembly (.NET) - dynamic JS SPA, not scrapable."
+    },
+    "oit": {
+      "id": 131,
+      "status": "dynamic_js_only",
+      "notes": "catalog.oit.edu uses Coursedog - dynamic JS, not scrapable."
+    },
+    "alverno": {
+      "id": 132,
+      "status": "completed",
+      "source": "catalog.alverno.edu",
+      "catalog_year": "2026",
+      "total_courses": 1044,
+      "script": "scripts/scrape_alverno.py",
+      "data_file": "data/alverno/alverno_2026.csv",
+      "progressive_pct": 13.51,
+      "canon_pct": 1.72,
+      "notes": "Alverno College. Dash-format codes (A-100 Title). CourseleafCMS noindent variant."
+    },
+    "vanguard": {
+      "id": 133,
+      "status": "completed",
+      "source": "catalog.vanguard.edu",
+      "catalog_year": "2026",
+      "total_courses": 1368,
+      "script": "scripts/scrape_vanguard.py",
+      "data_file": "data/vanguard/vanguard_2026.csv",
+      "progressive_pct": 10.45,
+      "canon_pct": 6.73,
+      "notes": "Vanguard University. detail-code/detail-title span format. Dash-format codes (ACCT-P225)."
+    },
+    "biola": {
+      "id": 134,
+      "status": "completed",
+      "source": "catalog.biola.edu",
+      "catalog_year": "2026",
+      "total_courses": 2754,
+      "script": "scripts/scrape_biola.py",
+      "data_file": "data/biola/biola_2026.csv",
+      "progressive_pct": 6.03,
+      "canon_pct": 18.01,
+      "notes": "Biola University. p.courseblocktitle with DEPT NBSP NUM - Title Credits N format."
     }
   }
 }

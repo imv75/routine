@@ -1,0 +1,38 @@
+{
+  "university": "uta",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 7016,
+  "progressive_count": 581,
+  "progressive_pct": 8.28,
+  "canon_count": 139,
+  "canon_pct": 1.98,
+  "climate_narrow_count": 32,
+  "climate_narrow_pct": 0.46,
+  "climate_broad_count": 209,
+  "climate_broad_pct": 2.98,
+  "by_area": {
+    "Professional": 93,
+    "STEM": 1728,
+    "Other": 2368,
+    "Humanities": 1736,
+    "Social Sciences": 822,
+    "Medical Sciences": 269
+  },
+  "failed_depts": [
+    "asl",
+    "eced",
+    "esol",
+    "exss",
+    "nurshi",
+    "cola",
+    "masi",
+    "msci",
+    "nrst",
+    "port",
+    "supa",
+    "svln",
+    "spec",
+    "soar"
+  ]
+}

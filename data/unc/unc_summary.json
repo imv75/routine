@@ -1,0 +1,23 @@
+{
+  "university": "unc",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 10664,
+  "progressive_count": 1535,
+  "progressive_pct": 14.39,
+  "canon_count": 401,
+  "canon_pct": 3.76,
+  "climate_narrow_count": 80,
+  "climate_narrow_pct": 0.75,
+  "climate_broad_count": 307,
+  "climate_broad_pct": 2.88,
+  "by_area": {
+    "Professional": 1496,
+    "Social Sciences": 2329,
+    "STEM": 1775,
+    "Humanities": 3099,
+    "Other": 468,
+    "Medical Sciences": 1497
+  },
+  "failed_depts": []
+}

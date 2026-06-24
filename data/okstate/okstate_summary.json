@@ -1,0 +1,26 @@
+{
+  "university": "okstate",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 7551,
+  "progressive_count": 475,
+  "progressive_pct": 6.29,
+  "canon_count": 144,
+  "canon_pct": 1.91,
+  "climate_narrow_count": 26,
+  "climate_narrow_pct": 0.34,
+  "climate_broad_count": 241,
+  "climate_broad_pct": 3.19,
+  "by_area": {
+    "Professional": 2074,
+    "Humanities": 1195,
+    "Social Sciences": 712,
+    "Other": 381,
+    "STEM": 2272,
+    "Medical Sciences": 917
+  },
+  "failed_depts": [
+    "gene",
+    "rt"
+  ]
+}

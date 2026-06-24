@@ -1,0 +1,23 @@
+{
+  "university": "uaf",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 3794,
+  "progressive_count": 348,
+  "progressive_pct": 9.17,
+  "canon_count": 69,
+  "canon_pct": 1.82,
+  "climate_narrow_count": 47,
+  "climate_narrow_pct": 1.24,
+  "climate_broad_count": 210,
+  "climate_broad_pct": 5.54,
+  "by_area": {
+    "Professional": 15,
+    "Other": 2658,
+    "Humanities": 429,
+    "STEM": 601,
+    "Social Sciences": 66,
+    "Medical Sciences": 25
+  },
+  "failed_depts": []
+}

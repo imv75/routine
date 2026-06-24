@@ -1,0 +1,22 @@
+{
+  "university": "msstate",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 3346,
+  "progressive_count": 222,
+  "progressive_pct": 6.63,
+  "canon_count": 57,
+  "canon_pct": 1.7,
+  "climate_narrow_count": 4,
+  "climate_narrow_pct": 0.12,
+  "climate_broad_count": 91,
+  "climate_broad_pct": 2.72,
+  "by_area": {
+    "STEM": 602,
+    "Other": 2278,
+    "Humanities": 273,
+    "Social Sciences": 84,
+    "Professional": 109
+  },
+  "failed_depts": []
+}

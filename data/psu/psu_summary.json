@@ -1,0 +1,27 @@
+{
+  "university": "psu",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 14505,
+  "progressive_count": 1911,
+  "progressive_pct": 13.17,
+  "canon_count": 488,
+  "canon_pct": 3.36,
+  "climate_narrow_count": 149,
+  "climate_narrow_pct": 1.03,
+  "climate_broad_count": 650,
+  "climate_broad_pct": 4.48,
+  "by_area": {
+    "Professional": 490,
+    "STEM": 3513,
+    "Social Sciences": 719,
+    "Humanities": 2121,
+    "Other": 7367,
+    "Medical Sciences": 295
+  },
+  "failed_depts": [
+    "enve",
+    "ce",
+    "cmpmt"
+  ]
+}

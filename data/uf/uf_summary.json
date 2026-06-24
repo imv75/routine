@@ -1,0 +1,29 @@
+{
+  "university": "uf",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 4929,
+  "progressive_count": 427,
+  "progressive_pct": 8.66,
+  "canon_count": 178,
+  "canon_pct": 3.61,
+  "climate_narrow_count": 28,
+  "climate_narrow_pct": 0.57,
+  "climate_broad_count": 179,
+  "climate_broad_pct": 3.63,
+  "by_area": {
+    "Other": 2972,
+    "Humanities": 788,
+    "STEM": 889,
+    "Social Sciences": 244,
+    "Medical Sciences": 36
+  },
+  "failed_depts": [
+    "african_languages",
+    "agricultural_and_life_sciences_general",
+    "environmental_horticulture",
+    "innovation_academy",
+    "las_ls_mod_for_lang_japanese",
+    "psychology"
+  ]
+}

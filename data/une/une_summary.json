@@ -1,0 +1,22 @@
+{
+  "university": "une",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 2070,
+  "progressive_count": 291,
+  "progressive_pct": 14.06,
+  "canon_count": 30,
+  "canon_pct": 1.45,
+  "climate_narrow_count": 48,
+  "climate_narrow_pct": 2.32,
+  "climate_broad_count": 176,
+  "climate_broad_pct": 8.5,
+  "by_area": {
+    "Medical Sciences": 174,
+    "Social Sciences": 21,
+    "Humanities": 79,
+    "Other": 1655,
+    "STEM": 141
+  },
+  "failed_depts": []
+}

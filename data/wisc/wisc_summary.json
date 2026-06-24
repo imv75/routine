@@ -1,0 +1,26 @@
+{
+  "university": "wisc",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 10142,
+  "progressive_count": 1271,
+  "progressive_pct": 12.53,
+  "canon_count": 245,
+  "canon_pct": 2.42,
+  "climate_narrow_count": 87,
+  "climate_narrow_pct": 0.86,
+  "climate_broad_count": 403,
+  "climate_broad_pct": 3.97,
+  "by_area": {
+    "Professional": 248,
+    "STEM": 2616,
+    "Humanities": 1807,
+    "Social Sciences": 459,
+    "Medical Sciences": 54,
+    "Other": 4958
+  },
+  "failed_depts": [
+    "anatomy",
+    "c_e_soc"
+  ]
+}

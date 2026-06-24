@@ -1,0 +1,21 @@
+{
+  "university": "alverno",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 1044,
+  "progressive_count": 141,
+  "progressive_pct": 13.51,
+  "canon_count": 18,
+  "canon_pct": 1.72,
+  "climate_narrow_count": 1,
+  "climate_narrow_pct": 0.1,
+  "climate_broad_count": 35,
+  "climate_broad_pct": 3.35,
+  "by_area": {
+    "Other": 755,
+    "Humanities": 121,
+    "STEM": 57,
+    "Professional": 111
+  },
+  "failed_depts": []
+}

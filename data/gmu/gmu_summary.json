@@ -1,0 +1,23 @@
+{
+  "university": "gmu",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 8248,
+  "progressive_count": 772,
+  "progressive_pct": 9.36,
+  "canon_count": 543,
+  "canon_pct": 6.58,
+  "climate_narrow_count": 49,
+  "climate_narrow_pct": 0.59,
+  "climate_broad_count": 311,
+  "climate_broad_pct": 3.77,
+  "by_area": {
+    "Other": 4042,
+    "Professional": 682,
+    "Humanities": 1257,
+    "Social Sciences": 555,
+    "STEM": 1440,
+    "Medical Sciences": 272
+  },
+  "failed_depts": []
+}

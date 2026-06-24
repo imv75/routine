@@ -1,0 +1,23 @@
+{
+  "university": "northeastern",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 7966,
+  "progressive_count": 843,
+  "progressive_pct": 10.58,
+  "canon_count": 122,
+  "canon_pct": 1.53,
+  "climate_narrow_count": 74,
+  "climate_narrow_pct": 0.93,
+  "climate_broad_count": 330,
+  "climate_broad_pct": 4.14,
+  "by_area": {
+    "Professional": 885,
+    "Humanities": 899,
+    "STEM": 1761,
+    "Other": 3558,
+    "Social Sciences": 630,
+    "Medical Sciences": 233
+  },
+  "failed_depts": []
+}

@@ -1,0 +1,26 @@
+{
+  "university": "uoregon",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 6007,
+  "progressive_count": 470,
+  "progressive_pct": 7.82,
+  "canon_count": 128,
+  "canon_pct": 2.13,
+  "climate_narrow_count": 15,
+  "climate_narrow_pct": 0.25,
+  "climate_broad_count": 144,
+  "climate_broad_pct": 2.4,
+  "by_area": {
+    "Other": 3084,
+    "Professional": 636,
+    "Humanities": 1055,
+    "STEM": 572,
+    "Social Sciences": 617,
+    "Medical Sciences": 43
+  },
+  "failed_depts": [
+    "pe",
+    "pppm"
+  ]
+}

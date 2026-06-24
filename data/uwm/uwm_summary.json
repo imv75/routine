@@ -1,0 +1,23 @@
+{
+  "university": "uwm",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 7006,
+  "progressive_count": 407,
+  "progressive_pct": 5.81,
+  "canon_count": 139,
+  "canon_pct": 1.98,
+  "climate_narrow_count": 8,
+  "climate_narrow_pct": 0.11,
+  "climate_broad_count": 79,
+  "climate_broad_pct": 1.13,
+  "by_area": {
+    "STEM": 1243,
+    "Humanities": 2719,
+    "Social Sciences": 1552,
+    "Other": 334,
+    "Professional": 479,
+    "Medical Sciences": 679
+  },
+  "failed_depts": []
+}

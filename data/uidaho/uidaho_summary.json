@@ -1,0 +1,29 @@
+{
+  "university": "uidaho",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 4946,
+  "progressive_count": 252,
+  "progressive_pct": 5.1,
+  "canon_count": 48,
+  "canon_pct": 0.97,
+  "climate_narrow_count": 26,
+  "climate_narrow_pct": 0.53,
+  "climate_broad_count": 256,
+  "climate_broad_pct": 5.18,
+  "by_area": {
+    "Professional": 237,
+    "STEM": 955,
+    "Social Sciences": 494,
+    "Humanities": 451,
+    "Other": 2809
+  },
+  "failed_depts": [
+    "chem",
+    "edsp",
+    "edad",
+    "engr",
+    "fire",
+    "fs"
+  ]
+}

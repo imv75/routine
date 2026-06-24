@@ -1,0 +1,25 @@
+{
+  "university": "iit",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 3221,
+  "progressive_count": 205,
+  "progressive_pct": 6.36,
+  "canon_count": 34,
+  "canon_pct": 1.06,
+  "climate_narrow_count": 32,
+  "climate_narrow_pct": 0.99,
+  "climate_broad_count": 140,
+  "climate_broad_pct": 4.35,
+  "by_area": {
+    "Other": 889,
+    "Humanities": 115,
+    "STEM": 1028,
+    "Professional": 917,
+    "Social Sciences": 272
+  },
+  "failed_depts": [
+    "iep",
+    "la"
+  ]
+}

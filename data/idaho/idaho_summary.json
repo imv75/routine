@@ -1,0 +1,25 @@
+{
+  "university": "idaho",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 5160,
+  "progressive_count": 259,
+  "progressive_pct": 5.02,
+  "canon_count": 50,
+  "canon_pct": 0.97,
+  "climate_narrow_count": 26,
+  "climate_narrow_pct": 0.5,
+  "climate_broad_count": 269,
+  "climate_broad_pct": 5.21,
+  "by_area": {
+    "STEM": 1247,
+    "Other": 2581,
+    "Humanities": 570,
+    "Professional": 369,
+    "Social Sciences": 364,
+    "Medical Sciences": 29
+  },
+  "failed_depts": [
+    "acct"
+  ]
+}

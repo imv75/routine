@@ -1,0 +1,28 @@
+{
+  "university": "miami",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 9882,
+  "progressive_count": 726,
+  "progressive_pct": 7.35,
+  "canon_count": 258,
+  "canon_pct": 2.61,
+  "climate_narrow_count": 95,
+  "climate_narrow_pct": 0.96,
+  "climate_broad_count": 461,
+  "climate_broad_pct": 4.67,
+  "by_area": {
+    "Professional": 1427,
+    "Humanities": 1627,
+    "Social Sciences": 628,
+    "Other": 4376,
+    "STEM": 1462,
+    "Medical Sciences": 362
+  },
+  "failed_depts": [
+    "cst",
+    "gsc",
+    "hed",
+    "wrt"
+  ]
+}

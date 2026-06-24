@@ -1,0 +1,23 @@
+{
+  "university": "uconn",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 7067,
+  "progressive_count": 279,
+  "progressive_pct": 3.95,
+  "canon_count": 58,
+  "canon_pct": 0.82,
+  "climate_narrow_count": 12,
+  "climate_narrow_pct": 0.17,
+  "climate_broad_count": 103,
+  "climate_broad_pct": 1.46,
+  "by_area": {
+    "Professional": 1177,
+    "Humanities": 1931,
+    "Medical Sciences": 1044,
+    "Other": 32,
+    "Social Sciences": 1263,
+    "STEM": 1620
+  },
+  "failed_depts": []
+}

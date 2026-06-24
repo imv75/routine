@@ -1,0 +1,23 @@
+{
+  "university": "uncg",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 5890,
+  "progressive_count": 541,
+  "progressive_pct": 9.19,
+  "canon_count": 128,
+  "canon_pct": 2.17,
+  "climate_narrow_count": 3,
+  "climate_narrow_pct": 0.05,
+  "climate_broad_count": 144,
+  "climate_broad_pct": 2.44,
+  "by_area": {
+    "Other": 3543,
+    "Professional": 179,
+    "Humanities": 722,
+    "STEM": 792,
+    "Social Sciences": 374,
+    "Medical Sciences": 280
+  },
+  "failed_depts": []
+}

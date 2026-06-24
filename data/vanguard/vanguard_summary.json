@@ -1,0 +1,23 @@
+{
+  "university": "vanguard",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 1368,
+  "progressive_count": 143,
+  "progressive_pct": 10.45,
+  "canon_count": 92,
+  "canon_pct": 6.73,
+  "climate_narrow_count": 0,
+  "climate_narrow_pct": 0.0,
+  "climate_broad_count": 18,
+  "climate_broad_pct": 1.32,
+  "by_area": {
+    "Professional": 35,
+    "Social Sciences": 188,
+    "Humanities": 191,
+    "Other": 740,
+    "STEM": 125,
+    "Medical Sciences": 89
+  },
+  "failed_depts": []
+}
