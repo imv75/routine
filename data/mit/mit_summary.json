@@ -1,0 +1,24 @@
+{
+  "university": "mit",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 5918,
+  "progressive_count": 574,
+  "progressive_pct": 9.7,
+  "canon_count": 204,
+  "canon_pct": 3.45,
+  "climate_narrow_count": 144,
+  "climate_narrow_pct": 2.43,
+  "climate_broad_count": 372,
+  "climate_broad_pct": 6.29,
+  "by_area": {
+    "STEM": 1429,
+    "Humanities": 1000,
+    "Other": 2016,
+    "Social Sciences": 980,
+    "Professional": 462,
+    "Medical Sciences": 31
+  },
+  "source": "rescraped_2026",
+  "failed_depts": []
+}

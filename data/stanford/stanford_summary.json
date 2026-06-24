@@ -1,0 +1,23 @@
+{
+  "university": "stanford",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 15668,
+  "progressive_count": 4236,
+  "progressive_pct": 27.04,
+  "canon_count": 1132,
+  "canon_pct": 7.22,
+  "climate_narrow_count": 535,
+  "climate_narrow_pct": 3.41,
+  "climate_broad_count": 1388,
+  "climate_broad_pct": 8.86,
+  "by_area": {
+    "Professional": 1319,
+    "Humanities": 5182,
+    "Other": 3510,
+    "STEM": 1670,
+    "Social Sciences": 3684,
+    "Medical Sciences": 303
+  },
+  "source": "rescraped_2026"
+}

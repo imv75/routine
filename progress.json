@@ -60,7 +60,16 @@
       "years_covered": "2001-2025",
       "catalog_years": 24,
       "course_years": 131897,
-      "notes": "Covered in Marinovic (2026). Raw data not yet in repo."
+      "notes": "Covered in Marinovic (2026). Raw data not yet in repo. Re-scraped full 2026 catalog (15668 courses, prog 27.04%, canon 7.22%); note paper's published shares use offered-subset + word-boundary matching, so differ.",
+      "rescraped_2026": true,
+      "source_2026": "explorecourses.stanford.edu (ExploreCourses XML API, AY2025-2026)",
+      "data_files": [
+        "data/stanford/stanford_2026.csv",
+        "data/stanford/stanford_summary.json"
+      ],
+      "rescrape_total_courses": 15668,
+      "rescrape_progressive_pct": 27.04,
+      "rescrape_canon_pct": 7.22
     },
     "berkeley": {
       "id": 2,
@@ -105,7 +114,16 @@
       "years_covered": "2006-2024",
       "catalog_years": 19,
       "course_years": 59089,
-      "notes": "Covered in Marinovic (2026). Raw data not yet in repo."
+      "notes": "Covered in Marinovic (2026). Raw data not yet in repo. Re-scraped full 2026 catalog (5918 courses, prog 9.7%, canon 3.45%); note paper's published shares use offered-subset + word-boundary matching, so differ.",
+      "rescraped_2026": true,
+      "source_2026": "catalog.mit.edu/subjects/ (CourseleafCMS)",
+      "data_files": [
+        "data/mit/mit_2026.csv",
+        "data/mit/mit_summary.json"
+      ],
+      "rescrape_total_courses": 5918,
+      "rescrape_progressive_pct": 9.7,
+      "rescrape_canon_pct": 3.45
     },
     "uchicago": {
       "id": 7,
@@ -132,7 +150,16 @@
       "years_covered": "2000-2025",
       "catalog_years": 26,
       "course_years": 191716,
-      "notes": "Covered in Marinovic (2026). Raw data not yet in repo."
+      "notes": "Covered in Marinovic (2026). Raw data not yet in repo. Re-scraped full 2026 catalog (4459 courses, prog 17.22%, canon 2.98%); note paper's published shares use offered-subset + word-boundary matching, so differ.",
+      "rescraped_2026": true,
+      "source_2026": "classes.cornell.edu Class Roster API (FA26)",
+      "data_files": [
+        "data/cornell/cornell_2026.csv",
+        "data/cornell/cornell_summary.json"
+      ],
+      "rescrape_total_courses": 4459,
+      "rescrape_progressive_pct": 17.22,
+      "rescrape_canon_pct": 2.98
     },
     "northwestern": {
       "id": 10,
@@ -141,7 +168,16 @@
       "years_covered": "2000-2025",
       "catalog_years": 26,
       "course_years": 66216,
-      "notes": "Covered in Marinovic (2026). Raw data not yet in repo."
+      "notes": "Covered in Marinovic (2026). Raw data not yet in repo. Re-scraped full 2026 catalog (1715 courses, prog 9.91%, canon 4.08%); note paper's published shares use offered-subset + word-boundary matching, so differ.",
+      "rescraped_2026": true,
+      "source_2026": "catalogs.northwestern.edu/undergraduate/courses-az/ (CourseleafCMS, UG only)",
+      "data_files": [
+        "data/northwestern/northwestern_2026.csv",
+        "data/northwestern/northwestern_summary.json"
+      ],
+      "rescrape_total_courses": 1715,
+      "rescrape_progressive_pct": 9.91,
+      "rescrape_canon_pct": 4.08
     },
     "nyu": {
       "id": 11,
@@ -150,7 +186,16 @@
       "years_covered": "2000-2025",
       "catalog_years": 24,
       "course_years": 49108,
-      "notes": "Covered in Marinovic (2026). Raw data not yet in repo."
+      "notes": "Covered in Marinovic (2026). Raw data not yet in repo. Re-scraped full 2026 catalog (16829 courses, prog 18.14%, canon 5.48%); note paper's published shares use offered-subset + word-boundary matching, so differ.",
+      "rescraped_2026": true,
+      "source_2026": "bulletins.nyu.edu/courses/ (CourseleafCMS)",
+      "data_files": [
+        "data/nyu/nyu_2026.csv",
+        "data/nyu/nyu_summary.json"
+      ],
+      "rescrape_total_courses": 16829,
+      "rescrape_progressive_pct": 18.14,
+      "rescrape_canon_pct": 5.48
     },
     "vanderbilt": {
       "id": 12,
@@ -168,7 +213,16 @@
       "years_covered": "2020-2024",
       "catalog_years": 5,
       "course_years": 29704,
-      "notes": "Covered in Marinovic (2026). Raw data not yet in repo."
+      "notes": "Covered in Marinovic (2026). Raw data not yet in repo. Re-scraped full 2026 catalog (9439 courses, prog 9.74%, canon 2.46%); note paper's published shares use offered-subset + word-boundary matching, so differ.",
+      "rescraped_2026": true,
+      "source_2026": "catalog.illinois.edu/courses-of-instruction/ (CourseleafCMS)",
+      "data_files": [
+        "data/uiuc/uiuc_2026.csv",
+        "data/uiuc/uiuc_summary.json"
+      ],
+      "rescrape_total_courses": 9439,
+      "rescrape_progressive_pct": 9.74,
+      "rescrape_canon_pct": 2.46
     },
     "utaustin": {
       "id": 14,
@@ -195,7 +249,16 @@
       "years_covered": "2016-2025",
       "catalog_years": 5,
       "course_years": 46390,
-      "notes": "Covered in Marinovic (2026). Raw data not yet in repo."
+      "notes": "Covered in Marinovic (2026). Raw data not yet in repo. Re-scraped full 2026 catalog (9137 courses, prog 10.82%, canon 2.47%); note paper's published shares use offered-subset + word-boundary matching, so differ.",
+      "rescraped_2026": true,
+      "source_2026": "catalog.registrar.uiowa.edu/courses/ (CourseleafCMS)",
+      "data_files": [
+        "data/uiowa/uiowa_2026.csv",
+        "data/uiowa/uiowa_summary.json"
+      ],
+      "rescrape_total_courses": 9137,
+      "rescrape_progressive_pct": 10.82,
+      "rescrape_canon_pct": 2.47
     },
     "umich": {
       "id": 17,
@@ -1662,5 +1725,28 @@
       "canon_pct": 0.63,
       "notes": "2026-27 catalog scraped. Texas Southern University. detail-code/detail-title span format. 0 depts failed."
     }
+  },
+  "reference_rescrape_2026": {
+    "scraped": [
+      "stanford",
+      "mit",
+      "cornell",
+      "northwestern",
+      "nyu",
+      "uiuc",
+      "uiowa"
+    ],
+    "not_accessible": [
+      "berkeley",
+      "harvard",
+      "yale",
+      "princeton",
+      "uchicago",
+      "columbia",
+      "vanderbilt",
+      "utaustin",
+      "tamu"
+    ],
+    "note": "berkeley/harvard/yale/princeton/uchicago/columbia/vanderbilt = dynamic-JS or proxy-blocked; utaustin/tamu = catalog soft-404. These 9 retain Marinovic (2026) published values."
   }
 }

@@ -1,0 +1,24 @@
+{
+  "university": "northwestern",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 1715,
+  "progressive_count": 170,
+  "progressive_pct": 9.91,
+  "canon_count": 70,
+  "canon_pct": 4.08,
+  "climate_narrow_count": 12,
+  "climate_narrow_pct": 0.7,
+  "climate_broad_count": 29,
+  "climate_broad_pct": 1.69,
+  "by_area": {
+    "Other": 494,
+    "Social Sciences": 243,
+    "Humanities": 757,
+    "STEM": 178,
+    "Medical Sciences": 6,
+    "Professional": 37
+  },
+  "source": "rescraped_2026",
+  "failed_depts": []
+}

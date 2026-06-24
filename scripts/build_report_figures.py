@@ -10,29 +10,34 @@ os.makedirs('reports/figures', exist_ok=True)
 with open('/tmp/agg.json') as f:
     R = json.load(f)
 
-scraped = [r for r in R if r['source'] == 'scraped']
+scraped = [r for r in R if r['source'] in ('scraped', 'rescraped')]
+
+COL = {'scraped': '#2c7fb8', 'rescraped': '#27ae60', 'Marinovic (2026)': '#c0392b'}
+def col(r): return COL.get(r['source'], '#888888')
+
+n_sc = sum(1 for r in R if r['source'] == 'scraped')
+n_re = sum(1 for r in R if r['source'] == 'rescraped')
+n_pa = sum(1 for r in R if r['source'] == 'Marinovic (2026)')
 
 # ---- Figure 1: Scatter prog vs canon, all 100 ----
 fig, ax = plt.subplots(figsize=(8, 6))
 xs = [r['canon'] for r in R]
 ys = [r['prog'] for r in R]
-colors = ['#c0392b' if r['source'] != 'scraped' else '#2c7fb8' for r in R]
-ax.scatter(xs, ys, c=colors, alpha=0.7, s=40, edgecolors='white', linewidth=0.5)
-# diagonal prog=canon
+ax.scatter(xs, ys, c=[col(r) for r in R], alpha=0.75, s=40, edgecolors='white', linewidth=0.5)
 lim = max(max(xs), max(ys)) + 2
 ax.plot([0, lim], [0, lim], '--', color='gray', linewidth=1, label='Progressive = Canon')
 ax.set_xlabel('Western-canon signal (% of courses)')
 ax.set_ylabel('Progressive signal (% of courses)')
 ax.set_title('Progressive vs. Western-Canon Signal, 100 Universities (latest catalog)')
-# annotate a few notable
-notable = {'uchicago','yale','nyu','princeton','stanford','biola','csp','marshall','tamucc','mwcc'}
+notable = {'uchicago','yale','nyu','princeton','stanford','biola','csp','marshall','tamucc','cornell'}
 for r in R:
     if r['key'] in notable:
         ax.annotate(r['name'], (r['canon'], r['prog']), fontsize=7,
                     xytext=(3, 3), textcoords='offset points')
 from matplotlib.lines import Line2D
-leg = [Line2D([0],[0], marker='o', color='w', markerfacecolor='#2c7fb8', label='Scraped (this project, 84)', markersize=8),
-       Line2D([0],[0], marker='o', color='w', markerfacecolor='#c0392b', label='Marinovic (2026) reference (16)', markersize=8),
+leg = [Line2D([0],[0], marker='o', color='w', markerfacecolor='#2c7fb8', label=f'Scraped, this project ({n_sc})', markersize=8),
+       Line2D([0],[0], marker='o', color='w', markerfacecolor='#27ae60', label=f'Re-scraped 2026, reference set ({n_re})', markersize=8),
+       Line2D([0],[0], marker='o', color='w', markerfacecolor='#c0392b', label=f'Marinovic (2026) published ({n_pa})', markersize=8),
        Line2D([0],[0], linestyle='--', color='gray', label='Progressive = Canon')]
 ax.legend(handles=leg, loc='upper right', fontsize=8)
 ax.grid(True, alpha=0.3)
@@ -49,7 +54,7 @@ for ax, grp, title in [(axes[0], top, 'Highest progressive share'),
                         (axes[1], bot, 'Lowest progressive share')]:
     names = [r['name'] for r in grp][::-1]
     vals = [r['prog'] for r in grp][::-1]
-    cols = ['#c0392b' if r['source'] != 'scraped' else '#2c7fb8' for r in grp][::-1]
+    cols = [col(r) for r in grp][::-1]
     ax.barh(names, vals, color=cols)
     ax.set_xlabel('Progressive signal (%)')
     ax.set_title(title)

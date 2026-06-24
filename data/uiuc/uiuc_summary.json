@@ -1,0 +1,24 @@
+{
+  "university": "uiuc",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 9439,
+  "progressive_count": 919,
+  "progressive_pct": 9.74,
+  "canon_count": 232,
+  "canon_pct": 2.46,
+  "climate_narrow_count": 53,
+  "climate_narrow_pct": 0.56,
+  "climate_broad_count": 353,
+  "climate_broad_pct": 3.74,
+  "by_area": {
+    "Humanities": 2135,
+    "Professional": 1325,
+    "Other": 3236,
+    "Social Sciences": 1307,
+    "Medical Sciences": 274,
+    "STEM": 1162
+  },
+  "source": "rescraped_2026",
+  "failed_depts": []
+}

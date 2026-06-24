@@ -1,0 +1,24 @@
+{
+  "university": "uiowa",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 9137,
+  "progressive_count": 989,
+  "progressive_pct": 10.82,
+  "canon_count": 226,
+  "canon_pct": 2.47,
+  "climate_narrow_count": 41,
+  "climate_narrow_pct": 0.45,
+  "climate_broad_count": 236,
+  "climate_broad_pct": 2.58,
+  "by_area": {
+    "STEM": 928,
+    "Other": 3294,
+    "Social Sciences": 1282,
+    "Professional": 1160,
+    "Humanities": 2044,
+    "Medical Sciences": 429
+  },
+  "source": "rescraped_2026",
+  "failed_depts": []
+}
