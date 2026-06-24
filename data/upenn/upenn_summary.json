@@ -1,0 +1,68 @@
+{
+  "university": "upenn",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "catalog_url": "https://catalog.upenn.edu/courses/",
+  "total_raw_courses": 13041,
+  "cross_listed_removed": 1899,
+  "cross_list_pct": 14.6,
+  "total_deduplicated": 11142,
+  "progressive_count": 2354,
+  "progressive_pct": 21.13,
+  "canon_count": 725,
+  "canon_pct": 6.51,
+  "climate_narrow_count": 188,
+  "climate_narrow_pct": 1.69,
+  "climate_broad_count": 355,
+  "climate_broad_pct": 3.19,
+  "by_area": {
+    "Humanities": {
+      "courses": 4752,
+      "share_pct": 42.6,
+      "progressive_pct": 27.4,
+      "canon_pct": 12.5,
+      "climate_narrow_pct": 0.7,
+      "climate_broad_pct": 1.1
+    },
+    "Medical Sciences": {
+      "courses": 1526,
+      "share_pct": 13.7,
+      "progressive_pct": 8.1,
+      "canon_pct": 0.9,
+      "climate_narrow_pct": 0.7,
+      "climate_broad_pct": 1.8
+    },
+    "Other": {
+      "courses": 86,
+      "share_pct": 0.8,
+      "progressive_pct": 10.5,
+      "canon_pct": 1.2,
+      "climate_narrow_pct": 1.2,
+      "climate_broad_pct": 1.2
+    },
+    "Professional": {
+      "courses": 1983,
+      "share_pct": 17.8,
+      "progressive_pct": 19.5,
+      "canon_pct": 0.7,
+      "climate_narrow_pct": 1.9,
+      "climate_broad_pct": 4.3
+    },
+    "STEM": {
+      "courses": 1206,
+      "share_pct": 10.8,
+      "progressive_pct": 4.1,
+      "canon_pct": 4.6,
+      "climate_narrow_pct": 2.6,
+      "climate_broad_pct": 5.8
+    },
+    "Social Sciences": {
+      "courses": 1589,
+      "share_pct": 14.3,
+      "progressive_pct": 30.5,
+      "canon_pct": 3.1,
+      "climate_narrow_pct": 4.7,
+      "climate_broad_pct": 7.4
+    }
+  }
+}

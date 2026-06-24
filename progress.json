@@ -1,0 +1,192 @@
+{
+  "last_updated": "2026-06-24",
+  "total_universities": 100,
+  "completed": 17,
+  "in_progress": null,
+  "failed": ["umich", "duke", "jhu"],
+  "universities": {
+    "stanford": {
+      "id": 1,
+      "status": "completed",
+      "source": "reference_paper",
+      "years_covered": "2001-2025",
+      "catalog_years": 24,
+      "course_years": 131897,
+      "notes": "Covered in Marinovic (2026). Raw data not yet in repo — available from author."
+    },
+    "berkeley": {
+      "id": 2,
+      "status": "completed",
+      "source": "reference_paper",
+      "years_covered": "1999-2025",
+      "catalog_years": 27,
+      "course_years": 191558,
+      "notes": "Covered in Marinovic (2026). Raw data not yet in repo."
+    },
+    "harvard": {
+      "id": 3,
+      "status": "completed",
+      "source": "reference_paper",
+      "years_covered": "1990-2026",
+      "catalog_years": 37,
+      "course_years": 120567,
+      "notes": "Covered in Marinovic (2026). Raw data not yet in repo."
+    },
+    "yale": {
+      "id": 4,
+      "status": "completed",
+      "source": "reference_paper",
+      "years_covered": "2006-2025",
+      "catalog_years": 19,
+      "course_years": 35205,
+      "notes": "Covered in Marinovic (2026). Raw data not yet in repo."
+    },
+    "princeton": {
+      "id": 5,
+      "status": "completed",
+      "source": "reference_paper",
+      "years_covered": "2016-2025",
+      "catalog_years": 10,
+      "course_years": 24118,
+      "notes": "Covered in Marinovic (2026). Raw data not yet in repo."
+    },
+    "mit": {
+      "id": 6,
+      "status": "completed",
+      "source": "reference_paper",
+      "years_covered": "2006-2024",
+      "catalog_years": 19,
+      "course_years": 59089,
+      "notes": "Covered in Marinovic (2026). Raw data not yet in repo."
+    },
+    "uchicago": {
+      "id": 7,
+      "status": "completed",
+      "source": "reference_paper",
+      "years_covered": "2012-2024",
+      "catalog_years": 13,
+      "course_years": 21381,
+      "notes": "Covered in Marinovic (2026). College catalog only. Raw data not yet in repo."
+    },
+    "columbia": {
+      "id": 8,
+      "status": "completed",
+      "source": "reference_paper",
+      "years_covered": "2015-2025",
+      "catalog_years": 11,
+      "course_years": 24674,
+      "notes": "Covered in Marinovic (2026). College bulletin only. Raw data not yet in repo."
+    },
+    "cornell": {
+      "id": 9,
+      "status": "completed",
+      "source": "reference_paper",
+      "years_covered": "2000-2025",
+      "catalog_years": 26,
+      "course_years": 191716,
+      "notes": "Covered in Marinovic (2026). Raw data not yet in repo."
+    },
+    "northwestern": {
+      "id": 10,
+      "status": "completed",
+      "source": "reference_paper",
+      "years_covered": "2000-2025",
+      "catalog_years": 26,
+      "course_years": 66216,
+      "notes": "Covered in Marinovic (2026). Raw data not yet in repo."
+    },
+    "nyu": {
+      "id": 11,
+      "status": "completed",
+      "source": "reference_paper",
+      "years_covered": "2000-2025",
+      "catalog_years": 24,
+      "course_years": 49108,
+      "notes": "Covered in Marinovic (2026). Raw data not yet in repo."
+    },
+    "vanderbilt": {
+      "id": 12,
+      "status": "completed",
+      "source": "reference_paper",
+      "years_covered": "2008-2025",
+      "catalog_years": 18,
+      "course_years": 58999,
+      "notes": "Covered in Marinovic (2026). Raw data not yet in repo."
+    },
+    "uiuc": {
+      "id": 13,
+      "status": "completed",
+      "source": "reference_paper",
+      "years_covered": "2020-2024",
+      "catalog_years": 5,
+      "course_years": 29704,
+      "notes": "Covered in Marinovic (2026). Raw data not yet in repo."
+    },
+    "utaustin": {
+      "id": 14,
+      "status": "completed",
+      "source": "reference_paper",
+      "years_covered": "2020-2025",
+      "catalog_years": 6,
+      "course_years": 47739,
+      "notes": "Covered in Marinovic (2026). Raw data not yet in repo."
+    },
+    "tamu": {
+      "id": 15,
+      "status": "completed",
+      "source": "reference_paper",
+      "years_covered": "2009-2024",
+      "catalog_years": 16,
+      "course_years": 50135,
+      "notes": "Covered in Marinovic (2026). Raw data not yet in repo."
+    },
+    "uiowa": {
+      "id": 16,
+      "status": "completed",
+      "source": "reference_paper",
+      "years_covered": "2016-2025",
+      "catalog_years": 5,
+      "course_years": 46390,
+      "notes": "Covered in Marinovic (2026). Raw data not yet in repo."
+    },
+    "umich": {
+      "id": 17,
+      "status": "blocked_by_network",
+      "source": null,
+      "years_covered": null,
+      "catalog_years": null,
+      "course_years": null,
+      "notes": "lsa.umich.edu returns 403/ECONNREFUSED from this environment. Retry from direct network. URLs tried: lsa.umich.edu/cg/, ro.umich.edu/catalogs, atlas.ai.umich.edu, bulletin.umich.edu"
+    },
+    "duke": {
+      "id": 18,
+      "status": "url_needs_update",
+      "source": null,
+      "years_covered": null,
+      "catalog_years": null,
+      "course_years": null,
+      "notes": "registrar.duke.edu/academics/courses-curricula-catalogs/ returns 404. Correct catalog URL needed."
+    },
+    "jhu": {
+      "id": 19,
+      "status": "not_started",
+      "source": null,
+      "years_covered": null,
+      "catalog_years": null,
+      "course_years": null,
+      "notes": "Not attempted in this run."
+    },
+    "upenn": {
+      "id": 20,
+      "status": "completed_partial",
+      "source": "catalog.upenn.edu",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 11142,
+      "data_files": ["data/upenn/upenn_2026.csv", "data/upenn/upenn_summary.json"],
+      "progressive_pct": 21.13,
+      "canon_pct": 6.51,
+      "notes": "2026-27 catalog scraped (11,142 deduplicated courses, 1,899 cross-listed duplicates removed). Historical data 2000-2025 not yet collected — requires historical catalog access. 6 departments failed (ANAT, CIS, BMB, LAW, LAWM, SPPO)."
+    }
+  }
+}
