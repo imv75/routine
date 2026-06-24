@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-06-24",
   "total_universities": 100,
-  "completed": 76,
+  "completed": 77,
   "in_progress": [],
   "failed": [],
   "blocked_by_network": [
@@ -457,8 +457,18 @@
     },
     "cwru": {
       "id": 48,
-      "status": "partial_accessible",
-      "notes": "bulletin.case.edu only has 5 professional schools (nursing, applied-social-sciences, dental, law, management). Main college/engineering not accessible."
+      "status": "completed",
+      "source": "bulletin.case.edu/course-descriptions/",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 5466,
+      "data_files": [
+        "data/cwru/cwru_2026.csv",
+        "data/cwru/cwru_summary.json"
+      ],
+      "progressive_pct": 21.75,
+      "canon_pct": 3.92,
+      "notes": "2026-27 catalog scraped. 223 departments via bulletin.case.edu (full catalog — Engineering, Arts & Sciences, Medicine, Law, Management). Previous 'partial_accessible' assessment was outdated; all schools accessible. 0 depts failed."
     },
     "tulane": {
       "id": 49,
