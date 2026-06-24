@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-06-24",
   "total_universities": 100,
-  "completed": 73,
+  "completed": 74,
   "in_progress": [],
   "failed": [],
   "blocked_by_network": [
@@ -1273,6 +1273,18 @@
       "id": 131,
       "status": "dynamic_js_only",
       "notes": "catalog.oit.edu uses Coursedog - dynamic JS, not scrapable."
+    },
+    "alverno": {
+      "id": 132,
+      "status": "completed",
+      "source": "catalog.alverno.edu",
+      "catalog_year": "2026",
+      "total_courses": 1044,
+      "script": "scripts/scrape_alverno.py",
+      "data_file": "data/alverno/alverno_2026.csv",
+      "progressive_pct": 13.51,
+      "canon_pct": 1.72,
+      "notes": "Alverno College. Dash-format codes (A-100 Title). CourseleafCMS noindent variant."
     }
   }
 }
