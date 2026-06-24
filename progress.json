@@ -1,9 +1,9 @@
 {
   "last_updated": "2026-06-24",
   "total_universities": 100,
-  "completed": 17,
+  "completed": 18,
   "in_progress": null,
-  "failed": ["umich", "duke", "jhu"],
+  "failed": ["umich", "duke"],
   "universities": {
     "stanford": {
       "id": 1,
@@ -169,12 +169,23 @@
     },
     "jhu": {
       "id": 19,
-      "status": "not_started",
-      "source": null,
-      "years_covered": null,
-      "catalog_years": null,
-      "course_years": null,
-      "notes": "Not attempted in this run."
+      "status": "completed",
+      "source": "e-catalogue.jhu.edu",
+      "years_covered": "2020-2025",
+      "catalog_years": 6,
+      "course_years": 57466,
+      "data_files": [
+        "data/jhu/jhu_2020.csv",
+        "data/jhu/jhu_2021.csv",
+        "data/jhu/jhu_2022.csv",
+        "data/jhu/jhu_2023.csv",
+        "data/jhu/jhu_2024.csv",
+        "data/jhu/jhu_2025.csv",
+        "data/jhu/jhu_summary.json"
+      ],
+      "progressive_pct_latest": 13.0,
+      "canon_pct_latest": 4.57,
+      "notes": "HTML e-catalogue available from 2020-21 onwards. 6 years scraped: 2020-21 through 2025-26. Prior years (pre-2020) only available as PDFs. 0 departments failed across all years. Progressive signal trending up: 10.3% (2020) -> 13.0% (2025)."
     },
     "upenn": {
       "id": 20,
