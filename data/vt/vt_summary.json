@@ -1,0 +1,23 @@
+{
+  "university": "vt",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 7685,
+  "progressive_count": 717,
+  "progressive_pct": 9.33,
+  "canon_count": 162,
+  "canon_pct": 2.11,
+  "climate_narrow_count": 77,
+  "climate_narrow_pct": 1.0,
+  "climate_broad_count": 449,
+  "climate_broad_pct": 5.84,
+  "by_area": {
+    "Professional": 609,
+    "Social Sciences": 456,
+    "Other": 3053,
+    "STEM": 2196,
+    "Humanities": 1144,
+    "Medical Sciences": 227
+  },
+  "failed_depts": []
+}

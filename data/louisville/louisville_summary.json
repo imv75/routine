@@ -1,0 +1,23 @@
+{
+  "university": "louisville",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 6470,
+  "progressive_count": 626,
+  "progressive_pct": 9.68,
+  "canon_count": 126,
+  "canon_pct": 1.95,
+  "climate_narrow_count": 18,
+  "climate_narrow_pct": 0.28,
+  "climate_broad_count": 129,
+  "climate_broad_pct": 1.99,
+  "by_area": {
+    "Professional": 121,
+    "STEM": 1087,
+    "Social Sciences": 510,
+    "Humanities": 1356,
+    "Other": 3024,
+    "Medical Sciences": 372
+  },
+  "failed_depts": []
+}
