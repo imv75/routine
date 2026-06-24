@@ -1,0 +1,25 @@
+{
+  "university": "txstate",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 5980,
+  "progressive_count": 741,
+  "progressive_pct": 12.39,
+  "canon_count": 173,
+  "canon_pct": 2.89,
+  "climate_narrow_count": 13,
+  "climate_narrow_pct": 0.22,
+  "climate_broad_count": 339,
+  "climate_broad_pct": 5.67,
+  "by_area": {
+    "Professional": 79,
+    "Other": 4177,
+    "Humanities": 493,
+    "Social Sciences": 378,
+    "STEM": 673,
+    "Medical Sciences": 180
+  },
+  "failed_depts": [
+    "russ"
+  ]
+}

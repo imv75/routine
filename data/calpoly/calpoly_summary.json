@@ -1,0 +1,27 @@
+{
+  "university": "calpoly",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 4210,
+  "progressive_count": 412,
+  "progressive_pct": 9.79,
+  "canon_count": 62,
+  "canon_pct": 1.47,
+  "climate_narrow_count": 55,
+  "climate_narrow_pct": 1.31,
+  "climate_broad_count": 250,
+  "climate_broad_pct": 5.94,
+  "by_area": {
+    "STEM": 934,
+    "Professional": 364,
+    "Humanities": 557,
+    "Other": 2005,
+    "Social Sciences": 258,
+    "Medical Sciences": 92
+  },
+  "failed_depts": [
+    "aged",
+    "phys",
+    "wgqs"
+  ]
+}

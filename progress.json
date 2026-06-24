@@ -1,8 +1,8 @@
 {
   "last_updated": "2026-06-24",
   "total_universities": 100,
-  "completed": 49,
-  "in_progress": ["utsa", "montanastate", "odu", "txstate"],
+  "completed": 58,
+  "in_progress": [],
   "failed": [],
   "blocked_by_network": ["umich", "duke", "jhu", "georgetown", "tufts", "bc", "brandeis", "rochester", "wfu", "temple", "rutgers", "clemson", "kstate", "wvu", "sc", "cmu", "fsu", "msu"],
   "dynamic_js_only": ["osu", "iu", "pitt", "lsu", "purdue", "vt", "ou", "unlv", "baylor", "ttu", "uh", "louisville", "uc", "udel", "brown", "ucsb", "asu", "utah", "uarizona", "ucla", "ucsd", "ucdavis", "uci", "uga", "stonybrook", "uva", "rpi", "emory", "washu"],
@@ -824,23 +824,111 @@
     },
     "utsa": {
       "id": 105,
-      "status": "in_progress",
-      "notes": "Scraping 2026-27 catalog. 126 undergrad + 87 grad depts."
+      "status": "completed",
+      "source": "catalog.utsa.edu/{undergraduate|graduate}/coursedescriptions/",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 5867,
+      "data_files": ["data/utsa/utsa_2026.csv", "data/utsa/utsa_summary.json"],
+      "progressive_pct": 9.43,
+      "canon_pct": 2.08,
+      "notes": "2026-27 catalog scraped. 126 undergrad + 87 grad depts. CourseleafCMS period format."
     },
     "montanastate": {
       "id": 106,
-      "status": "in_progress",
-      "notes": "Scraping 2026-27 catalog. 176 depts."
+      "status": "completed",
+      "source": "catalog.montana.edu/coursedescriptions/",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 4443,
+      "data_files": ["data/montanastate/montanastate_2026.csv", "data/montanastate/montanastate_summary.json"],
+      "progressive_pct": 6.46,
+      "canon_pct": 1.53,
+      "notes": "2026-27 catalog scraped. 176 depts. CourseleafCMS. 4 depts failed."
     },
     "odu": {
       "id": 107,
-      "status": "in_progress",
-      "notes": "Scraping 2026-27 catalog. 165 depts."
+      "status": "completed",
+      "source": "catalog.odu.edu/courses/",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 6746,
+      "data_files": ["data/odu/odu_2026.csv", "data/odu/odu_summary.json"],
+      "progressive_pct": 7.53,
+      "canon_pct": 1.78,
+      "notes": "2026-27 catalog scraped. 165 depts. Custom div.cols.noindent format. 3 depts failed."
     },
     "txstate": {
       "id": 108,
-      "status": "in_progress",
-      "notes": "Scraping 2026-27 catalog. 124 depts."
+      "status": "completed",
+      "source": "mycatalog.txstate.edu/courses/",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 5980,
+      "data_files": ["data/txstate/txstate_2026.csv", "data/txstate/txstate_summary.json"],
+      "progressive_pct": 12.39,
+      "canon_pct": 2.89,
+      "notes": "2026-27 catalog scraped. 124 depts via /azindex/. CourseleafCMS format. 1 dept failed."
+    },
+    "uncg": {
+      "id": 109,
+      "status": "completed",
+      "source": "catalog.uncg.edu/courses/",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 5890,
+      "data_files": ["data/uncg/uncg_2026.csv", "data/uncg/uncg_summary.json"],
+      "progressive_pct": 9.19,
+      "canon_pct": 2.17,
+      "notes": "2026-27 catalog scraped. 115 depts. CourseleafCMS noindent variant."
+    },
+    "calpoly": {
+      "id": 110,
+      "status": "completed",
+      "source": "catalog.calpoly.edu/courses/",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 4210,
+      "data_files": ["data/calpoly/calpoly_2026.csv", "data/calpoly/calpoly_summary.json"],
+      "progressive_pct": 9.79,
+      "canon_pct": 1.47,
+      "notes": "2026-27 catalog scraped. 128 depts. Custom multi-line strong format. 3 depts failed."
+    },
+    "utahtech": {
+      "id": 111,
+      "status": "completed",
+      "source": "catalog.utahtech.edu/courses/",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 2117,
+      "data_files": ["data/utahtech/utahtech_2026.csv", "data/utahtech/utahtech_summary.json"],
+      "progressive_pct": 16.25,
+      "canon_pct": 2.22,
+      "notes": "2026-27 catalog scraped. CourseleafCMS period format. 2 depts failed (biol, chem)."
+    },
+    "uvu": {
+      "id": 112,
+      "status": "completed",
+      "source": "catalog.uvu.edu/courses/",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 4292,
+      "data_files": ["data/uvu/uvu_2026.csv", "data/uvu/uvu_summary.json"],
+      "progressive_pct": 7.43,
+      "canon_pct": 2.1,
+      "notes": "2026-27 catalog scraped. 148 depts. ODU-style div.cols.noindent format. 3 depts failed."
+    },
+    "uaf": {
+      "id": 113,
+      "status": "completed",
+      "source": "catalog.uaf.edu/courses/",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 3794,
+      "data_files": ["data/uaf/uaf_2026.csv", "data/uaf/uaf_summary.json"],
+      "progressive_pct": 9.17,
+      "canon_pct": 1.82,
+      "notes": "2026-27 catalog scraped. 134 depts. Custom format: dept+num+title+credits concatenated in courseblocktitle."
     }
   }
 }

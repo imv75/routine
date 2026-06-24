@@ -1,0 +1,21 @@
+{
+  "university": "utsa",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 5867,
+  "progressive_count": 553,
+  "progressive_pct": 9.43,
+  "canon_count": 122,
+  "canon_pct": 2.08,
+  "climate_narrow_count": 30,
+  "climate_narrow_pct": 0.51,
+  "climate_broad_count": 209,
+  "climate_broad_pct": 3.56,
+  "by_area": {
+    "Humanities": 124,
+    "Professional": 262,
+    "Other": 4609,
+    "STEM": 872
+  },
+  "failed_depts": []
+}

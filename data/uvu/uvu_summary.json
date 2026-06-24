@@ -1,0 +1,27 @@
+{
+  "university": "uvu",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 4292,
+  "progressive_count": 319,
+  "progressive_pct": 7.43,
+  "canon_count": 90,
+  "canon_pct": 2.1,
+  "climate_narrow_count": 5,
+  "climate_narrow_pct": 0.12,
+  "climate_broad_count": 64,
+  "climate_broad_pct": 1.49,
+  "by_area": {
+    "Professional": 289,
+    "Other": 2495,
+    "Social Sciences": 310,
+    "Humanities": 621,
+    "STEM": 451,
+    "Medical Sciences": 126
+  },
+  "failed_depts": [
+    "asl",
+    "comm",
+    "sw"
+  ]
+}
