@@ -1,0 +1,26 @@
+{
+  "university": "ysu",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 4345,
+  "progressive_count": 242,
+  "progressive_pct": 5.57,
+  "canon_count": 63,
+  "canon_pct": 1.45,
+  "climate_narrow_count": 10,
+  "climate_narrow_pct": 0.23,
+  "climate_broad_count": 64,
+  "climate_broad_pct": 1.47,
+  "by_area": {
+    "Professional": 119,
+    "Other": 3054,
+    "Humanities": 459,
+    "STEM": 424,
+    "Social Sciences": 137,
+    "Medical Sciences": 152
+  },
+  "failed_depts": [
+    "anth",
+    "muin"
+  ]
+}

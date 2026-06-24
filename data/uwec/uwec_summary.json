@@ -1,0 +1,25 @@
+{
+  "university": "uwec",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 2998,
+  "progressive_count": 322,
+  "progressive_pct": 10.74,
+  "canon_count": 50,
+  "canon_pct": 1.67,
+  "climate_narrow_count": 5,
+  "climate_narrow_pct": 0.17,
+  "climate_broad_count": 46,
+  "climate_broad_pct": 1.53,
+  "by_area": {
+    "Professional": 104,
+    "Other": 1514,
+    "Social Sciences": 323,
+    "Humanities": 724,
+    "STEM": 333
+  },
+  "failed_depts": [
+    "uec",
+    "uem"
+  ]
+}

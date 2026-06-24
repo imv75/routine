@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-06-24",
   "total_universities": 100,
-  "completed": 58,
+  "completed": 61,
   "in_progress": [],
   "failed": [],
   "blocked_by_network": ["umich", "duke", "jhu", "georgetown", "tufts", "bc", "brandeis", "rochester", "wfu", "temple", "rutgers", "clemson", "kstate", "wvu", "sc", "cmu", "fsu", "msu"],
@@ -929,6 +929,42 @@
       "progressive_pct": 9.17,
       "canon_pct": 1.82,
       "notes": "2026-27 catalog scraped. 134 depts. Custom format: dept+num+title+credits concatenated in courseblocktitle."
+    },
+    "umt": {
+      "id": 114,
+      "status": "completed",
+      "source": "catalog.umt.edu/courses/",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 4400,
+      "data_files": ["data/umt/umt_2026.csv", "data/umt/umt_summary.json"],
+      "progressive_pct": 5.77,
+      "canon_pct": 2.07,
+      "notes": "2026-27 catalog scraped. 150 depts. CourseleafCMS dash format: DEPT NUM - Title. N Credits."
+    },
+    "ysu": {
+      "id": 115,
+      "status": "completed",
+      "source": "catalog.ysu.edu/courses/",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 4345,
+      "data_files": ["data/ysu/ysu_2026.csv", "data/ysu/ysu_summary.json"],
+      "progressive_pct": 5.57,
+      "canon_pct": 1.45,
+      "notes": "2026-27 catalog scraped. 154 depts. CourseleafCMS: DEPT NUM    Title    N s.h. format."
+    },
+    "uwec": {
+      "id": 116,
+      "status": "completed",
+      "source": "catalog.uwec.edu/courses/",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 2998,
+      "data_files": ["data/uwec/uwec_2026.csv", "data/uwec/uwec_summary.json"],
+      "progressive_pct": 10.74,
+      "canon_pct": 1.67,
+      "notes": "2026-27 catalog scraped. 165 depts. CourseleafCMS: DEPT NUM Title (N crs) + p.courseblockdescription. 2 depts failed."
     }
   }
 }

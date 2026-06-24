@@ -1,0 +1,27 @@
+{
+  "university": "umt",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 4400,
+  "progressive_count": 254,
+  "progressive_pct": 5.77,
+  "canon_count": 91,
+  "canon_pct": 2.07,
+  "climate_narrow_count": 34,
+  "climate_narrow_pct": 0.77,
+  "climate_broad_count": 166,
+  "climate_broad_pct": 3.77,
+  "by_area": {
+    "Professional": 190,
+    "Other": 3864,
+    "Humanities": 244,
+    "Medical Sciences": 33,
+    "Social Sciences": 55,
+    "STEM": 14
+  },
+  "failed_depts": [
+    "ot",
+    "pt",
+    "sw"
+  ]
+}
