@@ -1,0 +1,23 @@
+{
+  "university": "temple",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 12782,
+  "progressive_count": 1529,
+  "progressive_pct": 11.96,
+  "canon_count": 328,
+  "canon_pct": 2.57,
+  "climate_narrow_count": 82,
+  "climate_narrow_pct": 0.64,
+  "climate_broad_count": 369,
+  "climate_broad_pct": 2.89,
+  "by_area": {
+    "Other": 4491,
+    "STEM": 1496,
+    "Professional": 1065,
+    "Social Sciences": 1394,
+    "Humanities": 3430,
+    "Medical Sciences": 906
+  },
+  "failed_depts": []
+}

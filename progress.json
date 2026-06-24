@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-06-24",
   "total_universities": 100,
-  "completed": 77,
+  "completed": 81,
   "in_progress": [],
   "failed": [],
   "blocked_by_network": [
@@ -14,7 +14,6 @@
     "brandeis",
     "rochester",
     "wfu",
-    "temple",
     "rutgers",
     "clemson",
     "kstate",
@@ -30,13 +29,11 @@
     "pitt",
     "lsu",
     "purdue",
-    "vt",
     "ou",
     "unlv",
     "baylor",
     "ttu",
     "uh",
-    "louisville",
     "uc",
     "udel",
     "brown",
@@ -637,8 +634,18 @@
     },
     "vt": {
       "id": 66,
-      "status": "dynamic_js_only",
-      "notes": "catalog.vt.edu uses Acalog/ACMS returning 202 with JS-only content."
+      "status": "completed",
+      "source": "catalog.vt.edu/course-descriptions/{dept}/",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 7685,
+      "data_files": [
+        "data/vt/vt_2026.csv",
+        "data/vt/vt_summary.json"
+      ],
+      "progressive_pct": 9.33,
+      "canon_pct": 2.11,
+      "notes": "2026-27 catalog scraped. 142 departments at catalog.vt.edu/course-descriptions/{dept}/. CourseleafCMS detail-code/detail-title format. Previously logged as Acalog but catalog has migrated to CourseleafCMS. Session warmup required (visit main page first)."
     },
     "pitt": {
       "id": 67,
@@ -667,8 +674,18 @@
     },
     "temple": {
       "id": 70,
-      "status": "blocked_by_network",
-      "notes": "SSL blocked from proxy environment."
+      "status": "completed",
+      "source": "bulletin.temple.edu/courses/{dept}/",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 12782,
+      "data_files": [
+        "data/temple/temple_2026.csv",
+        "data/temple/temple_summary.json"
+      ],
+      "progressive_pct": 11.96,
+      "canon_pct": 2.57,
+      "notes": "2026-27 catalog scraped. 248 departments. Previously logged as SSL-blocked but bulletin.temple.edu accessible. CourseleafCMS p.courseblocktitle + div.courseblockdesc format."
     },
     "drexel": {
       "id": 71,
@@ -887,8 +904,18 @@
     },
     "louisville": {
       "id": 96,
-      "status": "dynamic_js_only",
-      "notes": "catalog.louisville.edu uses Acalog/ACMS returning 202 with JS-only content."
+      "status": "completed",
+      "source": "catalog.louisville.edu/{undergraduate|graduate}/courses/{dept}/",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 6470,
+      "data_files": [
+        "data/louisville/louisville_2026.csv",
+        "data/louisville/louisville_summary.json"
+      ],
+      "progressive_pct": 9.68,
+      "canon_pct": 1.95,
+      "notes": "2026-27 catalog scraped. 108 undergrad + 101 grad depts. CourseleafCMS p.courseblocktitle format. Previously logged as Acalog but catalog has migrated to CourseleafCMS."
     },
     "uc": {
       "id": 97,
@@ -1319,6 +1346,21 @@
       "progressive_pct": 6.03,
       "canon_pct": 18.01,
       "notes": "Biola University. p.courseblocktitle with DEPT NBSP NUM - Title Credits N format."
+    },
+    "unco": {
+      "id": 135,
+      "status": "completed",
+      "source": "unco.smartcatalogiq.com/en/current/{undergrad|grad}-catalog/course-descriptions/{dept}/",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 3304,
+      "data_files": [
+        "data/unco/unco_2026.csv",
+        "data/unco/unco_summary.json"
+      ],
+      "progressive_pct": 2.36,
+      "canon_pct": 0.39,
+      "notes": "2026-27 catalog scraped. 88 undergrad + 65 grad depts. SmartCatalogIQ h2-based course format."
     }
   }
 }

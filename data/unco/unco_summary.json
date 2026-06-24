@@ -1,0 +1,23 @@
+{
+  "university": "unco",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 3304,
+  "progressive_count": 78,
+  "progressive_pct": 2.36,
+  "canon_count": 13,
+  "canon_pct": 0.39,
+  "climate_narrow_count": 2,
+  "climate_narrow_pct": 0.06,
+  "climate_broad_count": 19,
+  "climate_broad_pct": 0.58,
+  "by_area": {
+    "Social Sciences": 139,
+    "Other": 1172,
+    "Humanities": 787,
+    "Professional": 268,
+    "STEM": 617,
+    "Medical Sciences": 321
+  },
+  "failed_depts": []
+}
