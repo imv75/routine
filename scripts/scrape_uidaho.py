@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-Old Dominion University course catalog scraper.
-URL: catalog.odu.edu/courses/{dept}/
-HTML: div.courseblock > div.cols.noindent with span.detail-xrefcode, span.detail-title
-      + div.noindent > p.courseblockextra.noindent (description)
+University of Idaho course catalog scraper.
+URL: catalog.uidaho.edu/courses/{dept}/
+HTML: div.courseblock > p.courseblocktitle.noindent > strong "ACCT 2000 (s) Title (N credits)"
+      + p.courseblockdesc.noindent
 """
 
 import csv
@@ -14,10 +14,10 @@ import time
 import requests
 from bs4 import BeautifulSoup
 
-UNIVERSITY = "odu"
+UNIVERSITY = "uidaho"
 CATALOG_YEAR = "2026"
 CATALOG_LABEL = "2026-2027"
-BASE_URL = "https://catalog.odu.edu"
+BASE_URL = "https://catalog.uidaho.edu"
 OUTPUT_DIR = f"/home/user/routine/data/{UNIVERSITY}"
 OUTPUT_CSV = f"{OUTPUT_DIR}/{UNIVERSITY}_{CATALOG_YEAR}.csv"
 SUMMARY_FILE = f"{OUTPUT_DIR}/{UNIVERSITY}_summary.json"
@@ -58,14 +58,14 @@ CLIMATE_BROAD = ["climate", "sustainability", "sustainable", "renewable energy",
                   "environmental justice", "carbon", "decarbonization", "net zero",
                   "clean energy", "green energy", "ecological", "ecosystem", "biodiversity"]
 
-STEM = {"biol", "chem", "cs", "ce", "ee", "envs", "geol", "math", "me",
-        "phys", "stat", "ece", "cet", "mece"}
-HUMANITIES = {"ai", "al", "amst", "arte", "arth", "chin", "engl", "fren", "germ",
-              "grek", "hist", "ital", "jpns", "lat", "ling", "musi",
-              "phil", "port", "russ", "span", "thea", "writ", "wgst"}
-SOCIAL = {"antr", "comm", "crim", "econ", "educ", "geog", "intl", "pols", "psyc",
-          "soci", "socw", "sw"}
-MEDICAL = {"hlth", "kins", "nurs", "nutr"}
+STEM = {"aero", "agls", "agec", "asm", "biol", "chem", "ce", "cs", "ee", "envs",
+        "geol", "math", "me", "mmbb", "phys", "stat", "for", "soil", "entom"}
+HUMANITIES = {"amst", "art", "arth", "chin", "comm", "engl", "fren", "germ", "grek",
+              "hist", "hum", "ital", "jap", "lat", "ling", "mhst", "musi", "phil",
+              "port", "russ", "span", "thea", "writ"}
+SOCIAL = {"aged", "aist", "anth", "crim", "econ", "educ", "geog", "pols", "psyc",
+          "soci", "socw", "sw", "wgst"}
+MEDICAL = {"biol", "hlth", "kine", "nurs", "nutr", "phrm", "vet"}
 PROFESSIONAL = {"acct", "ba", "fin", "law", "mgmt", "mktg"}
 
 
@@ -119,49 +119,23 @@ def parse_dept_page(html_text):
     soup = BeautifulSoup(html_text, "html.parser")
     courses = []
     for block in soup.find_all("div", class_="courseblock"):
-        def has_class(tag, cls_name):
-            c = tag.get("class", [])
-            return cls_name in (c if isinstance(c, list) else c.split())
-
-        code_span = None
-        for span in block.find_all("span"):
-            cls_list = span.get("class", [])
-            if isinstance(cls_list, str):
-                cls_list = cls_list.split()
-            if any("detail-xrefcode" in c or "detail-code" in c for c in cls_list):
-                code_span = span
-                break
-
-        title_span = None
-        for span in block.find_all("span"):
-            cls_list = span.get("class", [])
-            if isinstance(cls_list, str):
-                cls_list = cls_list.split()
-            if any("detail-title" in c for c in cls_list):
-                title_span = span
-                break
-
-        if not code_span or not title_span:
+        title_p = block.find("p", class_="courseblocktitle")
+        if not title_p:
             continue
-
-        code_text = code_span.get_text(strip=True)
-        m = re.match(r"([A-Z][A-Z0-9]*)\s+(\w+)", code_text)
+        strong = title_p.find("strong")
+        raw = (strong or title_p).get_text(" ", strip=True)
+        # "ACCT 2000 (s) Seminar (1-16 credits, max 99)"
+        # Optional (s) or other single-letter qualifiers after course number
+        m = re.match(r"([A-Z][A-Z0-9]*)\s+(\d+\w*)\s+(?:\([a-zA-Z]\)\s+)?(.+?)(?:\s+\([0-9].*\))?\s*$", raw)
         if not m:
             continue
         dept = m.group(1).strip()
         num = m.group(2).strip()
-        title = title_span.get_text(strip=True).rstrip(".")
+        title = m.group(3).strip().rstrip(".")
+        title = re.sub(r"\s+\([0-9].*\)\s*$", "", title).strip().rstrip(".")
 
-        desc = ""
-        for p in block.find_all("p"):
-            cls_list = p.get("class", [])
-            if isinstance(cls_list, str):
-                cls_list = cls_list.split()
-            if any("courseblockextra" in c or "courseblockdesc" in c for c in cls_list):
-                text = p.get_text(" ", strip=True)
-                if text and len(text) > 15:
-                    desc = text
-                    break
+        desc_p = block.find("p", class_="courseblockdesc")
+        desc = desc_p.get_text(" ", strip=True) if desc_p else ""
 
         if not title:
             continue
@@ -176,7 +150,7 @@ def main():
     seen = set()
     failed = []
 
-    print(f"=== Old Dominion University Course Catalog Scraper ===")
+    print(f"=== University of Idaho Course Catalog Scraper ===")
     print(f"Catalog year: {CATALOG_LABEL}")
 
     slugs = get_dept_slugs(session)

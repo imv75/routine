@@ -1,0 +1,23 @@
+{
+  "university": "vsu",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 2333,
+  "progressive_count": 193,
+  "progressive_pct": 8.27,
+  "canon_count": 44,
+  "canon_pct": 1.89,
+  "climate_narrow_count": 3,
+  "climate_narrow_pct": 0.13,
+  "climate_broad_count": 34,
+  "climate_broad_pct": 1.46,
+  "by_area": {
+    "Professional": 68,
+    "STEM": 424,
+    "Humanities": 452,
+    "Other": 993,
+    "Social Sciences": 350,
+    "Medical Sciences": 46
+  },
+  "failed_depts": []
+}

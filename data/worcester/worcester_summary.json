@@ -1,0 +1,27 @@
+{
+  "university": "worcester",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 1767,
+  "progressive_count": 208,
+  "progressive_pct": 11.77,
+  "canon_count": 26,
+  "canon_pct": 1.47,
+  "climate_narrow_count": 15,
+  "climate_narrow_pct": 0.85,
+  "climate_broad_count": 41,
+  "climate_broad_pct": 2.32,
+  "by_area": {
+    "Humanities": 442,
+    "STEM": 319,
+    "Professional": 166,
+    "Social Sciences": 329,
+    "Medical Sciences": 132,
+    "Other": 379
+  },
+  "failed_depts": [
+    "/undergraduate/courses/courses.pdf",
+    "/graduate/courses/history-(hi)/",
+    "/graduate/courses/courses.pdf"
+  ]
+}

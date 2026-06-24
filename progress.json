@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-06-24",
   "total_universities": 100,
-  "completed": 65,
+  "completed": 70,
   "in_progress": [],
   "failed": [],
   "blocked_by_network": [
@@ -1001,19 +1001,14 @@
       "notes": "2026-27 catalog scraped. 176 depts. CourseleafCMS. 4 depts failed."
     },
     "odu": {
-      "id": 107,
+      "id": 122,
       "status": "completed",
-      "source": "catalog.odu.edu/courses/",
-      "years_covered": "2026",
-      "catalog_years": 1,
-      "course_years": 6746,
-      "data_files": [
-        "data/odu/odu_2026.csv",
-        "data/odu/odu_summary.json"
-      ],
-      "progressive_pct": 7.53,
-      "canon_pct": 1.78,
-      "notes": "2026-27 catalog scraped. 165 depts. Custom div.cols.noindent format. 3 depts failed."
+      "source": "scraped",
+      "catalog_year": "2026",
+      "total_courses": 7543,
+      "script": "scripts/scrape_odu.py",
+      "data_file": "data/odu/odu_2026.csv",
+      "notes": "ODU uses div.cols.noindent with span.detail-xrefcode, span.detail-title format."
     },
     "txstate": {
       "id": 108,
@@ -1194,6 +1189,46 @@
       "script": "scripts/scrape_neiu.py",
       "data_file": "data/neiu/neiu_2026.csv",
       "notes": "NEIU uses dash-format codes (ACTG-201). Standard CourseleafCMS."
+    },
+    "uidaho": {
+      "id": 121,
+      "status": "completed",
+      "source": "scraped",
+      "catalog_year": "2026",
+      "total_courses": 4946,
+      "script": "scripts/scrape_uidaho.py",
+      "data_file": "data/uidaho/uidaho_2026.csv",
+      "notes": "U Idaho: noindent format with optional (s) qualifier. Standard CourseleafCMS."
+    },
+    "vsu": {
+      "id": 123,
+      "status": "completed",
+      "source": "scraped",
+      "catalog_year": "2026",
+      "total_courses": 2333,
+      "script": "scripts/scrape_vsu.py",
+      "data_file": "data/vsu/vsu_2026.csv",
+      "notes": "Virginia State U, uses undergrad+grad paths, period-separator format."
+    },
+    "worcester": {
+      "id": 124,
+      "status": "completed",
+      "source": "scraped",
+      "catalog_year": "2026",
+      "total_courses": 1767,
+      "script": "scripts/scrape_worcester.py",
+      "data_file": "data/worcester/worcester_2026.csv",
+      "notes": "Worcester State U, full-name slug URLs, dash-format course codes (BI-101)."
+    },
+    "une": {
+      "id": 125,
+      "status": "completed",
+      "source": "scraped",
+      "catalog_year": "2026",
+      "total_courses": 2070,
+      "script": "scripts/scrape_une.py",
+      "data_file": "data/une/une_2026.csv",
+      "notes": "U New England, div.cols.noindent format with div.courseblockextra desc."
     }
   }
 }

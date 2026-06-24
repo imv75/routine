@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-Old Dominion University course catalog scraper.
-URL: catalog.odu.edu/courses/{dept}/
-HTML: div.courseblock > div.cols.noindent with span.detail-xrefcode, span.detail-title
-      + div.noindent > p.courseblockextra.noindent (description)
+University of New England course catalog scraper.
+URL: catalog.une.edu/courses/{dept}/
+HTML: div.courseblock > div.cols.noindent with span.detail-code, span.detail-title
+      + div.noindent > div.courseblockextra.noindent (description)
 """
 
 import csv
@@ -14,10 +14,10 @@ import time
 import requests
 from bs4 import BeautifulSoup
 
-UNIVERSITY = "odu"
+UNIVERSITY = "une"
 CATALOG_YEAR = "2026"
 CATALOG_LABEL = "2026-2027"
-BASE_URL = "https://catalog.odu.edu"
+BASE_URL = "https://catalog.une.edu"
 OUTPUT_DIR = f"/home/user/routine/data/{UNIVERSITY}"
 OUTPUT_CSV = f"{OUTPUT_DIR}/{UNIVERSITY}_{CATALOG_YEAR}.csv"
 SUMMARY_FILE = f"{OUTPUT_DIR}/{UNIVERSITY}_summary.json"
@@ -58,27 +58,24 @@ CLIMATE_BROAD = ["climate", "sustainability", "sustainable", "renewable energy",
                   "environmental justice", "carbon", "decarbonization", "net zero",
                   "clean energy", "green energy", "ecological", "ecosystem", "biodiversity"]
 
-STEM = {"biol", "chem", "cs", "ce", "ee", "envs", "geol", "math", "me",
-        "phys", "stat", "ece", "cet", "mece"}
-HUMANITIES = {"ai", "al", "amst", "arte", "arth", "chin", "engl", "fren", "germ",
-              "grek", "hist", "ital", "jpns", "lat", "ling", "musi",
-              "phil", "port", "russ", "span", "thea", "writ", "wgst"}
-SOCIAL = {"antr", "comm", "crim", "econ", "educ", "geog", "intl", "pols", "psyc",
-          "soci", "socw", "sw"}
-MEDICAL = {"hlth", "kins", "nurs", "nutr"}
-PROFESSIONAL = {"acct", "ba", "fin", "law", "mgmt", "mktg"}
+STEM = {"anat", "anps", "bio", "biol", "chem", "cs", "envs", "math", "phys", "stat"}
+HUMANITIES = {"arb", "art", "eng", "engl", "fren", "hist", "hum", "phil", "span", "thea", "writ"}
+SOCIAL = {"ant", "anth", "comm", "crim", "econ", "educ", "pols", "psyc", "soci", "socw", "sw"}
+MEDICAL = {"anat", "ane", "anes", "anps", "apn", "dent", "hlth", "kine", "nurs", "nutr",
+           "pharm", "pt", "phrm", "ot", "pa"}
+PROFESSIONAL = {"acct", "ba", "bus", "fin", "law", "mgmt", "mktg"}
 
 
 def classify_area(dept):
     d = dept.lower()
+    if d in MEDICAL:
+        return "Medical Sciences"
     if d in STEM:
         return "STEM"
     if d in HUMANITIES:
         return "Humanities"
     if d in SOCIAL:
         return "Social Sciences"
-    if d in MEDICAL:
-        return "Medical Sciences"
     if d in PROFESSIONAL:
         return "Professional"
     return "Other"
@@ -119,16 +116,12 @@ def parse_dept_page(html_text):
     soup = BeautifulSoup(html_text, "html.parser")
     courses = []
     for block in soup.find_all("div", class_="courseblock"):
-        def has_class(tag, cls_name):
-            c = tag.get("class", [])
-            return cls_name in (c if isinstance(c, list) else c.split())
-
         code_span = None
         for span in block.find_all("span"):
             cls_list = span.get("class", [])
             if isinstance(cls_list, str):
                 cls_list = cls_list.split()
-            if any("detail-xrefcode" in c or "detail-code" in c for c in cls_list):
+            if any("detail-code" in c or "detail-xrefcode" in c for c in cls_list):
                 code_span = span
                 break
 
@@ -152,13 +145,14 @@ def parse_dept_page(html_text):
         num = m.group(2).strip()
         title = title_span.get_text(strip=True).rstrip(".")
 
+        # Description: in div.courseblockextra or p.courseblockdesc
         desc = ""
-        for p in block.find_all("p"):
-            cls_list = p.get("class", [])
+        for el in block.find_all(["div", "p"]):
+            cls_list = el.get("class", [])
             if isinstance(cls_list, str):
                 cls_list = cls_list.split()
             if any("courseblockextra" in c or "courseblockdesc" in c for c in cls_list):
-                text = p.get_text(" ", strip=True)
+                text = el.get_text(" ", strip=True)
                 if text and len(text) > 15:
                     desc = text
                     break
@@ -176,7 +170,7 @@ def main():
     seen = set()
     failed = []
 
-    print(f"=== Old Dominion University Course Catalog Scraper ===")
+    print(f"=== University of New England Course Catalog Scraper ===")
     print(f"Catalog year: {CATALOG_LABEL}")
 
     slugs = get_dept_slugs(session)
