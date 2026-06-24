@@ -1,0 +1,31 @@
+{
+  "university": "neiu",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 3558,
+  "progressive_count": 602,
+  "progressive_pct": 16.92,
+  "canon_count": 94,
+  "canon_pct": 2.64,
+  "climate_narrow_count": 19,
+  "climate_narrow_pct": 0.53,
+  "climate_broad_count": 82,
+  "climate_broad_pct": 2.3,
+  "by_area": {
+    "Professional": 108,
+    "Social Sciences": 220,
+    "Humanities": 705,
+    "Other": 2176,
+    "STEM": 349
+  },
+  "failed_depts": [
+    "afam",
+    "curr",
+    "eflm",
+    "grek",
+    "hled",
+    "inmd",
+    "pesv",
+    "russ"
+  ]
+}

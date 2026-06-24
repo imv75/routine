@@ -1,0 +1,23 @@
+{
+  "university": "unk",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 2667,
+  "progressive_count": 198,
+  "progressive_pct": 7.42,
+  "canon_count": 77,
+  "canon_pct": 2.89,
+  "climate_narrow_count": 10,
+  "climate_narrow_pct": 0.37,
+  "climate_broad_count": 34,
+  "climate_broad_pct": 1.27,
+  "by_area": {
+    "Professional": 94,
+    "Humanities": 510,
+    "STEM": 327,
+    "Other": 1645,
+    "Social Sciences": 86,
+    "Medical Sciences": 5
+  },
+  "failed_depts": []
+}
