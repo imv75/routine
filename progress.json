@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-06-24",
   "total_universities": 100,
-  "completed": 74,
+  "completed": 76,
   "in_progress": [],
   "failed": [],
   "blocked_by_network": [
@@ -1285,6 +1285,30 @@
       "progressive_pct": 13.51,
       "canon_pct": 1.72,
       "notes": "Alverno College. Dash-format codes (A-100 Title). CourseleafCMS noindent variant."
+    },
+    "vanguard": {
+      "id": 133,
+      "status": "completed",
+      "source": "catalog.vanguard.edu",
+      "catalog_year": "2026",
+      "total_courses": 1368,
+      "script": "scripts/scrape_vanguard.py",
+      "data_file": "data/vanguard/vanguard_2026.csv",
+      "progressive_pct": 10.45,
+      "canon_pct": 6.73,
+      "notes": "Vanguard University. detail-code/detail-title span format. Dash-format codes (ACCT-P225)."
+    },
+    "biola": {
+      "id": 134,
+      "status": "completed",
+      "source": "catalog.biola.edu",
+      "catalog_year": "2026",
+      "total_courses": 2754,
+      "script": "scripts/scrape_biola.py",
+      "data_file": "data/biola/biola_2026.csv",
+      "progressive_pct": 6.03,
+      "canon_pct": 18.01,
+      "notes": "Biola University. p.courseblocktitle with DEPT NBSP NUM - Title Credits N format."
     }
   }
 }
