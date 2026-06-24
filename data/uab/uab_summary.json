@@ -1,0 +1,30 @@
+{
+  "university": "uab",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 3556,
+  "progressive_count": 333,
+  "progressive_pct": 9.36,
+  "canon_count": 81,
+  "canon_pct": 2.28,
+  "climate_narrow_count": 9,
+  "climate_narrow_pct": 0.34,
+  "climate_broad_count": 64,
+  "climate_broad_pct": 2.41,
+  "by_area": {
+    "Social Sciences": 257,
+    "Humanities": 131,
+    "Other": 1888,
+    "STEM": 240,
+    "Professional": 17,
+    "Medical Sciences": 123
+  },
+  "failed_depts": [
+    "eda",
+    "edt",
+    "ems",
+    "epi",
+    "env",
+    "fll"
+  ]
+}

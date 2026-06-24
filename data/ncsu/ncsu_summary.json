@@ -1,0 +1,23 @@
+{
+  "university": "ncsu",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 7761,
+  "progressive_count": 628,
+  "progressive_pct": 8.09,
+  "canon_count": 189,
+  "canon_pct": 2.44,
+  "climate_narrow_count": 47,
+  "climate_narrow_pct": 0.61,
+  "climate_broad_count": 348,
+  "climate_broad_pct": 4.48,
+  "by_area": {
+    "Other": 6920,
+    "Medical Sciences": 82,
+    "STEM": 460,
+    "Professional": 65,
+    "Humanities": 118,
+    "Social Sciences": 116
+  },
+  "failed_depts": []
+}

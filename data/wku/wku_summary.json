@@ -1,0 +1,23 @@
+{
+  "university": "wku",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 3083,
+  "progressive_count": 83,
+  "progressive_pct": 2.69,
+  "canon_count": 31,
+  "canon_pct": 1.01,
+  "climate_narrow_count": 10,
+  "climate_narrow_pct": 0.32,
+  "climate_broad_count": 79,
+  "climate_broad_pct": 2.56,
+  "by_area": {
+    "Other": 1150,
+    "Professional": 587,
+    "STEM": 313,
+    "Social Sciences": 510,
+    "Humanities": 419,
+    "Medical Sciences": 104
+  },
+  "failed_depts": []
+}

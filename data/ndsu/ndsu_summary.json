@@ -1,0 +1,31 @@
+{
+  "university": "ndsu",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 5596,
+  "progressive_count": 190,
+  "progressive_pct": 3.4,
+  "canon_count": 80,
+  "canon_pct": 1.43,
+  "climate_narrow_count": 4,
+  "climate_narrow_pct": 0.09,
+  "climate_broad_count": 116,
+  "climate_broad_pct": 2.72,
+  "by_area": {
+    "Other": 1535,
+    "STEM": 1162,
+    "Professional": 319,
+    "Social Sciences": 430,
+    "Humanities": 540,
+    "Medical Sciences": 275
+  },
+  "failed_depts": [
+    "ai",
+    "atr",
+    "bimd",
+    "move",
+    "nutr",
+    "pt",
+    "se"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "university": "lamar",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 2346,
+  "progressive_count": 133,
+  "progressive_pct": 5.67,
+  "canon_count": 33,
+  "canon_pct": 1.41,
+  "by_area": {
+    "Other": 1123,
+    "Professional": 186,
+    "Humanities": 344,
+    "STEM": 401,
+    "Social Sciences": 192,
+    "Medical Sciences": 100
+  },
+  "failed_depts": [
+    "chem",
+    "misy",
+    "mued",
+    "span",
+    "thea"
+  ]
+}

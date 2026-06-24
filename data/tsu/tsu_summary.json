@@ -1,0 +1,23 @@
+{
+  "university": "tsu",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 2065,
+  "progressive_count": 22,
+  "progressive_pct": 1.07,
+  "canon_count": 13,
+  "canon_pct": 0.63,
+  "climate_narrow_count": 3,
+  "climate_narrow_pct": 0.15,
+  "climate_broad_count": 23,
+  "climate_broad_pct": 1.11,
+  "by_area": {
+    "Professional": 255,
+    "Other": 1119,
+    "Humanities": 135,
+    "Social Sciences": 202,
+    "STEM": 284,
+    "Medical Sciences": 70
+  },
+  "failed_depts": []
+}

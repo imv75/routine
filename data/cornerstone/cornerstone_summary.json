@@ -1,0 +1,25 @@
+{
+  "university": "cornerstone",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 1276,
+  "progressive_count": 79,
+  "progressive_pct": 6.19,
+  "canon_count": 117,
+  "canon_pct": 9.17,
+  "by_area": {
+    "Other": 899,
+    "Professional": 127,
+    "STEM": 88,
+    "Social Sciences": 66,
+    "Medical Sciences": 53,
+    "Humanities": 43
+  },
+  "failed_depts": [
+    "edu",
+    "fin",
+    "phi",
+    "pad",
+    "sci"
+  ]
+}

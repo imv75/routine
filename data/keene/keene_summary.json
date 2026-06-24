@@ -1,0 +1,23 @@
+{
+  "university": "keene",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 1006,
+  "progressive_count": 95,
+  "progressive_pct": 9.44,
+  "canon_count": 22,
+  "canon_pct": 2.19,
+  "by_area": {
+    "Other": 501,
+    "Professional": 113,
+    "Social Sciences": 84,
+    "Humanities": 132,
+    "STEM": 155,
+    "Medical Sciences": 21
+  },
+  "failed_depts": [
+    "hlsc",
+    "hp",
+    "met"
+  ]
+}

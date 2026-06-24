@@ -1,0 +1,19 @@
+{
+  "university": "tamiu",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 1990,
+  "progressive_count": 188,
+  "progressive_pct": 9.45,
+  "canon_count": 63,
+  "canon_pct": 3.17,
+  "by_area": {
+    "Other": 357,
+    "Humanities": 557,
+    "Professional": 165,
+    "STEM": 421,
+    "Social Sciences": 355,
+    "Medical Sciences": 135
+  },
+  "failed_depts": []
+}

@@ -1,0 +1,40 @@
+{
+  "university": "uwplatt",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 1195,
+  "progressive_count": 122,
+  "progressive_pct": 10.21,
+  "canon_count": 21,
+  "canon_pct": 1.76,
+  "climate_narrow_count": 8,
+  "climate_narrow_pct": 0.67,
+  "climate_broad_count": 51,
+  "climate_broad_pct": 4.27,
+  "by_area": {
+    "Professional": 126,
+    "Other": 565,
+    "STEM": 290,
+    "Social Sciences": 85,
+    "Humanities": 126,
+    "Medical Sciences": 3
+  },
+  "failed_depts": [
+    "art",
+    "bme",
+    "civileng",
+    "computer",
+    "forensic",
+    "ethnstdy",
+    "geneng",
+    "geology",
+    "indsteng",
+    "math",
+    "muap",
+    "polisci",
+    "sociolgy",
+    "software",
+    "scsci",
+    "speech"
+  ]
+}

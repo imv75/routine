@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-06-24",
   "total_universities": 100,
-  "completed": 81,
+  "completed": 100,
   "in_progress": [],
   "failed": [],
   "blocked_by_network": [
@@ -465,7 +465,7 @@
       ],
       "progressive_pct": 21.75,
       "canon_pct": 3.92,
-      "notes": "2026-27 catalog scraped. 223 departments via bulletin.case.edu (full catalog — Engineering, Arts & Sciences, Medicine, Law, Management). Previous 'partial_accessible' assessment was outdated; all schools accessible. 0 depts failed."
+      "notes": "2026-27 catalog scraped. 223 departments via bulletin.case.edu (full catalog \u2014 Engineering, Arts & Sciences, Medicine, Law, Management). Previous 'partial_accessible' assessment was outdated; all schools accessible. 0 depts failed."
     },
     "tulane": {
       "id": 49,
@@ -1361,6 +1361,306 @@
       "progressive_pct": 2.36,
       "canon_pct": 0.39,
       "notes": "2026-27 catalog scraped. 88 undergrad + 65 grad depts. SmartCatalogIQ h2-based course format."
+    },
+    "coloradomesa": {
+      "id": 136,
+      "status": "completed",
+      "source": "catalog.coloradomesa.edu/courses/",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 2985,
+      "data_files": [
+        "data/coloradomesa/coloradomesa_2026.csv",
+        "data/coloradomesa/coloradomesa_summary.json"
+      ],
+      "progressive_pct": 4.39,
+      "canon_pct": 2.14,
+      "notes": "2026-27 catalog scraped. CourseleafCMS period format. 6 depts failed."
+    },
+    "cornerstone": {
+      "id": 137,
+      "status": "completed",
+      "source": "catalog.cornerstone.edu/courses/",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 1276,
+      "data_files": [
+        "data/cornerstone/cornerstone_2026.csv",
+        "data/cornerstone/cornerstone_summary.json"
+      ],
+      "progressive_pct": 6.19,
+      "canon_pct": 9.17,
+      "notes": "2026-27 catalog scraped. CourseleafCMS format. 5 depts failed."
+    },
+    "csp": {
+      "id": 138,
+      "status": "completed",
+      "source": "catalog.csp.edu/courses/",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 1575,
+      "data_files": [
+        "data/csp/csp_2026.csv",
+        "data/csp/csp_summary.json"
+      ],
+      "progressive_pct": 15.49,
+      "canon_pct": 2.54,
+      "notes": "2026-27 catalog scraped. Concordia-St. Paul. CourseleafCMS format. 0 depts failed."
+    },
+    "csub": {
+      "id": 139,
+      "status": "completed",
+      "source": "catalog.csub.edu/courses/",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 2461,
+      "data_files": [
+        "data/csub/csub_2026.csv",
+        "data/csub/csub_summary.json"
+      ],
+      "progressive_pct": 14.83,
+      "canon_pct": 2.93,
+      "notes": "2026-27 catalog scraped. Cal State Bakersfield. CourseleafCMS format. 0 depts failed."
+    },
+    "keene": {
+      "id": 140,
+      "status": "completed",
+      "source": "catalog.keene.edu/courses/",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 1006,
+      "data_files": [
+        "data/keene/keene_2026.csv",
+        "data/keene/keene_summary.json"
+      ],
+      "progressive_pct": 9.44,
+      "canon_pct": 2.19,
+      "notes": "2026-27 catalog scraped. Keene State College. CourseleafCMS format. 3 depts failed."
+    },
+    "lamar": {
+      "id": 141,
+      "status": "completed",
+      "source": "catalog.lamar.edu/courses/",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 2346,
+      "data_files": [
+        "data/lamar/lamar_2026.csv",
+        "data/lamar/lamar_summary.json"
+      ],
+      "progressive_pct": 5.67,
+      "canon_pct": 1.41,
+      "notes": "2026-27 catalog scraped. Lamar University. CourseleafCMS format. 5 depts failed."
+    },
+    "mwcc": {
+      "id": 142,
+      "status": "completed",
+      "source": "catalog.mwcc.edu/courses/",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 448,
+      "data_files": [
+        "data/mwcc/mwcc_2026.csv",
+        "data/mwcc/mwcc_summary.json"
+      ],
+      "progressive_pct": 16.52,
+      "canon_pct": 2.68,
+      "notes": "2026-27 catalog scraped. Mount Wachusett Community College. CourseleafCMS format. 0 depts failed."
+    },
+    "ncsu": {
+      "id": 143,
+      "status": "completed",
+      "source": "catalog.ncsu.edu/course-descriptions/",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 7761,
+      "data_files": [
+        "data/ncsu/ncsu_2026.csv",
+        "data/ncsu/ncsu_summary.json"
+      ],
+      "progressive_pct": 8.09,
+      "canon_pct": 2.44,
+      "notes": "2026-27 catalog scraped. NC State. detail-coursecode/detail-title span format. 0 depts failed."
+    },
+    "ndsu": {
+      "id": 144,
+      "status": "completed",
+      "source": "catalog.ndsu.edu/course-catalog/descriptions/",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 5596,
+      "data_files": [
+        "data/ndsu/ndsu_2026.csv",
+        "data/ndsu/ndsu_summary.json"
+      ],
+      "progressive_pct": 3.4,
+      "canon_pct": 1.43,
+      "notes": "2026-27 catalog scraped. NDSU. CourseleafCMS period format. 7 depts failed."
+    },
+    "shsu": {
+      "id": 145,
+      "status": "completed",
+      "source": "catalog.shsu.edu/undergraduate/course-descriptions/",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 1966,
+      "data_files": [
+        "data/shsu/shsu_2026.csv",
+        "data/shsu/shsu_summary.json"
+      ],
+      "progressive_pct": 6.15,
+      "canon_pct": 2.03,
+      "notes": "2026-27 catalog scraped. Sam Houston State. CourseleafCMS period format. 5 depts failed."
+    },
+    "snow": {
+      "id": 146,
+      "status": "completed",
+      "source": "catalog.snow.edu/courses/",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 1150,
+      "data_files": [
+        "data/snow/snow_2026.csv",
+        "data/snow/snow_summary.json"
+      ],
+      "progressive_pct": 3.48,
+      "canon_pct": 0.87,
+      "notes": "2026-27 catalog scraped. Snow College. CourseleafCMS format. 0 depts failed."
+    },
+    "tamiu": {
+      "id": 147,
+      "status": "completed",
+      "source": "catalog.tamiu.edu/courses/",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 1990,
+      "data_files": [
+        "data/tamiu/tamiu_2026.csv",
+        "data/tamiu/tamiu_summary.json"
+      ],
+      "progressive_pct": 9.45,
+      "canon_pct": 3.17,
+      "notes": "2026-27 catalog scraped. Texas A&M International. CourseleafCMS format. 0 depts failed."
+    },
+    "uab": {
+      "id": 148,
+      "status": "completed",
+      "source": "catalog.uab.edu/coursedescriptions/",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 3556,
+      "data_files": [
+        "data/uab/uab_2026.csv",
+        "data/uab/uab_summary.json"
+      ],
+      "progressive_pct": 9.36,
+      "canon_pct": 2.28,
+      "notes": "2026-27 catalog scraped. UAB. CourseleafCMS period format. 6 depts failed."
+    },
+    "uwgb": {
+      "id": 149,
+      "status": "completed",
+      "source": "catalog.uwgb.edu/undergraduate/course-descriptions/",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 1340,
+      "data_files": [
+        "data/uwgb/uwgb_2026.csv",
+        "data/uwgb/uwgb_summary.json"
+      ],
+      "progressive_pct": 8.73,
+      "canon_pct": 1.72,
+      "notes": "2026-27 catalog scraped. UW Green Bay. CourseleafCMS full-name dept codes. 18 depts failed."
+    },
+    "uwplatt": {
+      "id": 150,
+      "status": "completed",
+      "source": "catalog.uwplatt.edu/undergraduate/course-descriptions/courses/",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 1195,
+      "data_files": [
+        "data/uwplatt/uwplatt_2026.csv",
+        "data/uwplatt/uwplatt_summary.json"
+      ],
+      "progressive_pct": 10.21,
+      "canon_pct": 1.76,
+      "notes": "2026-27 catalog scraped. UW Platteville. Credits in span format. 16 depts failed."
+    },
+    "washburn": {
+      "id": 151,
+      "status": "completed",
+      "source": "catalog.washburn.edu/courses/",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 2746,
+      "data_files": [
+        "data/washburn/washburn_2026.csv",
+        "data/washburn/washburn_summary.json"
+      ],
+      "progressive_pct": 7.39,
+      "canon_pct": 2.18,
+      "notes": "2026-27 catalog scraped. Washburn University. CourseleafCMS format. 0 depts failed."
+    },
+    "tamucc": {
+      "id": 152,
+      "status": "completed",
+      "source": "catalog.tamucc.edu/undergraduate/courses-az/",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 2043,
+      "data_files": [
+        "data/tamucc/tamucc_2026.csv",
+        "data/tamucc/tamucc_summary.json"
+      ],
+      "progressive_pct": 1.76,
+      "canon_pct": 0.69,
+      "notes": "2026-27 catalog scraped. Texas A&M Corpus Christi. detail-code span format. 0 depts failed."
+    },
+    "wku": {
+      "id": 153,
+      "status": "completed",
+      "source": "catalog.wku.edu/undergraduate/course-descriptions/",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 3083,
+      "data_files": [
+        "data/wku/wku_2026.csv",
+        "data/wku/wku_summary.json"
+      ],
+      "progressive_pct": 2.69,
+      "canon_pct": 1.01,
+      "notes": "2026-27 catalog scraped. Western Kentucky University. CourseleafCMS tab-separated title format. 0 depts failed."
+    },
+    "marshall": {
+      "id": 154,
+      "status": "completed",
+      "source": "catalog.marshall.edu/undergraduate/courses-az/",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 3216,
+      "data_files": [
+        "data/marshall/marshall_2026.csv",
+        "data/marshall/marshall_summary.json"
+      ],
+      "progressive_pct": 0.56,
+      "canon_pct": 1.09,
+      "notes": "2026-27 catalog scraped. Marshall University. detail-code span with code+num+title in one element. 0 depts failed."
+    },
+    "tsu": {
+      "id": 155,
+      "status": "completed",
+      "source": "catalog.tsu.edu/undergraduate/course-descriptions/",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 2065,
+      "data_files": [
+        "data/tsu/tsu_2026.csv",
+        "data/tsu/tsu_summary.json"
+      ],
+      "progressive_pct": 1.07,
+      "canon_pct": 0.63,
+      "notes": "2026-27 catalog scraped. Texas Southern University. detail-code/detail-title span format. 0 depts failed."
     }
   }
 }

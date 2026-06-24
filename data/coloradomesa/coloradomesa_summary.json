@@ -1,0 +1,26 @@
+{
+  "university": "coloradomesa",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 2985,
+  "progressive_count": 131,
+  "progressive_pct": 4.39,
+  "canon_count": 64,
+  "canon_pct": 2.14,
+  "by_area": {
+    "Other": 1492,
+    "Professional": 128,
+    "Humanities": 368,
+    "Social Sciences": 173,
+    "STEM": 617,
+    "Medical Sciences": 207
+  },
+  "failed_depts": [
+    "emgt",
+    "flsl",
+    "ints",
+    "kine",
+    "mark",
+    "musp"
+  ]
+}

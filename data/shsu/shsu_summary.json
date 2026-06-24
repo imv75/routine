@@ -1,0 +1,29 @@
+{
+  "university": "shsu",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 1966,
+  "progressive_count": 121,
+  "progressive_pct": 6.15,
+  "canon_count": 40,
+  "canon_pct": 2.03,
+  "climate_narrow_count": 1,
+  "climate_narrow_pct": 0.07,
+  "climate_broad_count": 28,
+  "climate_broad_pct": 2.07,
+  "by_area": {
+    "Professional": 78,
+    "Other": 876,
+    "Medical Sciences": 81,
+    "STEM": 121,
+    "Social Sciences": 100,
+    "Humanities": 95
+  },
+  "failed_depts": [
+    "bssn",
+    "envr",
+    "hist",
+    "isci",
+    "lssl"
+  ]
+}

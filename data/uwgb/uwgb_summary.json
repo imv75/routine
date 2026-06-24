@@ -1,0 +1,42 @@
+{
+  "university": "uwgb",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 1340,
+  "progressive_count": 117,
+  "progressive_pct": 8.73,
+  "canon_count": 23,
+  "canon_pct": 1.72,
+  "climate_narrow_count": 9,
+  "climate_narrow_pct": 0.67,
+  "climate_broad_count": 48,
+  "climate_broad_pct": 3.58,
+  "by_area": {
+    "Professional": 159,
+    "Social Sciences": 145,
+    "Other": 519,
+    "Humanities": 201,
+    "STEM": 275,
+    "Medical Sciences": 41
+  },
+  "failed_depts": [
+    "artsmgt",
+    "busadm",
+    "commsci",
+    "compsci",
+    "envsci",
+    "hlth-mgt",
+    "humbiol",
+    "humstud",
+    "infosci",
+    "milsci",
+    "musapp",
+    "musens",
+    "nutsci",
+    "orglead",
+    "phy-ed",
+    "polsci",
+    "pubadm",
+    "socwork"
+  ]
+}
