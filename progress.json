@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-06-24",
   "total_universities": 100,
-  "completed": 70,
+  "completed": 73,
   "in_progress": [],
   "failed": [],
   "blocked_by_network": [
@@ -751,14 +751,14 @@
       "source": "catalog.unl.edu",
       "years_covered": "2026",
       "catalog_years": 1,
-      "course_years": 5208,
+      "course_years": 9954,
       "data_files": [
         "data/unl/unl_2026.csv",
         "data/unl/unl_summary.json"
       ],
-      "progressive_pct": 7.49,
-      "canon_pct": 3.03,
-      "notes": "2026-27 catalog scraped."
+      "progressive_pct": 7.59,
+      "canon_pct": 2.44,
+      "notes": "2026-27 catalog scraped. Re-scraped with cb_ span format parser (undergrad + grad-professional). 9954 unique courses."
     },
     "iastate": {
       "id": 83,
@@ -1229,6 +1229,50 @@
       "script": "scripts/scrape_une.py",
       "data_file": "data/une/une_2026.csv",
       "notes": "U New England, div.cols.noindent format with div.courseblockextra desc."
+    },
+    "uni": {
+      "id": 126,
+      "status": "completed",
+      "source": "scraped",
+      "catalog_year": "2026",
+      "total_courses": 1750,
+      "script": "scripts/scrape_uni.py",
+      "data_file": "data/uni/uni_2026.csv",
+      "notes": "U Northern Iowa: period separator with em-dash before credit hours."
+    },
+    "iit": {
+      "id": 128,
+      "status": "completed",
+      "source": "catalog.iit.edu",
+      "catalog_year": "2026",
+      "total_courses": 3221,
+      "script": "scripts/scrape_iit.py",
+      "data_file": "data/iit/iit_2026.csv",
+      "progressive_pct": 6.36,
+      "canon_pct": 1.06,
+      "notes": "Illinois Institute of Technology. div.courseblocktitle format (div not p)."
+    },
+    "fairfield": {
+      "id": 129,
+      "status": "completed",
+      "source": "catalog.fairfield.edu",
+      "catalog_year": "2026",
+      "total_courses": 2631,
+      "script": "scripts/scrape_fairfield.py",
+      "data_file": "data/fairfield/fairfield_2026.csv",
+      "progressive_pct": 18.89,
+      "canon_pct": 5.28,
+      "notes": "Fairfield University. div.cols.noindent with span.detail-code/detail-title format."
+    },
+    "wsu": {
+      "id": 130,
+      "status": "dynamic_js_only",
+      "notes": "catalog.wsu.edu uses Blazor WebAssembly (.NET) - dynamic JS SPA, not scrapable."
+    },
+    "oit": {
+      "id": 131,
+      "status": "dynamic_js_only",
+      "notes": "catalog.oit.edu uses Coursedog - dynamic JS, not scrapable."
     }
   }
 }

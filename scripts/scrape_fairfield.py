@@ -1,11 +1,9 @@
 #!/usr/bin/env python3
 """
-University of Nebraska-Lincoln course catalog scraper.
-URL: catalog.unl.edu/{undergraduate|graduate-professional}/courses/{dept}/
-HTML: div.courseblock > div.cb_title_row with:
-        span.cb_subject_code + span.cb_course_number
-        div.cb_title > span.title
-      + div.cb_description > p
+Fairfield University course catalog scraper.
+URL: catalog.fairfield.edu/courses/{dept}/
+HTML: div.courseblock > div.cols.noindent > span.detail-code "ACCT 1011"
+      + span.detail-title "Title" + div.courseblockextra.noindent (desc)
 """
 
 import csv
@@ -16,10 +14,10 @@ import time
 import requests
 from bs4 import BeautifulSoup
 
-UNIVERSITY = "unl"
+UNIVERSITY = "fairfield"
 CATALOG_YEAR = "2026"
 CATALOG_LABEL = "2026-2027"
-BASE_URL = "https://catalog.unl.edu"
+BASE_URL = "https://catalog.fairfield.edu"
 OUTPUT_DIR = f"/home/user/routine/data/{UNIVERSITY}"
 OUTPUT_CSV = f"{OUTPUT_DIR}/{UNIVERSITY}_{CATALOG_YEAR}.csv"
 SUMMARY_FILE = f"{OUTPUT_DIR}/{UNIVERSITY}_summary.json"
@@ -60,14 +58,10 @@ CLIMATE_BROAD = ["climate", "sustainability", "sustainable", "renewable energy",
                   "environmental justice", "carbon", "decarbonization", "net zero",
                   "clean energy", "green energy", "ecological", "ecosystem", "biodiversity"]
 
-STEM = {"acct", "aero", "acts", "agri", "aecn", "agen", "alec", "biol", "chem", "cive",
-        "csce", "elec", "envs", "geol", "math", "mech", "phys", "stat", "nres"}
-HUMANITIES = {"adpr", "art", "arth", "clcs", "comm", "engl", "fren", "germ", "grek",
-              "hist", "jams", "jour", "lat", "ling", "musi", "phil", "reli", "span",
-              "thea", "writ", "wgss"}
-SOCIAL = {"anth", "abus", "crim", "econ", "educ", "geog", "pols", "psyc", "soci", "socw", "sw"}
-MEDICAL = {"biol", "hlth", "kine", "nurs", "nutr", "phrm"}
-PROFESSIONAL = {"acct", "abus", "fin", "law", "mngt", "mrkt"}
+STEM = {"bi", "ch", "cp", "cs", "en", "es", "ma", "ns", "ph", "ps", "sw"}
+HUMANITIES = {"ar", "cl", "en", "fr", "gr", "hi", "it", "la", "mu", "ph", "re", "sp", "th"}
+SOCIAL = {"as", "ec", "po", "py", "so", "ws"}
+PROFESSIONAL = {"ac", "ba", "fi", "mg", "mk"}
 
 
 def classify_area(dept):
@@ -78,8 +72,6 @@ def classify_area(dept):
         return "Humanities"
     if d in SOCIAL:
         return "Social Sciences"
-    if d in MEDICAL:
-        return "Medical Sciences"
     if d in PROFESSIONAL:
         return "Professional"
     return "Other"
@@ -98,8 +90,8 @@ def check_kw(text, kws):
     return any(k in t for k in kws)
 
 
-def get_dept_slugs(session, level_path):
-    url = f"{BASE_URL}/{level_path}/courses/"
+def get_dept_slugs(session):
+    url = f"{BASE_URL}/courses/"
     try:
         r = session.get(url, timeout=25)
         if r.status_code != 200:
@@ -107,12 +99,12 @@ def get_dept_slugs(session, level_path):
         soup = BeautifulSoup(r.text, "html.parser")
         slugs = []
         for a in soup.find_all("a", href=True):
-            m = re.match(rf"^/{level_path}/courses/([a-z][a-z0-9]*)/?$", a["href"])
+            m = re.match(r"^/courses/([a-z][a-z0-9]*)/?$", a["href"])
             if m:
                 slugs.append(m.group(1))
         return list(dict.fromkeys(slugs))
     except Exception as e:
-        print(f"  ERROR fetching {level_path} dept list: {e}")
+        print(f"  ERROR fetching dept list: {e}")
         return []
 
 
@@ -120,30 +112,40 @@ def parse_dept_page(html_text):
     soup = BeautifulSoup(html_text, "html.parser")
     courses = []
     for block in soup.find_all("div", class_="courseblock"):
-        # Extract dept code and number from cb_ spans
-        subj_span = block.find("span", class_="cb_subject_code")
-        num_span = block.find("span", class_="cb_course_number")
-        title_span = block.find("span", class_="title")
-        if not subj_span or not num_span or not title_span:
-            continue
+        code_span = None
+        title_span = None
+        for span in block.find_all("span"):
+            cls_list = span.get("class", [])
+            if isinstance(cls_list, str):
+                cls_list = cls_list.split()
+            if any("detail-code" in c for c in cls_list) and not code_span:
+                code_span = span
+            if any("detail-title" in c for c in cls_list) and not title_span:
+                title_span = span
 
-        dept = subj_span.get_text(strip=True)
-        num = num_span.get_text(strip=True)
+        if not code_span or not title_span:
+            continue
+        code_text = code_span.get_text(strip=True)
+        m = re.match(r"([A-Z][A-Z0-9]*)\s+(\w+)", code_text)
+        if not m:
+            continue
+        dept = m.group(1).strip()
+        num = m.group(2).strip()
         title = title_span.get_text(strip=True).rstrip(".")
 
-        if not dept or not num or not title:
-            continue
-
-        # Description: in div.cb_description > p
         desc = ""
-        desc_div = block.find("div", class_="cb_description")
-        if desc_div:
-            p = desc_div.find("p")
-            if p:
-                desc = p.get_text(" ", strip=True)
-                # Remove "Description:" prefix if present
-                desc = re.sub(r"^\s*Description:\s*", "", desc).strip()
+        for el in block.find_all(["div", "p"]):
+            cls_list = el.get("class", [])
+            if isinstance(cls_list, str):
+                cls_list = cls_list.split()
+            if any("courseblockextra" in c or "courseblockdesc" in c for c in cls_list):
+                text = el.get_text(" ", strip=True)
+                if text and len(text) > 15:
+                    desc = text
+                    break
 
+        if not title:
+            continue
         courses.append((dept, num, title, desc))
     return courses
 
@@ -155,21 +157,18 @@ def main():
     seen = set()
     failed = []
 
-    print(f"=== University of Nebraska-Lincoln Course Catalog Scraper ===")
+    print(f"=== Fairfield University Course Catalog Scraper ===")
     print(f"Catalog year: {CATALOG_LABEL}")
 
-    all_slugs = []
-    for level in ["undergraduate", "graduate-professional"]:
-        slugs = get_dept_slugs(session, level)
-        all_slugs.extend([(level, slug) for slug in slugs])
-    print(f"Scraping {len(all_slugs)} department-level combinations...")
+    slugs = get_dept_slugs(session)
+    print(f"Scraping {len(slugs)} departments...")
 
-    for level, slug in all_slugs:
-        url = f"{BASE_URL}/{level}/courses/{slug}/"
+    for slug in slugs:
+        url = f"{BASE_URL}/courses/{slug}/"
         try:
             r = session.get(url, timeout=25)
             if r.status_code != 200:
-                failed.append(f"{level}/{slug}")
+                failed.append(slug)
                 continue
             parsed = parse_dept_page(r.text)
             new = 0
@@ -197,13 +196,13 @@ def main():
                     })
                     new += 1
             if new:
-                print(f"  {level}/{slug.upper()}: {new} courses")
+                print(f"  {slug.upper()}: {new} courses")
             elif not parsed:
-                failed.append(f"{level}/{slug}")
+                failed.append(slug)
         except Exception as e:
-            print(f"  ERROR {level}/{slug}: {e}")
-            failed.append(f"{level}/{slug}")
-        time.sleep(0.2)
+            print(f"  ERROR {slug}: {e}")
+            failed.append(slug)
+        time.sleep(0.3)
 
     total = len(all_courses)
     print(f"\nTotal unique courses: {total}")
