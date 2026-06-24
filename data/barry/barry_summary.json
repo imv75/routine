@@ -1,0 +1,23 @@
+{
+  "university": "barry",
+  "academic_year": "2026",
+  "academic_year_label": "2025-2026",
+  "total_courses": 3375,
+  "progressive_count": 242,
+  "progressive_pct": 7.17,
+  "canon_count": 83,
+  "canon_pct": 2.46,
+  "climate_narrow_count": 4,
+  "climate_narrow_pct": 0.12,
+  "climate_broad_count": 44,
+  "climate_broad_pct": 1.3,
+  "by_area": {
+    "Professional": 356,
+    "Other": 2295,
+    "STEM": 226,
+    "Humanities": 286,
+    "Social Sciences": 186,
+    "Medical Sciences": 26
+  },
+  "failed_depts": []
+}

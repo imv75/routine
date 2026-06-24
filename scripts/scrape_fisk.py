@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """
-Barry University course catalog scraper.
-URL: barry.smartcatalogiq.com/en/2025-2026/{undergraduate|graduate}-catalog/courses/{dept}/{level}/{course}
+Fisk University course catalog scraper (HBCU).
+UG: fisk.smartcatalogiq.com/en/bulletin/undergraduate/courses/
+Grad: fisk.smartcatalogiq.com/en/bulletin/graduate/courses/
 HTML: div#main > h1 (span=code + title) + div.desc (desc)
 """
 
@@ -14,13 +15,18 @@ import requests
 from bs4 import BeautifulSoup
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
-UNIVERSITY = "barry"
+UNIVERSITY = "fisk"
 CATALOG_YEAR = "2026"
 CATALOG_LABEL = "2025-2026"
-BASE_URL = "https://barry.smartcatalogiq.com"
+BASE_URL = "https://fisk.smartcatalogiq.com"
 OUTPUT_DIR = f"/home/user/routine/data/{UNIVERSITY}"
 OUTPUT_CSV = f"{OUTPUT_DIR}/{UNIVERSITY}_{CATALOG_YEAR}.csv"
 SUMMARY_FILE = f"{OUTPUT_DIR}/{UNIVERSITY}_summary.json"
+
+SECTIONS = [
+    ("/en/bulletin/undergraduate", "courses", "undergraduate"),
+    ("/en/bulletin/graduate", "courses", "graduate"),
+]
 
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
@@ -58,16 +64,12 @@ CLIMATE_BROAD = ["climate", "sustainability", "sustainable", "renewable energy",
                   "environmental justice", "carbon", "decarbonization", "net zero",
                   "clean energy", "green energy", "ecological", "ecosystem", "biodiversity"]
 
-STEM = {"biol", "bms", "chem", "csci", "dat", "envs", "math", "nurs", "phys", "stat",
-        "aic", "bio", "cs", "phy"}
-HUMANITIES = {"art", "comm", "engl", "fren", "ger", "hist", "hum", "musi", "phil", "reli",
-              "span", "thea", "wgst", "the", "lat", "gre"}
-SOCIAL = {"anth", "cjus", "econ", "educ", "pols", "psyc", "soci", "socw", "sw",
-          "cjs", "psy", "pol"}
-MEDICAL = {"ane", "hlth", "kine", "nurs", "nutr", "athl", "ot", "pt", "pa", "bms",
-           "pod", "rad", "med", "dns", "anp"}
-PROFESSIONAL = {"acc", "acct", "adm", "admi", "adv", "fin", "mgmt", "mktg", "bus",
-                "mba", "law", "pub"}
+STEM = {"biol", "chem", "csci", "math", "phys", "stat", "envs", "nurs", "data", "cs", "sci"}
+HUMANITIES = {"art", "comm", "engl", "fren", "ger", "hist", "hum", "musi", "phil",
+              "reli", "span", "thea", "wgst", "lang"}
+SOCIAL = {"anth", "cjus", "econ", "educ", "pols", "psyc", "soci", "socw", "psy", "soc"}
+MEDICAL = {"hlth", "kine", "nurs", "nutr", "athl"}
+PROFESSIONAL = {"acct", "buad", "fin", "mgmt", "mktg", "bus", "mba"}
 
 
 def classify_area(dept):
@@ -85,8 +87,12 @@ def classify_area(dept):
     return "Other"
 
 
-def classify_level(section):
-    return "graduate" if "graduate" in section else "undergraduate"
+def classify_level(num_str):
+    try:
+        n = int(re.sub(r"[^0-9]", "", num_str)[:4])
+        return "graduate" if n >= 500 else "undergraduate"
+    except Exception:
+        return "undergraduate"
 
 
 def check_kw(text, kws):
@@ -94,25 +100,25 @@ def check_kw(text, kws):
     return any(k in t for k in kws)
 
 
-def get_dept_paths(session, catalog_path):
-    url = f"{BASE_URL}{catalog_path}/courses"
+def get_dept_paths(session, catalog_path, section):
+    url = f"{BASE_URL}{catalog_path}/{section}"
     r = session.get(url, timeout=25)
     soup = BeautifulSoup(r.text, "html.parser")
     links = [a["href"] for a in soup.find_all("a", href=True)]
-    pattern = re.compile(rf"^{catalog_path}/courses/[a-z][a-z0-9\-]+$")
+    pattern = re.compile(rf"^{re.escape(catalog_path)}/{re.escape(section)}/[a-z][a-z0-9\-]+$")
     return list(dict.fromkeys(h for h in links if pattern.match(h)))
 
 
-def get_course_urls(session, dept_path):
+def get_course_urls(session, catalog_path, section, dept_path):
     url = f"{BASE_URL}{dept_path}/"
     r = session.get(url, timeout=25)
     soup = BeautifulSoup(r.text, "html.parser")
     links = [a["href"] for a in soup.find_all("a", href=True)]
-    pattern = re.compile(r"^/en/2025-2026/[a-z\-]+-catalog/courses/[a-z][a-z0-9\-]+/\d+/[a-z][a-z0-9\-]+$")
+    pattern = re.compile(rf"^{re.escape(catalog_path)}/{re.escape(section)}/[a-z][a-z0-9\-]+/\d+/[a-z][a-z0-9\-]+$")
     return list(dict.fromkeys(h for h in links if pattern.match(h)))
 
 
-def fetch_course(session, path, level):
+def fetch_course(session, path):
     url = f"{BASE_URL}{path}"
     r = session.get(url, timeout=25)
     if r.status_code != 200:
@@ -134,7 +140,7 @@ def fetch_course(session, path, level):
     num = m.group(2)
     desc_div = main.find("div", class_="desc")
     desc = desc_div.get_text(" ", strip=True) if desc_div else ""
-    return dept, num, title, desc, level
+    return dept, num, title, desc
 
 
 def main():
@@ -143,37 +149,28 @@ def main():
     all_courses = []
     seen = set()
 
-    print(f"=== Barry University Course Catalog Scraper ===")
+    print(f"=== Fisk University Course Catalog Scraper ===")
     print(f"Catalog year: {CATALOG_LABEL}")
 
-    catalog_sections = [
-        ("/en/2025-2026/undergraduate-catalog", "undergraduate"),
-        ("/en/2025-2026/graduate-catalog", "graduate"),
-    ]
+    all_course_urls = []
+    for catalog_path, section, level_hint in SECTIONS:
+        dept_paths = get_dept_paths(session, catalog_path, section)
+        print(f"  {level_hint}: {len(dept_paths)} depts")
+        for dp in dept_paths:
+            urls = get_course_urls(session, catalog_path, section, dp)
+            all_course_urls.extend(urls)
+            time.sleep(0.1)
 
-    all_course_items = []
-    for catalog_path, level in catalog_sections:
-        depts = get_dept_paths(session, catalog_path)
-        print(f"  {level}: {len(depts)} depts")
-        for dp in depts:
-            urls = get_course_urls(session, dp)
-            all_course_items.extend([(u, level) for u in urls])
-            time.sleep(0.05)
-
-    all_course_items = list({u: l for u, l in all_course_items}.items())
-    print(f"Found {len(all_course_items)} course pages to fetch")
-
-    def fetch_one(args):
-        path, level = args
-        return fetch_course(session, path, level)
+    all_course_urls = list(dict.fromkeys(all_course_urls))
+    print(f"Found {len(all_course_urls)} course pages to fetch")
 
     with ThreadPoolExecutor(max_workers=8) as exe:
-        futures = {exe.submit(fetch_one, item): item for item in all_course_items}
+        futures = {exe.submit(fetch_course, session, p): p for p in all_course_urls}
         for fut in as_completed(futures):
             result = fut.result()
             if not result:
                 continue
-            dept, num, title, desc, level = result
+            dept, num, title, desc = result
             key = f"{dept}_{num}"
             if key in seen:
                 continue
@@ -188,7 +185,7 @@ def main():
                 "title": title,
                 "description": desc,
                 "broad_area": classify_area(dept),
-                "level": level,
+                "level": classify_level(num),
                 "progressive_signal": check_kw(full_text, PROGRESSIVE_KEYWORDS),
                 "western_canon_signal": check_kw(full_text, WESTERN_CANON_KEYWORDS),
                 "climate_narrow_signal": check_kw(full_text, CLIMATE_NARROW),

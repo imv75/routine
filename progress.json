@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-06-24",
   "total_universities": 100,
-  "completed": 91,
+  "completed": 100,
   "in_progress": [],
   "failed": [],
   "blocked_by_network": [
@@ -1456,6 +1456,96 @@
       "total_courses": 1117,
       "progressive_pct": 7.97,
       "canon_pct": 3.22
+    },
+    "hartwick": {
+      "id": 150,
+      "status": "completed",
+      "catalog_system": "smartcatalogiq",
+      "catalog_year": "2024-2025",
+      "total_courses": 971,
+      "progressive_pct": 13.49,
+      "canon_pct": 4.74,
+      "notes": "2024-2025 catalog (most recent available). 51 depts."
+    },
+    "ottawa": {
+      "id": 151,
+      "status": "completed",
+      "catalog_system": "smartcatalogiq",
+      "catalog_year": "2025-2026",
+      "total_courses": 1173,
+      "progressive_pct": 6.99,
+      "canon_pct": 1.62,
+      "notes": "38 UG + 22 grad depts. undergraduate-courses + graduate-courses sections."
+    },
+    "keuka": {
+      "id": 152,
+      "status": "completed",
+      "catalog_system": "smartcatalogiq",
+      "catalog_year": "2025-2026",
+      "total_courses": 773,
+      "progressive_pct": 10.61,
+      "canon_pct": 1.03,
+      "notes": "46 depts. Hyphen-format course codes (ACC-101)."
+    },
+    "barry": {
+      "id": 153,
+      "status": "completed",
+      "catalog_system": "smartcatalogiq",
+      "catalog_year": "2025-2026",
+      "total_courses": 3375,
+      "progressive_pct": 7.17,
+      "canon_pct": 2.46,
+      "notes": "142 UG + 60 grad depts. Hyphen-format course codes (ACC-201)."
+    },
+    "suffolk": {
+      "id": 154,
+      "status": "completed",
+      "catalog_system": "smartcatalogiq",
+      "catalog_year": "2025-2026",
+      "total_courses": 2178,
+      "progressive_pct": 16.3,
+      "canon_pct": 2.98,
+      "notes": "118 depts. Graduate threshold 600+."
+    },
+    "lesley": {
+      "id": 155,
+      "status": "completed",
+      "catalog_system": "smartcatalogiq",
+      "catalog_year": "2025-2026",
+      "total_courses": 1450,
+      "progressive_pct": 22.07,
+      "canon_pct": 1.72,
+      "notes": "75 depts. Unusual catalog path with hyphenated year in directory name."
+    },
+    "simmons": {
+      "id": 156,
+      "status": "completed",
+      "catalog_system": "smartcatalogiq",
+      "catalog_year": "2024-2025",
+      "total_courses": 1852,
+      "progressive_pct": 22.79,
+      "canon_pct": 2.16,
+      "notes": "56 UG + 29 grad depts. undergraduate-course-catalog + graduate-course-catalog sections."
+    },
+    "dominican": {
+      "id": 157,
+      "status": "completed",
+      "catalog_system": "smartcatalogiq",
+      "catalog_year": "2025-2026",
+      "total_courses": 1810,
+      "progressive_pct": 20.0,
+      "canon_pct": 2.71,
+      "notes": "57 depts. 4-digit level folders (/1000/, /2000/)."
+    },
+    "fisk": {
+      "id": 158,
+      "status": "completed",
+      "catalog_system": "smartcatalogiq",
+      "catalog_year": "2025-2026",
+      "total_courses": 725,
+      "progressive_pct": 5.93,
+      "canon_pct": 2.62,
+      "notes": "HBCU. 40 UG + 12 grad depts. /en/bulletin/undergraduate + /en/bulletin/graduate paths."
     }
   }
 }

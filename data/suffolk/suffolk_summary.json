@@ -1,0 +1,23 @@
+{
+  "university": "suffolk",
+  "academic_year": "2026",
+  "academic_year_label": "2025-2026",
+  "total_courses": 2178,
+  "progressive_count": 355,
+  "progressive_pct": 16.3,
+  "canon_count": 65,
+  "canon_pct": 2.98,
+  "climate_narrow_count": 24,
+  "climate_narrow_pct": 1.1,
+  "climate_broad_count": 84,
+  "climate_broad_pct": 3.86,
+  "by_area": {
+    "Professional": 123,
+    "Other": 1687,
+    "Humanities": 77,
+    "STEM": 99,
+    "Medical Sciences": 37,
+    "Social Sciences": 155
+  },
+  "failed_depts": []
+}

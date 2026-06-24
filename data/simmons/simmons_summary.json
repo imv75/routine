@@ -1,0 +1,23 @@
+{
+  "university": "simmons",
+  "academic_year": "2025",
+  "academic_year_label": "2024-2025",
+  "total_courses": 1852,
+  "progressive_count": 422,
+  "progressive_pct": 22.79,
+  "canon_count": 40,
+  "canon_pct": 2.16,
+  "climate_narrow_count": 4,
+  "climate_narrow_pct": 0.22,
+  "climate_broad_count": 35,
+  "climate_broad_pct": 1.89,
+  "by_area": {
+    "Other": 897,
+    "Professional": 161,
+    "Humanities": 290,
+    "STEM": 248,
+    "Social Sciences": 214,
+    "Medical Sciences": 42
+  },
+  "failed_depts": []
+}

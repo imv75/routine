@@ -1,0 +1,21 @@
+{
+  "university": "hartwick",
+  "academic_year": "2025",
+  "academic_year_label": "2024-2025",
+  "total_courses": 971,
+  "progressive_count": 131,
+  "progressive_pct": 13.49,
+  "canon_count": 46,
+  "canon_pct": 4.74,
+  "climate_narrow_count": 9,
+  "climate_narrow_pct": 0.93,
+  "climate_broad_count": 29,
+  "climate_broad_pct": 2.99,
+  "by_area": {
+    "Humanities": 331,
+    "Social Sciences": 133,
+    "Other": 339,
+    "STEM": 168
+  },
+  "failed_depts": []
+}

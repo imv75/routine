@@ -1,0 +1,18 @@
+{
+  "university": "lesley",
+  "academic_year": "2026",
+  "academic_year_label": "2025-2026",
+  "total_courses": 1450,
+  "progressive_count": 320,
+  "progressive_pct": 22.07,
+  "canon_count": 25,
+  "canon_pct": 1.72,
+  "climate_narrow_count": 12,
+  "climate_narrow_pct": 0.83,
+  "climate_broad_count": 48,
+  "climate_broad_pct": 3.31,
+  "by_area": {
+    "Other": 1450
+  },
+  "failed_depts": []
+}
