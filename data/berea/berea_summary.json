@@ -1,0 +1,23 @@
+{
+  "university": "berea",
+  "academic_year": "2026",
+  "academic_year_label": "2025-2026",
+  "total_courses": 894,
+  "progressive_count": 175,
+  "progressive_pct": 19.57,
+  "canon_count": 49,
+  "canon_pct": 5.48,
+  "climate_narrow_count": 3,
+  "climate_narrow_pct": 0.34,
+  "climate_broad_count": 45,
+  "climate_broad_pct": 5.03,
+  "by_area": {
+    "Humanities": 327,
+    "STEM": 163,
+    "Professional": 26,
+    "Social Sciences": 189,
+    "Medical Sciences": 39,
+    "Other": 150
+  },
+  "failed_depts": []
+}

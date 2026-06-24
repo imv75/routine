@@ -1,0 +1,23 @@
+{
+  "university": "bethel",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 996,
+  "progressive_count": 45,
+  "progressive_pct": 4.52,
+  "canon_count": 68,
+  "canon_pct": 6.83,
+  "climate_narrow_count": 0,
+  "climate_narrow_pct": 0.0,
+  "climate_broad_count": 8,
+  "climate_broad_pct": 0.8,
+  "by_area": {
+    "Professional": 60,
+    "Humanities": 177,
+    "Social Sciences": 117,
+    "STEM": 103,
+    "Other": 526,
+    "Medical Sciences": 13
+  },
+  "failed_depts": []
+}

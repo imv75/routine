@@ -1,0 +1,23 @@
+{
+  "university": "messiah",
+  "academic_year": "2026",
+  "academic_year_label": "2025-2026",
+  "total_courses": 1820,
+  "progressive_count": 221,
+  "progressive_pct": 12.14,
+  "canon_count": 82,
+  "canon_pct": 4.51,
+  "climate_narrow_count": 6,
+  "climate_narrow_pct": 0.33,
+  "climate_broad_count": 49,
+  "climate_broad_pct": 2.69,
+  "by_area": {
+    "Professional": 46,
+    "STEM": 276,
+    "Humanities": 379,
+    "Other": 971,
+    "Medical Sciences": 68,
+    "Social Sciences": 80
+  },
+  "failed_depts": []
+}

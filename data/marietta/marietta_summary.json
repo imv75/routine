@@ -1,0 +1,23 @@
+{
+  "university": "marietta",
+  "academic_year": "2026",
+  "academic_year_label": "2025-2026",
+  "total_courses": 941,
+  "progressive_count": 106,
+  "progressive_pct": 11.26,
+  "canon_count": 37,
+  "canon_pct": 3.93,
+  "climate_narrow_count": 5,
+  "climate_narrow_pct": 0.53,
+  "climate_broad_count": 38,
+  "climate_broad_pct": 4.04,
+  "by_area": {
+    "Professional": 53,
+    "Humanities": 185,
+    "STEM": 181,
+    "Other": 319,
+    "Social Sciences": 176,
+    "Medical Sciences": 27
+  },
+  "failed_depts": []
+}

@@ -1,0 +1,23 @@
+{
+  "university": "lander",
+  "academic_year": "2026",
+  "academic_year_label": "2025-2026",
+  "total_courses": 1520,
+  "progressive_count": 142,
+  "progressive_pct": 9.34,
+  "canon_count": 34,
+  "canon_pct": 2.24,
+  "climate_narrow_count": 1,
+  "climate_narrow_pct": 0.07,
+  "climate_broad_count": 17,
+  "climate_broad_pct": 1.12,
+  "by_area": {
+    "STEM": 171,
+    "Professional": 40,
+    "Humanities": 300,
+    "Social Sciences": 204,
+    "Other": 746,
+    "Medical Sciences": 59
+  },
+  "failed_depts": []
+}

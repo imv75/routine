@@ -1,0 +1,23 @@
+{
+  "university": "coker",
+  "academic_year": "2026",
+  "academic_year_label": "2025-2026",
+  "total_courses": 995,
+  "progressive_count": 65,
+  "progressive_pct": 6.53,
+  "canon_count": 16,
+  "canon_pct": 1.61,
+  "climate_narrow_count": 2,
+  "climate_narrow_pct": 0.2,
+  "climate_broad_count": 15,
+  "climate_broad_pct": 1.51,
+  "by_area": {
+    "Humanities": 353,
+    "STEM": 109,
+    "Professional": 95,
+    "Social Sciences": 142,
+    "Other": 286,
+    "Medical Sciences": 10
+  },
+  "failed_depts": []
+}

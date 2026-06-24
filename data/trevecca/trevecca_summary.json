@@ -1,0 +1,22 @@
+{
+  "university": "trevecca",
+  "academic_year": "2026",
+  "academic_year_label": "2025-2026",
+  "total_courses": 1697,
+  "progressive_count": 139,
+  "progressive_pct": 8.19,
+  "canon_count": 69,
+  "canon_pct": 4.07,
+  "climate_narrow_count": 0,
+  "climate_narrow_pct": 0.0,
+  "climate_broad_count": 28,
+  "climate_broad_pct": 1.65,
+  "by_area": {
+    "Professional": 111,
+    "Medical Sciences": 4,
+    "Humanities": 49,
+    "Other": 1491,
+    "Social Sciences": 42
+  },
+  "failed_depts": []
+}

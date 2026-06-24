@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-06-24",
   "total_universities": 100,
-  "completed": 80,
+  "completed": 91,
   "in_progress": [],
   "failed": [],
   "blocked_by_network": [
@@ -1357,6 +1357,105 @@
       "progressive_pct": 23.91,
       "canon_pct": 11.55,
       "notes": "College of the Holy Cross. 50 dept slugs. div.cols.noindent with em-dash in detail-code span."
+    },
+    "berea": {
+      "id": 139,
+      "status": "completed",
+      "catalog_system": "smartcatalogiq",
+      "catalog_year": "2025-2026",
+      "total_courses": 894,
+      "progressive_pct": 19.57,
+      "canon_pct": 5.48
+    },
+    "bethel": {
+      "id": 140,
+      "status": "completed",
+      "catalog_system": "smartcatalogiq",
+      "catalog_year": "2026-2027",
+      "total_courses": 996,
+      "progressive_pct": 4.52,
+      "canon_pct": 6.83
+    },
+    "findlay": {
+      "id": 141,
+      "status": "completed",
+      "catalog_system": "smartcatalogiq",
+      "catalog_year": "2025-2026",
+      "total_courses": 1782,
+      "progressive_pct": 6.06,
+      "canon_pct": 2.3
+    },
+    "coker": {
+      "id": 142,
+      "status": "completed",
+      "catalog_system": "smartcatalogiq",
+      "catalog_year": "2025-2026",
+      "total_courses": 995,
+      "progressive_pct": 6.53,
+      "canon_pct": 1.61
+    },
+    "northpark": {
+      "id": 143,
+      "status": "completed",
+      "catalog_system": "smartcatalogiq",
+      "catalog_year": "2025-2026",
+      "total_courses": 1369,
+      "progressive_pct": 8.91,
+      "canon_pct": 4.46
+    },
+    "trevecca": {
+      "id": 144,
+      "status": "completed",
+      "catalog_system": "smartcatalogiq",
+      "catalog_year": "2025-2026",
+      "total_courses": 1697,
+      "progressive_pct": 8.19,
+      "canon_pct": 4.07
+    },
+    "lander": {
+      "id": 145,
+      "status": "completed",
+      "catalog_system": "smartcatalogiq",
+      "catalog_year": "2025-2026",
+      "total_courses": 1520,
+      "progressive_pct": 9.34,
+      "canon_pct": 2.24
+    },
+    "marietta": {
+      "id": 146,
+      "status": "completed",
+      "catalog_system": "smartcatalogiq",
+      "catalog_year": "2025-2026",
+      "total_courses": 941,
+      "progressive_pct": 11.26,
+      "canon_pct": 3.93
+    },
+    "centre": {
+      "id": 147,
+      "status": "completed",
+      "catalog_system": "smartcatalogiq",
+      "catalog_year": "2025-2026",
+      "total_courses": 1117,
+      "progressive_pct": 21.67,
+      "canon_pct": 7.16
+    },
+    "messiah": {
+      "id": 148,
+      "status": "completed",
+      "catalog_system": "smartcatalogiq",
+      "catalog_year": "2025-2026",
+      "total_courses": 1820,
+      "progressive_pct": 12.14,
+      "canon_pct": 4.51
+    },
+    "wilson": {
+      "id": 149,
+      "status": "completed",
+      "catalog_system": "smartcatalogiq",
+      "catalog_year": "2025-2026",
+      "total_courses": 1117,
+      "progressive_pct": 7.97,
+      "canon_pct": 3.22
     }
   }
 }

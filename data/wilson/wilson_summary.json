@@ -1,0 +1,23 @@
+{
+  "university": "wilson",
+  "academic_year": "2026",
+  "academic_year_label": "2025-2026",
+  "total_courses": 1117,
+  "progressive_count": 89,
+  "progressive_pct": 7.97,
+  "canon_count": 36,
+  "canon_pct": 3.22,
+  "climate_narrow_count": 0,
+  "climate_narrow_pct": 0.0,
+  "climate_broad_count": 29,
+  "climate_broad_pct": 2.6,
+  "by_area": {
+    "Professional": 59,
+    "STEM": 79,
+    "Humanities": 149,
+    "Medical Sciences": 5,
+    "Other": 605,
+    "Social Sciences": 220
+  },
+  "failed_depts": []
+}

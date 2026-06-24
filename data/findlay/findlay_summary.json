@@ -1,0 +1,22 @@
+{
+  "university": "findlay",
+  "academic_year": "2026",
+  "academic_year_label": "2025-2026",
+  "total_courses": 1782,
+  "progressive_count": 108,
+  "progressive_pct": 6.06,
+  "canon_count": 41,
+  "canon_pct": 2.3,
+  "climate_narrow_count": 3,
+  "climate_narrow_pct": 0.17,
+  "climate_broad_count": 36,
+  "climate_broad_pct": 2.02,
+  "by_area": {
+    "Other": 792,
+    "Professional": 78,
+    "Social Sciences": 147,
+    "STEM": 374,
+    "Humanities": 391
+  },
+  "failed_depts": []
+}
