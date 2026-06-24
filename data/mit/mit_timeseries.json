@@ -1,0 +1,69 @@
+{
+  "university": "mit",
+  "source": "catalog.mit.edu archive + live",
+  "years": [
+    {
+      "academic_year": "2020",
+      "academic_year_label": "2020-2021",
+      "total_courses": 5191,
+      "progressive_pct": 8.01,
+      "canon_pct": 3.37,
+      "climate_narrow_pct": 1.52,
+      "climate_broad_pct": 5.24
+    },
+    {
+      "academic_year": "2021",
+      "academic_year_label": "2021-2022",
+      "total_courses": 5359,
+      "progressive_pct": 8.64,
+      "canon_pct": 3.32,
+      "climate_narrow_pct": 1.96,
+      "climate_broad_pct": 5.64
+    },
+    {
+      "academic_year": "2022",
+      "academic_year_label": "2022-2023",
+      "total_courses": 5375,
+      "progressive_pct": 8.86,
+      "canon_pct": 3.4,
+      "climate_narrow_pct": 2.08,
+      "climate_broad_pct": 5.73
+    },
+    {
+      "academic_year": "2023",
+      "academic_year_label": "2023-2024",
+      "total_courses": 5542,
+      "progressive_pct": 9.27,
+      "canon_pct": 3.39,
+      "climate_narrow_pct": 2.31,
+      "climate_broad_pct": 5.99
+    },
+    {
+      "academic_year": "2024",
+      "academic_year_label": "2024-2025",
+      "total_courses": 5651,
+      "progressive_pct": 9.31,
+      "canon_pct": 3.36,
+      "climate_narrow_pct": 2.28,
+      "climate_broad_pct": 5.93
+    },
+    {
+      "academic_year": "2025",
+      "academic_year_label": "2025-2026",
+      "total_courses": 5918,
+      "progressive_pct": 9.7,
+      "canon_pct": 3.45,
+      "climate_narrow_pct": 2.43,
+      "climate_broad_pct": 6.29
+    },
+    {
+      "academic_year": "2026",
+      "academic_year_label": "2026-2027",
+      "total_courses": 5918,
+      "progressive_pct": 9.7,
+      "canon_pct": 3.45,
+      "climate_narrow_pct": 2.43,
+      "climate_broad_pct": 6.29
+    }
+  ]
+}
