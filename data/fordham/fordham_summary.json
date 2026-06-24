@@ -1,0 +1,22 @@
+{
+  "university": "fordham",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 7982,
+  "progressive_count": 1656,
+  "progressive_pct": 20.75,
+  "canon_count": 574,
+  "canon_pct": 7.19,
+  "climate_narrow_count": 83,
+  "climate_narrow_pct": 1.04,
+  "climate_broad_count": 290,
+  "climate_broad_pct": 3.63,
+  "by_area": {
+    "Professional": 70,
+    "Other": 4941,
+    "Humanities": 2069,
+    "Social Sciences": 557,
+    "STEM": 345
+  },
+  "failed_depts": []
+}

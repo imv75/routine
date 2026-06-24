@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-06-24",
   "total_universities": 100,
-  "completed": 76,
+  "completed": 80,
   "in_progress": [],
   "failed": [],
   "blocked_by_network": [
@@ -1309,6 +1309,54 @@
       "progressive_pct": 6.03,
       "canon_pct": 18.01,
       "notes": "Biola University. p.courseblocktitle with DEPT NBSP NUM - Title Credits N format."
+    },
+    "fordham": {
+      "id": 135,
+      "status": "completed",
+      "source": "bulletin.fordham.edu",
+      "catalog_year": "2026",
+      "total_courses": 7982,
+      "script": "scripts/scrape_fordham.py",
+      "data_file": "data/fordham/fordham_2026.csv",
+      "progressive_pct": 20.75,
+      "canon_pct": 7.19,
+      "notes": "Fordham University. bulletin.fordham.edu/courses/{dept}/. Standard CourseleafCMS noindent period format. 176 dept slugs."
+    },
+    "depaul": {
+      "id": 136,
+      "status": "completed",
+      "source": "catalog.depaul.edu",
+      "catalog_year": "2026",
+      "total_courses": 8694,
+      "script": "scripts/scrape_depaul.py",
+      "data_file": "data/depaul/depaul_2026.csv",
+      "progressive_pct": 16.18,
+      "canon_pct": 3.32,
+      "notes": "DePaul University. catalog.depaul.edu/course-descriptions/{dept}/. Pipe-delimited format: DEPT NUM | TITLE | N quarter hours."
+    },
+    "clayton": {
+      "id": 137,
+      "status": "completed",
+      "source": "catalog.clayton.edu",
+      "catalog_year": "2026",
+      "total_courses": 1496,
+      "script": "scripts/scrape_clayton.py",
+      "data_file": "data/clayton/clayton_2026.csv",
+      "progressive_pct": 7.62,
+      "canon_pct": 1.54,
+      "notes": "Clayton State University. /courses/{undergraduate|graduate}-level-courses/{dept}/. div.cols.noindent span format."
+    },
+    "holycross": {
+      "id": 138,
+      "status": "completed",
+      "source": "catalog.holycross.edu",
+      "catalog_year": "2026",
+      "total_courses": 1359,
+      "script": "scripts/scrape_holycross.py",
+      "data_file": "data/holycross/holycross_2026.csv",
+      "progressive_pct": 23.91,
+      "canon_pct": 11.55,
+      "notes": "College of the Holy Cross. 50 dept slugs. div.cols.noindent with em-dash in detail-code span."
     }
   }
 }

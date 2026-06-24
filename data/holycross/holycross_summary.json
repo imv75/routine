@@ -1,0 +1,22 @@
+{
+  "university": "holycross",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 1359,
+  "progressive_count": 325,
+  "progressive_pct": 23.91,
+  "canon_count": 157,
+  "canon_pct": 11.55,
+  "climate_narrow_count": 25,
+  "climate_narrow_pct": 1.84,
+  "climate_broad_count": 57,
+  "climate_broad_pct": 4.19,
+  "by_area": {
+    "Humanities": 504,
+    "Professional": 19,
+    "Social Sciences": 229,
+    "Other": 433,
+    "STEM": 174
+  },
+  "failed_depts": []
+}

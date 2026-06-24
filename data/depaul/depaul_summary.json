@@ -1,0 +1,25 @@
+{
+  "university": "depaul",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 8694,
+  "progressive_count": 1407,
+  "progressive_pct": 16.18,
+  "canon_count": 289,
+  "canon_pct": 3.32,
+  "climate_narrow_count": 50,
+  "climate_narrow_pct": 0.58,
+  "climate_broad_count": 226,
+  "climate_broad_pct": 2.6,
+  "by_area": {
+    "Other": 6036,
+    "Humanities": 849,
+    "STEM": 791,
+    "Professional": 437,
+    "Social Sciences": 581
+  },
+  "failed_depts": [
+    "acc",
+    "ant"
+  ]
+}

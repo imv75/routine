@@ -1,0 +1,27 @@
+{
+  "university": "clayton",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 1496,
+  "progressive_count": 114,
+  "progressive_pct": 7.62,
+  "canon_count": 23,
+  "canon_pct": 1.54,
+  "climate_narrow_count": 2,
+  "climate_narrow_pct": 0.13,
+  "climate_broad_count": 22,
+  "climate_broad_pct": 1.47,
+  "by_area": {
+    "Professional": 100,
+    "Humanities": 385,
+    "STEM": 320,
+    "Other": 497,
+    "Social Sciences": 142,
+    "Medical Sciences": 52
+  },
+  "failed_depts": [
+    "undergraduate-level-courses/educ",
+    "undergraduate-level-courses/bals",
+    "undergraduate-level-courses/tech"
+  ]
+}
