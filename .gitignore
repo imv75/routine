@@ -1,0 +1,5 @@
+# Intermediate scraping files
+data/**/*_raw.csv
+data/**/scrape_progress.json
+__pycache__/
+*.pyc
