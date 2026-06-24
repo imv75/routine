@@ -1,0 +1,30 @@
+{
+  "university": "tulane",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 8960,
+  "progressive_count": 963,
+  "progressive_pct": 10.75,
+  "canon_count": 257,
+  "canon_pct": 2.87,
+  "climate_narrow_count": 93,
+  "climate_narrow_pct": 1.04,
+  "climate_broad_count": 340,
+  "climate_broad_pct": 3.79,
+  "by_area": {
+    "Professional": 2244,
+    "Humanities": 2559,
+    "Other": 431,
+    "Social Sciences": 1314,
+    "STEM": 1619,
+    "Medical Sciences": 793
+  },
+  "failed_depts": [
+    "hist",
+    "hisa",
+    "mils",
+    "pasw",
+    "span",
+    "tide"
+  ]
+}

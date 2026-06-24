@@ -1,0 +1,28 @@
+{
+  "university": "oregonstate",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 8469,
+  "progressive_count": 872,
+  "progressive_pct": 10.3,
+  "canon_count": 104,
+  "canon_pct": 1.23,
+  "climate_narrow_count": 101,
+  "climate_narrow_pct": 1.19,
+  "climate_broad_count": 478,
+  "climate_broad_pct": 5.64,
+  "by_area": {
+    "Professional": 1839,
+    "STEM": 3418,
+    "Social Sciences": 1063,
+    "Humanities": 1616,
+    "Medical Sciences": 435,
+    "Other": 98
+  },
+  "failed_depts": [
+    "bi",
+    "bis",
+    "vmc",
+    "z"
+  ]
+}

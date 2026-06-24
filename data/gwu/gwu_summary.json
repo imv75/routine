@@ -1,0 +1,30 @@
+{
+  "university": "gwu",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 7827,
+  "progressive_count": 547,
+  "progressive_pct": 6.99,
+  "canon_count": 184,
+  "canon_pct": 2.35,
+  "climate_narrow_count": 33,
+  "climate_narrow_pct": 0.42,
+  "climate_broad_count": 150,
+  "climate_broad_pct": 1.92,
+  "by_area": {
+    "Humanities": 961,
+    "Professional": 295,
+    "Social Sciences": 632,
+    "Medical Sciences": 791,
+    "STEM": 1304,
+    "Other": 3844
+  },
+  "failed_depts": [
+    "cama",
+    "engl",
+    "mmed",
+    "nrsc",
+    "patn",
+    "ppsy"
+  ]
+}

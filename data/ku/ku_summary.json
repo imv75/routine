@@ -1,0 +1,26 @@
+{
+  "university": "ku",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 8495,
+  "progressive_count": 1112,
+  "progressive_pct": 13.09,
+  "canon_count": 261,
+  "canon_pct": 3.07,
+  "climate_narrow_count": 59,
+  "climate_narrow_pct": 0.69,
+  "climate_broad_count": 242,
+  "climate_broad_pct": 2.85,
+  "by_area": {
+    "Humanities": 1171,
+    "Other": 5015,
+    "Social Sciences": 664,
+    "STEM": 1248,
+    "Professional": 397
+  },
+  "failed_depts": [
+    "schoolofmedicine",
+    "graduate-studies",
+    "flex"
+  ]
+}

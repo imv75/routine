@@ -1,0 +1,22 @@
+{
+  "university": "rice",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 6470,
+  "progressive_count": 859,
+  "progressive_pct": 13.28,
+  "canon_count": 321,
+  "canon_pct": 4.96,
+  "climate_narrow_count": 56,
+  "climate_narrow_pct": 0.87,
+  "climate_broad_count": 283,
+  "climate_broad_pct": 4.37,
+  "by_area": {
+    "Humanities": 2065,
+    "Social Sciences": 906,
+    "Other": 613,
+    "STEM": 2245,
+    "Professional": 641
+  },
+  "failed_depts": []
+}

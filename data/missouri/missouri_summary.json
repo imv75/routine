@@ -1,0 +1,25 @@
+{
+  "university": "missouri",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 11338,
+  "progressive_count": 1067,
+  "progressive_pct": 9.41,
+  "canon_count": 273,
+  "canon_pct": 2.41,
+  "climate_narrow_count": 33,
+  "climate_narrow_pct": 0.29,
+  "climate_broad_count": 270,
+  "climate_broad_pct": 2.38,
+  "by_area": {
+    "Professional": 612,
+    "Other": 8441,
+    "Social Sciences": 295,
+    "STEM": 1150,
+    "Medical Sciences": 77,
+    "Humanities": 763
+  },
+  "failed_depts": [
+    "courseofferings.pdf"
+  ]
+}

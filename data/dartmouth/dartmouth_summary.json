@@ -1,0 +1,43 @@
+{
+  "university": "dartmouth",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 4116,
+  "progressive_count": 1405,
+  "progressive_pct": 34.14,
+  "canon_count": 393,
+  "canon_pct": 9.55,
+  "climate_narrow_count": 84,
+  "climate_narrow_pct": 2.04,
+  "climate_broad_count": 213,
+  "climate_broad_pct": 5.17,
+  "by_area": {
+    "STEM": 747,
+    "Social Sciences": 727,
+    "Humanities": 1542,
+    "Other": 1097,
+    "Professional": 3
+  },
+  "failed_depts": [
+    "/en/current/orc/departments-programs-undergraduate/womens-gender-and-sexualities-studies-program/wgss-womens-gender-and-sexualities-studies/wgst-33-06/",
+    "/en/current/orc/departments-programs-graduate/biochemistry-and-cell-biology/bioc-biochemistry-and-cell-biology/100/bioc-111/",
+    "/en/current/orc/departments-programs-graduate/biochemistry-and-cell-biology/bioc-biochemistry-and-cell-biology/100/bioc-101/",
+    "/en/current/orc/departments-programs-graduate/biochemistry-and-cell-biology/bioc-biochemistry-and-cell-biology/100/bioc-102/",
+    "/en/current/orc/departments-programs-graduate/biochemistry-and-cell-biology/bioc-biochemistry-and-cell-biology/100/bioc-106/",
+    "/en/current/orc/departments-programs-graduate/biochemistry-and-cell-biology/bioc-biochemistry-and-cell-biology/100/bioc-132/",
+    "/en/current/orc/departments-programs-graduate/biochemistry-and-cell-biology/bioc-biochemistry-and-cell-biology/100/bioc-124/",
+    "/en/current/orc/departments-programs-graduate/biochemistry-and-cell-biology/bioc-biochemistry-and-cell-biology/100/bioc-197/",
+    "/en/current/orc/departments-programs-graduate/biochemistry-and-cell-biology/bioc-biochemistry-and-cell-biology/100/bioc-198/",
+    "/en/current/orc/departments-programs-graduate/biochemistry-and-cell-biology/bioc-biochemistry-and-cell-biology/100/bioc-196/",
+    "/en/current/orc/departments-programs-graduate/biochemistry-and-cell-biology/bioc-biochemistry-and-cell-biology/100/bioc-199/",
+    "/en/current/orc/departments-programs-graduate/biological-sciences/biol-biological-sciences/100/biol-103/",
+    "/en/current/orc/departments-programs-graduate/biochemistry-and-cell-biology/bioc-biochemistry-and-cell-biology/200/bioc-298/",
+    "/en/current/orc/departments-programs-graduate/biological-sciences/biol-biological-sciences/100/biol-123/",
+    "/en/current/orc/departments-programs-graduate/biological-sciences/biol-biological-sciences/100/biol-120/",
+    "/en/current/orc/departments-programs-graduate/biological-sciences/biol-biological-sciences/100/biol-125/",
+    "/en/current/orc/departments-programs-graduate/biological-sciences/biol-biological-sciences/100/biol-128/",
+    "/en/current/orc/departments-programs-graduate/biochemistry-and-cell-biology/bioc-biochemistry-and-cell-biology/200/bioc-299/",
+    "/en/current/orc/departments-programs-graduate/biological-sciences/biol-biological-sciences/100/biol-127/",
+    "/en/current/orc/departments-programs-graduate/biological-sciences/biol-biological-sciences/100/biol-134/"
+  ]
+}

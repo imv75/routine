@@ -1,0 +1,25 @@
+{
+  "university": "ua",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 6641,
+  "progressive_count": 610,
+  "progressive_pct": 9.19,
+  "canon_count": 207,
+  "canon_pct": 3.12,
+  "climate_narrow_count": 32,
+  "climate_narrow_pct": 0.48,
+  "climate_broad_count": 144,
+  "climate_broad_pct": 2.17,
+  "by_area": {
+    "Other": 4475,
+    "STEM": 995,
+    "Humanities": 802,
+    "Social Sciences": 176,
+    "Professional": 82,
+    "Medical Sciences": 111
+  },
+  "failed_depts": [
+    "/undergraduate/arts-sciences/speech-language-and-hearing-sciences/courses/"
+  ]
+}

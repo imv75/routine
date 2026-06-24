@@ -1,0 +1,23 @@
+{
+  "university": "uw",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 15673,
+  "progressive_count": 1785,
+  "progressive_pct": 11.39,
+  "canon_count": 423,
+  "canon_pct": 2.7,
+  "climate_narrow_count": 140,
+  "climate_narrow_pct": 0.89,
+  "climate_broad_count": 572,
+  "climate_broad_pct": 3.65,
+  "by_area": {
+    "Humanities": 2221,
+    "Other": 10457,
+    "Medical Sciences": 240,
+    "STEM": 2110,
+    "Social Sciences": 528,
+    "Professional": 117
+  },
+  "failed_depts": []
+}

@@ -1,0 +1,21 @@
+{
+  "university": "gatech",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 5332,
+  "progressive_count": 134,
+  "progressive_pct": 2.51,
+  "canon_count": 58,
+  "canon_pct": 1.09,
+  "climate_narrow_count": 19,
+  "climate_narrow_pct": 0.36,
+  "climate_broad_count": 130,
+  "climate_broad_pct": 2.44,
+  "by_area": {
+    "Professional": 876,
+    "STEM": 2706,
+    "Other": 294,
+    "Humanities": 905,
+    "Social Sciences": 551
+  }
+}

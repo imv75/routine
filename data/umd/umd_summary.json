@@ -1,0 +1,32 @@
+{
+  "university": "umd",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 9235,
+  "progressive_count": 1080,
+  "progressive_pct": 11.69,
+  "canon_count": 228,
+  "canon_pct": 2.47,
+  "climate_narrow_count": 117,
+  "climate_narrow_pct": 1.27,
+  "climate_broad_count": 398,
+  "climate_broad_pct": 4.31,
+  "by_area": {
+    "Humanities": 2055,
+    "Social Sciences": 802,
+    "Other": 2960,
+    "Professional": 1200,
+    "STEM": 1941,
+    "Medical Sciences": 277
+  },
+  "failed_depts": [
+    "chbe(unde)",
+    "clax(unde)",
+    "imdm(unde)",
+    "isrl(unde)",
+    "tdps(unde)",
+    "berc(grad)",
+    "film(grad)",
+    "puaf(grad)"
+  ]
+}

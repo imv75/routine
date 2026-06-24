@@ -1,0 +1,28 @@
+{
+  "university": "drexel",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 8329,
+  "progressive_count": 532,
+  "progressive_pct": 6.39,
+  "canon_count": 108,
+  "canon_pct": 1.3,
+  "climate_narrow_count": 42,
+  "climate_narrow_pct": 0.5,
+  "climate_broad_count": 265,
+  "climate_broad_pct": 3.18,
+  "by_area": {
+    "Other": 4817,
+    "Humanities": 589,
+    "STEM": 1592,
+    "Professional": 604,
+    "Social Sciences": 419,
+    "Medical Sciences": 308
+  },
+  "failed_depts": [
+    "anim(undergrad)",
+    "cit(undergrad)",
+    "nupr(grad)",
+    "bst(grad)"
+  ]
+}

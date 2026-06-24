@@ -1,0 +1,30 @@
+{
+  "university": "utd",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 5121,
+  "progressive_count": 266,
+  "progressive_pct": 5.19,
+  "canon_count": 90,
+  "canon_pct": 1.76,
+  "climate_narrow_count": 43,
+  "climate_narrow_pct": 0.84,
+  "climate_broad_count": 167,
+  "climate_broad_pct": 3.26,
+  "by_area": {
+    "Professional": 382,
+    "Other": 2836,
+    "Humanities": 585,
+    "STEM": 786,
+    "Medical Sciences": 251,
+    "Social Sciences": 281
+  },
+  "failed_depts": [
+    "ahtc",
+    "school",
+    "cpsy",
+    "hind",
+    "port",
+    "school"
+  ]
+}

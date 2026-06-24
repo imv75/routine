@@ -1,0 +1,29 @@
+{
+  "university": "iastate",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 8242,
+  "progressive_count": 597,
+  "progressive_pct": 7.24,
+  "canon_count": 138,
+  "canon_pct": 1.67,
+  "climate_narrow_count": 63,
+  "climate_narrow_pct": 0.76,
+  "climate_broad_count": 482,
+  "climate_broad_pct": 5.85,
+  "by_area": {
+    "Professional": 1895,
+    "Other": 3147,
+    "Humanities": 1085,
+    "Social Sciences": 512,
+    "STEM": 1257,
+    "Medical Sciences": 346
+  },
+  "failed_depts": [
+    "abe",
+    "afas",
+    "latn",
+    "la",
+    "las"
+  ]
+}

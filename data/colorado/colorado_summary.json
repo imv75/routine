@@ -1,0 +1,26 @@
+{
+  "university": "colorado",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 9232,
+  "progressive_count": 1250,
+  "progressive_pct": 13.54,
+  "canon_count": 329,
+  "canon_pct": 3.56,
+  "climate_narrow_count": 134,
+  "climate_narrow_pct": 1.45,
+  "climate_broad_count": 566,
+  "climate_broad_pct": 6.13,
+  "by_area": {
+    "Professional": 266,
+    "Other": 3717,
+    "STEM": 2324,
+    "Humanities": 1664,
+    "Social Sciences": 1124,
+    "Medical Sciences": 137
+  },
+  "failed_depts": [
+    "asen",
+    "anth"
+  ]
+}
