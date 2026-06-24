@@ -1,0 +1,23 @@
+{
+  "university": "cwru",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 5466,
+  "progressive_count": 1189,
+  "progressive_pct": 21.75,
+  "canon_count": 214,
+  "canon_pct": 3.92,
+  "climate_narrow_count": 44,
+  "climate_narrow_pct": 0.8,
+  "climate_broad_count": 214,
+  "climate_broad_pct": 3.92,
+  "by_area": {
+    "Medical Sciences": 957,
+    "Professional": 917,
+    "Other": 360,
+    "Humanities": 1342,
+    "STEM": 1292,
+    "Social Sciences": 598
+  },
+  "failed_depts": []
+}
