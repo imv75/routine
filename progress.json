@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-24",
+  "last_updated": "2026-06-25",
   "total_universities": 100,
   "completed": 100,
   "in_progress": [],
@@ -9,7 +9,6 @@
     "duke",
     "jhu",
     "georgetown",
-    "tufts",
     "bc",
     "brandeis",
     "rochester",
@@ -434,8 +433,18 @@
     },
     "tufts": {
       "id": 46,
-      "status": "blocked_by_network",
-      "notes": "SSL blocked from proxy environment."
+      "status": "completed",
+      "source": "as.tufts.edu department pages",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 2187,
+      "data_files": [
+        "data/tufts/tufts_2026.csv",
+        "data/tufts/tufts_summary.json"
+      ],
+      "progressive_pct": 21.49,
+      "canon_pct": 8.78,
+      "notes": "2026-27 catalog scraped. 35 departments across as.tufts.edu/{dept}/academics/courses and subdomain sites. 3 format variants (standard all-in-one, number-only, split title/desc, FMS dash-dept). 2 depts 404 (medieval-studies, middle-eastern-studies)."
     },
     "bu": {
       "id": 47,
