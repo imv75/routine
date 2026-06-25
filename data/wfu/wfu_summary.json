@@ -1,0 +1,23 @@
+{
+  "university": "wfu",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 2552,
+  "progressive_count": 361,
+  "progressive_pct": 14.15,
+  "canon_count": 138,
+  "canon_pct": 5.41,
+  "climate_narrow_count": 13,
+  "climate_narrow_pct": 0.51,
+  "climate_broad_count": 49,
+  "climate_broad_pct": 1.92,
+  "by_area": {
+    "Other": 1013,
+    "Professional": 45,
+    "Humanities": 820,
+    "Social Sciences": 353,
+    "STEM": 310,
+    "Medical Sciences": 11
+  },
+  "failed_depts": []
+}

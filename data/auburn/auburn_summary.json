@@ -1,0 +1,28 @@
+{
+  "university": "auburn",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 6901,
+  "progressive_count": 234,
+  "progressive_pct": 3.39,
+  "canon_count": 85,
+  "canon_pct": 1.23,
+  "climate_narrow_count": 26,
+  "climate_narrow_pct": 0.38,
+  "climate_broad_count": 223,
+  "climate_broad_pct": 3.23,
+  "by_area": {
+    "Professional": 359,
+    "Other": 3457,
+    "STEM": 1523,
+    "Humanities": 740,
+    "Medical Sciences": 507,
+    "Social Sciences": 315
+  },
+  "failed_depts": [
+    "/coursesofinstruction/airf/",
+    "/coursesofinstruction/pypd/",
+    "/coursesofinstruction/phed/",
+    "/coursesofinstruction/pfen/"
+  ]
+}

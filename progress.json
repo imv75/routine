@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-24",
+  "last_updated": "2026-06-25",
   "total_universities": 100,
   "completed": 100,
   "in_progress": [],
@@ -13,7 +13,6 @@
     "bc",
     "brandeis",
     "rochester",
-    "wfu",
     "rutgers",
     "clemson",
     "kstate",
@@ -489,8 +488,18 @@
     },
     "wfu": {
       "id": 51,
-      "status": "blocked_by_network",
-      "notes": "SSL blocked from proxy environment."
+      "status": "completed",
+      "source": "bulletin.wfu.edu/courses-az/{dept}/",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 2552,
+      "data_files": [
+        "data/wfu/wfu_2026.csv",
+        "data/wfu/wfu_summary.json"
+      ],
+      "progressive_pct": 14.15,
+      "canon_pct": 5.41,
+      "notes": "2026-27 catalog scraped. 78 dept links. bulletin.wfu.edu (not catalog.wfu.edu which was SSL blocked). Standard CourseleafCMS courseblocktitle format."
     },
     "brandeis": {
       "id": 52,
@@ -734,8 +743,18 @@
     },
     "auburn": {
       "id": 76,
-      "status": "blocked_by_network",
-      "notes": "catalog.auburn.edu returns 403. bulletin.auburn.edu returns 404. auburn.smartcatalogiq.com returns 404. SSL/access blocked."
+      "status": "completed",
+      "source": "bulletin.auburn.edu/coursesofinstruction/{dept}/",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 6901,
+      "data_files": [
+        "data/auburn/auburn_2026.csv",
+        "data/auburn/auburn_summary.json"
+      ],
+      "progressive_pct": 3.39,
+      "canon_pct": 1.23,
+      "notes": "2026-27 catalog scraped. 161 dept links, 4 failed. bulletin.auburn.edu (not catalog.auburn.edu which was Canvas LMS). Unique format: div.courseblock > p > strong with DEPT NUM TITLE (CREDITS) format."
     },
     "lsu": {
       "id": 77,
