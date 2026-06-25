@@ -5,7 +5,11 @@ from fpdf import FPDF
 
 with open('/tmp/agg.json') as f:
     R = json.load(f)
-scraped = [r for r in R if r['source'] == 'scraped']
+scraped = [r for r in R if r['source'] in ('scraped', 'rescraped')]
+rescraped = [r for r in R if r['source'] == 'rescraped']
+byk = {r['key']: r for r in R}
+N_COLLECTED = len(scraped); N_RESCRAPED = len(rescraped)
+N_PAPER = sum(1 for r in R if r['source'] == 'Marinovic (2026)')
 
 def area_count(n):
     return n['courses'] if isinstance(n, dict) else n
@@ -83,15 +87,17 @@ para(f'This report extends the catalog-language analysis of Marinovic (2026), "W
      f'Following the reference methodology, each course title and description is searched for two '
      f'keyword families: a progressive signal (race, gender, identity, diversity, equity, social '
      f'justice, decolonial, and related themes) and a Western-canon signal (classical antiquity, '
-     f'the Western intellectual tradition, canonical authors and texts). For the 84 newly '
-     f'collected institutions the report uses the most recent published catalog (mostly '
-     f'2026-2027); for the 16 reference institutions it cites the shares reported in Marinovic '
-     f'(2026). Across the 84 freshly scraped catalogs - {tot:,} deduplicated courses - the '
-     f'course-weighted progressive signal is {cw_prog:.1f}% and the Western-canon signal is '
-     f'{cw_canon:.1f}%. The central pattern of the original paper holds in the far larger sample: '
+     f'the Western intellectual tradition, canonical authors and texts). The sample combines '
+     f'{N_COLLECTED} freshly collected catalogs - {N_COLLECTED-N_RESCRAPED} regional/public/private '
+     f'institutions plus {N_RESCRAPED} of the original reference universities re-scraped from their '
+     f'current 2026 catalogs (Stanford, MIT, Cornell, Northwestern, NYU, UIUC, U. Iowa) - with the '
+     f'remaining {N_PAPER} reference universities cited from Marinovic (2026) because their catalogs '
+     f'are dynamic-JS or proxy-blocked. Across the {N_COLLECTED} collected catalogs - {tot:,} '
+     f'deduplicated courses - the course-weighted progressive signal is {cw_prog:.1f}% and the '
+     f'Western-canon signal is {cw_canon:.1f}%. The central pattern of the original paper holds: '
      f'the progressive signal exceeds the Western-canon signal at {above} of 100 institutions, '
      f'typically by a factor of three to four. The signal is far from uniform - progressive '
-     f'shares range from under 1% to over 34% - and the few institutions where the canon signal '
+     f'shares range from under 1% to over 27% - and the few institutions where the canon signal '
      f'dominates are Christian colleges or low-signal outliers. These measures are mechanical '
      f'keyword counts, not judgments about course quality or what is taught in classrooms.')
 
@@ -112,49 +118,55 @@ para('The 100 institutions here are deliberately heterogeneous - private researc
      'language by which universities describe their courses.')
 
 h1('2. Data and Method')
-para('Coverage. The report combines (i) 84 newly collected catalogs scraped from each '
-     f"institution's current public catalog - almost all 2026-2027 - parsed into a common schema "
-     f'and containing {tot:,} deduplicated courses; and (ii) 16 reference catalogs from Marinovic '
-     '(2026), whose latest-year progressive and Western-canon shares are reproduced from Table 6 '
-     'of that paper (2024 or 2025 catalogs).')
-para('Keyword matching. Matching is case-insensitive and uses the same progressive and '
-     'Western-canon keyword lists as the reference paper. A course carries a signal if its '
-     'combined title-plus-description contains at least one keyword from the corresponding list. '
-     'Cross-listed duplicates are collapsed to one course-year before any share is computed. The '
-     'two signals are not mutually exclusive.')
-para('Three caveats specific to this extension: (1) Single-year snapshot - the 84 new '
-     'institutions are observed in one recent catalog year, so this is a cross-section, not a '
-     'panel, and cannot speak to trends over time. (2) Coarser area classification - broad areas '
-     'are assigned by a mechanical department/title keyword map, so the residual "Other" category '
-     'is large and should be read as "unclassified." (3) No enrollment weights - all shares are '
-     'unweighted course counts, the same basis the reference paper uses for cross-university '
-     'comparison.')
+para(f'Coverage. The report combines (i) {N_COLLECTED} freshly collected catalogs scraped from '
+     f"each institution's current public catalog - almost all 2026-2027, {tot:,} deduplicated "
+     f'courses - including {N_RESCRAPED} of the original reference universities re-scraped directly '
+     f'(Stanford via the ExploreCourses XML API; MIT, Northwestern, NYU, UIUC, U. Iowa via '
+     f'CourseleafCMS; Cornell via the Class Roster API); and (ii) {N_PAPER} reference catalogs '
+     f'carried over from Marinovic (2026) - Berkeley, Harvard, Yale, Princeton, U. Chicago, '
+     f'Columbia, Vanderbilt, UT Austin, Texas A&M - whose catalogs are dynamic-JS apps or blocked '
+     f'from the collection environment and could not be re-scraped.')
+para('Keyword matching. Matching is case-insensitive substring matching against the same '
+     'progressive and Western-canon keyword lists used throughout this project (drawn from Tables '
+     '2-3 of the reference paper). A course carries a signal if its combined title-plus-description '
+     'contains at least one keyword from the corresponding list. Cross-listed duplicates are '
+     'collapsed to one course-year before any share is computed. The two signals are not mutually '
+     'exclusive.')
+para(f'Caveats: (1) Single-year snapshot - the collected catalogs are observed in one recent '
+     'catalog year, so this is a cross-section, not a panel. (2) Coarser area classification - '
+     'broad areas are assigned by a mechanical department/title keyword map, so the residual '
+     '"Other" category is large and should be read as "unclassified." (3) Full catalog, no '
+     'enrollment weights - all shares are unweighted course counts over the full published '
+     "catalog. The paper's headline figures restrict to offered/enrolled courses and use "
+     'word-boundary matching, so re-scraped values here run higher than its published numbers '
+     '(quantified in section 4.4).')
 
 h1('3. Headline Findings')
 bullet(f'The progressive signal dominates the canon signal almost everywhere. At {above} of 100 '
-       f'institutions the progressive share exceeds the Western-canon share. Across the 84 '
-       f'scraped catalogs the course-weighted progressive signal ({cw_prog:.1f}%) is about '
-       f'{cw_prog/cw_canon:.1f}x the canon signal ({cw_canon:.1f}%).')
-bullet(f'Typical magnitudes are lower than the elite sample. The median institution carries the '
+       f'institutions the progressive share exceeds the Western-canon share. Across the '
+       f'{N_COLLECTED} collected catalogs the course-weighted progressive signal ({cw_prog:.1f}%) '
+       f'is about {cw_prog/cw_canon:.1f}x the canon signal ({cw_canon:.1f}%).')
+bullet(f'Typical magnitudes are well below the elite tail. The median institution carries the '
        f'progressive signal on {med_prog:.1f}% of courses and the canon signal on {med_canon:.1f}%. '
-       f'The most progressive elite catalogs (Yale 21.7%, U. Chicago 28.3%) sit in the upper tail '
+       f'The most progressive catalogs - Stanford and the elite privates - sit in the upper tail '
        f'of the full distribution, not at its center.')
-bullet('Enormous dispersion. Progressive shares span roughly 0.6% to 34%. The spread is '
+bullet('Enormous dispersion. Progressive shares span roughly 0.6% to 27%. The spread is '
        'institutional, not just disciplinary: regional and technical schools cluster low, while '
        'research universities and several small private colleges cluster high.')
 bullet('Where the canon wins, it is usually religious. Only three institutions carry more '
        'canonical than progressive language: Biola and Cornerstone (Christian colleges), and '
        'Marshall, an outlier whose 0.6% progressive share reflects short, sparse catalog '
        'descriptions rather than a canon-heavy curriculum.')
-bullet(f'Climate language is modest but pervasive. Across scraped catalogs the narrow climate '
+bullet(f'Climate language is modest but pervasive. Across collected catalogs the narrow climate '
        f'signal averages {statistics.mean([r["cn"] for r in scraped if r["cn"] is not None]):.1f}% '
        f'of courses and the broad climate-or-sustainability signal '
        f'{statistics.mean([r["cb"] for r in scraped if r["cb"] is not None]):.1f}%.')
 
 img('reports/figures/fig1_scatter.png', w=W*0.92)
-caption('Figure 1. Each point is one institution\'s latest catalog. Points above the dashed line '
-        'carry more progressive than canonical language. Red = 16 reference institutions '
-        '(Marinovic 2026); blue = 84 newly collected catalogs.')
+caption(f'Figure 1. Each point is one institution\'s latest catalog. Points above the dashed line '
+        f'carry more progressive than canonical language. Blue = {N_COLLECTED-N_RESCRAPED} '
+        f'regional/public/private catalogs; green = {N_RESCRAPED} re-scraped 2026 reference '
+        f'catalogs; red = {N_PAPER} reference catalogs cited from Marinovic (2026).')
 img('reports/figures/fig3_distribution.png', w=W*0.8)
 caption('Figure 2. Distribution of progressive and Western-canon shares across all 100 '
         'institutions. Dashed lines mark the means.')
@@ -184,20 +196,46 @@ def row(cells, header=False, fill=False):
         align = 'L' if _ in ('University',) else ('C' if _ in ('#','Year','Src') else 'R')
         pdf.cell(wd, 5, clean(str(val)), border=0, align=align, fill=True)
     pdf.ln(5)
+SRC = {'scraped': 'sc', 'rescraped': 're', 'Marinovic (2026)': 'pap'}
 row([c[1] for c in cols], header=True)
 for i, r in enumerate(ordered, 1):
-    src = 'sc' if r['source'] == 'scraped' else 'pap'
+    src = SRC[r['source']]
     ratio = f"{r['ratio']:.2f}" if r['ratio'] is not None else '-'
-    totc = f"{r['total']:,}" + ('' if r['source']=='scraped' else '*')
+    totc = f"{r['total']:,}" + ('' if r['source'] in ('scraped','rescraped') else '*')
     row([i, r['name'], r['year'], totc, f"{r['prog']:.1f}", f"{r['canon']:.1f}", ratio, src],
         fill=(i % 2 == 0))
 pdf.ln(1)
 pdf.set_font('Helvetica', 'I', 7.5); pdf.set_text_color(110)
-pdf.multi_cell(W, 4, clean('* For the 16 reference institutions (src=pap) the course count is the '
-    'total course-years in Marinovic (2026), not a single-year count; shares are latest-year '
-    '(2024/2025) values from that paper. Scraped counts (src=sc) are deduplicated single-year '
-    '(mostly 2026-2027).'))
+pdf.multi_cell(W, 4, clean('Src: sc = scraped this project; re = reference university re-scraped '
+    'from its 2026 catalog; pap = carried over from Marinovic (2026). * For the 9 pap rows the '
+    'course count is total course-years in that paper, not a single year; shares are its latest-year '
+    '(2024/2025) values. Collected counts are deduplicated single-year (mostly 2026-2027).'))
 pdf.set_text_color(0)
+
+# ---- 4.4 Re-scraped reference comparison ----
+pdf.ln(2)
+h2('4.4 Re-scraped reference universities: 2026 catalog vs. published figures')
+para('Seven of the sixteen original reference universities could be re-scraped from their live '
+     '2026 catalogs. The table below places the freshly scraped shares next to the values '
+     'Marinovic (2026) reported. The re-scraped numbers run consistently higher for two structural '
+     'reasons: this project scrapes the entire published catalog (vs. the paper restricting to '
+     'offered/enrolled courses), and it uses substring matching (vs. the paper\'s word-boundary '
+     'matching). The gap is a methodological artifact, not evidence the catalogs changed; relative '
+     'ordering is largely preserved. Northwestern is undergraduate-only here.')
+ccols = [(46,'University'), (32,'2026 Prog %'), (28,'Paper Prog %'),
+         (32,'2026 Canon %'), (28,'Paper Canon %'), (28,'2026 courses')]
+pdf.set_font('Helvetica','B',8.5); pdf.set_fill_color(20,40,90); pdf.set_text_color(255)
+for wd,t in ccols: pdf.cell(wd,6,t,align='L' if t=='University' else 'R',fill=True)
+pdf.ln(6); pdf.set_text_color(0)
+for j,k in enumerate(['stanford','nyu','cornell','uiowa','northwestern','uiuc','mit']):
+    r = byk[k]; pp,pc = (r.get('paper') or (None,None))
+    pp = f"{pp:.1f}" if pp is not None else '-'; pc = f"{pc:.1f}" if pc is not None else '-'
+    pdf.set_font('Helvetica','',8.5)
+    pdf.set_fill_color(238,242,248) if j%2==0 else pdf.set_fill_color(255,255,255)
+    pdf.cell(46,5.5,clean(r['name']),fill=True)
+    pdf.cell(32,5.5,f"{r['prog']:.1f}",align='R',fill=True); pdf.cell(28,5.5,pp,align='R',fill=True)
+    pdf.cell(32,5.5,f"{r['canon']:.1f}",align='R',fill=True); pdf.cell(28,5.5,pc,align='R',fill=True)
+    pdf.cell(28,5.5,f"{r['total']:,}",align='R',fill=True); pdf.ln(5.5)
 
 img('reports/figures/fig2_ranking.png', w=W*0.95)
 caption('Figure 3. The twenty highest and twenty lowest institutions by progressive share.')
@@ -205,10 +243,10 @@ caption('Figure 3. The twenty highest and twenty lowest institutions by progress
 # ---- Composition + climate ----
 pdf.add_page()
 h1('5. Catalog Composition')
-para('Universities differ in the mix of courses they offer, which shapes baseline exposure to '
-     'each keyword list. The table below aggregates broad-area composition across the 84 scraped '
-     'catalogs. The large "Other" share reflects the coarse keyword-based area classifier used in '
-     'this extension and should be read as "unclassified."')
+para(f'Universities differ in the mix of courses they offer, which shapes baseline exposure to '
+     f'each keyword list. The table below aggregates broad-area composition across the '
+     f'{N_COLLECTED} collected catalogs. The large "Other" share reflects the coarse keyword-based '
+     f'area classifier used in this extension and should be read as "unclassified."')
 crow = [(70,'Broad area'), (45,'Courses'), (55,'Share of catalog')]
 pdf.set_font('Helvetica','B',9); pdf.set_fill_color(20,40,90); pdf.set_text_color(255)
 for wd,t in crow: pdf.cell(wd,6,t,align='L' if t=='Broad area' else 'R',fill=True)
@@ -232,7 +270,7 @@ h1('6. Climate-Related Language')
 para('Following Appendix C of the reference paper, climate language is measured separately. A '
      'narrow signal captures climate change, global warming, greenhouse gas, carbon emissions, '
      'and similar; a broad signal adds sustainability, renewable energy, and clean energy. The '
-     'fifteen scraped institutions with the highest broad climate share are shown below.')
+     'fifteen collected institutions with the highest broad climate share are shown below.')
 cl = sorted([r for r in scraped if r['cb'] is not None], key=lambda r: r['cb'], reverse=True)[:15]
 pdf.set_font('Helvetica','B',9); pdf.set_fill_color(20,40,90); pdf.set_text_color(255)
 pdf.cell(12,6,'#',align='C',fill=True); pdf.cell(78,6,'University',fill=True)
@@ -245,17 +283,19 @@ for i,r in enumerate(cl,1):
     pdf.cell(40,5.5,f"{r['cn']:.1f}",align='R',fill=True); pdf.cell(40,5.5,f"{r['cb']:.1f}",align='R',fill=True); pdf.ln(5.5)
 pdf.ln(2)
 img('reports/figures/fig4_climate.png', w=W*0.85)
-caption('Figure 4. Top 20 scraped institutions by broad climate-or-sustainability share; dark '
+caption('Figure 4. Top 20 collected institutions by broad climate-or-sustainability share; dark '
         'bars show the narrow climate-change signal within each.')
 
 h1('7. Limitations and Conclusion')
 para('Catalogs are not classrooms: keyword counts on public descriptions do not reveal what is '
-     'assigned, how a course is taught, or what students learn. Keyword lists produce false '
-     'positives (equity in finance, diversity in biology, classical in physics) and false '
-     'negatives (themes discussed without the listed words). These institutions are observed once '
-     'and weighted by course count, not student seats. Coverage is uneven - some catalogs omit '
-     'departments that failed to scrape, recorded per-institution in each summary file.')
-para(f'Extending the measurement from 16 to 100 institutions does not overturn the central '
+     'assigned, how a course is taught, or what students learn. Substring keyword matching '
+     'produces false positives (race in "race car," equity in finance, classical in physics) and '
+     'false negatives. The re-scraped reference values are not directly comparable to the paper\'s '
+     'published figures (full catalog + substring here vs. offered-subset + word-boundary there); '
+     'they ARE comparable to the other collected catalogs. Nine reference universities could not '
+     'be re-scraped and retain paper values; Northwestern is undergraduate-only.')
+para(f'Extending the measurement from 16 to 100 institutions - and re-scraping seven reference '
+     f'universities from their 2026 catalogs - does not overturn the central '
      f'finding of Marinovic (2026): progressive language is far more common than Western-canon '
      f'language in the stated curriculum, dominating at {above} of 100 schools. What the wider '
      f'sample adds is context for magnitude. The very high progressive shares of the '

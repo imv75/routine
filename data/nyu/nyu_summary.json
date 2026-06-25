@@ -1,0 +1,24 @@
+{
+  "university": "nyu",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 16829,
+  "progressive_count": 3052,
+  "progressive_pct": 18.14,
+  "canon_count": 922,
+  "canon_pct": 5.48,
+  "climate_narrow_count": 239,
+  "climate_narrow_pct": 1.42,
+  "climate_broad_count": 752,
+  "climate_broad_pct": 4.47,
+  "by_area": {
+    "Humanities": 4339,
+    "Other": 4667,
+    "Professional": 2528,
+    "Social Sciences": 3374,
+    "STEM": 1446,
+    "Medical Sciences": 475
+  },
+  "source": "rescraped_2026",
+  "failed_depts": []
+}

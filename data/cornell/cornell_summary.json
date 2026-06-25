@@ -1,0 +1,23 @@
+{
+  "university": "cornell",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 4459,
+  "progressive_count": 768,
+  "progressive_pct": 17.22,
+  "canon_count": 133,
+  "canon_pct": 2.98,
+  "climate_narrow_count": 102,
+  "climate_narrow_pct": 2.29,
+  "climate_broad_count": 327,
+  "climate_broad_pct": 7.33,
+  "by_area": {
+    "Professional": 525,
+    "Humanities": 962,
+    "Social Sciences": 848,
+    "Other": 1398,
+    "Medical Sciences": 98,
+    "STEM": 628
+  },
+  "source": "rescraped_2026"
+}

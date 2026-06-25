@@ -28,6 +28,8 @@ PAPER = {
 }
 
 DISPLAY = {
+    'stanford':'Stanford','mit':'MIT','cornell':'Cornell','northwestern':'Northwestern',
+    'nyu':'NYU','uiuc':'UIUC','uiowa':'U. Iowa',
     'upenn':'U. Penn','wisc':'U. Wisconsin–Madison','uw':'U. Washington','gatech':'Georgia Tech',
     'dartmouth':'Dartmouth','rice':'Rice','notredame':'Notre Dame','psu':'Penn State',
     'unc':'UNC Chapel Hill','bu':'Boston University','cwru':'Case Western','tulane':'Tulane',
@@ -57,8 +59,10 @@ for k, v in completed.items():
     if os.path.exists(sfile):
         with open(sfile) as f:
             s = json.load(f)
+        rescraped = s.get('source') == 'rescraped_2026'
         rec = {
-            'key': k, 'name': DISPLAY.get(k, k), 'source': 'scraped',
+            'key': k, 'name': DISPLAY.get(k, k),
+            'source': 'rescraped' if rescraped else 'scraped',
             'year': int(s.get('academic_year', 2026)),
             'total': s.get('total_courses', 0),
             'prog': round(s.get('progressive_pct', 0.0), 1),
@@ -66,6 +70,7 @@ for k, v in completed.items():
             'cn': s.get('climate_narrow_pct', 0.0),
             'cb': s.get('climate_broad_pct', 0.0),
             'by_area': s.get('by_area', {}),
+            'paper': PAPER.get(k, (None, None, None, None))[:2] if k in PAPER else None,
         }
     elif k in PAPER:
         p, c, yr, nm = PAPER[k]
@@ -82,13 +87,16 @@ for k, v in completed.items():
 with open('/tmp/agg.json', 'w') as f:
     json.dump(records, f, indent=2)
 
-scraped = [r for r in records if r['source'] == 'scraped']
+# "scraped" aggregates include both the 84 original scrapes and the 7 re-scrapes
+scraped = [r for r in records if r['source'] in ('scraped', 'rescraped')]
+n_rescraped = sum(1 for r in records if r['source'] == 'rescraped')
+n_paper = sum(1 for r in records if r['source'] == 'Marinovic (2026)')
 tot_courses = sum(r['total'] for r in scraped)
 cw_prog = sum(r['prog'] * r['total'] for r in scraped) / tot_courses
 cw_canon = sum(r['canon'] * r['total'] for r in scraped) / tot_courses
 all_courses = tot_courses
 
-print(f'Total records: {len(records)}  (scraped {len(scraped)} + paper {len(records)-len(scraped)})')
+print(f'Total records: {len(records)}  (scraped {len(scraped)-n_rescraped} + rescraped {n_rescraped} + paper {n_paper})')
 print(f'Scraped courses (latest-year, deduped): {tot_courses:,}')
 print(f'Course-weighted progressive: {cw_prog:.2f}%, canon: {cw_canon:.2f}%')
 print(f'Simple-mean progressive: {statistics.mean(r["prog"] for r in scraped):.2f}%, canon: {statistics.mean(r["canon"] for r in scraped):.2f}%')
