@@ -1,0 +1,69 @@
+{
+  "university": "cornell",
+  "source": "classes.cornell.edu Class Roster API (Fall roster)",
+  "years": [
+    {
+      "academic_year": "2020",
+      "academic_year_label": "2020-2021",
+      "total_courses": 4088,
+      "progressive_pct": 15.63,
+      "canon_pct": 4.48,
+      "climate_narrow_pct": 1.37,
+      "climate_broad_pct": 5.38
+    },
+    {
+      "academic_year": "2021",
+      "academic_year_label": "2021-2022",
+      "total_courses": 4298,
+      "progressive_pct": 15.8,
+      "canon_pct": 4.35,
+      "climate_narrow_pct": 1.19,
+      "climate_broad_pct": 5.49
+    },
+    {
+      "academic_year": "2022",
+      "academic_year_label": "2022-2023",
+      "total_courses": 4360,
+      "progressive_pct": 15.73,
+      "canon_pct": 3.6,
+      "climate_narrow_pct": 1.65,
+      "climate_broad_pct": 6.61
+    },
+    {
+      "academic_year": "2023",
+      "academic_year_label": "2023-2024",
+      "total_courses": 4564,
+      "progressive_pct": 16.52,
+      "canon_pct": 3.7,
+      "climate_narrow_pct": 1.77,
+      "climate_broad_pct": 7.14
+    },
+    {
+      "academic_year": "2024",
+      "academic_year_label": "2024-2025",
+      "total_courses": 4549,
+      "progressive_pct": 17.85,
+      "canon_pct": 4.18,
+      "climate_narrow_pct": 2.18,
+      "climate_broad_pct": 7.21
+    },
+    {
+      "academic_year": "2025",
+      "academic_year_label": "2025-2026",
+      "total_courses": 4458,
+      "progressive_pct": 16.8,
+      "canon_pct": 3.75,
+      "climate_narrow_pct": 2.18,
+      "climate_broad_pct": 7.6
+    },
+    {
+      "academic_year": "2026",
+      "academic_year_label": "2026-2027",
+      "total_courses": 4463,
+      "progressive_pct": 17.19,
+      "canon_pct": 2.98,
+      "climate_narrow_pct": 2.29,
+      "climate_broad_pct": 7.33
+    }
+  ]
+}
