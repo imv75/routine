@@ -1,0 +1,114 @@
+{
+  "university": "Georgetown University",
+  "short_name": "georgetown",
+  "source": "sitearchives.georgetown.edu/courses/",
+  "note": "Archived course descriptions 2004-2016. Live site inaccessible from proxy.",
+  "years": {
+    "2005": {
+      "catalog_year": 2005,
+      "label": "2004-05",
+      "courses": 1760,
+      "progressive_pct": 14.55,
+      "western_canon_pct": 8.12,
+      "file": "georgetown_2005.csv"
+    },
+    "2006": {
+      "catalog_year": 2006,
+      "label": "2005-06",
+      "courses": 2143,
+      "progressive_pct": 19.09,
+      "western_canon_pct": 9.66,
+      "file": "georgetown_2006.csv"
+    },
+    "2007": {
+      "catalog_year": 2007,
+      "label": "2006-07",
+      "courses": 2474,
+      "progressive_pct": 17.74,
+      "western_canon_pct": 8.89,
+      "file": "georgetown_2007.csv"
+    },
+    "2008": {
+      "catalog_year": 2008,
+      "label": "2007-08",
+      "courses": 2550,
+      "progressive_pct": 18.16,
+      "western_canon_pct": 7.49,
+      "file": "georgetown_2008.csv"
+    },
+    "2009": {
+      "catalog_year": 2009,
+      "label": "2008-09",
+      "courses": 2713,
+      "progressive_pct": 19.68,
+      "western_canon_pct": 8.29,
+      "file": "georgetown_2009.csv"
+    },
+    "2010": {
+      "catalog_year": 2010,
+      "label": "2009-10",
+      "courses": 3264,
+      "progressive_pct": 19.52,
+      "western_canon_pct": 7.38,
+      "file": "georgetown_2010.csv"
+    },
+    "2011": {
+      "catalog_year": 2011,
+      "label": "2010-11",
+      "courses": 3316,
+      "progressive_pct": 19.6,
+      "western_canon_pct": 8.08,
+      "file": "georgetown_2011.csv"
+    },
+    "2012": {
+      "catalog_year": 2012,
+      "label": "2011-12",
+      "courses": 3251,
+      "progressive_pct": 20.02,
+      "western_canon_pct": 7.6,
+      "file": "georgetown_2012.csv"
+    },
+    "2013": {
+      "catalog_year": 2013,
+      "label": "2012-13",
+      "courses": 3779,
+      "progressive_pct": 19.66,
+      "western_canon_pct": 7.59,
+      "file": "georgetown_2013.csv"
+    },
+    "2014": {
+      "catalog_year": 2014,
+      "label": "2013-14",
+      "courses": 3877,
+      "progressive_pct": 20.51,
+      "western_canon_pct": 7.63,
+      "file": "georgetown_2014.csv"
+    },
+    "2015": {
+      "catalog_year": 2015,
+      "label": "2014-15",
+      "courses": 4010,
+      "progressive_pct": 21.45,
+      "western_canon_pct": 7.18,
+      "file": "georgetown_2015.csv"
+    },
+    "2016": {
+      "catalog_year": 2016,
+      "label": "2015-16",
+      "courses": 4081,
+      "progressive_pct": 20.73,
+      "western_canon_pct": 7.23,
+      "file": "georgetown_2016.csv"
+    },
+    "2017": {
+      "catalog_year": 2017,
+      "label": "2016-17",
+      "courses": 4191,
+      "progressive_pct": 20.62,
+      "western_canon_pct": 6.68,
+      "file": "georgetown_2017.csv"
+    }
+  },
+  "total_courses": 41409,
+  "catalog_years": 13
+}

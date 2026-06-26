@@ -1,0 +1,18 @@
+{
+  "university": "Emory University",
+  "short_name": "emory",
+  "source": "catalog.college.emory.edu",
+  "note": "Emory College of Arts & Sciences static HTML catalog. Current year only (HTML); prior years are PDFs.",
+  "years": {
+    "2026": {
+      "catalog_year": 2026,
+      "label": "2025-26",
+      "courses": 3607,
+      "progressive_pct": 4.71,
+      "western_canon_pct": 3.13,
+      "file": "emory_2026.csv"
+    }
+  },
+  "total_courses": 3607,
+  "catalog_years": 1
+}

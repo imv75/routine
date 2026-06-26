@@ -1,23 +1,20 @@
 {
   "last_updated": "2026-06-26",
   "total_universities": 100,
-  "completed": 112,
+  "completed": 117,
   "in_progress": [],
   "failed": [],
   "blocked_by_network": [
     "umich",
     "duke",
-    "georgetown",
     "tufts",
     "bc",
     "brandeis",
     "rochester",
     "wfu",
-    "rutgers",
     "clemson",
     "kstate",
     "sc",
-    "cmu",
     "fsu",
     "msu"
   ],
@@ -25,7 +22,6 @@
     "osu",
     "pitt",
     "lsu",
-    "purdue",
     "ou",
     "unlv",
     "baylor",
@@ -41,7 +37,6 @@
     "stonybrook",
     "uva",
     "rpi",
-    "emory",
 
     "wsu",
     "oit",
@@ -351,8 +346,19 @@
     },
     "cmu": {
       "id": 26,
-      "status": "blocked_by_network",
-      "notes": "catalog.cmu.edu SSL blocked. coursecatalog.web.cmu.edu also blocked. enr-apps.as.cmu.edu/assets/SOC/ has titles only (no descriptions)."
+      "status": "completed",
+      "source": "enr-apps.as.cmu.edu/SOC (SOC Servlet)",
+      "years_covered": "2026-2027",
+      "catalog_years": 2,
+      "total_courses": 8167,
+      "data_files": [
+        "data/cmu/cmu_2026.csv",
+        "data/cmu/cmu_2027.csv",
+        "data/cmu/cmu_summary.json"
+      ],
+      "progressive_pct": 1.16,
+      "canon_pct": 0.28,
+      "notes": "Scraped via SOC Servlet (title-only, no descriptions). F24/S25 not accessible; 2026-27 available. 8,167 courses."
     },
     "usc": {
       "id": 27,
@@ -418,13 +424,45 @@
     },
     "georgetown": {
       "id": 32,
-      "status": "blocked_by_network",
-      "notes": "SSL blocked from proxy environment."
+      "status": "completed",
+      "source": "sitearchives.georgetown.edu/courses/ (static HTML archives)",
+      "years_covered": "2005-2017",
+      "catalog_years": 13,
+      "total_courses": 41409,
+      "data_files": [
+        "data/georgetown/georgetown_2005.csv",
+        "data/georgetown/georgetown_2006.csv",
+        "data/georgetown/georgetown_2007.csv",
+        "data/georgetown/georgetown_2008.csv",
+        "data/georgetown/georgetown_2009.csv",
+        "data/georgetown/georgetown_2010.csv",
+        "data/georgetown/georgetown_2011.csv",
+        "data/georgetown/georgetown_2012.csv",
+        "data/georgetown/georgetown_2013.csv",
+        "data/georgetown/georgetown_2014.csv",
+        "data/georgetown/georgetown_2015.csv",
+        "data/georgetown/georgetown_2016.csv",
+        "data/georgetown/georgetown_2017.csv",
+        "data/georgetown/georgetown_summary.json"
+      ],
+      "progressive_pct": 19.9,
+      "canon_pct": 7.87,
+      "notes": "Scraped from sitearchives.georgetown.edu. Live site SSL-blocked. Full descriptions available 2004-2016 AY (catalog years 2005-2017). 41,409 courses."
     },
     "emory": {
       "id": 33,
-      "status": "dynamic_js_only",
-      "notes": "catalog.emory.edu uses Coursedog (dynamic JS). emory.smartcatalogiq.com returns 404."
+      "status": "completed",
+      "source": "catalog.college.emory.edu (static HTML, Emory College of Arts & Sciences)",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "total_courses": 3607,
+      "data_files": [
+        "data/emory/emory_2026.csv",
+        "data/emory/emory_summary.json"
+      ],
+      "progressive_pct": 4.71,
+      "canon_pct": 3.13,
+      "notes": "2025-26 catalog scraped. catalog.college.emory.edu is static HTML (48 departments, 3607 courses). catalog.emory.edu uses Coursedog/dynamic JS but College catalog is accessible. Historical years only as PDFs."
     },
     "washu": {
       "id": 34,
@@ -513,8 +551,38 @@
     },
     "purdue": {
       "id": 41,
-      "status": "dynamic_js_only",
-      "notes": "catalog.purdue.edu uses Acalog/ACMS returning 202 with JS-only content."
+      "status": "completed",
+      "source": "selfservice.mypurdue.purdue.edu/prod/bwckctlg (Banner SIS)",
+      "years_covered": "2009-2027",
+      "catalog_years": 19,
+      "total_courses": 292677,
+      "data_files": [
+        "data/purdue/purdue_2009.csv",
+        "data/purdue/purdue_2010.csv",
+        "data/purdue/purdue_2011.csv",
+        "data/purdue/purdue_2012.csv",
+        "data/purdue/purdue_2013.csv",
+        "data/purdue/purdue_2014.csv",
+        "data/purdue/purdue_2015.csv",
+        "data/purdue/purdue_2016.csv",
+        "data/purdue/purdue_2017.csv",
+        "data/purdue/purdue_2018.csv",
+        "data/purdue/purdue_2019.csv",
+        "data/purdue/purdue_2020.csv",
+        "data/purdue/purdue_2021.csv",
+        "data/purdue/purdue_2022.csv",
+        "data/purdue/purdue_2023.csv",
+        "data/purdue/purdue_2024.csv",
+        "data/purdue/purdue_2025.csv",
+        "data/purdue/purdue_2026.csv",
+        "data/purdue/purdue_2027.csv",
+        "data/purdue/purdue_summary.json"
+      ],
+      "progressive_pct_2009": 8.57,
+      "progressive_pct_2027": 14.04,
+      "canon_pct_2009": 2.89,
+      "canon_pct_2027": 2.54,
+      "notes": "Scraped via Banner SIS (262 subjects, Fall terms 2008-2026, AY 2009-2027). catalog.purdue.edu uses Acalog (202 JS-only); Banner SIS endpoint accessible with parallel requests (10 workers). Full descriptions available. Progressive signal rose from 8.6% (2009) to 14.7% (2026), then 14.0% (2027). 292,677 total courses."
     },
     "iu": {
       "id": 42,
@@ -787,8 +855,21 @@
     },
     "rutgers": {
       "id": 68,
-      "status": "blocked_by_network",
-      "notes": "SSL blocked from proxy environment."
+      "status": "completed",
+      "source": "classes.rutgers.edu/soc/api/courses.json (SoC JSON API)",
+      "years_covered": "2024-2027",
+      "catalog_years": 4,
+      "total_courses": 33114,
+      "data_files": [
+        "data/rutgers/rutgers_2024.csv",
+        "data/rutgers/rutgers_2025.csv",
+        "data/rutgers/rutgers_2026.csv",
+        "data/rutgers/rutgers_2027.csv",
+        "data/rutgers/rutgers_summary.json"
+      ],
+      "progressive_pct": 2.17,
+      "canon_pct": 0.7,
+      "notes": "Scraped via SoC JSON API (title-only, no descriptions). API returns data only for 2024-2027. 33,114 courses across NB, NK, CM campuses."
     },
     "uconn": {
       "id": 69,
