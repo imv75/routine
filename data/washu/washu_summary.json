@@ -1,0 +1,23 @@
+{
+  "university": "washu",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "source": "bulletin.wustl.edu (CourseleafCMS)",
+  "total_courses": 7714,
+  "progressive_count": 1773,
+  "progressive_pct": 22.98,
+  "canon_count": 628,
+  "canon_pct": 8.14,
+  "climate_narrow_count": 111,
+  "climate_narrow_pct": 1.44,
+  "climate_broad_count": 367,
+  "climate_broad_pct": 4.76,
+  "by_area": {
+    "Other": 3547,
+    "Social Sciences": 1028,
+    "Humanities": 1297,
+    "STEM": 1208,
+    "Professional": 634
+  },
+  "failed_paths": []
+}

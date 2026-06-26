@@ -1,0 +1,24 @@
+{
+  "university": "brown",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "source": "bulletin.brown.edu/{dept}/",
+  "total_courses": 11480,
+  "progressive_count": 3212,
+  "progressive_pct": 27.98,
+  "canon_count": 1102,
+  "canon_pct": 9.6,
+  "climate_narrow_count": 184,
+  "climate_narrow_pct": 1.6,
+  "climate_broad_count": 444,
+  "climate_broad_pct": 3.87,
+  "by_area": {
+    "Social Sciences": 2748,
+    "Other": 2820,
+    "STEM": 1245,
+    "Humanities": 4454,
+    "Professional": 112,
+    "Medical Sciences": 101
+  },
+  "failed_paths": []
+}

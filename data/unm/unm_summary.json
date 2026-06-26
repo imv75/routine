@@ -1,0 +1,24 @@
+{
+  "university": "unm",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "source": "lobowebapp.unm.edu/ban_ssb/bwckctlg.p_display_courses (Banner SIS, Fall 2026)",
+  "total_courses": 6470,
+  "progressive_count": 599,
+  "progressive_pct": 9.26,
+  "canon_count": 98,
+  "canon_pct": 1.51,
+  "climate_narrow_count": 17,
+  "climate_narrow_pct": 0.26,
+  "climate_broad_count": 143,
+  "climate_broad_pct": 2.21,
+  "by_area": {
+    "Other": 2766,
+    "Professional": 336,
+    "Humanities": 986,
+    "Medical Sciences": 193,
+    "Social Sciences": 540,
+    "STEM": 1649
+  },
+  "failed_subjects": []
+}
