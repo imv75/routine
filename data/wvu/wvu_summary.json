@@ -1,0 +1,23 @@
+{
+  "university": "wvu",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "source": "catalog.wvu.edu/undergraduate/courses/ + /graduate/courses/",
+  "total_courses": 10192,
+  "progressive_count": 421,
+  "progressive_pct": 4.13,
+  "canon_count": 89,
+  "canon_pct": 0.87,
+  "climate_narrow_count": 20,
+  "climate_narrow_pct": 0.2,
+  "climate_broad_count": 202,
+  "climate_broad_pct": 1.98,
+  "by_area": {
+    "STEM": 1480,
+    "Professional": 643,
+    "Other": 6197,
+    "Social Sciences": 482,
+    "Humanities": 955,
+    "Medical Sciences": 435
+  }
+}

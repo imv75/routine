@@ -797,8 +797,18 @@
     },
     "auburn": {
       "id": 76,
-      "status": "blocked_by_network",
-      "notes": "catalog.auburn.edu returns 403. bulletin.auburn.edu returns 404. auburn.smartcatalogiq.com returns 404. SSL/access blocked."
+      "status": "completed",
+      "source": "bulletin.auburn.edu/coursesofinstruction/",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 7072,
+      "data_files": [
+        "data/auburn/auburn_2026.csv",
+        "data/auburn/auburn_summary.json"
+      ],
+      "progressive_pct": 3.32,
+      "canon_pct": 1.2,
+      "notes": "2026-27 catalog scraped. Previously blocked; bulletin.auburn.edu/coursesofinstruction/ now accessible. 162 departments. Custom courseblock format: div.courseblock > p > strong 'DEPT NNNN TITLE (N)' + description."
     },
     "lsu": {
       "id": 77,
@@ -922,8 +932,18 @@
     },
     "wvu": {
       "id": 89,
-      "status": "blocked_by_network",
-      "notes": "SSL blocked from proxy environment."
+      "status": "completed",
+      "source": "catalog.wvu.edu/undergraduate/courses/ + /graduate/courses/",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 10192,
+      "data_files": [
+        "data/wvu/wvu_2026.csv",
+        "data/wvu/wvu_summary.json"
+      ],
+      "progressive_pct": 4.13,
+      "canon_pct": 0.87,
+      "notes": "2026-27 catalog scraped. Previously blocked; catalog.wvu.edu now accessible. 5341 undergrad + 4851 grad unique courses. CourseleafCMS all-courses-on-one-page format."
     },
     "unm": {
       "id": 90,
