@@ -148,10 +148,13 @@ def cornell(years):
         courses=[]
         for sub in codes:
             try:
-                j=s.get(f'https://classes.cornell.edu/api/2.0/search/classes.json?roster={roster}&subject={sub}',timeout=30).json()
+                resp=s.get(f'https://classes.cornell.edu/api/2.0/search/classes.json?roster={roster}&subject={sub}',timeout=30)
+                j=resp.json() if resp.content else None
             except Exception:
                 time.sleep(0.3); s=make_session(); continue
-            for c in j.get('data',{}).get('classes',[]):
+            if not j:
+                continue
+            for c in (j.get('data') or {}).get('classes',[]):
                 courses.append((c.get('subject',''),str(c.get('catalogNbr','')),
                                 c.get('titleLong') or c.get('titleShort') or '',c.get('description') or ''))
             time.sleep(0.1)

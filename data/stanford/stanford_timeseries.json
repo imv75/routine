@@ -1,0 +1,69 @@
+{
+  "university": "stanford",
+  "source": "explorecourses.stanford.edu XML API",
+  "years": [
+    {
+      "academic_year": "2020",
+      "academic_year_label": "2020-2021",
+      "total_courses": 12999,
+      "progressive_pct": 21.79,
+      "canon_pct": 6.15,
+      "climate_narrow_pct": 2.19,
+      "climate_broad_pct": 6.37
+    },
+    {
+      "academic_year": "2021",
+      "academic_year_label": "2021-2022",
+      "total_courses": 13695,
+      "progressive_pct": 23.21,
+      "canon_pct": 6.68,
+      "climate_narrow_pct": 2.42,
+      "climate_broad_pct": 6.47
+    },
+    {
+      "academic_year": "2022",
+      "academic_year_label": "2022-2023",
+      "total_courses": 14543,
+      "progressive_pct": 24.7,
+      "canon_pct": 6.94,
+      "climate_narrow_pct": 2.83,
+      "climate_broad_pct": 7.39
+    },
+    {
+      "academic_year": "2023",
+      "academic_year_label": "2023-2024",
+      "total_courses": 13486,
+      "progressive_pct": 25.19,
+      "canon_pct": 6.75,
+      "climate_narrow_pct": 3.4,
+      "climate_broad_pct": 8.39
+    },
+    {
+      "academic_year": "2024",
+      "academic_year_label": "2024-2025",
+      "total_courses": 14461,
+      "progressive_pct": 26.33,
+      "canon_pct": 7.15,
+      "climate_narrow_pct": 3.33,
+      "climate_broad_pct": 8.3
+    },
+    {
+      "academic_year": "2025",
+      "academic_year_label": "2025-2026",
+      "total_courses": 15668,
+      "progressive_pct": 27.04,
+      "canon_pct": 7.22,
+      "climate_narrow_pct": 3.41,
+      "climate_broad_pct": 8.86
+    },
+    {
+      "academic_year": "2026",
+      "academic_year_label": "2026-2027",
+      "total_courses": 15128,
+      "progressive_pct": 26.79,
+      "canon_pct": 7.44,
+      "climate_narrow_pct": 3.36,
+      "climate_broad_pct": 8.96
+    }
+  ]
+}
