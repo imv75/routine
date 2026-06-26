@@ -1,0 +1,162 @@
+{
+  "university": "Purdue University",
+  "short_name": "purdue",
+  "source": "selfservice.mypurdue.purdue.edu/prod/bwckctlg.p_display_courses",
+  "note": "Banner SIS catalog. Fall terms only. Descriptions available.",
+  "years": {
+    "2027": {
+      "catalog_year": 2027,
+      "label": "2026-27",
+      "courses": 17390,
+      "progressive_pct": 14.04,
+      "western_canon_pct": 2.54,
+      "file": "purdue_2027.csv"
+    },
+    "2026": {
+      "catalog_year": 2026,
+      "label": "2025-26",
+      "courses": 17073,
+      "progressive_pct": 14.7,
+      "western_canon_pct": 2.51,
+      "file": "purdue_2026.csv"
+    },
+    "2025": {
+      "catalog_year": 2025,
+      "label": "2024-25",
+      "courses": 17027,
+      "progressive_pct": 14.25,
+      "western_canon_pct": 2.45,
+      "file": "purdue_2025.csv"
+    },
+    "2024": {
+      "catalog_year": 2024,
+      "label": "2023-24",
+      "courses": 16335,
+      "progressive_pct": 13.85,
+      "western_canon_pct": 2.47,
+      "file": "purdue_2024.csv"
+    },
+    "2023": {
+      "catalog_year": 2023,
+      "label": "2022-23",
+      "courses": 16137,
+      "progressive_pct": 13.59,
+      "western_canon_pct": 2.49,
+      "file": "purdue_2023.csv"
+    },
+    "2022": {
+      "catalog_year": 2022,
+      "label": "2021-22",
+      "courses": 16141,
+      "progressive_pct": 11.37,
+      "western_canon_pct": 2.52,
+      "file": "purdue_2022.csv"
+    },
+    "2021": {
+      "catalog_year": 2021,
+      "label": "2020-21",
+      "courses": 15748,
+      "progressive_pct": 11.09,
+      "western_canon_pct": 2.54,
+      "file": "purdue_2021.csv"
+    },
+    "2020": {
+      "catalog_year": 2020,
+      "label": "2019-20",
+      "courses": 15931,
+      "progressive_pct": 11.44,
+      "western_canon_pct": 2.54,
+      "file": "purdue_2020.csv"
+    },
+    "2019": {
+      "catalog_year": 2019,
+      "label": "2018-19",
+      "courses": 16379,
+      "progressive_pct": 10.81,
+      "western_canon_pct": 2.53,
+      "file": "purdue_2019.csv"
+    },
+    "2018": {
+      "catalog_year": 2018,
+      "label": "2017-18",
+      "courses": 15750,
+      "progressive_pct": 10.68,
+      "western_canon_pct": 2.5,
+      "file": "purdue_2018.csv"
+    },
+    "2017": {
+      "catalog_year": 2017,
+      "label": "2016-17",
+      "courses": 15302,
+      "progressive_pct": 10.46,
+      "western_canon_pct": 2.52,
+      "file": "purdue_2017.csv"
+    },
+    "2016": {
+      "catalog_year": 2016,
+      "label": "2015-16",
+      "courses": 14931,
+      "progressive_pct": 10.31,
+      "western_canon_pct": 2.5,
+      "file": "purdue_2016.csv"
+    },
+    "2015": {
+      "catalog_year": 2015,
+      "label": "2014-15",
+      "courses": 14763,
+      "progressive_pct": 10.41,
+      "western_canon_pct": 2.57,
+      "file": "purdue_2015.csv"
+    },
+    "2014": {
+      "catalog_year": 2014,
+      "label": "2013-14",
+      "courses": 15280,
+      "progressive_pct": 9.83,
+      "western_canon_pct": 2.68,
+      "file": "purdue_2014.csv"
+    },
+    "2013": {
+      "catalog_year": 2013,
+      "label": "2012-13",
+      "courses": 14947,
+      "progressive_pct": 9.56,
+      "western_canon_pct": 2.7,
+      "file": "purdue_2013.csv"
+    },
+    "2012": {
+      "catalog_year": 2012,
+      "label": "2011-12",
+      "courses": 14195,
+      "progressive_pct": 9.39,
+      "western_canon_pct": 2.8,
+      "file": "purdue_2012.csv"
+    },
+    "2011": {
+      "catalog_year": 2011,
+      "label": "2010-11",
+      "courses": 13669,
+      "progressive_pct": 8.74,
+      "western_canon_pct": 2.89,
+      "file": "purdue_2011.csv"
+    },
+    "2010": {
+      "catalog_year": 2010,
+      "label": "2009-10",
+      "courses": 13131,
+      "progressive_pct": 8.74,
+      "western_canon_pct": 2.95,
+      "file": "purdue_2010.csv"
+    },
+    "2009": {
+      "catalog_year": 2009,
+      "label": "2008-09",
+      "courses": 12548,
+      "progressive_pct": 8.57,
+      "western_canon_pct": 2.89,
+      "file": "purdue_2009.csv"
+    }
+  },
+  "total_courses": 292677,
+  "catalog_years": 19
+}

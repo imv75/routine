@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-06-26",
   "total_universities": 100,
-  "completed": 115,
+  "completed": 117,
   "in_progress": [],
   "failed": [],
   "blocked_by_network": [
@@ -37,7 +37,6 @@
     "stonybrook",
     "uva",
     "rpi",
-    "emory",
 
     "wsu",
     "oit",
@@ -452,8 +451,18 @@
     },
     "emory": {
       "id": 33,
-      "status": "dynamic_js_only",
-      "notes": "catalog.emory.edu uses Coursedog (dynamic JS). emory.smartcatalogiq.com returns 404."
+      "status": "completed",
+      "source": "catalog.college.emory.edu (static HTML, Emory College of Arts & Sciences)",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "total_courses": 3607,
+      "data_files": [
+        "data/emory/emory_2026.csv",
+        "data/emory/emory_summary.json"
+      ],
+      "progressive_pct": 4.71,
+      "canon_pct": 3.13,
+      "notes": "2025-26 catalog scraped. catalog.college.emory.edu is static HTML (48 departments, 3607 courses). catalog.emory.edu uses Coursedog/dynamic JS but College catalog is accessible. Historical years only as PDFs."
     },
     "washu": {
       "id": 34,
@@ -542,8 +551,38 @@
     },
     "purdue": {
       "id": 41,
-      "status": "dynamic_js_only",
-      "notes": "catalog.purdue.edu uses Acalog/ACMS returning 202 with JS-only content."
+      "status": "completed",
+      "source": "selfservice.mypurdue.purdue.edu/prod/bwckctlg (Banner SIS)",
+      "years_covered": "2009-2027",
+      "catalog_years": 19,
+      "total_courses": 292677,
+      "data_files": [
+        "data/purdue/purdue_2009.csv",
+        "data/purdue/purdue_2010.csv",
+        "data/purdue/purdue_2011.csv",
+        "data/purdue/purdue_2012.csv",
+        "data/purdue/purdue_2013.csv",
+        "data/purdue/purdue_2014.csv",
+        "data/purdue/purdue_2015.csv",
+        "data/purdue/purdue_2016.csv",
+        "data/purdue/purdue_2017.csv",
+        "data/purdue/purdue_2018.csv",
+        "data/purdue/purdue_2019.csv",
+        "data/purdue/purdue_2020.csv",
+        "data/purdue/purdue_2021.csv",
+        "data/purdue/purdue_2022.csv",
+        "data/purdue/purdue_2023.csv",
+        "data/purdue/purdue_2024.csv",
+        "data/purdue/purdue_2025.csv",
+        "data/purdue/purdue_2026.csv",
+        "data/purdue/purdue_2027.csv",
+        "data/purdue/purdue_summary.json"
+      ],
+      "progressive_pct_2009": 8.57,
+      "progressive_pct_2027": 14.04,
+      "canon_pct_2009": 2.89,
+      "canon_pct_2027": 2.54,
+      "notes": "Scraped via Banner SIS (262 subjects, Fall terms 2008-2026, AY 2009-2027). catalog.purdue.edu uses Acalog (202 JS-only); Banner SIS endpoint accessible with parallel requests (10 workers). Full descriptions available. Progressive signal rose from 8.6% (2009) to 14.7% (2026), then 14.0% (2027). 292,677 total courses."
     },
     "iu": {
       "id": 42,
