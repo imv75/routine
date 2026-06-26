@@ -1,0 +1,34 @@
+{
+  "university": "Carnegie Mellon University",
+  "short_name": "cmu",
+  "source": "enr-apps.as.cmu.edu/SOC",
+  "note": "No course descriptions; keyword signals based on title only",
+  "years": {
+    "2025": {
+      "catalog_year": 2025,
+      "label": "2025",
+      "courses": 0,
+      "progressive_pct": 0,
+      "western_canon_pct": 0,
+      "file": "cmu_2025.csv"
+    },
+    "2026": {
+      "catalog_year": 2026,
+      "label": "2025-26",
+      "courses": 4993,
+      "progressive_pct": 1.16,
+      "western_canon_pct": 0.28,
+      "file": "cmu_2026.csv"
+    },
+    "2027": {
+      "catalog_year": 2027,
+      "label": "2026-27",
+      "courses": 3174,
+      "progressive_pct": 0.95,
+      "western_canon_pct": 0.19,
+      "file": "cmu_2027.csv"
+    }
+  },
+  "total_courses": 8167,
+  "catalog_years": 3
+}

@@ -1,0 +1,42 @@
+{
+  "university": "Rutgers University New Brunswick",
+  "short_name": "rutgers",
+  "source": "classes.rutgers.edu/soc/api/courses.json",
+  "note": "No course descriptions available; keyword signals based on title only",
+  "years": {
+    "2024": {
+      "catalog_year": 2024,
+      "label": "2023-24",
+      "courses": 6668,
+      "progressive_pct": 2.04,
+      "western_canon_pct": 0.63,
+      "file": "rutgers_2024.csv"
+    },
+    "2025": {
+      "catalog_year": 2025,
+      "label": "2024-25",
+      "courses": 9841,
+      "progressive_pct": 2.17,
+      "western_canon_pct": 0.76,
+      "file": "rutgers_2025.csv"
+    },
+    "2026": {
+      "catalog_year": 2026,
+      "label": "2025-26",
+      "courses": 9988,
+      "progressive_pct": 2.38,
+      "western_canon_pct": 0.81,
+      "file": "rutgers_2026.csv"
+    },
+    "2027": {
+      "catalog_year": 2027,
+      "label": "2026-27",
+      "courses": 6617,
+      "progressive_pct": 2.06,
+      "western_canon_pct": 0.54,
+      "file": "rutgers_2027.csv"
+    }
+  },
+  "total_courses": 33114,
+  "catalog_years": 4
+}
