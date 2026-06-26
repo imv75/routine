@@ -14,17 +14,17 @@
     {
       "academic_year": "2021",
       "academic_year_label": "2021-2022",
-      "total_courses": 4391,
-      "progressive_pct": 7.04,
-      "canon_pct": 2.05,
+      "total_courses": 4355,
+      "progressive_pct": 7.1,
+      "canon_pct": 2.02,
       "climate_narrow_pct": 0.41,
-      "climate_broad_pct": 2.3
+      "climate_broad_pct": 2.32
     },
     {
       "academic_year": "2022",
       "academic_year_label": "2022-2023",
-      "total_courses": 4501,
-      "progressive_pct": 7.44,
+      "total_courses": 4495,
+      "progressive_pct": 7.43,
       "canon_pct": 2.07,
       "climate_narrow_pct": 0.36,
       "climate_broad_pct": 2.51
@@ -32,20 +32,29 @@
     {
       "academic_year": "2023",
       "academic_year_label": "2023-2024",
-      "total_courses": 4425,
-      "progressive_pct": 7.48,
-      "canon_pct": 2.08,
-      "climate_narrow_pct": 0.38,
-      "climate_broad_pct": 2.53
+      "total_courses": 4272,
+      "progressive_pct": 7.21,
+      "canon_pct": 2.22,
+      "climate_narrow_pct": 0.4,
+      "climate_broad_pct": 2.48
     },
     {
       "academic_year": "2024",
       "academic_year_label": "2024-2025",
-      "total_courses": 4489,
-      "progressive_pct": 7.86,
-      "canon_pct": 2.0,
-      "climate_narrow_pct": 0.42,
-      "climate_broad_pct": 2.94
+      "total_courses": 4365,
+      "progressive_pct": 8.09,
+      "canon_pct": 1.97,
+      "climate_narrow_pct": 0.44,
+      "climate_broad_pct": 2.91
+    },
+    {
+      "academic_year": "2025",
+      "academic_year_label": "2025-2026",
+      "total_courses": 4451,
+      "progressive_pct": 8.22,
+      "canon_pct": 1.84,
+      "climate_narrow_pct": 0.4,
+      "climate_broad_pct": 3.17
     }
   ]
 }
