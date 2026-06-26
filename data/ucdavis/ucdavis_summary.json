@@ -1,0 +1,24 @@
+{
+  "university": "ucdavis",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "source": "catalog.ucdavis.edu/courses-subject-code/",
+  "total_courses": 9883,
+  "progressive_count": 883,
+  "progressive_pct": 8.93,
+  "canon_count": 261,
+  "canon_pct": 2.64,
+  "climate_narrow_count": 57,
+  "climate_narrow_pct": 0.58,
+  "climate_broad_count": 308,
+  "climate_broad_pct": 3.12,
+  "by_area": {
+    "Other": 5171,
+    "STEM": 1223,
+    "Social Sciences": 1029,
+    "Medical Sciences": 160,
+    "Humanities": 1695,
+    "Professional": 605
+  },
+  "failed_depts": []
+}

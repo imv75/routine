@@ -1,0 +1,23 @@
+{
+  "university": "cu",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "source": "catalog.colorado.edu/courses-a-z/",
+  "total_courses": 9556,
+  "progressive_count": 1301,
+  "progressive_pct": 13.61,
+  "canon_count": 333,
+  "canon_pct": 3.48,
+  "climate_narrow_count": 137,
+  "climate_narrow_pct": 1.43,
+  "climate_broad_count": 577,
+  "climate_broad_pct": 6.04,
+  "by_area": {
+    "Professional": 332,
+    "STEM": 2599,
+    "Humanities": 1883,
+    "Social Sciences": 1258,
+    "Other": 3484
+  },
+  "failed_depts": []
+}

@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-University of Colorado Boulder course catalog scraper.
-URL: catalog.colorado.edu/courses-a-z/{slug}/
-HTML: div.courseblock[data-coursecode="DEPT NUM"] > p.courseblocktitle > strong "DEPT NUM  (credits) Title"
-      + p.courseblockdesc
+University of Colorado Boulder Course Catalog Scraper.
+Source: catalog.colorado.edu/courses-a-z/
+Format: CourseleafCMS per-department pages at /courses-a-z/{dept}/
+Title pattern: "DEPT NNNN  (N) Title" in p.courseblocktitle > strong
 """
 
 import csv
@@ -13,16 +13,7 @@ import re
 import time
 import requests
 from bs4 import BeautifulSoup
-
-UNIVERSITY = "colorado"
-CATALOG_YEAR = "2026"
-CATALOG_LABEL = "2026-2027"
-BASE_URL = "https://catalog.colorado.edu"
-OUTPUT_DIR = f"/home/user/routine/data/{UNIVERSITY}"
-OUTPUT_CSV = f"{OUTPUT_DIR}/{UNIVERSITY}_{CATALOG_YEAR}.csv"
-SUMMARY_FILE = f"{OUTPUT_DIR}/{UNIVERSITY}_summary.json"
-
-os.makedirs(OUTPUT_DIR, exist_ok=True)
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 PROGRESSIVE_KEYWORDS = [
     "diversity", "diverse", "inclusion", "inclusive", "belonging", "dei",
@@ -40,6 +31,7 @@ PROGRESSIVE_KEYWORDS = [
     "indigenous", "native american", "latinx", "chicano", "chicana",
     "diaspora", "reparations", "microaggression", "implicit bias", "systemic racism",
 ]
+
 WESTERN_CANON_KEYWORDS = [
     "western civilization", "western tradition", "western thought",
     "great books", "liberal arts tradition",
@@ -52,189 +44,192 @@ WESTERN_CANON_KEYWORDS = [
     "bible", "biblical", "iliad", "odyssey", "aeneid", "divine comedy",
     "canterbury tales", "leviathan", "federalist", "classics", "classical",
 ]
-CLIMATE_NARROW = ["climate change", "global warming", "greenhouse gas", "carbon emission",
-                   "fossil fuel", "sea level rise", "climate crisis"]
-CLIMATE_BROAD = ["climate", "sustainability", "sustainable", "renewable energy",
-                  "environmental justice", "carbon", "decarbonization", "net zero",
-                  "clean energy", "green energy", "ecological", "ecosystem", "biodiversity"]
 
-STEM = {"appm", "asen", "atls", "atoc", "bchm", "bien", "bmen", "cees", "chem",
-        "chen", "chin", "csci", "cspb", "cven", "ecen", "emen", "envs",
-        "geog", "geol", "iphy", "mcen", "math", "mbio", "moln", "neus",
-        "phy", "phys", "psyc", "stat", "biol"}
-HUMANITIES = {"arab", "arth", "clhm", "clas", "comr", "crwr", "engl", "fren",
-              "germ", "grek", "hist", "ital", "jpns", "jwst", "latn", "ling",
-              "muel", "musc", "phil", "port", "russ", "span", "thtr"}
-SOCIAL = {"anth", "comm", "econ", "educ", "geog", "ints", "jour", "laws",
-          "pols", "psyc", "slhs", "socy", "wgst"}
-MEDICAL = {"dnce", "hcsm", "hlth", "iphy", "kine", "neus", "nrsc", "nurs", "pubh"}
-PROFESSIONAL = {"acct", "badm", "baim", "bcor", "bslw", "busm", "buso", "finc",
-                "hmgt", "intb", "laws", "mgmt", "mktg", "rlst"}
+CLIMATE_NARROW_KEYWORDS = [
+    "climate change", "global warming", "greenhouse gas", "carbon emission",
+    "fossil fuel", "sea level rise", "climate crisis",
+]
+
+CLIMATE_BROAD_KEYWORDS = [
+    "climate", "sustainability", "sustainable", "renewable energy",
+    "environmental justice", "carbon", "decarbonization", "net zero",
+    "clean energy", "green energy", "ecological", "ecosystem", "biodiversity",
+]
+
+STEM_DEPTS = {
+    "asen", "appm", "aren", "arch", "astr", "atoc", "atls", "bchm", "bien",
+    "bmen", "chem", "coen", "csci", "csee", "ecen", "emen", "envs", "envd",
+    "geog", "geol", "geen", "math", "mcen", "msen", "nrsc", "phys", "stat",
+    "tlen", "chen", "ceen", "biol", "bioc", "iphy", "mbio", "pbio", "psci",
+    "qbio",
+}
+HUMANITIES_DEPTS = {
+    "clhm", "clsc", "cmst", "danc", "dram", "engl", "fren", "germ", "grek",
+    "hist", "honr", "humn", "ital", "jpns", "latn", "ling", "muel", "musc",
+    "phil", "port", "russ", "scan", "slav", "span", "thtr", "writ",
+    "arab", "chin", "arth", "artf", "arts",
+}
+SOCIAL_DEPTS = {
+    "anth", "comm", "econ", "educ", "ethc", "geog", "jour",
+    "pols", "psyc", "socy", "wmst", "wgst", "afst", "amst", "asia",
+    "hcwe", "hust", "ilas", "jwst", "mdst", "mest", "nais", "rlst",
+}
+MEDICAL_DEPTS = {
+    "hlth", "kine", "nrsc", "nurs", "iphy", "mbio", "psyc", "pbio",
+}
+PROFESSIONAL_DEPTS = {
+    "acct", "aprd", "airr", "badm", "bakr", "base", "bcor", "bpol",
+    "bslw", "busm", "buso", "csvc", "fnce", "ldsp", "mgmt",
+    "mktg", "oadm", "rael", "rbus",
+}
 
 
-def classify_area(dept):
+def classify_dept(dept):
     d = dept.lower()
-    if d in STEM:
+    if d in STEM_DEPTS:
         return "STEM"
-    if d in HUMANITIES:
+    if d in HUMANITIES_DEPTS:
         return "Humanities"
-    if d in SOCIAL:
+    if d in SOCIAL_DEPTS:
         return "Social Sciences"
-    if d in MEDICAL:
+    if d in MEDICAL_DEPTS:
         return "Medical Sciences"
-    if d in PROFESSIONAL:
+    if d in PROFESSIONAL_DEPTS:
         return "Professional"
     return "Other"
 
 
 def classify_level(num):
     try:
-        n = int(re.sub(r"[^0-9]", "", str(num))[:4])
+        n = int(re.sub(r"[^0-9]", "", str(num))[:5])
         return "graduate" if n >= 5000 else "undergraduate"
     except Exception:
         return "undergraduate"
 
 
-def check_kw(text, kws):
+def check_keywords(text, keywords):
     t = text.lower()
-    return any(k in t for k in kws)
+    return any(kw in t for kw in keywords)
 
 
-def get_dept_slugs(session):
-    url = f"{BASE_URL}/courses-a-z/"
+def parse_courseblock(block, dept_hint):
+    title_p = block.find("p", class_="courseblocktitle")
+    if not title_p:
+        return None
+    strong = title_p.find("strong")
+    title_text = strong.get_text(" ", strip=True) if strong else title_p.get_text(" ", strip=True)
+
+    # Format: "DEPT NNNN  (N) Course Title"
+    m = re.match(
+        r"([A-Z][A-Z0-9]+)\s+([\d]+[A-Z]?)\s+\([\d\-]+\)\s+(.+)",
+        title_text,
+    )
+    if not m:
+        m = re.match(r"([A-Z][A-Z0-9]+)\s+([\d]+[A-Z]?)\s+(.+)", title_text)
+    if not m:
+        return None
+
+    dept = m.group(1).strip()
+    num = m.group(2).strip()
+    title = m.group(3).strip()
+
+    desc_p = block.find("p", class_="courseblockdesc")
+    desc = desc_p.get_text(" ", strip=True) if desc_p else ""
+    desc = re.sub(r"^(Description|Course Description):\s*", "", desc, flags=re.IGNORECASE)
+
+    full_text = f"{title} {desc}"
+    area = classify_dept(dept)
+    level = classify_level(num)
+
+    return {
+        "university": "cu",
+        "academic_year": "2026",
+        "academic_year_label": "2026-2027",
+        "department_code": dept,
+        "course_number": num,
+        "title": title,
+        "description": desc,
+        "broad_area": area,
+        "level": level,
+        "progressive_signal": check_keywords(full_text, PROGRESSIVE_KEYWORDS),
+        "western_canon_signal": check_keywords(full_text, WESTERN_CANON_KEYWORDS),
+        "climate_narrow_signal": check_keywords(full_text, CLIMATE_NARROW_KEYWORDS),
+        "climate_broad_signal": check_keywords(full_text, CLIMATE_BROAD_KEYWORDS),
+        "cross_listed": False,
+        "deduplicated": True,
+    }
+
+
+def get_departments():
+    s = requests.Session()
+    s.headers["User-Agent"] = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120"
+    r = s.get("https://catalog.colorado.edu/courses-a-z/", timeout=20)
+    soup = BeautifulSoup(r.text, "html.parser")
+    pc = soup.find("div", class_="page_content") or soup
+    depts = []
+    for a in pc.find_all("a", href=True):
+        m = re.match(r"^/courses-a-z/([^/]+)/?$", a["href"])
+        if m:
+            depts.append(m.group(1))
+    return list(dict.fromkeys(depts))
+
+
+def scrape_dept(dept):
+    s = requests.Session()
+    s.headers["User-Agent"] = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120"
+    url = f"https://catalog.colorado.edu/courses-a-z/{dept}/"
     try:
-        r = session.get(url, timeout=25)
+        r = s.get(url, timeout=20)
         if r.status_code != 200:
-            return []
+            return dept, [], f"HTTP {r.status_code}"
         soup = BeautifulSoup(r.text, "html.parser")
-        slugs = []
-        for a in soup.find_all("a", href=True):
-            m = re.match(r"/courses-a-z/([a-z]+)/", a["href"])
-            if m:
-                slugs.append(m.group(1))
-        return list(dict.fromkeys(slugs))
+        blocks = soup.find_all("div", class_="courseblock")
+        courses = []
+        for b in blocks:
+            c = parse_courseblock(b, dept)
+            if c:
+                courses.append(c)
+        return dept, courses, None
     except Exception as e:
-        print(f"  ERROR fetching dept list: {e}")
-        return []
+        return dept, [], str(e)
 
 
-def parse_dept_page(html_text):
-    soup = BeautifulSoup(html_text, "html.parser")
-    courses = []
-    for block in soup.find_all("div", class_="courseblock"):
-        # data-coursecode="ACCT 3220"
-        code = block.get("data-coursecode", "")
-        parts = code.split()
-        if len(parts) < 2:
-            # Try parsing from title
-            title_p = block.find("p", class_="courseblocktitle")
-            if not title_p:
-                continue
-            strong = title_p.find("strong")
-            if not strong:
-                continue
-            text = strong.get_text(" ", strip=True)
-            m = re.match(r"([A-Z][A-Z0-9]*)\s+(\d[\w]*)", text)
-            if not m:
-                continue
-            dept, num = m.group(1), m.group(2)
-        else:
-            dept = parts[0]
-            num = parts[1]
+def scrape_colorado():
+    output_dir = "/home/user/routine/data/cu"
+    os.makedirs(output_dir, exist_ok=True)
 
-        title_p = block.find("p", class_="courseblocktitle")
-        if not title_p:
-            continue
-        strong = title_p.find("strong")
-        if not strong:
-            continue
-        title_text = strong.get_text(" ", strip=True)
-        # Format: "ACCT 3220  (3) Corporate Financial Reporting 1"
-        # Remove the dept+num+credits prefix
-        title = re.sub(r"^[A-Z][A-Z0-9]*\s+[\w]+\s*(?:\([^)]+\))?\s*", "", title_text).strip()
-        if not title:
-            # Try splitting after the number
-            m = re.search(r"[A-Z][A-Z0-9]*\s+[\w]+\s+(?:\([^)]+\)\s+)?(.+)", title_text)
-            if m:
-                title = m.group(1).strip()
+    print("=== University of Colorado Boulder Course Catalog Scraper ===")
+    print("Fetching department list...")
+    depts = get_departments()
+    print(f"Found {len(depts)} departments")
 
-        desc_p = block.find("p", class_="courseblockdesc")
-        desc = desc_p.get_text(" ", strip=True) if desc_p else ""
-
-        full_text = f"{title} {desc}"
-        courses.append((dept, num, title, desc))
-    return courses
-
-
-def main():
-    session = requests.Session()
-    session.headers.update({"User-Agent": "Mozilla/5.0 (academic research crawler)"})
     all_courses = []
     seen = set()
     failed = []
 
-    print(f"=== University of Colorado Boulder Course Catalog Scraper ===")
-    print(f"Catalog year: {CATALOG_LABEL}")
-
-    slugs = get_dept_slugs(session)
-    print(f"Scraping {len(slugs)} departments...")
-
-    for slug in slugs:
-        url = f"{BASE_URL}/courses-a-z/{slug}/"
-        try:
-            r = session.get(url, timeout=25)
-            if r.status_code != 200:
-                failed.append(slug)
-                continue
-            parsed = parse_dept_page(r.text)
-            new = 0
-            for dept, num, title, desc in parsed:
-                key = f"{dept}_{num}"
-                if key not in seen:
-                    seen.add(key)
-                    full_text = f"{title} {desc}"
-                    all_courses.append({
-                        "university": UNIVERSITY,
-                        "academic_year": CATALOG_YEAR,
-                        "academic_year_label": CATALOG_LABEL,
-                        "department_code": dept,
-                        "course_number": num,
-                        "title": title,
-                        "description": desc,
-                        "broad_area": classify_area(dept),
-                        "level": classify_level(num),
-                        "progressive_signal": check_kw(full_text, PROGRESSIVE_KEYWORDS),
-                        "western_canon_signal": check_kw(full_text, WESTERN_CANON_KEYWORDS),
-                        "climate_narrow_signal": check_kw(full_text, CLIMATE_NARROW),
-                        "climate_broad_signal": check_kw(full_text, CLIMATE_BROAD),
-                        "cross_listed": False,
-                        "deduplicated": True,
-                    })
-                    new += 1
-            if new:
-                print(f"  {slug.upper()}: {new} courses")
-            elif not parsed:
-                failed.append(slug)
-        except Exception as e:
-            print(f"  ERROR {slug}: {e}")
-            failed.append(slug)
-        time.sleep(0.2)
+    with ThreadPoolExecutor(max_workers=8) as ex:
+        futures = {ex.submit(scrape_dept, d): d for d in depts}
+        for fut in as_completed(futures):
+            dept, courses, err = fut.result()
+            if err:
+                print(f"  FAIL {dept}: {err}")
+                failed.append(dept)
+            else:
+                new = 0
+                for c in courses:
+                    key = f"{c['department_code']}_{c['course_number']}"
+                    if key not in seen:
+                        seen.add(key)
+                        all_courses.append(c)
+                        new += 1
+                if new:
+                    print(f"  {dept.upper()}: {new} courses")
+            time.sleep(0.05)
 
     total = len(all_courses)
-    print(f"\nTotal unique courses: {total}")
-    if failed:
-        print(f"Failed ({len(failed)}): {', '.join(failed[:20])}")
-
-    fields = [
-        "university", "academic_year", "academic_year_label",
-        "department_code", "course_number", "title", "description",
-        "broad_area", "level", "progressive_signal", "western_canon_signal",
-        "climate_narrow_signal", "climate_broad_signal", "cross_listed", "deduplicated",
-    ]
-    with open(OUTPUT_CSV, "w", newline="", encoding="utf-8") as f:
-        w = csv.DictWriter(f, fieldnames=fields)
-        w.writeheader()
-        w.writerows(all_courses)
+    if not total:
+        print("No courses found!")
+        return {}
 
     prog = sum(1 for c in all_courses if c["progressive_signal"])
     canon = sum(1 for c in all_courses if c["western_canon_signal"])
@@ -244,24 +239,51 @@ def main():
     for c in all_courses:
         area_counts[c["broad_area"]] = area_counts.get(c["broad_area"], 0) + 1
 
+    print(f"\n=== CU Boulder Summary ===")
+    print(f"Total: {total} | Progressive: {prog} ({round(100*prog/total,2)}%) | Canon: {canon} ({round(100*canon/total,2)}%)")
+    if failed:
+        print(f"Failed ({len(failed)}): {', '.join(failed[:20])}")
+    for area, cnt in sorted(area_counts.items(), key=lambda x: -x[1]):
+        print(f"  {area}: {cnt} ({round(100*cnt/total)}%)")
+
+    fields = [
+        "university", "academic_year", "academic_year_label",
+        "department_code", "course_number", "title", "description",
+        "broad_area", "level", "progressive_signal", "western_canon_signal",
+        "climate_narrow_signal", "climate_broad_signal",
+        "cross_listed", "deduplicated",
+    ]
+    csv_path = f"{output_dir}/cu_2026.csv"
+    with open(csv_path, "w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=fields)
+        writer.writeheader()
+        writer.writerows(all_courses)
+
     summary = {
-        "university": UNIVERSITY, "academic_year": CATALOG_YEAR,
-        "academic_year_label": CATALOG_LABEL, "total_courses": total,
-        "progressive_count": prog, "progressive_pct": round(100*prog/total, 2) if total else 0,
-        "canon_count": canon, "canon_pct": round(100*canon/total, 2) if total else 0,
-        "climate_narrow_count": cn, "climate_narrow_pct": round(100*cn/total, 2) if total else 0,
-        "climate_broad_count": cb, "climate_broad_pct": round(100*cb/total, 2) if total else 0,
-        "by_area": area_counts, "failed_depts": failed,
+        "university": "cu",
+        "academic_year": "2026",
+        "academic_year_label": "2026-2027",
+        "source": "catalog.colorado.edu/courses-a-z/",
+        "total_courses": total,
+        "progressive_count": prog,
+        "progressive_pct": round(100 * prog / total, 2),
+        "canon_count": canon,
+        "canon_pct": round(100 * canon / total, 2),
+        "climate_narrow_count": cn,
+        "climate_narrow_pct": round(100 * cn / total, 2),
+        "climate_broad_count": cb,
+        "climate_broad_pct": round(100 * cb / total, 2),
+        "by_area": area_counts,
+        "failed_depts": failed,
     }
-    with open(SUMMARY_FILE, "w") as f:
+    summary_path = f"{output_dir}/cu_summary.json"
+    with open(summary_path, "w") as f:
         json.dump(summary, f, indent=2)
 
-    print(f"Wrote {OUTPUT_CSV}")
-    print(f"\n=== Summary ===")
-    print(f"Total: {total} | Progressive: {prog} ({summary['progressive_pct']}%) | Canon: {canon} ({summary['canon_pct']}%)")
-    for area, cnt in sorted(area_counts.items(), key=lambda x: -x[1]):
-        print(f"  {area}: {cnt} ({100*cnt//total if total else 0}%)")
+    print(f"\nSaved: {csv_path}")
+    print(f"Saved: {summary_path}")
+    return summary
 
 
 if __name__ == "__main__":
-    main()
+    scrape_colorado()

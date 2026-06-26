@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-06-24",
+  "last_updated": "2026-06-26",
   "total_universities": 100,
-  "completed": 100,
+  "completed": 112,
   "in_progress": [],
   "failed": [],
   "blocked_by_network": [
     "umich",
     "duke",
-    "jhu",
     "georgetown",
     "tufts",
     "bc",
@@ -17,7 +16,6 @@
     "rutgers",
     "clemson",
     "kstate",
-    "wvu",
     "sc",
     "cmu",
     "fsu",
@@ -25,7 +23,6 @@
   ],
   "dynamic_js_only": [
     "osu",
-    "iu",
     "pitt",
     "lsu",
     "purdue",
@@ -36,21 +33,21 @@
     "uh",
     "uc",
     "udel",
-    "brown",
     "ucsb",
     "asu",
     "utah",
     "uarizona",
     "ucla",
-    "ucsd",
-    "ucdavis",
-    "uci",
-    "uga",
     "stonybrook",
     "uva",
     "rpi",
     "emory",
-    "washu"
+
+    "wsu",
+    "oit",
+
+    "utk",
+    "umn"
   ],
   "universities": {
     "stanford": {
@@ -272,8 +269,15 @@
     },
     "jhu": {
       "id": 19,
-      "status": "blocked_by_network",
-      "notes": "SSL blocked from proxy environment."
+      "status": "completed",
+      "notes": "Scraped via e-catalogue.jhu.edu/course-descriptions/. 10248 courses (14.67% progressive, 4.88% canon).",
+      "data_files": [
+        "data/jhu/jhu_2026.csv",
+        "data/jhu/jhu_summary.json"
+      ],
+      "total_courses": 10248,
+      "progressive_pct": 14.67,
+      "canon_pct": 4.88
     },
     "upenn": {
       "id": 20,
@@ -357,8 +361,15 @@
     },
     "brown": {
       "id": 28,
-      "status": "dynamic_js_only",
-      "notes": "cab.brown.edu uses Acalog/ACMS returning 202 with JS-only content."
+      "status": "completed",
+      "notes": "Scraped via bulletin.brown.edu/. 11480 courses (27.98% progressive, 9.6% canon).",
+      "data_files": [
+        "data/brown/brown_2026.csv",
+        "data/brown/brown_summary.json"
+      ],
+      "total_courses": 11480,
+      "progressive_pct": 27.98,
+      "canon_pct": 9.6
     },
     "dartmouth": {
       "id": 29,
@@ -417,18 +428,48 @@
     },
     "washu": {
       "id": 34,
-      "status": "dynamic_js_only",
-      "notes": "catalog.wustl.edu returns 403. bulletin.wustl.edu/courses/ returns 404. Course search only \u2014 dynamic."
+      "status": "completed",
+      "source": "bulletin.wustl.edu (CourseleafCMS)",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 7714,
+      "data_files": [
+        "data/washu/washu_2026.csv",
+        "data/washu/washu_summary.json"
+      ],
+      "progressive_pct": 22.98,
+      "canon_pct": 8.14,
+      "notes": "2026-27 catalog scraped via bulletin.wustl.edu dept pages (CourseleafCMS). 100 dept paths across undergrad/grad schools."
     },
     "ucsd": {
       "id": 35,
-      "status": "dynamic_js_only",
-      "notes": "catalog.ucsd.edu uses dynamic JS \u2014 not scrapable with requests."
+      "status": "completed",
+      "source": "catalog.ucsd.edu/courses/{DEPT}.html",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 6925,
+      "data_files": [
+        "data/ucsd/ucsd_2026.csv",
+        "data/ucsd/ucsd_summary.json"
+      ],
+      "progressive_pct": 13.46,
+      "canon_pct": 2.97,
+      "notes": "2026-27 catalog scraped. 84 departments. Static HTML per-dept pages. p.course-name 'DEPT NUM. Title (Credits)' + p.course-descriptions format."
     },
     "ucdavis": {
       "id": 36,
-      "status": "dynamic_js_only",
-      "notes": "catalog.ucdavis.edu uses dynamic JS \u2014 not scrapable with requests."
+      "status": "completed",
+      "source": "catalog.ucdavis.edu/courses-subject-code/",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 9883,
+      "data_files": [
+        "data/ucdavis/ucdavis_2026.csv",
+        "data/ucdavis/ucdavis_summary.json"
+      ],
+      "progressive_pct": 8.93,
+      "canon_pct": 2.64,
+      "notes": "2026-27 catalog scraped. 237 departments. CourseleafCMS detail-code/detail-title span format. Graduate level >= 200. Em-dash prefix in title spans."
     },
     "ucsb": {
       "id": 37,
@@ -437,8 +478,18 @@
     },
     "uci": {
       "id": 38,
-      "status": "dynamic_js_only",
-      "notes": "catalogue.uci.edu uses dynamic JS \u2014 not scrapable with requests."
+      "status": "completed",
+      "source": "catalogue.uci.edu/allcourses/",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 5354,
+      "data_files": [
+        "data/uci/uci_2026.csv",
+        "data/uci/uci_summary.json"
+      ],
+      "progressive_pct": 9.39,
+      "canon_pct": 2.65,
+      "notes": "2026-27 catalog scraped. 124 departments. CourseleafCMS detail-code/detail-title span format. UCI multi-word dept codes (AC ENG, ART HIS). Graduate level >= 200."
     },
     "msu": {
       "id": 39,
@@ -467,8 +518,18 @@
     },
     "iu": {
       "id": 42,
-      "status": "dynamic_js_only",
-      "notes": "bulletin.indiana.edu uses Acalog/ACMS returning 202 with JS-only content."
+      "status": "completed",
+      "source": "bulletin.college.indiana.edu (College of Arts and Sciences AJAX API)",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 4625,
+      "data_files": [
+        "data/iu/iu_2026.csv",
+        "data/iu/iu_summary.json"
+      ],
+      "progressive_pct": 12.97,
+      "canon_pct": 4.91,
+      "notes": "2026-27 catalog scraped. 70 subjects from College of Arts and Sciences. AJAX endpoint /ajax/bulletin_ajax.php with action BULLETIN-COURSES-RESULTS. Paginated by subject."
     },
     "umn": {
       "id": 43,
@@ -627,8 +688,17 @@
     },
     "uga": {
       "id": 58,
-      "status": "dynamic_js_only",
-      "notes": "bulletin.uga.edu is a JS SPA (React/MVC). Course/Index has 249 subjects in a select dropdown but all content is dynamically loaded."
+      "status": "completed",
+      "source": "scraped_2026",
+      "catalog_url": "bulletin.uga.edu/Course/_ViewAllCourses",
+      "total_courses": 13374,
+      "progressive_pct": 7.77,
+      "canon_pct": 2.36,
+      "notes": "Custom .NET bulletin system with POST API. 248 subjects, 18 per page, paginated. Deduplicated cross-listed courses.",
+      "data_files": [
+        "data/uga/uga_2026.csv",
+        "data/uga/uga_summary.json"
+      ]
     },
     "fsu": {
       "id": 59,
@@ -797,8 +867,18 @@
     },
     "auburn": {
       "id": 76,
-      "status": "blocked_by_network",
-      "notes": "catalog.auburn.edu returns 403. bulletin.auburn.edu returns 404. auburn.smartcatalogiq.com returns 404. SSL/access blocked."
+      "status": "completed",
+      "source": "bulletin.auburn.edu/coursesofinstruction/",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 7072,
+      "data_files": [
+        "data/auburn/auburn_2026.csv",
+        "data/auburn/auburn_summary.json"
+      ],
+      "progressive_pct": 3.32,
+      "canon_pct": 1.2,
+      "notes": "2026-27 catalog scraped. Previously blocked; bulletin.auburn.edu/coursesofinstruction/ now accessible. 162 departments. Custom courseblock format: div.courseblock > p > strong 'DEPT NNNN TITLE (N)' + description."
     },
     "lsu": {
       "id": 77,
@@ -922,13 +1002,33 @@
     },
     "wvu": {
       "id": 89,
-      "status": "blocked_by_network",
-      "notes": "SSL blocked from proxy environment."
+      "status": "completed",
+      "source": "catalog.wvu.edu/undergraduate/courses/ + /graduate/courses/",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 10192,
+      "data_files": [
+        "data/wvu/wvu_2026.csv",
+        "data/wvu/wvu_summary.json"
+      ],
+      "progressive_pct": 4.13,
+      "canon_pct": 0.87,
+      "notes": "2026-27 catalog scraped. Previously blocked; catalog.wvu.edu now accessible. 5341 undergrad + 4851 grad unique courses. CourseleafCMS all-courses-on-one-page format."
     },
     "unm": {
       "id": 90,
-      "status": "dynamic_js_only",
-      "notes": "catalog.unm.edu course paths return 404. Dynamic JS catalog."
+      "status": "completed",
+      "source": "lobowebapp.unm.edu/ban_ssb/bwckctlg.p_display_courses (Banner SIS, Fall 2026)",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "course_years": 6470,
+      "data_files": [
+        "data/unm/unm_2026.csv",
+        "data/unm/unm_summary.json"
+      ],
+      "progressive_pct": 9.26,
+      "canon_pct": 1.51,
+      "notes": "2026-27 catalog scraped via Banner SIS (255 subjects, Fall 2026 term 202680). catalog.unm.edu is dynamic JS; Banner SIS endpoint is static HTML."
     },
     "colostate": {
       "id": 91,
@@ -1724,6 +1824,20 @@
       "progressive_pct": 1.07,
       "canon_pct": 0.63,
       "notes": "2026-27 catalog scraped. Texas Southern University. detail-code/detail-title span format. 0 depts failed."
+    },
+    "cu": {
+      "id": 62,
+      "status": "completed",
+      "source": "scraped_2026",
+      "catalog_url": "catalog.colorado.edu/courses-a-z/",
+      "total_courses": 9556,
+      "progressive_pct": 13.61,
+      "canon_pct": 3.48,
+      "notes": "CourseleafCMS per-department pages at /courses-a-z/{dept}/. 177 departments scraped.",
+      "data_files": [
+        "data/cu/cu_2026.csv",
+        "data/cu/cu_summary.json"
+      ]
     }
   },
   "reference_rescrape_2026": {

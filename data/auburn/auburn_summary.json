@@ -1,0 +1,26 @@
+{
+  "university": "auburn",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "source": "bulletin.auburn.edu/coursesofinstruction/",
+  "total_courses": 7072,
+  "progressive_count": 235,
+  "progressive_pct": 3.32,
+  "canon_count": 85,
+  "canon_pct": 1.2,
+  "climate_narrow_count": 26,
+  "climate_narrow_pct": 0.37,
+  "climate_broad_count": 224,
+  "climate_broad_pct": 3.17,
+  "by_area": {
+    "STEM": 1940,
+    "Professional": 249,
+    "Other": 3877,
+    "Humanities": 585,
+    "Social Sciences": 165,
+    "Medical Sciences": 256
+  },
+  "failed_depts": [
+    "coursesofinstruction.pdf"
+  ]
+}
