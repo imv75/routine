@@ -1,0 +1,23 @@
+{
+  "university": "uci",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "source": "catalogue.uci.edu/allcourses/",
+  "total_courses": 5354,
+  "progressive_count": 503,
+  "progressive_pct": 9.39,
+  "canon_count": 142,
+  "canon_pct": 2.65,
+  "climate_narrow_count": 43,
+  "climate_narrow_pct": 0.8,
+  "climate_broad_count": 158,
+  "climate_broad_pct": 2.95,
+  "by_area": {
+    "Humanities": 894,
+    "Other": 3247,
+    "STEM": 1068,
+    "Social Sciences": 75,
+    "Professional": 70
+  },
+  "failed_depts": []
+}

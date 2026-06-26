@@ -2,25 +2,25 @@
   "university": "colorado",
   "academic_year": "2026",
   "academic_year_label": "2026-2027",
-  "total_courses": 9232,
-  "progressive_count": 1250,
+  "total_courses": 9426,
+  "progressive_count": 1276,
   "progressive_pct": 13.54,
-  "canon_count": 329,
-  "canon_pct": 3.56,
-  "climate_narrow_count": 134,
-  "climate_narrow_pct": 1.45,
-  "climate_broad_count": 566,
-  "climate_broad_pct": 6.13,
+  "canon_count": 318,
+  "canon_pct": 3.37,
+  "climate_narrow_count": 135,
+  "climate_narrow_pct": 1.43,
+  "climate_broad_count": 572,
+  "climate_broad_pct": 6.07,
   "by_area": {
-    "Professional": 266,
-    "Other": 3717,
-    "STEM": 2324,
+    "Other": 3634,
+    "STEM": 2459,
+    "Social Sciences": 1314,
     "Humanities": 1664,
-    "Social Sciences": 1124,
+    "Professional": 218,
     "Medical Sciences": 137
   },
   "failed_depts": [
-    "asen",
-    "anth"
+    "acct",
+    "humn"
   ]
 }

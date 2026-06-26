@@ -1,0 +1,23 @@
+{
+  "university": "uga",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "source": "bulletin.uga.edu/Course/_ViewAllCourses",
+  "total_courses": 13374,
+  "progressive_count": 1039,
+  "progressive_pct": 7.77,
+  "canon_count": 315,
+  "canon_pct": 2.36,
+  "climate_narrow_count": 55,
+  "climate_narrow_pct": 0.41,
+  "climate_broad_count": 420,
+  "climate_broad_pct": 3.14,
+  "by_area": {
+    "STEM": 1696,
+    "Other": 7600,
+    "Professional": 957,
+    "Humanities": 1933,
+    "Social Sciences": 1062,
+    "Medical Sciences": 126
+  }
+}

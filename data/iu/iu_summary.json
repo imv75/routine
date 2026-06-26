@@ -1,0 +1,21 @@
+{
+  "university": "iu",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "source": "bulletin.college.indiana.edu (College of Arts and Sciences)",
+  "total_courses": 4625,
+  "progressive_count": 600,
+  "progressive_pct": 12.97,
+  "canon_count": 227,
+  "canon_pct": 4.91,
+  "climate_narrow_count": 27,
+  "climate_narrow_pct": 0.58,
+  "climate_broad_count": 128,
+  "climate_broad_pct": 2.77,
+  "by_area": {
+    "Social Sciences": 1885,
+    "STEM": 565,
+    "Other": 121,
+    "Humanities": 2054
+  }
+}

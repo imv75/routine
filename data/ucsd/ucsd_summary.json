@@ -1,0 +1,23 @@
+{
+  "university": "ucsd",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "source": "catalog.ucsd.edu/courses/{DEPT}.html",
+  "total_courses": 6925,
+  "progressive_count": 932,
+  "progressive_pct": 13.46,
+  "canon_count": 206,
+  "canon_pct": 2.97,
+  "climate_narrow_count": 115,
+  "climate_narrow_pct": 1.66,
+  "climate_broad_count": 280,
+  "climate_broad_pct": 4.04,
+  "by_area": {
+    "Humanities": 883,
+    "Other": 3035,
+    "STEM": 1772,
+    "Social Sciences": 947,
+    "Professional": 288
+  },
+  "failed_depts": []
+}
