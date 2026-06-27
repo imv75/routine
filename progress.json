@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-06-27T03:34:01.338510Z",
+  "last_updated": "2026-06-27T03:49:41.406452Z",
   "total_universities": 100,
-  "completed": 123,
+  "completed": 124,
   "in_progress": [],
   "failed": [],
   "blocked_by_network": [
@@ -23,7 +23,6 @@
     "asu",
     "utah",
     "uarizona",
-    "ucla",
     "wsu",
     "oit",
     "umn",
@@ -284,8 +283,15 @@
     },
     "ucla": {
       "id": 21,
-      "status": "dynamic_js_only",
-      "notes": "Scraping via catalog.registrar.ucla.edu (Next.js SSR general catalog). 15,133 URLs from sitemap. In progress."
+      "status": "completed",
+      "notes": "Next.js SSR general catalog (catalog.registrar.ucla.edu). AY=2024-2025.",
+      "name": "University of California, Los Angeles",
+      "data_files": [
+        "/home/user/routine/data/ucla/ucla_2024_2025.csv"
+      ],
+      "courses_count": 8571,
+      "progressive_pct": 6.41,
+      "canon_pct": 1.28
     },
     "wisc": {
       "id": 22,
