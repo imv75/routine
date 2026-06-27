@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-06-26",
+  "last_updated": "2026-06-27T01:42:54.665465Z",
   "total_universities": 100,
-  "completed": 117,
+  "completed": 118,
   "in_progress": [],
   "failed": [],
   "blocked_by_network": [
@@ -20,29 +20,27 @@
   ],
   "dynamic_js_only": [
     "osu",
-    "pitt",
-    "lsu",
     "ou",
-    "unlv",
     "baylor",
-    "ttu",
     "uh",
     "uc",
-    "udel",
     "ucsb",
     "asu",
     "utah",
     "uarizona",
     "ucla",
-    "stonybrook",
-    "uva",
-    "rpi",
-
     "wsu",
     "oit",
-
+    "umn",
+    "usc",
+    "unlv",
+    "ttu",
+    "rpi",
     "utk",
-    "umn"
+    "udel",
+    "stonybrook",
+    "lsu",
+    "uva"
   ],
   "universities": {
     "stanford": {
@@ -363,7 +361,8 @@
     "usc": {
       "id": 27,
       "status": "dynamic_js_only",
-      "notes": "catalogue.usc.edu uses Acalog/ACMS returning 202 with JS-only content."
+      "notes": "catalogue.usc.edu uses Acalog/ACMS returning 202 with JS-only content.",
+      "name": "University of Southern California"
     },
     "brown": {
       "id": 28,
@@ -622,7 +621,8 @@
     "uva": {
       "id": 45,
       "status": "dynamic_js_only",
-      "notes": "records.ureg.virginia.edu uses Acalog (returns 202 for course content pages). louslist.org returns 403."
+      "notes": "records.ureg.virginia.edu uses Acalog (returns 202 for course content pages). louslist.org returns 403.",
+      "name": "University of Virginia"
     },
     "tufts": {
       "id": 46,
@@ -850,8 +850,15 @@
     },
     "pitt": {
       "id": 67,
-      "status": "dynamic_js_only",
-      "notes": "catalog.pitt.edu uses Acalog/ACMS returning 202 with JS-only content."
+      "status": "completed",
+      "notes": "Acalog direct requests (no WAF). catoid=235, navoid=24840.",
+      "name": "University of Pittsburgh",
+      "data_files": [
+        "/home/user/routine/data/pitt/pitt_2024_2025.csv"
+      ],
+      "courses_count": 4000,
+      "progressive_pct": 9.98,
+      "canon_pct": 1.65
     },
     "rutgers": {
       "id": 68,
@@ -919,12 +926,14 @@
     "rpi": {
       "id": 72,
       "status": "dynamic_js_only",
-      "notes": "catalog.rpi.edu uses Acalog/ACMS returning 202 with JS-only content."
+      "notes": "catalog.rpi.edu uses Acalog/ACMS returning 202 with JS-only content.",
+      "name": "Rensselaer Polytechnic Institute"
     },
     "utk": {
       "id": 73,
       "status": "dynamic_js_only",
-      "notes": "catalog.utk.edu uses Acalog/ACMS returning 202 with JS-only content."
+      "notes": "catalog.utk.edu uses Acalog/ACMS returning 202 with JS-only content.",
+      "name": "University of Tennessee Knoxville"
     },
     "uky": {
       "id": 74,
@@ -964,7 +973,8 @@
     "lsu": {
       "id": 77,
       "status": "dynamic_js_only",
-      "notes": "catalog.lsu.edu uses Acalog/ACMS returning 202 with JS-only content."
+      "notes": "catalog.lsu.edu uses Acalog/ACMS returning 202 with JS-only content.",
+      "name": "Louisiana State University"
     },
     "ou": {
       "id": 78,
@@ -1129,7 +1139,8 @@
     "unlv": {
       "id": 92,
       "status": "dynamic_js_only",
-      "notes": "catalog.unlv.edu uses Acalog/ACMS returning 202 with JS-only content."
+      "notes": "catalog.unlv.edu uses Acalog/ACMS returning 202 with JS-only content.",
+      "name": "University of Nevada Las Vegas"
     },
     "baylor": {
       "id": 93,
@@ -1139,7 +1150,8 @@
     "ttu": {
       "id": 94,
       "status": "dynamic_js_only",
-      "notes": "catalog.ttu.edu uses Acalog/ACMS returning 202 with JS-only content."
+      "notes": "catalog.ttu.edu uses Acalog/ACMS returning 202 with JS-only content.",
+      "name": "Texas Tech University"
     },
     "uh": {
       "id": 95,
@@ -1184,12 +1196,14 @@
     "stonybrook": {
       "id": 99,
       "status": "dynamic_js_only",
-      "notes": "catalog.stonybrook.edu uses Acalog/ACMS (returns 202 for content pages)."
+      "notes": "catalog.stonybrook.edu uses Acalog/ACMS (returns 202 for content pages).",
+      "name": "Stony Brook University"
     },
     "udel": {
       "id": 100,
       "status": "dynamic_js_only",
-      "notes": "catalog.udel.edu uses Acalog/ACMS returning 202 with JS-only content."
+      "notes": "catalog.udel.edu uses Acalog/ACMS returning 202 with JS-only content.",
+      "name": "University of Delaware"
     },
     "uta": {
       "id": 101,
