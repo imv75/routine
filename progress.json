@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-06-27T01:58:49.579581Z",
+  "last_updated": "2026-06-27T02:13:27.580695Z",
   "total_universities": 100,
-  "completed": 119,
+  "completed": 121,
   "in_progress": [],
   "failed": [],
   "blocked_by_network": [
@@ -9,8 +9,6 @@
     "duke",
     "tufts",
     "bc",
-    "rochester",
-    "wfu",
     "clemson",
     "kstate",
     "sc",
@@ -675,13 +673,27 @@
     },
     "rochester": {
       "id": 50,
-      "status": "blocked_by_network",
-      "notes": "SSL blocked from proxy environment."
+      "status": "completed",
+      "notes": "PDF course list (AS&E). AY=2024-2025.",
+      "name": "University of Rochester",
+      "data_files": [
+        "/home/user/routine/data/rochester/rochester_2024_2025.csv"
+      ],
+      "courses_count": 5087,
+      "progressive_pct": 2.97,
+      "canon_pct": 2.3
     },
     "wfu": {
       "id": 51,
-      "status": "blocked_by_network",
-      "notes": "SSL blocked from proxy environment."
+      "status": "completed",
+      "notes": "CourseLeaf static HTML bulletin. AY=2024-2025.",
+      "name": "Wake Forest University",
+      "data_files": [
+        "/home/user/routine/data/wfu/wfu_2024_2025.csv"
+      ],
+      "courses_count": 2552,
+      "progressive_pct": 6.08,
+      "canon_pct": 2.03
     },
     "brandeis": {
       "id": 52,
