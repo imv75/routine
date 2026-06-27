@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-06-27T02:32:44.966613Z",
+  "last_updated": "2026-06-27T02:49:42.823136Z",
   "total_universities": 100,
-  "completed": 122,
+  "completed": 123,
   "in_progress": [],
   "failed": [],
   "blocked_by_network": [
@@ -16,7 +16,6 @@
   ],
   "dynamic_js_only": [
     "osu",
-    "ou",
     "baylor",
     "uh",
     "uc",
@@ -995,8 +994,15 @@
     },
     "ou": {
       "id": 78,
-      "status": "dynamic_js_only",
-      "notes": "catalog.ou.edu uses Acalog/ACMS returning 202 with JS-only content."
+      "status": "completed",
+      "notes": "CourseLeaf HTML at ou-public.courseleaf.com. AY=2024-2025.",
+      "name": "University of Oklahoma",
+      "data_files": [
+        "/home/user/routine/data/ou/ou_2024_2025.csv"
+      ],
+      "courses_count": 7206,
+      "progressive_pct": 3.43,
+      "canon_pct": 0.83
     },
     "okstate": {
       "id": 79,
