@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-06-27T02:13:27.580695Z",
+  "last_updated": "2026-06-27T02:32:44.966613Z",
   "total_universities": 100,
-  "completed": 121,
+  "completed": 122,
   "in_progress": [],
   "failed": [],
   "blocked_by_network": [
@@ -11,7 +11,6 @@
     "bc",
     "clemson",
     "kstate",
-    "sc",
     "fsu",
     "msu"
   ],
@@ -1016,8 +1015,15 @@
     },
     "sc": {
       "id": 80,
-      "status": "blocked_by_network",
-      "notes": "SSL blocked from proxy environment."
+      "status": "completed",
+      "notes": "CourseLeaf HTML bulletin. AY=2024-2025.",
+      "name": "University of South Carolina",
+      "data_files": [
+        "/home/user/routine/data/sc/sc_2024_2025.csv"
+      ],
+      "courses_count": 5017,
+      "progressive_pct": 2.81,
+      "canon_pct": 1.24
     },
     "clemson": {
       "id": 81,
