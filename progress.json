@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-06-27T01:42:54.665465Z",
+  "last_updated": "2026-06-27T01:58:49.579581Z",
   "total_universities": 100,
-  "completed": 118,
+  "completed": 119,
   "in_progress": [],
   "failed": [],
   "blocked_by_network": [
@@ -9,7 +9,6 @@
     "duke",
     "tufts",
     "bc",
-    "brandeis",
     "rochester",
     "wfu",
     "clemson",
@@ -686,8 +685,15 @@
     },
     "brandeis": {
       "id": 52,
-      "status": "blocked_by_network",
-      "notes": "SSL blocked from proxy environment."
+      "status": "completed",
+      "notes": "HTML bulletin scrape. AY=2025-2026.",
+      "name": "Brandeis University",
+      "data_files": [
+        "/home/user/routine/data/brandeis/brandeis_2025_2026.csv"
+      ],
+      "courses_count": 8706,
+      "progressive_pct": 11.89,
+      "canon_pct": 4.22
     },
     "northeastern": {
       "id": 53,
