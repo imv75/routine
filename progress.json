@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-27T02:49:42.823136Z",
+  "last_updated": "2026-06-27T03:34:01.338510Z",
   "total_universities": 100,
   "completed": 123,
   "in_progress": [],
@@ -248,12 +248,12 @@
     "umich": {
       "id": 17,
       "status": "blocked_by_network",
-      "notes": "lsa.umich.edu returns 403/ECONNREFUSED from proxy. URLs tried: lsa.umich.edu/cg/, ro.umich.edu/catalogs, atlas.ai.umich.edu, bulletin.umich.edu"
+      "notes": "lsa.umich.edu: 403. ro.umich.edu/catalogs: 403. All umich.edu domains: SSL/proxy blocked. No accessible alternative."
     },
     "duke": {
       "id": 18,
       "status": "blocked_by_network",
-      "notes": "SSL blocked from proxy environment. registrar.duke.edu/academics/courses-curricula-catalogs/ returns 404."
+      "notes": "All duke.edu domains: SSL blocked at proxy level (502 Bad Gateway). registrar.duke.edu: 404. No accessible alternative."
     },
     "jhu": {
       "id": 19,
@@ -285,7 +285,7 @@
     "ucla": {
       "id": 21,
       "status": "dynamic_js_only",
-      "notes": "registrar.ucla.edu/Academics/Course-Descriptions uses dynamic JS \u2014 not scrapable with requests."
+      "notes": "Scraping via catalog.registrar.ucla.edu (Next.js SSR general catalog). 15,133 URLs from sitemap. In progress."
     },
     "wisc": {
       "id": 22,
@@ -319,8 +319,9 @@
     },
     "osu": {
       "id": 24,
-      "status": "dynamic_js_only",
-      "notes": "catalog.osu.edu uses Acalog/ACMS returning 202 with JS-only content."
+      "status": "blocked",
+      "notes": "catalog.osu.edu: Acalog/ACMS returning 202 (AWS WAF challenge). courses.osu.edu also returns 202. No accessible alternative.",
+      "name": "Ohio State University"
     },
     "gatech": {
       "id": 25,
@@ -356,7 +357,7 @@
     "usc": {
       "id": 27,
       "status": "dynamic_js_only",
-      "notes": "catalogue.usc.edu uses Acalog/ACMS returning 202 with JS-only content.",
+      "notes": "catalogue.usc.edu: Acalog/ACMS returning 202 (AWS WAF challenge). No accessible alternative.",
       "name": "University of Southern California"
     },
     "brown": {
@@ -505,8 +506,9 @@
     },
     "ucsb": {
       "id": 37,
-      "status": "dynamic_js_only",
-      "notes": "app.coursedog.com backend \u2014 dynamic API, not directly scrapable."
+      "status": "blocked",
+      "notes": "ucsbcatalog.coursedog.com/my.sa.ucsb.edu: Coursedog Nuxt SPA. Course data loaded client-side. No public API found.",
+      "name": "University of California, Santa Barbara"
     },
     "uci": {
       "id": 38,
@@ -526,7 +528,7 @@
     "msu": {
       "id": 39,
       "status": "blocked_by_network",
-      "notes": "catalog.msu.edu and schedule.msu.edu return ProxyError (SSL blocked from proxy environment)."
+      "notes": "catalog.msu.edu and schedule.msu.edu: SSL blocked at proxy level (ProxyError). No accessible alternative."
     },
     "psu": {
       "id": 40,
@@ -595,8 +597,9 @@
     },
     "umn": {
       "id": 43,
-      "status": "dynamic_js_only",
-      "notes": "catalog.umn.edu and coursecat.umn.edu use Coursedog (dynamic JS, ProxyError). catalogs.umn.edu/courses returns 404."
+      "status": "blocked",
+      "notes": "umtc.catalog.prod.coursedog.com: Coursedog SPA, SSL-blocked. catalogs.umn.edu links to Coursedog. classinfo.umn.edu: Schedule Builder SPA. No accessible course catalog.",
+      "name": "University of Minnesota"
     },
     "unc": {
       "id": 44,
@@ -616,13 +619,14 @@
     "uva": {
       "id": 45,
       "status": "dynamic_js_only",
-      "notes": "records.ureg.virginia.edu uses Acalog (returns 202 for course content pages). louslist.org returns 403.",
+      "notes": "records.ureg.virginia.edu: Acalog/ACMS returning 202 (AWS WAF challenge). louslist.org: 403. courses.virginia.edu: SSL-blocked. No accessible alternative.",
       "name": "University of Virginia"
     },
     "tufts": {
       "id": 46,
-      "status": "blocked_by_network",
-      "notes": "SSL blocked from proxy environment."
+      "status": "blocked",
+      "notes": "All tufts.edu domains: SSL blocked at proxy level (502/ProxyError). No accessible alternative.",
+      "name": "Tufts University"
     },
     "bu": {
       "id": 47,
@@ -722,8 +726,9 @@
     },
     "bc": {
       "id": 54,
-      "status": "blocked_by_network",
-      "notes": "SSL blocked from proxy environment."
+      "status": "blocked",
+      "notes": "All bc.edu domains: SSL blocked at proxy level (502 Bad Gateway). No accessible alternative.",
+      "name": "Boston College"
     },
     "gwu": {
       "id": 55,
@@ -787,17 +792,19 @@
     "fsu": {
       "id": 59,
       "status": "blocked_by_network",
-      "notes": "catalog.fsu.edu and apps.registrar.fsu.edu return ProxyError (SSL blocked from proxy environment)."
+      "notes": "catalog.fsu.edu: SSL-blocked (ProxyError). bulletin.fsu.edu: Coursedog SPA. registrar.fsu.edu/bulletin: navigation only. No accessible course data."
     },
     "uarizona": {
       "id": 60,
-      "status": "dynamic_js_only",
-      "notes": "catalog.arizona.edu uses dynamic JS \u2014 not scrapable with requests."
+      "status": "blocked",
+      "notes": "catalog.arizona.edu: Coursedog Nuxt SPA - courses not in SSR NUXT data (only term metadata). Auth-required API. No accessible alternative.",
+      "name": "University of Arizona"
     },
     "asu": {
       "id": 61,
-      "status": "dynamic_js_only",
-      "notes": "catalog.asu.edu uses dynamic JS \u2014 not scrapable with requests."
+      "status": "blocked",
+      "notes": "catalog.apps.asu.edu: React SPA (AWS WAF/CloudFront, 657b challenge). webapp4.asu.edu/catalog: React SPA. No accessible API found.",
+      "name": "Arizona State University"
     },
     "colorado": {
       "id": 62,
@@ -816,8 +823,9 @@
     },
     "utah": {
       "id": 63,
-      "status": "dynamic_js_only",
-      "notes": "catalog.utah.edu uses dynamic JS \u2014 not scrapable with requests."
+      "status": "blocked",
+      "notes": "catalog.utah.edu: Coursedog Nuxt SPA - NUXT data has CMS structure, not course data. student.utah.edu: SSL-blocked. No accessible alternative.",
+      "name": "University of Utah"
     },
     "uoregon": {
       "id": 64,
@@ -942,19 +950,20 @@
     "rpi": {
       "id": 72,
       "status": "dynamic_js_only",
-      "notes": "catalog.rpi.edu uses Acalog/ACMS returning 202 with JS-only content.",
+      "notes": "catalog.rpi.edu: Acalog/ACMS returning 202 (AWS WAF challenge). No accessible alternative.",
       "name": "Rensselaer Polytechnic Institute"
     },
     "utk": {
       "id": 73,
       "status": "dynamic_js_only",
-      "notes": "catalog.utk.edu uses Acalog/ACMS returning 202 with JS-only content.",
+      "notes": "catalog.utk.edu: Acalog/ACMS returning 202 (AWS WAF challenge). No accessible alternative.",
       "name": "University of Tennessee Knoxville"
     },
     "uky": {
       "id": 74,
-      "status": "blocked_by_network",
-      "notes": "catalog.uky.edu returns ProxyError (SSL blocked from proxy environment)."
+      "status": "blocked",
+      "notes": "catalog.uky.edu and catalogs.uky.edu: SSL blocked at proxy level (ProxyError). No accessible alternative.",
+      "name": "University of Kentucky"
     },
     "ua": {
       "id": 75,
@@ -989,7 +998,7 @@
     "lsu": {
       "id": 77,
       "status": "dynamic_js_only",
-      "notes": "catalog.lsu.edu uses Acalog/ACMS returning 202 with JS-only content.",
+      "notes": "catalog.lsu.edu: Acalog/ACMS system returning 202 (AWS WAF). lsu.edu subdomains SSL-blocked. No accessible alternative.",
       "name": "Louisiana State University"
     },
     "ou": {
@@ -1033,8 +1042,9 @@
     },
     "clemson": {
       "id": 81,
-      "status": "blocked_by_network",
-      "notes": "SSL blocked from proxy environment."
+      "status": "blocked",
+      "notes": "All clemson.edu domains: SSL blocked at proxy level (502 Bad Gateway). No accessible alternative.",
+      "name": "Clemson University"
     },
     "unl": {
       "id": 82,
@@ -1098,13 +1108,15 @@
     },
     "kstate": {
       "id": 86,
-      "status": "blocked_by_network",
-      "notes": "SSL blocked from proxy environment."
+      "status": "blocked",
+      "notes": "All k-state.edu domains: SSL blocked at proxy level (502 Bad Gateway). No accessible alternative.",
+      "name": "Kansas State University"
     },
     "olemiss": {
       "id": 87,
-      "status": "blocked_by_network",
-      "notes": "catalog.olemiss.edu returns 403."
+      "status": "blocked",
+      "notes": "catalog.olemiss.edu: Cloudflare Bot Management - 403 challenge for all pages. No accessible alternative found.",
+      "name": "University of Mississippi"
     },
     "msstate": {
       "id": 88,
@@ -1169,24 +1181,26 @@
     "unlv": {
       "id": 92,
       "status": "dynamic_js_only",
-      "notes": "catalog.unlv.edu uses Acalog/ACMS returning 202 with JS-only content.",
+      "notes": "catalog.unlv.edu: Acalog/ACMS returning 202 (AWS WAF challenge). No accessible alternative.",
       "name": "University of Nevada Las Vegas"
     },
     "baylor": {
       "id": 93,
-      "status": "dynamic_js_only",
-      "notes": "catalog.baylor.edu uses Acalog/ACMS returning 202 with JS-only content."
+      "status": "blocked",
+      "notes": "catalog.baylor.edu: Acalog/ACMS system, all endpoints return HTTP 202 (AWS WAF challenge from proxy IP). No accessible alternative found.",
+      "name": "Baylor University"
     },
     "ttu": {
       "id": 94,
       "status": "dynamic_js_only",
-      "notes": "catalog.ttu.edu uses Acalog/ACMS returning 202 with JS-only content.",
+      "notes": "catalog.ttu.edu: Acalog/ACMS returning 202 (AWS WAF challenge). No accessible alternative.",
       "name": "Texas Tech University"
     },
     "uh": {
       "id": 95,
-      "status": "dynamic_js_only",
-      "notes": "publications.uh.edu uses Acalog/ACMS returning 202 with JS-only content."
+      "status": "blocked",
+      "notes": "publications.uh.edu: Acalog/ACMS returning 202 (AWS WAF challenge). No accessible alternative.",
+      "name": "University of Houston"
     },
     "louisville": {
       "id": 96,
@@ -1205,8 +1219,9 @@
     },
     "uc": {
       "id": 97,
-      "status": "dynamic_js_only",
-      "notes": "catalog.uc.edu uses Acalog/ACMS returning 202 with JS-only content."
+      "status": "blocked",
+      "notes": "catalog.uc.edu: Acalog/ACMS returning 202 (AWS WAF challenge). No accessible alternative.",
+      "name": "University of Cincinnati"
     },
     "miami": {
       "id": 98,
@@ -1226,13 +1241,13 @@
     "stonybrook": {
       "id": 99,
       "status": "dynamic_js_only",
-      "notes": "catalog.stonybrook.edu uses Acalog/ACMS (returns 202 for content pages).",
+      "notes": "catalog.stonybrook.edu: Acalog/ACMS returning 202 (AWS WAF). Main bulletin links back to WAF-blocked catalog. No accessible alternative.",
       "name": "Stony Brook University"
     },
     "udel": {
       "id": 100,
       "status": "dynamic_js_only",
-      "notes": "catalog.udel.edu uses Acalog/ACMS returning 202 with JS-only content.",
+      "notes": "catalog.udel.edu: Acalog/ACMS returning 202 (AWS WAF challenge). No accessible alternative.",
       "name": "University of Delaware"
     },
     "uta": {
@@ -1591,13 +1606,15 @@
     },
     "wsu": {
       "id": 130,
-      "status": "dynamic_js_only",
-      "notes": "catalog.wsu.edu uses Blazor WebAssembly (.NET) - dynamic JS SPA, not scrapable."
+      "status": "blocked",
+      "notes": "catalog.wsu.edu: Blazor WebAssembly .NET SPA - not scrapable with requests. schedules.wsu.edu: Schedule Builder (JS SPA). No accessible course catalog.",
+      "name": "Washington State University"
     },
     "oit": {
       "id": 131,
-      "status": "dynamic_js_only",
-      "notes": "catalog.oit.edu uses Coursedog - dynamic JS, not scrapable."
+      "status": "blocked",
+      "notes": "catalog.oit.edu: Coursedog Nuxt SPA - course data loaded client-side via auth-required API. oit.catalog.prod.coursedog.com: SSL-blocked from proxy.",
+      "name": "Oregon Institute of Technology"
     },
     "alverno": {
       "id": 132,
