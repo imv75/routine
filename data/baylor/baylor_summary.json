@@ -1,0 +1,24 @@
+{
+  "university": "baylor",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "source": "catalog.baylor.edu/undergraduate/courses-instruction/ + /graduate-school/",
+  "total_courses": 6438,
+  "progressive_count": 335,
+  "progressive_pct": 5.2,
+  "canon_count": 220,
+  "canon_pct": 3.42,
+  "climate_narrow_count": 19,
+  "climate_narrow_pct": 0.3,
+  "climate_broad_count": 125,
+  "climate_broad_pct": 1.94,
+  "by_area": {
+    "Professional": 257,
+    "STEM": 1071,
+    "Other": 3089,
+    "Social Sciences": 593,
+    "Humanities": 1427,
+    "Medical Sciences": 1
+  },
+  "failed_depts": []
+}

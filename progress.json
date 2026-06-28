@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-06-26",
+  "last_updated": "2026-06-28",
   "total_universities": 100,
-  "completed": 117,
+  "completed": 118,
   "in_progress": [],
   "failed": [],
   "blocked_by_network": [
@@ -24,7 +24,6 @@
     "lsu",
     "ou",
     "unlv",
-    "baylor",
     "ttu",
     "uh",
     "uc",
@@ -1133,8 +1132,16 @@
     },
     "baylor": {
       "id": 93,
-      "status": "dynamic_js_only",
-      "notes": "catalog.baylor.edu uses Acalog/ACMS returning 202 with JS-only content."
+      "status": "completed",
+      "total_courses": 6438,
+      "progressive_count": 335,
+      "progressive_pct": 5.2,
+      "canon_count": 220,
+      "canon_pct": 3.42,
+      "climate_narrow_count": 19,
+      "climate_broad_count": 125,
+      "source": "catalog.baylor.edu/undergraduate/courses-instruction/ + /graduate-school/",
+      "notes": "2026-27 catalog scraped via CourseleafCMS static HTML endpoints, bypassing Acalog WAF."
     },
     "ttu": {
       "id": 94,
