@@ -13,7 +13,9 @@
     "rochester",
     "clemson",
     "sc",
-    "msu"
+    "msu",
+    "uky",
+    "olemiss"
   ],
   "dynamic_js_only": [
     "osu",
@@ -30,7 +32,8 @@
     "uva",
     "rpi",
     "wsu",
-    "utk"
+    "utk",
+    "usc"
   ],
   "universities": {
     "stanford": {
@@ -280,7 +283,7 @@
     "ucla": {
       "id": 21,
       "status": "dynamic_js_only",
-      "notes": "registrar.ucla.edu/Academics/Course-Descriptions uses dynamic JS \u2014 not scrapable with requests."
+      "notes": "catalog.registrar.ucla.edu uses Next.js/CourseLoop (api-us-west-1.prod.courseloop.com). CourseLoop API returns 403 Forbidden; CF URL (cf-api-us-west-1.prod.courseloop.com) connection refused (000). SPA fully client-rendered; no public course data API accessible from proxy environment."
     },
     "wisc": {
       "id": 22,
@@ -637,7 +640,7 @@
     "tufts": {
       "id": 46,
       "status": "blocked_by_network",
-      "notes": "SSL blocked from proxy environment."
+      "notes": "Bulletin only available as Box.com PDF (students.tufts.edu/registrar/forms-and-policies/bulletin). catalog.tufts.edu and coursecatalog.tufts.edu both return 000 (proxy blocked). tufts.smartcatalogiq.com returns 500. No accessible structured course data endpoint."
     },
     "bu": {
       "id": 47,
@@ -687,7 +690,7 @@
     "rochester": {
       "id": 50,
       "status": "blocked_by_network",
-      "notes": "SSL blocked from proxy environment."
+      "notes": "catalog.rochester.edu, courses.rochester.edu, bulletin.rochester.edu all return 000 (proxy blocked). rochester.smartcatalogiq.com is accessible but returns 'Document Not Found' for all year paths \u2014 catalog appears to have been migrated or removed."
     },
     "wfu": {
       "id": 51,
@@ -822,7 +825,7 @@
     "asu": {
       "id": 61,
       "status": "dynamic_js_only",
-      "notes": "catalog.asu.edu uses dynamic JS \u2014 not scrapable with requests."
+      "notes": "catalog.apps.asu.edu is a React SPA (class search). API at eadvs-cscc-catalog-api.apps.asu.edu/catalog-microservices/api/v1/search/courses requires OAuth authentication (returns 401 Unauthorized). catalog.asu.edu is a Drupal site with program listings only \u2014 no individual course descriptions accessible without auth."
     },
     "colorado": {
       "id": 62,
@@ -1030,7 +1033,7 @@
     "ou": {
       "id": 78,
       "status": "dynamic_js_only",
-      "notes": "catalog.ou.edu uses Acalog/ACMS returning 202 with JS-only content."
+      "notes": "catalog.ou.edu redirects to http://www.ou.edu/enrollment/academic_publications (HTTP redirect). Proxy supports HTTPS-only tunnels; HTTP redirect target returns 404 via HTTPS. registrar.ou.edu returns 000 (proxy blocked). Coursedog not found for ou.edu."
     },
     "okstate": {
       "id": 79,
@@ -2034,5 +2037,11 @@
       "tamu"
     ],
     "note": "berkeley/harvard/yale/princeton/uchicago/columbia/vanderbilt = dynamic-JS or proxy-blocked; utaustin/tamu = catalog soft-404. These 9 retain Marinovic (2026) published values."
+  },
+  "original_100_summary": {
+    "completed": 74,
+    "blocked_by_network": 11,
+    "dynamic_js_or_waf": 15,
+    "notes": "74/100 universities successfully scraped. 11 blocked by proxy (SSL/network policy): umich, duke, msu, tufts, bc, brandeis, rochester, clemson, sc, uky, olemiss. 15 inaccessible due to dynamic JS / WAF: osu (Acalog WAF), lsu (Acalog WAF), ou (HTTP redirect only), unlv (Acalog WAF), ttu (Acalog WAF), uh (proxy blocked), uc (proxy blocked), udel (Acalog WAF), asu (React SPA, auth-required API), ucla (CourseLoop API 403), stonybrook (Acalog WAF), uva (Acalog WAF + proxy blocked), rpi (Acalog WAF), usc (Angular SPA), utk (Acalog WAF). All alternatives exhausted: Coursedog probed, alternative subdomains tested, cookie-based WAF bypass attempted."
   }
 }
