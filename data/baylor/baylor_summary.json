@@ -1,0 +1,17 @@
+{
+  "university": "baylor",
+  "catalog_year": "2026-2027",
+  "total_courses": 6438,
+  "progressive_pct": 5.2,
+  "western_canon_pct": 3.42,
+  "climate_narrow_pct": 0.3,
+  "area_breakdown": {
+    "STEM": 994,
+    "Other": 3310,
+    "Social Sciences": 404,
+    "Humanities": 1021,
+    "Professional": 335,
+    "Medical Sciences": 374
+  },
+  "failed_depts": []
+}

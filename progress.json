@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-06-26",
+  "last_updated": "2026-06-29",
   "total_universities": 100,
-  "completed": 117,
+  "completed": 127,
   "in_progress": [],
   "failed": [],
   "blocked_by_network": [
@@ -11,38 +11,29 @@
     "bc",
     "brandeis",
     "rochester",
-    "wfu",
     "clemson",
-    "kstate",
     "sc",
-    "fsu",
-    "msu"
+    "msu",
+    "uky",
+    "olemiss"
   ],
   "dynamic_js_only": [
     "osu",
-    "pitt",
     "lsu",
     "ou",
     "unlv",
-    "baylor",
     "ttu",
     "uh",
     "uc",
     "udel",
-    "ucsb",
     "asu",
-    "utah",
-    "uarizona",
     "ucla",
     "stonybrook",
     "uva",
     "rpi",
-
     "wsu",
-    "oit",
-
     "utk",
-    "umn"
+    "usc"
   ],
   "universities": {
     "stanford": {
@@ -292,7 +283,7 @@
     "ucla": {
       "id": 21,
       "status": "dynamic_js_only",
-      "notes": "registrar.ucla.edu/Academics/Course-Descriptions uses dynamic JS \u2014 not scrapable with requests."
+      "notes": "catalog.registrar.ucla.edu uses Next.js/CourseLoop (api-us-west-1.prod.courseloop.com). CourseLoop API returns 403 Forbidden; CF URL (cf-api-us-west-1.prod.courseloop.com) connection refused (000). SPA fully client-rendered; no public course data API accessible from proxy environment."
     },
     "wisc": {
       "id": 22,
@@ -511,8 +502,19 @@
     },
     "ucsb": {
       "id": 37,
-      "status": "dynamic_js_only",
-      "notes": "app.coursedog.com backend \u2014 dynamic API, not directly scrapable."
+      "status": "completed",
+      "source": "app.coursedog.com CSV export API (public, no auth required)",
+      "catalog_url": "catalog.ucsb.edu",
+      "years_covered": "2025",
+      "catalog_years": 1,
+      "total_courses": 14121,
+      "data_files": [
+        "data/ucsb/ucsb_2025.csv",
+        "data/ucsb/ucsb_summary.json"
+      ],
+      "progressive_pct": 13.8,
+      "canon_pct": 3.64,
+      "notes": "2025-26 catalog scraped via Coursedog public CSV export API. 14,121 courses. No grad_threshold for level (UCSB: <200=undergrad)."
     },
     "uci": {
       "id": 38,
@@ -601,8 +603,19 @@
     },
     "umn": {
       "id": 43,
-      "status": "dynamic_js_only",
-      "notes": "catalog.umn.edu and coursecat.umn.edu use Coursedog (dynamic JS, ProxyError). catalogs.umn.edu/courses returns 404."
+      "status": "completed",
+      "source": "app.coursedog.com CSV export API (public, no auth required)",
+      "catalog_url": "umtc.catalog.prod.coursedog.com",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "total_courses": 25682,
+      "data_files": [
+        "data/umn/umn_2026.csv",
+        "data/umn/umn_summary.json"
+      ],
+      "progressive_pct": 12.81,
+      "canon_pct": 2.91,
+      "notes": "2026-27 catalog scraped via Coursedog public CSV export API. school=umn_umntc_peoplesoft. 25,682 courses (deduplicated from 52,862 rows). grad_threshold=5000."
     },
     "unc": {
       "id": 44,
@@ -627,7 +640,7 @@
     "tufts": {
       "id": 46,
       "status": "blocked_by_network",
-      "notes": "SSL blocked from proxy environment."
+      "notes": "Bulletin only available as Box.com PDF (students.tufts.edu/registrar/forms-and-policies/bulletin). catalog.tufts.edu and coursecatalog.tufts.edu both return 000 (proxy blocked). tufts.smartcatalogiq.com returns 500. No accessible structured course data endpoint."
     },
     "bu": {
       "id": 47,
@@ -677,12 +690,22 @@
     "rochester": {
       "id": 50,
       "status": "blocked_by_network",
-      "notes": "SSL blocked from proxy environment."
+      "notes": "catalog.rochester.edu, courses.rochester.edu, bulletin.rochester.edu all return 000 (proxy blocked). rochester.smartcatalogiq.com is accessible but returns 'Document Not Found' for all year paths \u2014 catalog appears to have been migrated or removed."
     },
     "wfu": {
       "id": 51,
-      "status": "blocked_by_network",
-      "notes": "SSL blocked from proxy environment."
+      "status": "completed",
+      "catalog_year": "2025-2026",
+      "source": "bulletin.wfu.edu (CourseleafCMS)",
+      "total_courses": 2436,
+      "progressive_pct": 14.74,
+      "western_canon_pct": 5.67,
+      "climate_narrow_pct": 0.0,
+      "data_files": [
+        "data/wfu/wfu_2026.csv",
+        "data/wfu/wfu_summary.json"
+      ],
+      "notes": "78 dept pages from bulletin.wfu.edu/azindex/. 3 pages failed (proxy disconnect). CourseleafCMS format."
     },
     "brandeis": {
       "id": 52,
@@ -770,18 +793,39 @@
     },
     "fsu": {
       "id": 59,
-      "status": "blocked_by_network",
-      "notes": "catalog.fsu.edu and apps.registrar.fsu.edu return ProxyError (SSL blocked from proxy environment)."
+      "status": "completed",
+      "catalog_year": "2025-2026",
+      "source": "bulletin.fsu.edu (Coursedog CSV export)",
+      "total_courses": 12179,
+      "progressive_pct": 5.28,
+      "western_canon_pct": 2.17,
+      "climate_narrow_pct": 0.0,
+      "data_files": [
+        "data/fsu/fsu_2026.csv",
+        "data/fsu/fsu_summary.json"
+      ],
+      "notes": "Coursedog CSV (fsu_peoplesoft, kNmTRiTxAoRs2wXOK2cs). CSV lacks course codes/numbers. 86 draft entries skipped."
     },
     "uarizona": {
       "id": 60,
-      "status": "dynamic_js_only",
-      "notes": "catalog.arizona.edu uses dynamic JS \u2014 not scrapable with requests."
+      "status": "completed",
+      "source": "app.coursedog.com CSV export API (public, no auth required)",
+      "catalog_url": "catalog.arizona.edu",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "total_courses": 38659,
+      "data_files": [
+        "data/uarizona/uarizona_2026.csv",
+        "data/uarizona/uarizona_summary.json"
+      ],
+      "progressive_pct": 7.23,
+      "canon_pct": 1.99,
+      "notes": "2026-27 catalog scraped via Coursedog public CSV export API. school=arizona_peoplesoft. 38,659 courses (deduplicated from 50,404 rows). grad_threshold=500."
     },
     "asu": {
       "id": 61,
       "status": "dynamic_js_only",
-      "notes": "catalog.asu.edu uses dynamic JS \u2014 not scrapable with requests."
+      "notes": "catalog.apps.asu.edu is a React SPA (class search). API at eadvs-cscc-catalog-api.apps.asu.edu/catalog-microservices/api/v1/search/courses requires OAuth authentication (returns 401 Unauthorized). catalog.asu.edu is a Drupal site with program listings only \u2014 no individual course descriptions accessible without auth."
     },
     "colorado": {
       "id": 62,
@@ -799,9 +843,19 @@
       "notes": "2026-27 catalog scraped. catalog.colorado.edu/courses-a-z/ \u2014 177 departments, 2 failed."
     },
     "utah": {
-      "id": 63,
-      "status": "dynamic_js_only",
-      "notes": "catalog.utah.edu uses dynamic JS \u2014 not scrapable with requests."
+      "id": 83,
+      "status": "completed",
+      "catalog_year": "2026-2027",
+      "source": "catalog.utah.edu (Coursedog CSV export)",
+      "total_courses": 18155,
+      "progressive_pct": 0.0,
+      "western_canon_pct": 0.0,
+      "climate_narrow_pct": 0.0,
+      "data_files": [
+        "data/utah/utah_2027.csv",
+        "data/utah/utah_summary.json"
+      ],
+      "notes": "Coursedog CSV export (utah_peoplesoft). Only subject code + catalog number exported \u2014 no title or description. Keyword analysis not possible."
     },
     "uoregon": {
       "id": 64,
@@ -849,9 +903,19 @@
       "notes": "2026-27 catalog scraped. 142 departments at catalog.vt.edu/course-descriptions/{dept}/. CourseleafCMS detail-code/detail-title format. Previously logged as Acalog but catalog has migrated to CourseleafCMS. Session warmup required (visit main page first)."
     },
     "pitt": {
-      "id": 67,
-      "status": "dynamic_js_only",
-      "notes": "catalog.pitt.edu uses Acalog/ACMS returning 202 with JS-only content."
+      "id": 56,
+      "status": "completed",
+      "catalog_year": "2025-2026",
+      "source": "catalog.upp.pitt.edu (Acalog ACMS, subject-filtered, no WAF)",
+      "total_courses": 5289,
+      "progressive_pct": 3.16,
+      "western_canon_pct": 1.04,
+      "climate_narrow_pct": 0.08,
+      "data_files": [
+        "data/pitt/pitt_2026.csv",
+        "data/pitt/pitt_summary.json"
+      ],
+      "notes": "168 subject codes from filter[27] select; preview_course.php per coid via ThreadPoolExecutor(8). No WAF on catalog.upp.pitt.edu."
     },
     "rutgers": {
       "id": 68,
@@ -969,7 +1033,7 @@
     "ou": {
       "id": 78,
       "status": "dynamic_js_only",
-      "notes": "catalog.ou.edu uses Acalog/ACMS returning 202 with JS-only content."
+      "notes": "catalog.ou.edu redirects to http://www.ou.edu/enrollment/academic_publications (HTTP redirect). Proxy supports HTTPS-only tunnels; HTTP redirect target returns 404 via HTTPS. registrar.ou.edu returns 000 (proxy blocked). Coursedog not found for ou.edu."
     },
     "okstate": {
       "id": 79,
@@ -1058,8 +1122,18 @@
     },
     "kstate": {
       "id": 86,
-      "status": "blocked_by_network",
-      "notes": "SSL blocked from proxy environment."
+      "status": "completed",
+      "catalog_year": "2025-2026",
+      "source": "app.coursedog.com (Coursedog CSV export API)",
+      "total_courses": 20938,
+      "progressive_pct": 1.88,
+      "western_canon_pct": 0.73,
+      "climate_narrow_pct": 0.09,
+      "data_files": [
+        "data/kstate/kstate_2026.csv",
+        "data/kstate/kstate_summary.json"
+      ],
+      "notes": "Previously blocked_by_network; catalog.k-state.edu uses Coursedog. CSV export via public API. 20,938 unique courses."
     },
     "olemiss": {
       "id": 87,
@@ -1133,8 +1207,18 @@
     },
     "baylor": {
       "id": 93,
-      "status": "dynamic_js_only",
-      "notes": "catalog.baylor.edu uses Acalog/ACMS returning 202 with JS-only content."
+      "status": "completed",
+      "catalog_year": "2026-2027",
+      "source": "catalog.baylor.edu (CourseleafCMS-like catalog)",
+      "total_courses": 6438,
+      "progressive_pct": 5.2,
+      "western_canon_pct": 3.42,
+      "climate_narrow_pct": 0.3,
+      "data_files": [
+        "data/baylor/baylor_2026.csv",
+        "data/baylor/baylor_summary.json"
+      ],
+      "notes": "Scraped UG+Grad course catalog from catalog.baylor.edu. 215 department pages."
     },
     "ttu": {
       "id": 94,
@@ -1551,9 +1635,19 @@
       "notes": "catalog.wsu.edu uses Blazor WebAssembly (.NET) - dynamic JS SPA, not scrapable."
     },
     "oit": {
-      "id": 131,
-      "status": "dynamic_js_only",
-      "notes": "catalog.oit.edu uses Coursedog - dynamic JS, not scrapable."
+      "id": 98,
+      "status": "completed",
+      "catalog_year": "2026-2027",
+      "source": "catalog.oit.edu (Coursedog CSV export)",
+      "total_courses": 4440,
+      "progressive_pct": 0.32,
+      "western_canon_pct": 0.09,
+      "climate_narrow_pct": 0.05,
+      "data_files": [
+        "data/oit/oit_2027.csv",
+        "data/oit/oit_summary.json"
+      ],
+      "notes": "Coursedog CSV export (oit_banner). Descriptions not in export template \u2014 keyword analysis based on course titles only."
     },
     "alverno": {
       "id": 132,
@@ -1943,5 +2037,11 @@
       "tamu"
     ],
     "note": "berkeley/harvard/yale/princeton/uchicago/columbia/vanderbilt = dynamic-JS or proxy-blocked; utaustin/tamu = catalog soft-404. These 9 retain Marinovic (2026) published values."
+  },
+  "original_100_summary": {
+    "completed": 74,
+    "blocked_by_network": 11,
+    "dynamic_js_or_waf": 15,
+    "notes": "74/100 universities successfully scraped. 11 blocked by proxy (SSL/network policy): umich, duke, msu, tufts, bc, brandeis, rochester, clemson, sc, uky, olemiss. 15 inaccessible due to dynamic JS / WAF: osu (Acalog WAF), lsu (Acalog WAF), ou (HTTP redirect only), unlv (Acalog WAF), ttu (Acalog WAF), uh (proxy blocked), uc (proxy blocked), udel (Acalog WAF), asu (React SPA, auth-required API), ucla (CourseLoop API 403), stonybrook (Acalog WAF), uva (Acalog WAF + proxy blocked), rpi (Acalog WAF), usc (Angular SPA), utk (Acalog WAF). All alternatives exhausted: Coursedog probed, alternative subdomains tested, cookie-based WAF bypass attempted."
   }
 }

@@ -1,0 +1,17 @@
+{
+  "university": "pitt",
+  "catalog_year": "2025-2026",
+  "total_courses": 5289,
+  "progressive_pct": 3.16,
+  "western_canon_pct": 1.04,
+  "climate_narrow_pct": 0.08,
+  "area_breakdown": {
+    "Social Sciences": 689,
+    "Other": 1965,
+    "Humanities": 1274,
+    "STEM": 949,
+    "Professional": 237,
+    "Medical Sciences": 175
+  },
+  "note": "Acalog subject-filtered, max 100 per subject. Subjects with 100 results may be truncated."
+}

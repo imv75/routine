@@ -1,0 +1,22 @@
+{
+  "university": "umn",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 25682,
+  "progressive_count": 3290,
+  "progressive_pct": 12.81,
+  "canon_count": 748,
+  "canon_pct": 2.91,
+  "climate_narrow_count": 260,
+  "climate_narrow_pct": 1.01,
+  "climate_broad_count": 1104,
+  "climate_broad_pct": 4.3,
+  "by_area": {
+    "Humanities": 3710,
+    "Professional": 2622,
+    "Other": 13650,
+    "STEM": 3085,
+    "Medical Sciences": 619,
+    "Social Sciences": 1996
+  }
+}

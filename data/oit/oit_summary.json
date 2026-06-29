@@ -1,0 +1,22 @@
+{
+  "university": "oit",
+  "academic_year": "2027",
+  "academic_year_label": "2026-2027",
+  "total_courses": 4440,
+  "progressive_count": 14,
+  "progressive_pct": 0.32,
+  "canon_count": 4,
+  "canon_pct": 0.09,
+  "climate_narrow_count": 2,
+  "climate_narrow_pct": 0.05,
+  "climate_broad_count": 23,
+  "climate_broad_pct": 0.52,
+  "by_area": {
+    "Other": 2643,
+    "Professional": 251,
+    "Humanities": 234,
+    "STEM": 1030,
+    "Social Sciences": 255,
+    "Medical Sciences": 27
+  }
+}

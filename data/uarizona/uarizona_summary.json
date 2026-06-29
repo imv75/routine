@@ -1,0 +1,22 @@
+{
+  "university": "uarizona",
+  "academic_year": "2026",
+  "academic_year_label": "2026-2027",
+  "total_courses": 38659,
+  "progressive_count": 2796,
+  "progressive_pct": 7.23,
+  "canon_count": 771,
+  "canon_pct": 1.99,
+  "climate_narrow_count": 167,
+  "climate_narrow_pct": 0.43,
+  "climate_broad_count": 972,
+  "climate_broad_pct": 2.51,
+  "by_area": {
+    "Other": 19660,
+    "Humanities": 6431,
+    "STEM": 5938,
+    "Professional": 2705,
+    "Medical Sciences": 909,
+    "Social Sciences": 3016
+  }
+}

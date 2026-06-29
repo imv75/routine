@@ -1,0 +1,17 @@
+{
+  "university": "fsu",
+  "catalog_year": "2025-2026",
+  "total_courses": 12179,
+  "progressive_pct": 5.28,
+  "western_canon_pct": 2.17,
+  "climate_narrow_pct": 0.3,
+  "area_breakdown": {
+    "Other": 5823,
+    "Professional": 432,
+    "Social Sciences": 1366,
+    "Humanities": 2189,
+    "STEM": 1788,
+    "Medical Sciences": 581
+  },
+  "notes": "Coursedog CSV export missing course codes/numbers. Dept from Academic Org field. No level classification possible."
+}

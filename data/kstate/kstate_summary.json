@@ -1,0 +1,22 @@
+{
+  "university": "kstate",
+  "academic_year": "2026",
+  "academic_year_label": "2025-2026",
+  "total_courses": 20938,
+  "progressive_count": 394,
+  "progressive_pct": 1.88,
+  "canon_count": 152,
+  "canon_pct": 0.73,
+  "climate_narrow_count": 19,
+  "climate_narrow_pct": 0.09,
+  "climate_broad_count": 202,
+  "climate_broad_pct": 0.96,
+  "by_area": {
+    "Other": 10399,
+    "Professional": 2057,
+    "STEM": 4280,
+    "Humanities": 2369,
+    "Medical Sciences": 187,
+    "Social Sciences": 1646
+  }
+}
