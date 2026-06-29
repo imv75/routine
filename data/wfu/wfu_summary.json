@@ -1,0 +1,20 @@
+{
+  "university": "wfu",
+  "catalog_year": "2025-2026",
+  "total_courses": 2436,
+  "progressive_pct": 14.74,
+  "western_canon_pct": 5.67,
+  "climate_narrow_pct": 0.53,
+  "area_breakdown": {
+    "Other": 846,
+    "Professional": 141,
+    "Humanities": 853,
+    "STEM": 214,
+    "Social Sciences": 382
+  },
+  "failed_depts": [
+    "/courses-az/csc/",
+    "/courses-az/ent/",
+    "/courses-az/frh/"
+  ]
+}

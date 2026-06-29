@@ -1,0 +1,22 @@
+{
+  "university": "utah",
+  "academic_year": "2027",
+  "academic_year_label": "2026-2027",
+  "total_courses": 18155,
+  "progressive_count": 0,
+  "progressive_pct": 0.0,
+  "canon_count": 0,
+  "canon_pct": 0.0,
+  "climate_narrow_count": 0,
+  "climate_narrow_pct": 0.0,
+  "climate_broad_count": 0,
+  "climate_broad_pct": 0.0,
+  "by_area": {
+    "Professional": 1507,
+    "Other": 7888,
+    "Medical Sciences": 463,
+    "Humanities": 3314,
+    "Social Sciences": 1913,
+    "STEM": 3070
+  }
+}

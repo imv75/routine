@@ -271,6 +271,17 @@ CONFIGS = {
         "col_desc": "Course Description",
         "grad_threshold": 500,
     },
+    "kstate": {
+        "school": "ksu_peoplesoft_direct",
+        "catalog_id": "tEfKZKprd3uCEYSK44LZ",
+        "year": "2026",
+        "year_label": "2025-2026",
+        "col_dept": "Subject Code",
+        "col_num": "Course Number",
+        "col_title": "Course Title",
+        "col_desc": "Course Description",
+        "grad_threshold": 500,
+    },
 }
 
 

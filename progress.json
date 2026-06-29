@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-06-29",
   "total_universities": 100,
-  "completed": 120,
+  "completed": 127,
   "in_progress": [],
   "failed": [],
   "blocked_by_network": [
@@ -11,32 +11,25 @@
     "bc",
     "brandeis",
     "rochester",
-    "wfu",
     "clemson",
-    "kstate",
     "sc",
-    "fsu",
     "msu"
   ],
   "dynamic_js_only": [
     "osu",
-    "pitt",
     "lsu",
     "ou",
     "unlv",
-    "baylor",
     "ttu",
     "uh",
     "uc",
     "udel",
     "asu",
-    "utah",
     "ucla",
     "stonybrook",
     "uva",
     "rpi",
     "wsu",
-    "oit",
     "utk"
   ],
   "universities": {
@@ -698,8 +691,18 @@
     },
     "wfu": {
       "id": 51,
-      "status": "blocked_by_network",
-      "notes": "SSL blocked from proxy environment."
+      "status": "completed",
+      "catalog_year": "2025-2026",
+      "source": "bulletin.wfu.edu (CourseleafCMS)",
+      "total_courses": 2436,
+      "progressive_pct": 14.74,
+      "western_canon_pct": 5.67,
+      "climate_narrow_pct": 0.0,
+      "data_files": [
+        "data/wfu/wfu_2026.csv",
+        "data/wfu/wfu_summary.json"
+      ],
+      "notes": "78 dept pages from bulletin.wfu.edu/azindex/. 3 pages failed (proxy disconnect). CourseleafCMS format."
     },
     "brandeis": {
       "id": 52,
@@ -787,8 +790,18 @@
     },
     "fsu": {
       "id": 59,
-      "status": "blocked_by_network",
-      "notes": "catalog.fsu.edu and apps.registrar.fsu.edu return ProxyError (SSL blocked from proxy environment)."
+      "status": "completed",
+      "catalog_year": "2025-2026",
+      "source": "bulletin.fsu.edu (Coursedog CSV export)",
+      "total_courses": 12179,
+      "progressive_pct": 5.28,
+      "western_canon_pct": 2.17,
+      "climate_narrow_pct": 0.0,
+      "data_files": [
+        "data/fsu/fsu_2026.csv",
+        "data/fsu/fsu_summary.json"
+      ],
+      "notes": "Coursedog CSV (fsu_peoplesoft, kNmTRiTxAoRs2wXOK2cs). CSV lacks course codes/numbers. 86 draft entries skipped."
     },
     "uarizona": {
       "id": 60,
@@ -827,9 +840,19 @@
       "notes": "2026-27 catalog scraped. catalog.colorado.edu/courses-a-z/ \u2014 177 departments, 2 failed."
     },
     "utah": {
-      "id": 63,
-      "status": "dynamic_js_only",
-      "notes": "catalog.utah.edu uses Coursedog. CSV export API works (19,312 rows) but lacks title/description columns \u2014 only subject code, catalog number, credits, prereqs. JSON search API requires authentication (401). Cannot compute keyword signals without course text."
+      "id": 83,
+      "status": "completed",
+      "catalog_year": "2026-2027",
+      "source": "catalog.utah.edu (Coursedog CSV export)",
+      "total_courses": 18155,
+      "progressive_pct": 0.0,
+      "western_canon_pct": 0.0,
+      "climate_narrow_pct": 0.0,
+      "data_files": [
+        "data/utah/utah_2027.csv",
+        "data/utah/utah_summary.json"
+      ],
+      "notes": "Coursedog CSV export (utah_peoplesoft). Only subject code + catalog number exported \u2014 no title or description. Keyword analysis not possible."
     },
     "uoregon": {
       "id": 64,
@@ -877,9 +900,19 @@
       "notes": "2026-27 catalog scraped. 142 departments at catalog.vt.edu/course-descriptions/{dept}/. CourseleafCMS detail-code/detail-title format. Previously logged as Acalog but catalog has migrated to CourseleafCMS. Session warmup required (visit main page first)."
     },
     "pitt": {
-      "id": 67,
-      "status": "dynamic_js_only",
-      "notes": "catalog.pitt.edu uses Acalog/ACMS returning 202 with JS-only content."
+      "id": 56,
+      "status": "completed",
+      "catalog_year": "2025-2026",
+      "source": "catalog.upp.pitt.edu (Acalog ACMS, subject-filtered, no WAF)",
+      "total_courses": 5289,
+      "progressive_pct": 3.16,
+      "western_canon_pct": 1.04,
+      "climate_narrow_pct": 0.08,
+      "data_files": [
+        "data/pitt/pitt_2026.csv",
+        "data/pitt/pitt_summary.json"
+      ],
+      "notes": "168 subject codes from filter[27] select; preview_course.php per coid via ThreadPoolExecutor(8). No WAF on catalog.upp.pitt.edu."
     },
     "rutgers": {
       "id": 68,
@@ -1086,8 +1119,18 @@
     },
     "kstate": {
       "id": 86,
-      "status": "blocked_by_network",
-      "notes": "SSL blocked from proxy environment."
+      "status": "completed",
+      "catalog_year": "2025-2026",
+      "source": "app.coursedog.com (Coursedog CSV export API)",
+      "total_courses": 20938,
+      "progressive_pct": 1.88,
+      "western_canon_pct": 0.73,
+      "climate_narrow_pct": 0.09,
+      "data_files": [
+        "data/kstate/kstate_2026.csv",
+        "data/kstate/kstate_summary.json"
+      ],
+      "notes": "Previously blocked_by_network; catalog.k-state.edu uses Coursedog. CSV export via public API. 20,938 unique courses."
     },
     "olemiss": {
       "id": 87,
@@ -1161,8 +1204,18 @@
     },
     "baylor": {
       "id": 93,
-      "status": "dynamic_js_only",
-      "notes": "catalog.baylor.edu uses Acalog/ACMS returning 202 with JS-only content."
+      "status": "completed",
+      "catalog_year": "2026-2027",
+      "source": "catalog.baylor.edu (CourseleafCMS-like catalog)",
+      "total_courses": 6438,
+      "progressive_pct": 5.2,
+      "western_canon_pct": 3.42,
+      "climate_narrow_pct": 0.3,
+      "data_files": [
+        "data/baylor/baylor_2026.csv",
+        "data/baylor/baylor_summary.json"
+      ],
+      "notes": "Scraped UG+Grad course catalog from catalog.baylor.edu. 215 department pages."
     },
     "ttu": {
       "id": 94,
@@ -1579,9 +1632,19 @@
       "notes": "catalog.wsu.edu uses Blazor WebAssembly (.NET) - dynamic JS SPA, not scrapable."
     },
     "oit": {
-      "id": 131,
-      "status": "dynamic_js_only",
-      "notes": "catalog.oit.edu uses Coursedog - dynamic JS, not scrapable."
+      "id": 98,
+      "status": "completed",
+      "catalog_year": "2026-2027",
+      "source": "catalog.oit.edu (Coursedog CSV export)",
+      "total_courses": 4440,
+      "progressive_pct": 0.32,
+      "western_canon_pct": 0.09,
+      "climate_narrow_pct": 0.05,
+      "data_files": [
+        "data/oit/oit_2027.csv",
+        "data/oit/oit_summary.json"
+      ],
+      "notes": "Coursedog CSV export (oit_banner). Descriptions not in export template \u2014 keyword analysis based on course titles only."
     },
     "alverno": {
       "id": 132,
