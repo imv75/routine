@@ -1,0 +1,21 @@
+{
+  "university": "ucsb",
+  "academic_year": "2025",
+  "academic_year_label": "2025-2026",
+  "total_courses": 14121,
+  "progressive_count": 1949,
+  "progressive_pct": 13.8,
+  "canon_count": 514,
+  "canon_pct": 3.64,
+  "climate_narrow_count": 130,
+  "climate_narrow_pct": 0.92,
+  "climate_broad_count": 453,
+  "climate_broad_pct": 3.21,
+  "by_area": {
+    "Humanities": 4106,
+    "Other": 6139,
+    "STEM": 2364,
+    "Social Sciences": 1235,
+    "Professional": 277
+  }
+}

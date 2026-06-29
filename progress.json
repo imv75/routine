@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-06-26",
+  "last_updated": "2026-06-29",
   "total_universities": 100,
-  "completed": 117,
+  "completed": 120,
   "in_progress": [],
   "failed": [],
   "blocked_by_network": [
@@ -29,20 +29,15 @@
     "uh",
     "uc",
     "udel",
-    "ucsb",
     "asu",
     "utah",
-    "uarizona",
     "ucla",
     "stonybrook",
     "uva",
     "rpi",
-
     "wsu",
     "oit",
-
-    "utk",
-    "umn"
+    "utk"
   ],
   "universities": {
     "stanford": {
@@ -511,8 +506,19 @@
     },
     "ucsb": {
       "id": 37,
-      "status": "dynamic_js_only",
-      "notes": "app.coursedog.com backend \u2014 dynamic API, not directly scrapable."
+      "status": "completed",
+      "source": "app.coursedog.com CSV export API (public, no auth required)",
+      "catalog_url": "catalog.ucsb.edu",
+      "years_covered": "2025",
+      "catalog_years": 1,
+      "total_courses": 14121,
+      "data_files": [
+        "data/ucsb/ucsb_2025.csv",
+        "data/ucsb/ucsb_summary.json"
+      ],
+      "progressive_pct": 13.8,
+      "canon_pct": 3.64,
+      "notes": "2025-26 catalog scraped via Coursedog public CSV export API. 14,121 courses. No grad_threshold for level (UCSB: <200=undergrad)."
     },
     "uci": {
       "id": 38,
@@ -601,8 +607,19 @@
     },
     "umn": {
       "id": 43,
-      "status": "dynamic_js_only",
-      "notes": "catalog.umn.edu and coursecat.umn.edu use Coursedog (dynamic JS, ProxyError). catalogs.umn.edu/courses returns 404."
+      "status": "completed",
+      "source": "app.coursedog.com CSV export API (public, no auth required)",
+      "catalog_url": "umtc.catalog.prod.coursedog.com",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "total_courses": 25682,
+      "data_files": [
+        "data/umn/umn_2026.csv",
+        "data/umn/umn_summary.json"
+      ],
+      "progressive_pct": 12.81,
+      "canon_pct": 2.91,
+      "notes": "2026-27 catalog scraped via Coursedog public CSV export API. school=umn_umntc_peoplesoft. 25,682 courses (deduplicated from 52,862 rows). grad_threshold=5000."
     },
     "unc": {
       "id": 44,
@@ -775,8 +792,19 @@
     },
     "uarizona": {
       "id": 60,
-      "status": "dynamic_js_only",
-      "notes": "catalog.arizona.edu uses dynamic JS \u2014 not scrapable with requests."
+      "status": "completed",
+      "source": "app.coursedog.com CSV export API (public, no auth required)",
+      "catalog_url": "catalog.arizona.edu",
+      "years_covered": "2026",
+      "catalog_years": 1,
+      "total_courses": 38659,
+      "data_files": [
+        "data/uarizona/uarizona_2026.csv",
+        "data/uarizona/uarizona_summary.json"
+      ],
+      "progressive_pct": 7.23,
+      "canon_pct": 1.99,
+      "notes": "2026-27 catalog scraped via Coursedog public CSV export API. school=arizona_peoplesoft. 38,659 courses (deduplicated from 50,404 rows). grad_threshold=500."
     },
     "asu": {
       "id": 61,
@@ -801,7 +829,7 @@
     "utah": {
       "id": 63,
       "status": "dynamic_js_only",
-      "notes": "catalog.utah.edu uses dynamic JS \u2014 not scrapable with requests."
+      "notes": "catalog.utah.edu uses Coursedog. CSV export API works (19,312 rows) but lacks title/description columns \u2014 only subject code, catalog number, credits, prereqs. JSON search API requires authentication (401). Cannot compute keyword signals without course text."
     },
     "uoregon": {
       "id": 64,
