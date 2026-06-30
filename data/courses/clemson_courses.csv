@@ -1,195 +1,1036 @@
 university,department_code,course_number,title,description,progressive_signal,western_canon_signal,climate_narrow_signal,climate_broad_signal
+Clemson University,ACCT,3220,Accounting Information Systems,,False,False,False,False
+Clemson University,WFB,468,0,,False,False,False,False
+Clemson University,ACCT,3130,Intermediate Financial Accounting III,,False,False,False,False
+Clemson University,ACCT,2020,Managerial Accounting Concepts,,False,False,False,False
+Clemson University,ACCT,2900,Special Topics,,False,False,False,False
+Clemson University,ACCT,3030,Cost Accounting,,False,False,False,False
 Clemson University,ACCT,3110,Intermediate Financial Accounting I,,False,False,False,False
 Clemson University,BIOL,468,0,,False,False,False,False
-Clemson University,ACCT,2020,Managerial Accounting Concepts,,False,False,False,False
-Clemson University,ACCT,3030,Cost Accounting,,False,False,False,False
-Clemson University,ACCT,3220,Accounting Information Systems,,False,False,False,False
-Clemson University,ACCT,2900,Special Topics,,False,False,False,False
-Clemson University,ACCT,3990,Internship in Accounting,,False,False,False,False
 Clemson University,ACCT,4040,Individual Taxation,,False,False,False,False
-Clemson University,ACCT,4060,Business Taxation,,False,False,False,False
-Clemson University,ACCT,3130,Intermediate Financial Accounting III,,False,False,False,False
-Clemson University,ACCT,4100,Contemporary Reporting and Management Control Systems,,False,False,False,False
-Clemson University,ACCT,4080,Retirement and Estate Planning,,False,False,False,False
-Clemson University,AS,1090,Air Force Today I,,False,False,False,False
-Clemson University,AS,1091,Air Force Today I Laboratory,,False,False,False,False
-Clemson University,AMFG,4801,Practicum Laboratory in Advanced Manufacturing,,False,False,False,False
-Clemson University,ACCT,4150,Auditing,,False,False,False,False
-Clemson University,AMFG,4800,Practicum Experience in Advanced Manufacturing,,False,False,False,False
-Clemson University,AS,2091,Development of Air Power I Laboratory,,False,False,False,False
-Clemson University,AS,2090,Development of Air Power I,,False,False,False,False
-Clemson University,AS,1101,Air Force Today II Laboratory,,False,False,False,False
-Clemson University,AS,2101,Development of Air Power II Laboratory,,False,False,False,False
-Clemson University,AS,3090,Air Force Leadership and Management I,,False,False,False,False
-Clemson University,ACCT,3980,Creative Inquiry in Accounting,,False,False,False,False
-Clemson University,AS,3091,Air Force Leadership and Management I Laboratory,,False,False,False,False
-Clemson University,AS,3100,Air Force Leadership and Management II,,False,False,False,False
-Clemson University,AS,4091,National Security Policy I Laboratory,,False,False,False,False
-Clemson University,AS,4100,National Security Policy II,,False,False,False,False
-Clemson University,AS,4101,National Security Policy II Laboratory,,False,False,False,False
-Clemson University,AGRB,2050,Agriculture and Society,,False,False,False,False
-Clemson University,AGRB,2020,Agricultural Economics,,False,False,False,False
 Clemson University,ACCT,3120,Intermediate Financial Accounting II,,False,False,False,False
-Clemson University,AGRB,3020,Economics of Farm Management,,False,False,False,False
-Clemson University,AGRB,3090,Economics of Agricultural Marketing,,False,False,False,False
-Clemson University,AS,4090,National Security Policy I,,False,False,False,False
-Clemson University,AS,1100,Air Force Today II,,False,False,False,False
-Clemson University,AGRB,3510,Principles of Agricultural Sales and Advertising,,False,False,False,False
-Clemson University,AS,2100,Development of Air Power II,,False,False,False,False
-Clemson University,AGRB,3520,Public Finance,,False,False,False,False
-Clemson University,ACCT,2010,Financial Accounting Concepts,,False,False,False,False
-Clemson University,AGRB,4020,Production Economics,,False,False,False,False
-Clemson University,AGRB,4090,Commodity Futures Markets,,False,False,False,False
-Clemson University,AGRB,3190,Agribusiness Management,,False,False,False,False
-Clemson University,AGRB,4130,Advanced Real Estate Appraisal,,False,False,False,False
-Clemson University,AGRB,4080,Quantitative Agribusiness Analysis II,,False,False,False,False
-Clemson University,AGRB,3570,Natural Resources Economics,,False,False,False,True
-Clemson University,AGRB,4520,Agricultural Policy,,False,False,False,False
-Clemson University,AGRB,3080,Quantitative Agribusiness Analysis I,,False,False,False,False
-Clemson University,AGRB,4900,Selected Topics,,False,False,False,False
-Clemson University,AGRB,4910,"Internship, Agribusiness, and Community and Rural Development",,False,False,False,False
+Clemson University,ACCT,4150,Auditing,,False,False,False,False
+Clemson University,ACCT,3990,Internship in Accounting,,False,False,False,False
 Clemson University,AMFG,3800,Introduction to Manufacturing Systems and Processes,,False,False,False,False
+Clemson University,ACCT,4100,Contemporary Reporting and Management Control Systems,,False,False,False,False
+Clemson University,AS,1100,Air Force Today II,,False,False,False,False
+Clemson University,AS,1090,Air Force Today I,,False,False,False,False
+Clemson University,ACCT,4060,Business Taxation,,False,False,False,False
+Clemson University,AS,2100,Development of Air Power II,,False,False,False,False
+Clemson University,AS,1101,Air Force Today II Laboratory,,False,False,False,False
+Clemson University,AMFG,4801,Practicum Laboratory in Advanced Manufacturing,,False,False,False,False
+Clemson University,ACCT,4080,Retirement and Estate Planning,,False,False,False,False
+Clemson University,AS,2090,Development of Air Power I,,False,False,False,False
+Clemson University,AS,1091,Air Force Today I Laboratory,,False,False,False,False
 Clemson University,AS,3101,Air Force Leadership and Management II Laboratory,,False,False,False,False
-Clemson University,AGED,1000,Orientation and Field Experience,,False,False,False,False
-Clemson University,AGED,2000,Agricultural Applications of Educational Technology,,False,False,False,False
-Clemson University,AGED,1020,Agricultural Education Freshman Seminar,,False,False,False,False
-Clemson University,AGED,2001,Agricultural Applications of Educational Technology Laboratory,,False,False,False,False
-Clemson University,WFB,468,0,,False,False,False,False
-Clemson University,AGRB,4210,Globalization,,False,False,False,False
-Clemson University,AGED,2020,Agricultural Education Sophomore Seminar,,False,False,False,False
+Clemson University,AS,2101,Development of Air Power II Laboratory,,False,False,False,False
+Clemson University,AS,3100,Air Force Leadership and Management II,,False,False,False,False
+Clemson University,AS,4100,National Security Policy II,,False,False,False,False
+Clemson University,AS,2091,Development of Air Power I Laboratory,,False,False,False,False
+Clemson University,AGRB,2050,Agriculture and Society,,False,False,False,False
+Clemson University,ACCT,3980,Creative Inquiry in Accounting,,False,False,False,False
+Clemson University,AGRB,3020,Economics of Farm Management,,False,False,False,False
+Clemson University,AS,4091,National Security Policy I Laboratory,,False,False,False,False
+Clemson University,AGRB,3080,Quantitative Agribusiness Analysis I,,False,False,False,False
+Clemson University,AS,4101,National Security Policy II Laboratory,,False,False,False,False
+Clemson University,AGRB,3510,Principles of Agricultural Sales and Advertising,,False,False,False,False
+Clemson University,AGRB,3190,Agribusiness Management,,False,False,False,False
+Clemson University,AGRB,3570,Natural Resources Economics,,False,False,False,True
+Clemson University,AGRB,2020,Agricultural Economics,,False,False,False,False
+Clemson University,AS,3091,Air Force Leadership and Management I Laboratory,,False,False,False,False
 Clemson University,AGRB,3130,Principles of Real Estate Appraisal,,False,False,False,False
-Clemson University,AGED,2031,Teaching Agriscience Laboratory,,False,False,False,False
-Clemson University,AGRB,4600,Agricultural Finance,,False,False,False,False
-Clemson University,AGED,2040,Applied Agriculture Calculations,,False,False,False,False
-Clemson University,AGED,3020,Agricultural Education Junior Seminar,,False,False,False,False
-Clemson University,AGED,3031,Mechanical Technology for Agriculture Education Laboratory,,False,False,False,False
-Clemson University,AGED,3650,Multiculturalism in Agricultural Education,,False,False,False,False
-Clemson University,AGED,3550,Team and Organizational Leadership in the Food and Fiber System,,False,False,False,False
-Clemson University,AGED,4000,Supervised Field Experience II,,False,False,False,False
+Clemson University,AGRB,4080,Quantitative Agribusiness Analysis II,,False,False,False,False
+Clemson University,AGRB,3090,Economics of Agricultural Marketing,,False,False,False,False
+Clemson University,AGRB,4130,Advanced Real Estate Appraisal,,False,False,False,False
 Clemson University,AGRB,4110,Regional Impact Analysis,,False,False,False,False
 Clemson University,AGRB,4120,Regional Economic Development Theory and Policy,,False,False,False,False
+Clemson University,AGRB,4520,Agricultural Policy,,False,False,False,False
+Clemson University,ACCT,2010,Financial Accounting Concepts,,False,False,False,False
+Clemson University,AS,4090,National Security Policy I,,False,False,False,False
+Clemson University,AGRB,4910,"Internship, Agribusiness, and Community and Rural Development",,False,False,False,False
+Clemson University,AGRB,4600,Agricultural Finance,,False,False,False,False
+Clemson University,AGRB,4900,Selected Topics,,False,False,False,False
+Clemson University,AGED,1000,Orientation and Field Experience,,False,False,False,False
 Clemson University,AGRB,4940,Creative Inquiry: Community and Rural Development,,False,False,False,False
-Clemson University,AGED,4020,Agricultural Education Senior Seminar,,False,False,False,False
-Clemson University,AGRB,4560,Prices,,False,False,False,False
-Clemson University,AGED,4070,Internship in Extension and Leadership Education,,False,False,False,False
+Clemson University,AGED,2000,Agricultural Applications of Educational Technology,,False,False,False,False
+Clemson University,AGED,2001,Agricultural Applications of Educational Technology Laboratory,,False,False,False,False
+Clemson University,AGED,1020,Agricultural Education Freshman Seminar,,False,False,False,False
 Clemson University,AGED,2011,Introduction to Agricultural Education Laboratory,,False,False,False,False
-Clemson University,AGED,4120,Senior Agriculture Leadership Seminar,,False,False,False,False
-Clemson University,AGED,2010,Introduction to Agricultural Education,,False,False,False,False
-Clemson University,AGED,4150,Leadership of Volunteers,,False,False,False,False
-Clemson University,AGED,4251,Teaching Agricultural Mechanics Laboratory,,False,False,False,False
-Clemson University,AGED,4280,Special Studies in Agricultural Education,,False,False,False,False
-Clemson University,AGED,4230,Curriculum,,False,False,False,False
+Clemson University,AGED,2030,Teaching Agriscience,,False,False,False,False
+Clemson University,AS,3090,Air Force Leadership and Management I,,False,False,False,False
+Clemson University,AGED,2031,Teaching Agriscience Laboratory,,False,False,False,False
+Clemson University,AMFG,4800,Practicum Experience in Advanced Manufacturing,,False,False,False,False
+Clemson University,AGED,3020,Agricultural Education Junior Seminar,,False,False,False,False
+Clemson University,AGRB,3520,Public Finance,,False,False,False,False
+Clemson University,AGRB,4020,Production Economics,,False,False,False,False
 Clemson University,AGED,3030,Mechanical Technology for Agriculture Education,,False,False,False,False
-Clemson University,AGED,4400,Program Development in Adult/Extension Education,,False,False,False,False
+Clemson University,AGED,3031,Mechanical Technology for Agriculture Education Laboratory,,False,False,False,False
+Clemson University,AGRB,4090,Commodity Futures Markets,,False,False,False,False
+Clemson University,AGED,3650,Multiculturalism in Agricultural Education,,False,False,False,False
+Clemson University,AGED,4000,Supervised Field Experience II,,False,False,False,False
+Clemson University,AGRB,4210,Globalization,,False,False,False,False
+Clemson University,AGED,4030,Principles of Adult/Extension Education,,False,False,False,False
+Clemson University,AGED,2020,Agricultural Education Sophomore Seminar,,False,False,False,False
+Clemson University,AGED,4120,Senior Agriculture Leadership Seminar,,False,False,False,False
 Clemson University,AGED,4060,Directed Teaching,,False,False,False,False
-Clemson University,AGED,4500,Modern Topics and Issues,,False,False,False,False
-Clemson University,AGM,1010,Introduction to Agricultural Mechanization and Business,,False,False,False,False
-Clemson University,BIOL,468,0,,False,False,False,False
+Clemson University,AGED,4070,Internship in Extension and Leadership Education,,False,False,False,False
+Clemson University,AGED,4160,Ethics and Issues in Agriculture and the Food and Fiber System,,False,False,False,False
 Clemson University,AGED,4250,Teaching Agricultural Mechanics,,False,False,False,False
+Clemson University,AGED,4251,Teaching Agricultural Mechanics Laboratory,,False,False,False,False
+Clemson University,AGED,4020,Agricultural Education Senior Seminar,,False,False,False,False
+Clemson University,AGED,4400,Program Development in Adult/Extension Education,,False,False,False,False
+Clemson University,AGED,4150,Leadership of Volunteers,,False,False,False,False
+Clemson University,AGRB,4560,Prices,,False,False,False,False
+Clemson University,AGED,3550,Team and Organizational Leadership in the Food and Fiber System,,False,False,False,False
+Clemson University,AGED,4230,Curriculum,,False,False,False,False
+Clemson University,AGED,4810,Web Design for the Life Sciences and Agriculture,,False,False,False,False
 Clemson University,AGED,4010,Instructional Methods in Agricultural Education,,False,False,False,False
-Clemson University,AGM,2060,Machinery Management,,False,False,False,False
 Clemson University,AGM,2050,Principles of Fabrication,,False,False,False,False
+Clemson University,AGM,1010,Introduction to Agricultural Mechanization and Business,,False,False,False,False
 Clemson University,AGM,2051,Principles of Fabrication Laboratory,,False,False,False,False
-Clemson University,AGM,2061,Machinery Management Laboratory,,False,False,False,False
-Clemson University,AGM,2200,Calculations for Mechanized Agriculture,,False,False,False,False
+Clemson University,AGED,2040,Applied Agriculture Calculations,,False,False,False,False
 Clemson University,AGM,2190,Agribusiness and Food Systems,,False,False,False,False
+Clemson University,AGM,2200,Calculations for Mechanized Agriculture,,False,False,False,False
+Clemson University,AGED,4011,Instructional Methods in Agricultural Education Laboratory,,False,False,False,False
 Clemson University,AGM,2201,Calculations for Mechanized Agriculture Laboratory,,False,False,False,False
 Clemson University,AGM,2211,Surveying: Earthwork and Area Measurements Laboratory,,False,False,False,False
-Clemson University,AGED,2030,Teaching Agriscience,,False,False,False,False
-Clemson University,AGED,4810,Web Design for the Life Sciences and Agriculture,,False,False,False,False
-Clemson University,AGM,2210,Surveying: Earthwork and Area Measurements,,False,False,False,False
-Clemson University,AGED,4011,Instructional Methods in Agricultural Education Laboratory,,False,False,False,False
-Clemson University,AGED,4030,Principles of Adult/Extension Education,,False,False,False,False
-Clemson University,AGM,3190,Agribusiness Decision Analysis,,False,False,False,False
-Clemson University,AGM,4050,Environmental Control in Animal Structures,,False,False,False,False
-Clemson University,AGED,4811,Web Design for the Life Sciences and Agriculture Laboratory,,False,False,False,False
-Clemson University,AGM,4051,Environmental Control in Animal Structures Laboratory,,False,False,False,False
-Clemson University,AGED,4160,Ethics and Issues in Agriculture and the Food and Fiber System,,False,False,False,False
-Clemson University,AGM,4060,Mechanical and Hydraulic Systems,,False,False,False,False
-Clemson University,AGM,4100,Precision Agriculture Technology,,False,False,False,False
 Clemson University,AGM,3010,Soil and Water Conservation,,False,False,False,True
+Clemson University,AGM,3190,Agribusiness Decision Analysis,,False,False,False,False
 Clemson University,WFB,468,0,,False,False,False,False
-Clemson University,AGM,4020,Irrigation System Design,,False,False,False,False
-Clemson University,AGM,4601,Electrical Systems Laboratory,,False,False,False,False
-Clemson University,AGM,4600,Electrical Systems,,False,False,False,False
-Clemson University,AGM,4720,Capstone,,False,False,False,False
-Clemson University,AGM,4721,Capstone Laboratory,,False,False,False,False
-Clemson University,AGM,4730,Special Topics in Agricultural Mechanization,,False,False,False,False
-Clemson University,AGM,4101,Precision Agriculture Technology Laboratory,,False,False,False,False
-Clemson University,ASL,1021,American Sign Language I Laboratory,,False,False,False,False
-Clemson University,AGM,4000,Senior Seminar in Agricultural Mechanization and Business,,False,False,False,False
-Clemson University,ASL,1020,American Sign Language I,,False,False,False,False
-Clemson University,AGM,4521,Mobile Power Laboratory,,False,False,False,False
-Clemson University,ASL,1010,American Sign Language I,,False,False,False,False
+Clemson University,AGM,2061,Machinery Management Laboratory,,False,False,False,False
+Clemson University,BIOL,468,0,,False,False,False,False
 Clemson University,AGM,3710,Agricultural Mechanization Practicum,,False,False,False,False
-Clemson University,ASL,3000,Fingerspelling and Numbers in American Sign Language,,False,False,False,False
-Clemson University,ASL,3020,Advanced American Sign Language II,,False,False,False,False
-Clemson University,ASL,3040,Internship in American Sign Language,,False,False,False,False
 Clemson University,AGM,4021,Irrigation System Design Laboratory,,False,False,False,False
+Clemson University,AGM,4000,Senior Seminar in Agricultural Mechanization and Business,,False,False,False,False
+Clemson University,AGM,4051,Environmental Control in Animal Structures Laboratory,,False,False,False,False
+Clemson University,AGED,4280,Special Studies in Agricultural Education,,False,False,False,False
+Clemson University,AGED,4811,Web Design for the Life Sciences and Agriculture Laboratory,,False,False,False,False
+Clemson University,AGED,2010,Introduction to Agricultural Education,,False,False,False,False
+Clemson University,AGM,4050,Environmental Control in Animal Structures,,False,False,False,False
+Clemson University,AGM,4521,Mobile Power Laboratory,,False,False,False,False
+Clemson University,AGM,4600,Electrical Systems,,False,False,False,False
+Clemson University,AGM,4520,Mobile Power,,False,False,False,False
+Clemson University,AGM,4020,Irrigation System Design,,False,False,False,False
+Clemson University,AGM,4721,Capstone Laboratory,,False,False,False,False
+Clemson University,AGM,2210,Surveying: Earthwork and Area Measurements,,False,False,False,False
+Clemson University,AGM,2060,Machinery Management,,False,False,False,False
+Clemson University,ASL,1010,American Sign Language I,,False,False,False,False
+Clemson University,AGED,4500,Modern Topics and Issues,,False,False,False,False
+Clemson University,AGM,4730,Special Topics in Agricultural Mechanization,,False,False,False,False
+Clemson University,AGM,4061,Mechanical and Hydraulic Systems Laboratory,,False,False,False,False
+Clemson University,AGM,4720,Capstone,,False,False,False,False
+Clemson University,ASL,2020,American Sign Language II,,False,False,False,False
+Clemson University,ASL,1021,American Sign Language I Laboratory,,False,False,False,False
+Clemson University,ASL,2970,Creative Inquiry: American Sign Language,,False,False,False,False
+Clemson University,ASL,1011,American Sign Language I Laboratory,,False,False,False,False
+Clemson University,ASL,3010,Advanced American Sign Language I,,False,False,False,False
+Clemson University,AGM,4060,Mechanical and Hydraulic Systems,,False,False,False,False
+Clemson University,ASL,3050,Deaf Studies in the United States,,False,False,False,False
+Clemson University,AGM,4100,Precision Agriculture Technology,,False,False,False,False
+Clemson University,ASL,3040,Internship in American Sign Language,,False,False,False,False
 Clemson University,ASL,3150,Survey of Interpreting in Public Schools,,False,False,False,False
 Clemson University,ASL,3200,American Sign Language English Interpreting in Elementary Schools I,,False,False,False,False
-Clemson University,ASL,3250,American Sign Language English Interpreting in Secondary Schools I,,False,False,False,False
-Clemson University,AGM,4061,Mechanical and Hydraulic Systems Laboratory,,False,False,False,False
-Clemson University,ASL,1011,American Sign Language I Laboratory,,False,False,False,False
-Clemson University,ASL,3490,Advanced Applications in American Sign Language,,False,False,False,False
-Clemson University,ASL,3950,ASL-English Interpreting Field Observation,,False,False,False,False
-Clemson University,AGM,4520,Mobile Power,,False,False,False,False
-Clemson University,ASL,4050,Advanced Deaf Culture and History,,False,False,False,False
-Clemson University,ASL,4200,American Sign Language English Interpreting in Elementary Schools II,,False,False,False,False
-Clemson University,ASL,4010,Discourse in American Sign Language I,,False,False,False,False
-Clemson University,ASL,3010,Advanced American Sign Language I,,False,False,False,False
-Clemson University,ASL,4450,American Sign Language for Health Care Practitioners II,,False,False,False,False
-Clemson University,ASL,2010,American Sign Language II,,False,False,False,False
-Clemson University,ASL,4600,Deaf Literature and Folklore,,False,False,False,False
-Clemson University,ASL,4250,American Sign Language English Interpreting in Secondary Schools II,,False,False,False,False
 Clemson University,ASL,3450,American Sign Language for Health Care Practitioners I,,False,False,False,False
-Clemson University,AVS,1000,Orientation to Animal and Veterinary Sciences,,False,False,False,False
-Clemson University,AVS,1500,Introduction to Animal Science,,False,False,False,False
-Clemson University,AVS,1510,Introduction to Animal Science Laboratory,,False,False,False,False
-Clemson University,AVS,2010,Poultry Techniques,,False,False,False,False
-Clemson University,ASL,4980,Independent Study,,False,False,False,False
-Clemson University,ASL,3050,Deaf Studies in the United States,,False,False,False,False
-Clemson University,AVS,2020,CAFLS Plus,,False,False,False,False
-Clemson University,ASL,2020,American Sign Language II,,False,False,False,False
-Clemson University,AVS,2021,CAFLS Plus Laboratory,,False,False,False,False
-Clemson University,ASL,2970,Creative Inquiry: American Sign Language,,False,False,False,False
-Clemson University,AVS,2030,Dairy Science Techniques,,False,False,False,False
-Clemson University,ASL,3970,Creative Inquiry in American Sign Language,,False,False,False,False
-Clemson University,ASL,4020,Discourse in American Sign Language II,,False,False,False,False
-Clemson University,AVS,2040,Horse Care Techniques,,False,False,False,False
-Clemson University,AVS,2000,Beef Cattle Techniques,,False,False,False,False
-Clemson University,AVS,2041,Horse Care Techniques Laboratory,,False,False,False,False
-Clemson University,AVS,2090,Livestock Exhibition Techniques,,False,False,False,False
-Clemson University,AVS,2081,Techniques of Teaching Horsemanship Laboratory,,False,False,False,False
-Clemson University,AVS,2011,Poultry Techniques Laboratory,,False,False,False,False
-Clemson University,AVS,2001,Beef Cattle Techniques Laboratory,,False,False,False,False
-Clemson University,AVS,2050,Horsemanship Techniques,,False,False,False,False
+Clemson University,ASL,3250,American Sign Language English Interpreting in Secondary Schools I,,False,False,False,False
+Clemson University,ASL,3950,ASL-English Interpreting Field Observation,,False,False,False,False
+Clemson University,AGM,4101,Precision Agriculture Technology Laboratory,,False,False,False,False
+Clemson University,ASL,1020,American Sign Language I,,False,False,False,False
+Clemson University,AGM,4601,Electrical Systems Laboratory,,False,False,False,False
+Clemson University,ASL,4200,American Sign Language English Interpreting in Elementary Schools II,,False,False,False,False
+Clemson University,ASL,4250,American Sign Language English Interpreting in Secondary Schools II,,False,False,False,False
+Clemson University,ASL,4600,Deaf Literature and Folklore,,False,False,False,False
+Clemson University,ASL,3490,Advanced Applications in American Sign Language,,False,False,False,False
+Clemson University,ASL,2010,American Sign Language II,,False,False,False,False
+Clemson University,ASL,4010,Discourse in American Sign Language I,,False,False,False,False
 Clemson University,ASL,4970,Creative Inquiry in American Sign Language,,False,False,False,False
-Clemson University,AVS,3010,Anatomy and Physiology of Domestic Animals,,False,False,False,False
-Clemson University,AVS,3011,Anatomy and Physiology of Domestic Animals Laboratory,,False,False,False,False
-Clemson University,AVS,2080,Techniques of Teaching Horsemanship,,False,False,False,False
-Clemson University,AVS,2031,Dairy Science Techniques Laboratory,,False,False,False,False
-Clemson University,AVS,2061,Swine Techniques Laboratory,,False,False,False,False
-Clemson University,AVS,3090,Principles of Equine Evaluation,,False,False,False,False
-Clemson University,AVS,3100,Animal Health,,False,False,False,False
+Clemson University,AVS,1510,Introduction to Animal Science Laboratory,,False,False,False,False
+Clemson University,ASL,3970,Creative Inquiry in American Sign Language,,False,False,False,False
+Clemson University,AVS,2000,Beef Cattle Techniques,,False,False,False,False
+Clemson University,AVS,2001,Beef Cattle Techniques Laboratory,,False,False,False,False
+Clemson University,AVS,2010,Poultry Techniques,,False,False,False,False
+Clemson University,ASL,3020,Advanced American Sign Language II,,False,False,False,False
+Clemson University,ASL,4020,Discourse in American Sign Language II,,False,False,False,False
+Clemson University,ASL,4050,Advanced Deaf Culture and History,,False,False,False,False
+Clemson University,AVS,2030,Dairy Science Techniques,,False,False,False,False
+Clemson University,AVS,2040,Horse Care Techniques,,False,False,False,False
+Clemson University,ASL,3000,Fingerspelling and Numbers in American Sign Language,,False,False,False,False
+Clemson University,AVS,2050,Horsemanship Techniques,,False,False,False,False
+Clemson University,ASL,4450,American Sign Language for Health Care Practitioners II,,False,False,False,False
+Clemson University,ASL,4980,Independent Study,,False,False,False,False
+Clemson University,AVS,2011,Poultry Techniques Laboratory,,False,False,False,False
+Clemson University,AVS,1500,Introduction to Animal Science,,False,False,False,False
+Clemson University,AVS,2020,CAFLS Plus,,False,False,False,False
 Clemson University,AVS,2060,Swine Techniques,,False,False,False,False
+Clemson University,AVS,2081,Techniques of Teaching Horsemanship Laboratory,,False,False,False,False
 Clemson University,AVS,2091,Livestock Exhibition Techniques Laboratory,,False,False,False,False
-Clemson University,AVS,3111,Dairy Cattle Selection Laboratory,,False,False,False,False
-Clemson University,AVS,3230,Poultry and Poultry Products Evaluation,,False,False,False,False
-Clemson University,AVS,3700,Principles of Animal Nutrition,,False,False,False,False
-Clemson University,AVS,3750,Applied Animal Nutrition,,False,False,False,False
-Clemson University,AVS,3021,Livestock Selection and Evaluation I Laboratory,,False,False,False,False
-Clemson University,AVS,2120,Small Ruminant Techniques,,False,False,False,False
-Clemson University,AVS,3851,Equine Behavior and Training Laboratory,,False,False,False,False
-Clemson University,AVS,3150,Animal Welfare,,False,False,False,False
-Clemson University,AVS,3900,Practicum,,False,False,False,False
-Clemson University,AVS,3850,Equine Behavior and Training,,False,False,False,False
-Clemson University,AVS,3751,Applied Animal Nutrition Laboratory,,False,False,False,False
-Clemson University,AVS,3020,Livestock Selection and Evaluation I,,False,False,False,False
 Clemson University,AVS,2111,Meat Processing Techniques Laboratory,,False,False,False,False
-Clemson University,AVS,3860,Advanced Equine Behavior and Training,,False,False,False,False
-Clemson University,AVS,3600,Internship,,False,False,False,False
-Clemson University,AVS,4000,Animal and Veterinary Sciences Professional Development,,False,False,False,False
 Clemson University,AVS,2110,Meat Processing Techniques,,False,False,False,False
+Clemson University,AVS,2090,Livestock Exhibition Techniques,,False,False,False,False
+Clemson University,AVS,3011,Anatomy and Physiology of Domestic Animals Laboratory,,False,False,False,False
+Clemson University,AVS,3020,Livestock Selection and Evaluation I,,False,False,False,False
+Clemson University,AVS,2021,CAFLS Plus Laboratory,,False,False,False,False
+Clemson University,AVS,2080,Techniques of Teaching Horsemanship,,False,False,False,False
+Clemson University,AVS,3021,Livestock Selection and Evaluation I Laboratory,,False,False,False,False
+Clemson University,AVS,2041,Horse Care Techniques Laboratory,,False,False,False,False
+Clemson University,AVS,3100,Animal Health,,False,False,False,False
+Clemson University,AVS,3111,Dairy Cattle Selection Laboratory,,False,False,False,False
+Clemson University,AVS,3010,Anatomy and Physiology of Domestic Animals,,False,False,False,False
+Clemson University,AVS,2031,Dairy Science Techniques Laboratory,,False,False,False,False
+Clemson University,AVS,3600,Internship,,False,False,False,False
+Clemson University,AVS,3750,Applied Animal Nutrition,,False,False,False,False
+Clemson University,AVS,3751,Applied Animal Nutrition Laboratory,,False,False,False,False
+Clemson University,AVS,3850,Equine Behavior and Training,,False,False,False,False
+Clemson University,AVS,3851,Equine Behavior and Training Laboratory,,False,False,False,False
+Clemson University,AVS,2120,Small Ruminant Techniques,,False,False,False,False
+Clemson University,AVS,2061,Swine Techniques Laboratory,,False,False,False,False
+Clemson University,AVS,4000,Animal and Veterinary Sciences Professional Development,,False,False,False,False
+Clemson University,AVS,3900,Practicum,,False,False,False,False
+Clemson University,BIOL,468,0,,False,False,False,False
+Clemson University,WFB,468,0,,False,False,False,False
+Clemson University,AVS,4010,Beef Production,,False,False,False,False
+Clemson University,AVS,1000,Orientation to Animal and Veterinary Sciences,,False,False,False,False
+Clemson University,AVS,3230,Poultry and Poultry Products Evaluation,,False,False,False,False
+Clemson University,AVS,3150,Animal Welfare,,False,False,False,False
+Clemson University,AVS,4100,Domestic Animal Behavior,,False,False,False,False
 Clemson University,AVS,2121,Small Ruminant Techniques Laboratory,,False,False,False,False
+Clemson University,AVS,4050,Advanced Selection and Evaluation,,False,False,False,False
+Clemson University,AVS,4110,Animal Growth and Development,,False,False,False,False
+Clemson University,AVS,4130,Animal Products,,False,False,False,False
+Clemson University,AVS,3090,Principles of Equine Evaluation,,False,False,False,False
+Clemson University,AVS,4131,Animal Products Laboratory,,False,False,False,False
+Clemson University,AVS,4150,Contemporary Issues in Animal Science,,False,False,False,False
+Clemson University,AVS,4160,Equine Exercise Physiology,,False,False,False,False
+Clemson University,AVS,3700,Principles of Animal Nutrition,,False,False,False,False
+Clemson University,AVS,4170,Animal Agribusiness Development,,False,False,False,False
+Clemson University,AVS,4200,Poultry Science On-line,,False,False,False,False
+Clemson University,AVS,4120,Advanced Equine Management,,False,False,False,False
+Clemson University,AVS,4410,Animal and Veterinary Sciences Teaching Experience,,False,False,False,False
+Clemson University,AVS,4090,Selected Topics,,False,False,False,False
+Clemson University,AVS,4011,Beef Production Laboratory,,False,False,False,False
+Clemson University,AVS,4440,AVS Animal Agribusiness Travel Experience,,False,False,False,False
 Clemson University,AVS,3110,Dairy Cattle Selection,,False,False,False,False
+Clemson University,AVS,4161,Equine Exercise Physiology Laboratory,,False,False,False,False
+Clemson University,AVS,4500,Sustainable Livestock Production Systems,,False,False,False,False
+Clemson University,AVS,4530,Animal Reproduction,,False,False,False,False
+Clemson University,AVS,4430,AVS International Experience,,False,False,False,False
+Clemson University,AVS,3860,Advanced Equine Behavior and Training,,False,False,False,False
+Clemson University,AVS,4420,Animal and Veterinary Sciences Extension Experience,,False,False,False,False
+Clemson University,AVS,4650,Animal Physiology I,,False,False,False,False
+Clemson University,AVS,4171,Animal Agribusiness Development Laboratory,,False,False,False,False
+Clemson University,AVS,4220,Special Problems,,False,False,False,False
+Clemson University,AVS,4121,Advanced Equine Management Laboratory,,False,False,False,False
+Clemson University,AVS,4501,Sustainable Livestock Production Systems Laboratory,,False,False,False,False
+Clemson University,ANTH,2050,Professional Development,,False,False,False,False
+Clemson University,AVS,4441,AVS Animal Agribusiness Travel Experience Laboratory,,False,False,False,False
+Clemson University,AVS,4531,Animal Reproduction Laboratory,,False,False,False,False
+Clemson University,ANTH,3200,North American Indian Cultures,,False,False,False,False
+Clemson University,ANTH,3311,Archaeology Laboratory,,False,False,False,False
+Clemson University,ANTH,3310,Archaeology,,False,False,False,False
+Clemson University,AVS,4060,Seminars and Related Topics,,False,False,False,False
+Clemson University,AVS,4670,Animal Physiology II,,False,False,False,False
+Clemson University,ANTH,3320,World Archaeology,,False,False,False,False
+Clemson University,AVS,4550,Animal Reproductive Management,,False,False,False,False
+Clemson University,ANTH,4280,"Law, Culture and Society",,False,False,False,False
+Clemson University,ANTH,4350,Field Studies in Archaeology,,False,False,False,False
+Clemson University,ANTH,4530,Human Remains Recovery,,False,False,False,False
+Clemson University,ANTH,2010,Introduction to Anthropology,,False,False,False,False
+Clemson University,AVS,4551,Animal Reproductive Management Laboratory,,False,False,False,False
+Clemson University,ANTH,4980,Independent Study,,False,False,False,False
+Clemson University,ANTH,4990,Special Topics,,False,False,False,False
+Clemson University,ARAB,1000,Introduction to Arabic Conversation and Comprehension,,False,False,False,False
+Clemson University,ARAB,1010,Elementary Arabic I,,False,False,False,False
+Clemson University,ARAB,1011,Elementary Arabic I Laboratory,,False,False,False,False
+Clemson University,AVS,4910,Animal and Veterinary Sciences Undergraduate Research Experience,,False,False,False,False
+Clemson University,ARAB,1021,Elementary Arabic II Laboratory,,False,False,False,False
+Clemson University,ARAB,2010,Intermediate Arabic I,,False,False,False,False
+Clemson University,ARAB,2011,Intermediate Arabic I Laboratory,,False,False,False,False
+Clemson University,ANTH,4040,Anthropological Theories,,False,False,False,False
+Clemson University,ANTH,4030,Qualitative Methods,,False,False,False,False
+Clemson University,ARAB,3050,Intermediate Arabic Conversation and Composition,,False,False,False,False
+Clemson University,ANTH,4960,Creative Inquiry,,False,False,False,False
+Clemson University,ARCH,1511,Architecture Communication Laboratory,,False,False,False,False
+Clemson University,ANTH,4250,Field Studies in Cultural Anthropology,,False,False,False,False
+Clemson University,ARCH,1521,Collaborative Studio II Laboratory,,False,False,False,False
+Clemson University,ARCH,2040,History of Modern Architecture,,False,False,False,False
+Clemson University,ARCH,2510,Architecture Foundations I,,False,False,False,False
+Clemson University,ARCH,2511,Architecture Foundations I Laboratory,,False,False,False,False
+Clemson University,ARCH,1510,Architecture Communication,,False,False,False,False
+Clemson University,ARCH,2520,Architecture Foundations II,,False,False,False,False
+Clemson University,ARCH,1520,Collaborative Studio II,,False,False,False,False
+Clemson University,ARCH,2710,Structures II,,False,False,False,False
+Clemson University,ARCH,3500,Introduction to Urban Contexts,,False,False,False,False
+Clemson University,ARCH,1010,Introduction to Architecture,,False,False,False,False
+Clemson University,ARCH,3511,Studio Clemson Laboratory,,False,False,False,False
+Clemson University,ANTH,3010,Cultural Anthropology,,False,False,False,False
+Clemson University,AVS,4700,Animal Genetics,,False,False,False,False
+Clemson University,ANTH,4950,Field Studies,,False,False,False,False
+Clemson University,ARCH,3531,Studio Genoa Laboratory,,False,False,False,False
+Clemson University,ARCH,3510,Studio Clemson,,False,False,False,False
+Clemson University,ARCH,2700,Structures I,,False,False,False,False
+Clemson University,ARCH,3521,Studio Charleston Laboratory,,False,False,False,False
+Clemson University,ARCH,3530,Studio Genoa,,False,False,False,False
+Clemson University,ARCH,3551,Studio South Laboratory,,False,False,False,False
+Clemson University,ARCH,3520,Studio Charleston,,False,False,False,False
+Clemson University,ARCH,4010,Architectural Portfolio,,False,False,False,False
+Clemson University,BIOL,468,0,,False,False,False,False
+Clemson University,WFB,468,0,,False,False,False,False
+Clemson University,ARAB,2021,Intermediate Arabic II Laboratory,,False,False,False,False
+Clemson University,ARCH,4040,Current Directions in Architecture,,False,False,False,False
+Clemson University,ARCH,4050,American Architectural Styles 1650 to 1950,,False,False,False,False
+Clemson University,ARCH,4120,Architectural History Research,,False,False,False,False
+Clemson University,ARCH,4160,Field Studies in Architecture and Related Arts,,False,False,False,False
+Clemson University,ARCH,4210,Architectural Seminar,,False,False,False,False
+Clemson University,ARCH,3541,Studio Barcelona Laboratory,,False,False,False,False
+Clemson University,ARCH,4240,Product Design,,False,False,False,False
+Clemson University,ARCH,2521,Architecture Foundations II Laboratory,,False,False,False,False
+Clemson University,ARCH,4260,Architectural Color Graphics,,False,False,False,False
+Clemson University,ARCH,4250,Energy in Architecture,,False,False,False,False
+Clemson University,ARCH,4270,Advanced Color Graphics,,False,False,False,False
+Clemson University,ARCH,4281,Computer-Aided Design Laboratory,,False,False,False,False
+Clemson University,ARCH,4300,Theories and Philosophies of Technology and Architecture,,False,False,False,False
+Clemson University,ARCH,4280,Computer-Aided Design,,False,False,False,False
+Clemson University,ARCH,4400,New York Field Study,,False,False,False,False
+Clemson University,ARCH,3540,Studio Barcelona,,False,False,False,False
+Clemson University,ARCH,4140,Design Seminar,,False,False,False,False
+Clemson University,ARCH,4720,Architectural Field Studies,,False,False,False,False
+Clemson University,ARAB,2020,Intermediate Arabic II,,False,False,False,False
+Clemson University,ARCH,4710,Architectural History of Place,,False,False,False,False
+Clemson University,ARCH,4850,History and Theory of Architecture + Health,,False,False,False,False
+Clemson University,ARCH,4880,Architectural Programming and Predesign,,False,False,False,False
+Clemson University,ARCH,4890,Internship,,False,False,False,False
+Clemson University,ARCH,4030,The Modern Architectural Movement,,False,False,False,False
+Clemson University,ARCH,4521,Synthesis Studio Laboratory,,False,False,False,False
+Clemson University,ARCH,4990,Selected Topics in Architecture,,False,False,False,False
+Clemson University,ARCH,4900,Directed Studies,,False,False,False,False
+Clemson University,ART,1030,Visual Arts Studio,,False,False,False,False
+Clemson University,ARAB,1020,Elementary Arabic II,,False,False,False,False
+Clemson University,ARCH,4290,Architectural Graphics,,False,False,False,False
+Clemson University,ART,1510,Foundations in Visual Art I,,False,False,False,False
+Clemson University,ART,1520,Foundations in Visual Art II,,False,False,False,False
+Clemson University,ART,2050,Beginning Life Drawing,,False,False,False,False
+Clemson University,ART,1530,Orientation to Visual Arts I,,False,False,False,False
+Clemson University,ART,2090,Beginning Sculpture,,False,False,False,False
+Clemson University,ART,2110,Beginning Printmaking,,False,False,False,False
+Clemson University,ART,2130,Beginning Photography,,False,False,False,False
+Clemson University,ARCH,4721,Architectural Field Studies Laboratory,,False,False,False,False
+Clemson University,ARCH,4770,Introduction of Craft,,False,False,False,False
+Clemson University,ART,2170,Beginning Ceramics,,False,False,False,False
+Clemson University,ART,2230,Woodworking Studio,,False,False,False,False
+Clemson University,ART,2070,Beginning Painting,,False,False,False,False
+Clemson University,ARCH,4510,Architecture Studio III,,False,False,False,False
+Clemson University,ART,2150,Beginning Graphic Design,,False,False,False,False
+Clemson University,ART,2100,Art Appreciation,,False,False,False,False
+Clemson University,ART,3050,Intermediate Drawing,,False,False,False,False
+Clemson University,ART,2210,Beginning New Media,,False,False,False,False
+Clemson University,ART,3150,Graphic Design,,False,False,False,False
+Clemson University,ART,3170,Ceramic Arts,,False,False,False,False
+Clemson University,ART,3180,Ceramics Research I,,False,False,False,False
+Clemson University,ARCH,4520,Synthesis Studio,,False,False,False,False
+Clemson University,ARCH,3550,Studio South,,False,False,False,False
+Clemson University,ART,3130,Photography,,False,False,False,False
+Clemson University,ART,3210,New Media Art II,,False,False,False,False
+Clemson University,ART,3090,Sculpture,,False,False,False,False
+Clemson University,ART,3750,Writing for the Arts in Charleston,,False,False,False,False
+Clemson University,ART,4070,Advanced Painting,,False,False,False,False
+Clemson University,ART,4050,Advanced Drawing,,False,False,False,False
+Clemson University,ART,4090,Advanced Sculpture,,False,False,False,False
+Clemson University,ART,4130,Advanced Photography,,False,False,False,False
+Clemson University,ART,4110,Advanced Printmaking,,False,False,False,False
+Clemson University,ART,4160,Advanced Media Art: Interactive Objects and Environments,,False,False,False,False
+Clemson University,ART,4170,Advanced Ceramic Arts,,False,False,False,False
+Clemson University,ART,4200,Selected Topics in Art,,False,False,False,False
+Clemson University,ART,4210,Two-Dimensional Digital Animation,,False,False,False,False
+Clemson University,ART,4550,Atelier InSite Creative Inquiry II,,False,False,False,False
+Clemson University,ART,1050,Foundation Drawing I,,False,False,False,False
+Clemson University,ART,4710,Bachelor of Fine Arts Senior Studio I,,False,False,False,False
+Clemson University,ART,4720,Bachelor of Fine Arts Senior Studio II,,False,False,False,False
+Clemson University,ART,4740,Travel Seminar,,False,False,False,False
+Clemson University,ART,4730,Senior Seminar in Professional Career Preparation,,False,False,False,False
+Clemson University,ART,3070,Painting,,False,False,False,False
+Clemson University,ART,3570,Community Supported Art - Creative Inquiry,,False,False,False,False
+Clemson University,ART,4150,Advanced Graphic Design,,False,False,False,False
+Clemson University,ART,4900,Directed Studies,,False,False,False,False
+Clemson University,AAH,1020,Survey of Art and Architectural History II,,False,False,False,False
+Clemson University,AAH,2030,History and Theory of Architecture I,,False,False,False,False
+Clemson University,AAH,1010,Survey of Art and Architectural History I,,False,False,False,False
+Clemson University,ART,1060,Foundation Drawing II,,False,False,False,False
+Clemson University,ART,4890,Art and Art History Internship,,False,False,False,False
+Clemson University,AAH,3050,Contemporary Art History,,False,False,False,False
+Clemson University,AAH,3300,Honors Colloquium,,False,False,False,False
+Clemson University,AAH,3950,Special Topics in Visual Studies Abroad I,,False,False,False,False
+Clemson University,AAH,4110,Directed Research in Art History I,,False,False,False,False
+Clemson University,ART,3550,Atelier InSite Creative Inquiry I,,False,False,False,False
+Clemson University,AAH,4240,Studies in the Art and Architecture of the Renaissance II,,False,True,False,False
+Clemson University,AAH,4300,Twentieth Century Art I,,False,False,False,False
+Clemson University,AAH,4320,Twentieth Century Art II,,False,False,False,False
+Clemson University,AAH,2040,History and Theory of Architecture II,,False,False,False,False
+Clemson University,ART,4750,Senior Exhibition Internship,,False,False,False,False
+Clemson University,AAH,2050,History and Theory of Art I,,False,False,False,False
+Clemson University,ASTR,1040,Stellar Astronomy Laboratory,,False,False,False,False
+Clemson University,ASTR,1020,Stellar Astronomy,,False,False,False,False
+Clemson University,ART,3110,Printmaking,,False,False,False,False
+Clemson University,ASTR,1050,Physics of the Universe,,False,False,False,False
+Clemson University,ASTR,3020,Stellar Astrophysics,,False,False,False,False
+Clemson University,AAH,4120,Directed Research in Art History II,,False,False,False,False
+Clemson University,AL,3440,Athletics and Woman: Current and Historical Issues,,False,False,False,False
+Clemson University,ART,3120,Printmaking Research I,,False,False,False,False
+Clemson University,AAH,4230,Studies in the Art and Architecture of the Renaissance I,,False,True,False,False
+Clemson University,AAH,2060,History and Theory of Art II,,False,False,False,False
+Clemson University,AL,3510,National Coach Certification Preparation for Athletic Leadership,,False,False,False,False
+Clemson University,ASTR,1030,Solar System Astronomy Laboratory,,False,False,False,False
+Clemson University,AL,3530,Theory of Prevention and Treatment of Athletic Injuries,,False,False,False,False
+Clemson University,AL,3531,Theory of Prevention and Treatment of Athletic Injuries Laboratory,,False,False,False,False
+Clemson University,ASTR,4750,Selected Topics in Astrophysics,,False,False,False,False
+Clemson University,ASTR,3030,Galactic Astrophysics,,False,False,False,False
+Clemson University,AL,3600,High School Athletics Ethical and Legal Issues,,False,False,False,False
+Clemson University,AL,3710,Coaching Baseball,,False,False,False,False
+Clemson University,AL,3610,Administration and Organization of Athletic Programs,,False,False,False,False
+Clemson University,ART,3230,Digital Sculpture,,False,False,False,False
+Clemson University,ASTR,1010,Solar System Astronomy,,False,False,False,False
+Clemson University,BIOL,468,0,,False,False,False,False
+Clemson University,AL,3500,Scientific Basis of Coaching I: Exercise Physiology,,False,False,False,False
+Clemson University,AL,3760,Coaching Strength and Conditioning,,False,False,False,False
+Clemson University,AL,3770,Coaching Track and Field,,False,False,False,False
+Clemson University,AL,3620,Psychology of Coaching,,False,False,False,False
+Clemson University,AL,3520,Scientific Basis of Coaching II: Kinesiology,,False,False,False,False
+Clemson University,AL,4390,Independent Study in Athletic Leadership,,False,False,False,False
+Clemson University,AL,3730,Coaching Cross Country,,False,False,False,False
+Clemson University,AUD,1850,Introduction to Audio Technology,,False,False,False,False
+Clemson University,AL,3720,Coaching Basketball,,False,False,False,False
+Clemson University,AL,3490,Principles of Coaching,,False,False,False,False
+Clemson University,AL,4000,Athletic Leadership Internship,,False,False,False,False
+Clemson University,AUD,1950,Creative Inquiry I,,False,False,False,False
+Clemson University,AUD,2791,Audio Practicum Laboratory,,False,False,False,False
+Clemson University,AUD,2801,Sound Reinforcement Laboratory,,False,False,False,False
+Clemson University,WFB,468,0,,False,False,False,False
+Clemson University,AL,3740,Coaching Football,,False,False,False,False
+Clemson University,AUD,2850,Acoustics of Music,,False,False,False,False
+Clemson University,AUD,3800,Audio Engineering I,,False,False,False,False
+Clemson University,AL,4380,Selected Topics in Athletic Leadership,,False,False,False,False
+Clemson University,AUD,3850,Advanced Live Sound Reinforcement,,False,False,False,False
+Clemson University,AUD,3801,Audio Engineering I Laboratory,,False,False,False,False
+Clemson University,AUD,2800,Sound Reinforcement,,False,False,False,False
+Clemson University,AUD,1851,Introduction to Audio Technology Laboratory,,False,False,False,False
+Clemson University,AUD,2790,Audio Practicum,,False,False,False,False
+Clemson University,AUD,4850,Production Workshop,,False,False,False,False
+Clemson University,AUD,4851,Production Workshop Laboratory,,False,False,False,False
+Clemson University,AUD,4950,Creative Inquiry IV,,False,False,False,False
+Clemson University,AUD,4990,Independent Study in Audio Technology,,False,False,False,False
+Clemson University,AUD,4801,Audio Engineering II Laboratory,,False,False,False,False
+Clemson University,AUD,2950,Creative Inquiry II,,False,False,False,False
+Clemson University,AUE,4011,Vehicle Dynamics Laboratory,,False,False,False,False
+Clemson University,AL,4530,"Athletic Injuries: Prevention, Assessment and Rehabilitation",,False,False,False,False
+Clemson University,AL,3750,Coaching Soccer,,False,False,False,False
+Clemson University,AUE,4021,Automobile Powertrain Systems Laboratory,,False,False,False,False
+Clemson University,AUE,4020,Automobile Powertrain Systems,,False,False,False,False
+Clemson University,BCHM,3010,Molecular Biochemistry,,False,False,False,False
+Clemson University,BCHM,3050,Essential Elements of Biochemistry,,False,False,False,False
+Clemson University,BCHM,4060,Physiological Chemistry,,False,False,False,False
+Clemson University,AUD,3851,Advanced Live Sound Reinforcement Laboratory,,False,False,False,False
+Clemson University,AUD,4800,Audio Engineering II,,False,False,False,False
+Clemson University,BCHM,4310,Physical Approach to Biochemistry,,False,False,False,False
+Clemson University,BCHM,4320,Biochemistry of Metabolism,,False,False,False,False
+Clemson University,AUD,3860,Electronic Composition and Sound Design,,False,False,False,False
+Clemson University,AUD,3950,Creative Inquiry III,,False,False,False,False
+Clemson University,AUD,3861,Electronic Composition and Sound Design Laboratory,,False,False,False,False
+Clemson University,BCHM,4430,Molecular Basis of Disease,,False,False,False,False
+Clemson University,BCHM,4230,Principles of Biochemistry,,False,False,False,False
+Clemson University,BCHM,4360,Molecular Biology: Genes to Proteins,,False,False,False,False
+Clemson University,BCHM,4900,Selected Topics in Biochemistry,,False,False,False,False
+Clemson University,AUE,4040,Automotive Engineering Project Prototyping and Validation,,False,False,False,False
+Clemson University,BCHM,1030,Careers in Biochemistry and Genetics,,False,False,False,False
+Clemson University,BCHM,4910,Directed Research in Biochemistry,,False,False,False,False
+Clemson University,AUE,4030,Automotive Engineering Project Tools,,False,False,False,False
+Clemson University,BIOE,1010,Biology for Bioengineers,,False,False,False,False
+Clemson University,BCHM,4340,Biochemistry of Metabolism Laboratory,,False,False,False,False
+Clemson University,BIOE,2010,Introduction to Biomedical Engineering,,False,False,False,False
+Clemson University,BIOE,3021,Biomaterials Laboratory,,False,False,False,False
+Clemson University,BIOE,3000,Bioengineering Ethics and Entrepreneurship,,False,False,False,False
+Clemson University,BIOE,3100,Engineering Analysis of Physiological Processes,,False,False,False,False
+Clemson University,BIOE,3020,Biomaterials,,False,False,False,False
+Clemson University,BIOE,3200,Biomechanics,,False,False,False,False
+Clemson University,BCHM,4930,Senior Seminar,,False,False,False,False
+Clemson University,BIOE,4000,Bioengineering Leadership and MedTech Commercialization,,False,False,False,False
+Clemson University,AUE,4010,Vehicle Dynamics,,False,False,False,False
+Clemson University,BIOE,3700,Bioinstrumentation and Bioimaging,,False,False,False,False
+Clemson University,BIOE,4021,Biocompatibility Laboratory,,False,False,False,False
+Clemson University,BIOE,4020,Biocompatibility,,False,False,False,False
+Clemson University,BIOE,4030,Applied Biomedical Design,,False,False,False,False
+Clemson University,BIOE,4120,Orthopaedic Engineering and Pathology,,False,False,False,False
+Clemson University,BIOE,4150,Research Principles and Concepts,,False,False,False,False
+Clemson University,BIOE,4200,Sports Engineering,,False,False,False,False
+Clemson University,BIOE,4010,Bioengineering Design Theory,,False,False,False,False
+Clemson University,BIOE,2000,Bioengineering Professional Development,,False,False,False,False
+Clemson University,BIOE,4311,Medical Imaging Laboratory,,False,False,False,False
+Clemson University,BIOE,4350,Computer Modeling of Multiphysics Problems,,False,False,False,False
+Clemson University,BIOE,3701,Bioinstrumentation and Bioimaging Laboratory,,False,False,False,False
+Clemson University,BCHM,4920,Honors Thesis in Biochemistry,,False,False,False,False
+Clemson University,BCHM,4330,Physical Approach to Biochemistry Laboratory,,False,False,False,False
+Clemson University,BIOE,3101,Engineering Analysis of Physiological Processes Laboratory,,False,False,False,False
+Clemson University,BIOE,4500,Special Topics in Bioengineering,,False,False,False,False
+Clemson University,BIOE,3210,Biofluid Mechanics,,False,False,False,False
+Clemson University,BIOE,4600,International Bioengineering Research Topics,,False,False,False,False
+Clemson University,BIOE,4610,International Study in Bioengineering,,False,False,False,False
+Clemson University,BIOE,4230,Cardiovascular Engineering and Pathology,,False,False,False,False
+Clemson University,BIOE,4400,Biopharmaceutical Engineering,,False,False,False,False
+Clemson University,BIOE,4310,Medical Imaging,,False,False,False,False
+Clemson University,BIOL,468,0,,False,False,False,False
+Clemson University,BIOE,4710,Biophotonics,,False,False,False,False
+Clemson University,BIOE,3470,Transport Processes in Bioengineering,,False,False,False,False
+Clemson University,BIOE,4761,Biosurface Engineering Laboratory,,False,False,False,False
+Clemson University,BIOE,4031,Applied Biomedical Design Laboratory,,False,False,False,False
+Clemson University,BIOE,4820,Biomaterial Implantology,,False,False,False,False
+Clemson University,BIOE,4821,Biomaterial Implantology Laboratory,,False,False,False,False
+Clemson University,BIOE,4900,Internship,,False,False,False,False
+Clemson University,BIOE,4910,Mentored Research in Bioengineering,,False,False,False,False
+Clemson University,BIOL,1010,Frontiers in Biology I,,False,False,False,False
+Clemson University,BIOE,4510,Creative Inquiry in Bioengineering,,False,False,False,False
+Clemson University,BIOL,1050,General Biology Laboratory I,,False,False,False,False
+Clemson University,BIOL,1060,General Biology Laboratory II,,False,False,False,False
+Clemson University,BIOL,1040,General Biology II,,False,False,False,False
+Clemson University,BIOE,4490,Drug Delivery,,False,False,False,False
+Clemson University,BIOE,4760,Biosurface Engineering,,False,False,False,False
+Clemson University,BIOL,1100,Principles of Biology I,,False,False,False,False
+Clemson University,BIOL,1110,Principles of Biology II,,False,False,False,False
+Clemson University,BIOL,1111,Principles of Biology II Laboratory,,False,False,False,False
+Clemson University,BIOE,4480,Tissue Engineering,,False,False,False,False
+Clemson University,BIOL,1220,Keys to Biodiversity,,True,False,False,True
+Clemson University,BIOL,1230,Keys to Human Biology,,False,False,False,False
+Clemson University,BIOL,1200,Biological Inquiry Laboratory,,False,False,False,False
+Clemson University,BIOL,1910,Directed Research,,False,False,False,False
+Clemson University,BIOL,2010,Biotechnology and Society,,False,False,False,False
+Clemson University,BIOL,2000,Biology in the News,,False,False,False,False
+Clemson University,BIOL,2030,Human Disease and Society,,False,False,False,False
+Clemson University,BIOE,4690,International Bioengineering Internship,,False,False,False,False
+Clemson University,BIOL,2050,Plant Form and Function,,False,False,False,False
+Clemson University,BIOL,2100,Evolution and Creationism,,False,False,False,False
+Clemson University,BIOL,2060,Plant Form and Function Laboratory,,False,False,False,False
+Clemson University,BIOL,2110,Introduction to Toxicology,,False,False,False,False
+Clemson University,BIOL,2200,"Biology: Concepts, Issues, and Values",,False,False,False,False
+Clemson University,BIOL,2220,Human Anatomy and Physiology I,,False,False,False,False
+Clemson University,BIOL,2230,Human Anatomy and Physiology II,,False,False,False,False
+Clemson University,BIOL,2231,Human Anatomy and Physiology II Laboratory,,False,False,False,False
+Clemson University,BIOL,3020,Invertebrate Biology,,False,False,False,False
+Clemson University,BIOL,3030,Vertebrate Biology,,False,False,False,False
+Clemson University,BIOL,1090,Introduction to Life Science,,False,False,False,False
+Clemson University,BIOE,4481,Tissue Engineering Laboratory,,False,False,False,False
+Clemson University,BIOL,3060,Invertebrate Biology Laboratory,,False,False,False,False
+Clemson University,BIOL,3080,Biology of Plants Practicum,,False,False,False,False
+Clemson University,BIOL,3150,Functional Human Anatomy,,False,False,False,False
+Clemson University,BIOL,3070,Vertebrate Biology Laboratory,,False,False,False,False
+Clemson University,BIOL,3160,Human Physiology,,False,False,False,False
+Clemson University,BIOL,2221,Human Anatomy and Physiology I Laboratory,,False,False,False,False
+Clemson University,BIOL,2300,Emergency Medical Responder,,False,False,False,False
+Clemson University,BIOL,3201,Field Botany Laboratory,,False,False,False,False
+Clemson University,BIOL,3200,Field Botany,,False,False,False,False
+Clemson University,BIOL,3040,Biology of Plants,,False,False,False,False
+Clemson University,WFB,468,0,,False,False,False,False
+Clemson University,BIOL,1091,Introduction to Life Science Laboratory,,False,False,False,False
+Clemson University,BIOL,3151,Functional Human Anatomy Laboratory,,False,False,False,False
+Clemson University,BIOL,4020,Plant Physiology Laboratory,,False,False,False,False
+Clemson University,BIOL,4010,Plant Physiology,,False,False,False,False
+Clemson University,BIOL,3941,Selected Topics in Creative Inquiry I Laboratory,,False,False,False,False
+Clemson University,BIOL,4080,Comparative Vertebrate Morphology,,False,False,False,False
+Clemson University,BIOL,4070,Plant Taxonomy Laboratory,,False,False,False,False
+Clemson University,BIOL,4090,Comparative Vertebrate Morphology Laboratory,,False,False,False,False
+Clemson University,BIOL,4100,Limnology,,False,False,False,False
+Clemson University,BIOL,4110,Limnological Analyses,,False,False,False,False
+Clemson University,BIOL,1101,Principles of Biology I Laboratory,,False,False,False,False
+Clemson University,BIOL,4200,Neurobiology,,False,False,False,False
+Clemson University,BIOL,4280,Quantitative Biology,,False,False,False,False
+Clemson University,BIOL,2040,"Environment, Energy and Society",,False,False,False,False
+Clemson University,BIOL,4320,Animal Histology,,False,False,False,False
+Clemson University,BIOL,3350,Evolutionary Biology,,False,False,False,False
+Clemson University,BIOL,4111,Limnological Analyses Laboratory,,False,False,False,False
+Clemson University,BIOL,4170,Marine Biology,,False,False,False,False
+Clemson University,BIOL,3161,Human Physiology Laboratory,,False,False,False,False
+Clemson University,BIOL,4340,Biological Chemistry Laboratory Techniques,,False,False,False,False
+Clemson University,BIOL,4281,Quantitative Biology Laboratory,,False,False,False,False
+Clemson University,BIOL,4420,Biogeography,,False,False,False,False
+Clemson University,BIOL,4030,Introduction to Applied Genomics,,False,False,False,False
+Clemson University,BIOL,1030,General Biology I,,False,False,False,False
+Clemson University,BIOL,4441,Freshwater Ecology Laboratory,,False,False,False,True
+Clemson University,BIOL,4440,Freshwater Ecology Laboratory (Lecture Portion),,False,False,False,True
+Clemson University,BIOL,4451,Ecology Laboratory,,False,False,False,True
+Clemson University,BIOL,4331,Animal Histology Laboratory,,False,False,False,False
+Clemson University,BIOL,3940,Selected Topics in Creative Inquiry I,,False,False,False,False
+Clemson University,BIOL,4471,Plant Ecology Laboratory,,False,False,False,True
+Clemson University,BIOL,4400,Developmental Animal Biology,,False,False,False,False
+Clemson University,WFB,468,0,,False,False,False,False
+Clemson University,BIOL,468,0,,False,False,False,False
+Clemson University,BIOL,4480,Marine Ecology,,False,False,False,True
+Clemson University,BIOL,4450,Ecology Laboratory (Lecture Portion),,False,False,False,True
+Clemson University,BIOL,4491,Field Ecology Laboratory,,False,False,False,True
+Clemson University,BIOL,4430,Freshwater Ecology,,False,False,False,True
+Clemson University,BIOL,4500,Developmental Biology Laboratory (Lecture Portion),,False,False,False,False
+Clemson University,BIOL,4590,Systems Physiology,,False,False,False,False
+Clemson University,BIOL,4060,Introductory Plant Taxonomy,,False,False,False,False
+Clemson University,BIOL,4601,Systems Physiology Laboratory,,False,False,False,False
+Clemson University,BIOL,4490,Field Ecology,,False,False,False,True
+Clemson University,BIOL,4620,Cell Biology Laboratory (Lecture Portion),,False,False,False,False
+Clemson University,BIOL,4621,Cell Biology Laboratory,,False,False,False,False
+Clemson University,BIOL,4341,Biological Chemistry Laboratory Techniques Laboratory,,False,False,False,False
+Clemson University,BIOL,4641,Mammalogy Laboratory,,False,False,False,False
+Clemson University,BIOL,4640,Mammalogy,,False,False,False,False
+Clemson University,BIOL,4580,Cell Physiology,,False,False,False,False
+Clemson University,BIOL,4710,Behavioral Ecology Laboratory (Lecture Portion),,False,False,False,True
+Clemson University,BIOL,4711,Behavioral Ecology Laboratory,,False,False,False,True
+Clemson University,BIOL,4501,Developmental Biology Laboratory,,False,False,False,False
+Clemson University,BIOL,4721,Ornithology Laboratory,,False,False,False,False
+Clemson University,BIOL,4330,Animal Histology Laboratory,,False,False,False,False
+Clemson University,BIOL,4610,Cell Biology,,False,False,False,False
+Clemson University,BIOL,4750,Comparative Physiology,,False,False,False,False
+Clemson University,BIOL,4460,Plant Ecology,,False,False,False,True
+Clemson University,BIOL,4410,Ecology,,False,False,False,True
+Clemson University,BIOL,4761,Comparative Physiology Laboratory,,False,False,False,False
+Clemson University,BIOL,4771,Ichthyology Laboratory,,False,False,False,False
+Clemson University,BIOL,4790,Kinesiology,,False,False,False,False
+Clemson University,BIOL,4470,Plant Ecology Laboratory (Lecture Portion),,False,False,False,True
+Clemson University,BIOL,4760,Comparative Physiology Laboratory (Lecture Portion),,False,False,False,False
+Clemson University,BIOL,4840,Human and Comparative Vertebrate Embryology,,False,False,False,False
+Clemson University,BIOL,4850,Molecular Phylogenetics and the Comparative Method,,False,False,False,False
+Clemson University,BIOL,4860,Natural History,,False,False,False,False
+Clemson University,BIOL,4870,Electron and Optical Microscopy Theory,,False,False,False,False
+Clemson University,BIOL,4871,Electron and Optical Microscopy Laboratory,,False,False,False,False
+Clemson University,BIOL,4770,Ichthyology,,False,False,False,False
+Clemson University,BIOL,4600,Systems Physiology Laboratory (Lecture Portion),,False,False,False,False
+Clemson University,BIOL,4830,Stem Cell Biology,,False,False,False,False
+Clemson University,BIOL,4880,Health Professions Practicum,,False,False,False,False
+Clemson University,BIOL,4891,Clinical Applications and Medical Practices Laboratory,,False,False,False,False
+Clemson University,BIOL,4670,Principles of Hematology,,False,False,False,False
+Clemson University,BIOL,4930,Senior Seminar,,False,False,False,False
+Clemson University,BIOL,4780,Exercise Physiology,,False,False,False,False
+Clemson University,BIOL,4700,Behavioral Ecology,,False,False,False,True
+Clemson University,BIOL,4970,Special Topics Laboratory,,False,False,False,False
+Clemson University,BIOL,4720,Ornithology,,False,False,False,False
+Clemson University,BMOL,4030,Biotransport Phenomena,,False,False,False,False
+Clemson University,BMOL,4250,Biomolecular Engineering,,False,False,False,False
+Clemson University,BIOL,4920,Internship in Biological Sciences,,False,False,False,False
+Clemson University,BMOL,4230,Bioseparations,,False,False,False,False
+Clemson University,BMOL,4270,Membranes for Biotechnology and Biomedicine,,False,False,False,False
+Clemson University,BMOL,4260,Biosensors and Bioelectronic Devices,,False,False,False,False
+Clemson University,BE,1990,Creative Inquiry in Biosystems Engineering I,,False,False,False,False
+Clemson University,BE,2101,Introduction to Biosystems Engineering Laboratory,,False,False,False,False
+Clemson University,BIOL,4951,Service Learning in Biology Laboratory,,False,False,False,False
+Clemson University,BIOL,4950,Service Learning in Biology,,False,False,False,False
+Clemson University,BE,2121,Fundamentals of Biosystems Engineering Laboratory,,False,False,False,False
+Clemson University,BMOL,4290,Bioprocess Engineering,,False,False,False,False
+Clemson University,BE,3000,Biosystems Engineering Honors Seminar,,False,False,False,False
+Clemson University,BE,3010,Biosystems Engineering Honors Thesis Research,,False,False,False,False
+Clemson University,BE,3140,Biosystems Engineering Mechanical Design,,False,False,False,False
+Clemson University,BIOL,4851,Molecular Phylogenetics and the Comparative Method Laboratory,,False,False,False,False
+Clemson University,BE,3201,Principles and Practices of Geomatics Laboratory,,False,False,False,False
+Clemson University,BE,3200,Principles and Practices of Geomatics,,False,False,False,False
+Clemson University,BIOL,4730,History of Modern Biology,,False,False,False,False
+Clemson University,BE,3700,Practicum,,False,False,False,False
+Clemson University,BE,3990,Creative Inquiry in Biosystems Engineering III,,False,False,False,False
+Clemson University,BE,4000,Biosystems Engineering Honors Thesis,,False,False,False,False
+Clemson University,BIOL,4960,Selected Topics,,False,False,False,False
+Clemson University,BE,4101,Biological Kinetics and Reactor Modeling Laboratory,,False,False,False,False
+Clemson University,BIOL,4890,Clinical Applications and Medical Practice,,False,False,False,False
+Clemson University,BE,4100,Biological Kinetics and Reactor Modeling,,False,False,False,False
+Clemson University,BE,2990,Creative Inquiry in Biosystems Engineering II,,False,False,False,False
+Clemson University,BE,4151,Instrumentation and Control for Biosystems Engineers Laboratory,,False,False,False,False
+Clemson University,BE,4150,Instrumentation and Control for Biosystems Engineers,,False,False,False,False
+Clemson University,BE,4170,Applied Instrumentation and Control for Biosystems,,False,False,False,False
+Clemson University,BE,3100,Biosystems Engineering Thermodynamics,,False,False,False,False
+Clemson University,BE,4210,Engineering Systems for Soil Water Management,,False,False,False,False
+Clemson University,BE,4141,Biosystems Engineering Unit Operations Laboratory,,False,False,False,False
+Clemson University,BE,4220,Hydrologic Modeling of Small Watersheds,,False,False,False,False
+Clemson University,BIOL,468,0,,False,False,False,False
+Clemson University,BE,4240,Ecological Engineering,,False,False,False,False
+Clemson University,BE,2100,Introduction to Biosystems Engineering,,False,False,False,False
+Clemson University,WFB,468,0,,False,False,False,False
+Clemson University,BE,4280,Biochemical Engineering,,False,False,False,False
+Clemson University,BE,4120,Heat and Mass Transport in Biosystems Engineering,,False,False,False,False
+Clemson University,BE,4351,Applications in Biotechnology Engineering Laboratory,,False,False,False,False
+Clemson University,BE,2120,Fundamentals of Biosystems Engineering,,False,False,False,False
+Clemson University,BE,4171,Applied Instrumentation and Control for Biosystems Laboratory,,False,False,False,False
+Clemson University,BE,4640,Non-Point Source Management in Engineered Ecosystems,,False,False,False,True
+Clemson University,BE,4730,Special Topics in Biosystems Engineering,,False,False,False,False
+Clemson University,BE,4270,Ecohydrology,,False,False,False,False
+Clemson University,BE,4740,Biosystems Engineering Design Project Management,,False,False,False,False
+Clemson University,BE,4741,Biosystems Engineering Design/Project Management Laboratory,,False,False,False,False
+Clemson University,BE,4380,Bioprocess Engineering Design,,False,False,False,False
+Clemson University,BE,4750,Biosystems Engineering Capstone Design,,False,False,False,False
+Clemson University,BT,2201,Biosystems Technology I Laboratory,,False,False,False,False
+Clemson University,BE,3220,Small Watershed Hydrology and Sedimentology,,False,False,False,False
+Clemson University,BT,2400,Biosystems Technology II,,False,False,False,False
+Clemson University,BT,2401,Biosystems Technology II Laboratory,,False,False,False,False
+Clemson University,BUS,2910,Honors Seminar in International Business,,False,False,False,False
+Clemson University,BE,4381,Bioprocess Engineering Design Laboratory,,False,False,False,False
+Clemson University,BUS,3910,International Business Honors Thesis Research,,False,False,False,False
+Clemson University,BIOL,4910,Undergraduate Research in Biological Sciences,,False,False,False,False
+Clemson University,BUS,2990,Creative Inquiry in Business,,False,False,False,False
+Clemson University,BUS,3990,Creative Inquiry in Business,,False,False,False,False
+Clemson University,BE,4211,Engineering Systems for Soil Water Management Laboratory,,False,False,False,False
+Clemson University,BUS,4910,International Business Honors Thesis I,,False,False,False,False
+Clemson University,BUS,4990,Creative Inquiry in Business,,False,False,False,False
+Clemson University,BE,4350,Applications in Biotechnology Engineering,,False,False,False,False
+Clemson University,BT,2200,Biosystems Technology I,,False,False,False,False
+Clemson University,CVT,3251,Echocardiography Principles Laboratory,,False,False,False,False
+Clemson University,BE,4140,Biosystems Engineering Unit Operations,,False,False,False,False
+Clemson University,CVT,3260,Echocardiography Methods,,False,False,False,False
+Clemson University,BUS,1010,Business Foundations,,False,False,False,False
+Clemson University,CVT,3350,Vascular Sonography Principles,,False,False,False,False
+Clemson University,CVT,3261,Echocardiography Methods Laboratory,,False,False,False,False
+Clemson University,CVT,3351,Vascular Sonography Principles Laboratory,,False,False,False,False
+Clemson University,CVT,3361,Vascular Sonography Methods Laboratory,,False,False,False,False
+Clemson University,CVT,4250,CVS Field Experience II,,False,False,False,False
+Clemson University,CVT,4260,CVS Field Experience III,,False,False,False,False
+Clemson University,BUS,3920,International Business Honors Thesis Proposal,,False,False,False,False
+Clemson University,CTE,1150,Contemporary Technological Problems,,False,False,False,False
+Clemson University,BE,4641,Non-Point Source Management in Engineered Ecosystems Laboratory,,False,False,False,True
+Clemson University,BE,4990,Creative Inquiry in Biosystems Engineering IV,,False,False,False,False
+Clemson University,CTE,2210,Exploring Technology,,False,False,False,False
+Clemson University,CTE,3100,Designing Creative Instruction,,False,False,False,False
+Clemson University,INT,1010,Off-Campus Internship Part-Time 1,,False,False,False,False
+Clemson University,CVT,2250,Ultrasound Physics,,False,False,False,False
+Clemson University,INT,1020,Off-Campus Internship Part-Time 2,,False,False,False,False
+Clemson University,INT,1530,UPIC Internship Part-Time 3,,False,False,False,False
+Clemson University,INT,1540,UPIC Internship Part-Time 4,,False,False,False,False
+Clemson University,INT,1030,Off-Campus Internship Part-Time 3,,False,False,False,False
+Clemson University,INT,2010,Off-Campus Internship Full-Time I,,False,False,False,False
+Clemson University,INT,2020,Off-Campus Internship Full-Time 2,,False,False,False,False
+Clemson University,INT,2510,UPIC Internship Full-Time 1,,False,False,False,False
+Clemson University,CTE,3101,Designing Creative Instruction Laboratory,,False,False,False,False
+Clemson University,BUS,4920,International Business Honors Thesis II,,False,False,False,False
+Clemson University,INT,2540,UPIC Internship Full-Time 4,,False,False,False,False
+Clemson University,INT,3010,International Internship,,False,False,False,False
+Clemson University,CVT,4240,CVS Field Experience I,,False,False,False,False
+Clemson University,CHE,1990,Creative Inquiry in Chemical and Biomolecular Engineering,,False,False,False,False
+Clemson University,CHE,2110,Mass and Energy Balances,,False,False,False,False
+Clemson University,CHE,1300,Introduction to Chemical Engineering,,False,False,False,False
+Clemson University,INT,2030,Off-Campus Internship Full-Time 3,,False,False,False,False
+Clemson University,CHE,2111,Mass and Energy Balances Laboratory,,False,False,False,False
+Clemson University,CHE,2200,Chemical Engineering Thermodynamics I,,False,False,False,False
+Clemson University,CHE,2301,Fluids/Heat Transfer Laboratory,,False,False,False,False
+Clemson University,INT,1520,UPIC Internship Part-Time 2,,False,False,False,False
+Clemson University,CHE,3000,Honors Seminar,,False,False,False,False
+Clemson University,INT,1510,UPIC Internship Part-Time 1,,False,False,False,False
+Clemson University,CHE,3070,Unit Operations Laboratory I,,False,False,False,False
+Clemson University,CHE,3210,Chemical Engineering Thermodynamics II,,False,False,False,False
+Clemson University,CHE,3071,Unit Operations Laboratory I Laboratory,,False,False,False,False
+Clemson University,CVT,3250,Echocardiography Principles,,False,False,False,False
+Clemson University,CHE,3300,Mass Transfer and Separation Processes,,False,False,False,False
+Clemson University,CHE,3301,Mass Transfer and Separation Processes Laboratory,,False,False,False,False
+Clemson University,CHE,3530,Process Dynamics and Control,,False,False,False,False
+Clemson University,INT,2520,UPIC Internship Full-Time 2,,False,False,False,False
+Clemson University,CHE,3990,Creative Inquiry in Chemical and Biomolecular Engineering,,False,False,False,False
+Clemson University,CHE,4010,Transport Phenomena,,False,False,False,False
+Clemson University,CHE,4070,Unit Operations Laboratory II,,False,False,False,False
+Clemson University,CHE,4071,Unit Operations Laboratory II Laboratory,,False,False,False,False
+Clemson University,CHE,4130,Polymer Composite Engineering,,False,False,False,False
+Clemson University,CVT,2260,Introduction to Cardiovascular Sonography,,False,False,False,False
+Clemson University,CHE,4120,Polymer Engineering,,False,False,False,False
+Clemson University,INT,2530,UPIC Internship Full-Time 3,,False,False,False,False
+Clemson University,CHE,4140,Green Engineering,,False,False,False,False
+Clemson University,CHE,4331,Process Design II Laboratory,,False,False,False,False
+Clemson University,CHE,4330,Process Design II,,False,False,False,False
+Clemson University,CVT,3360,Vascular Sonography Methods,,False,False,False,False
+Clemson University,CHE,4450,Selected Topics in Chemical Engineering,,False,False,False,False
+Clemson University,CHE,4430,"Safety, Environmental and Professional Practice I",,False,False,False,False
+Clemson University,CHE,4910,Special Projects in Chemical Engineering,,False,False,False,False
+Clemson University,CHE,4950,Honors Research II,,False,False,False,False
+Clemson University,CHE,4970,Honors Thesis,,False,False,False,False
+Clemson University,CHE,4990,Creative Inquiry in Chemical and Biomolecular Engineering,,False,False,False,False
+Clemson University,CHE,2990,Creative Inquiry in Chemical and Biomolecular Engineering,,False,False,False,False
+Clemson University,CH,1011,General Chemistry Laboratory,,False,False,False,False
+Clemson University,CH,1010,General Chemistry,,False,False,False,False
+Clemson University,BIOL,468,0,,False,False,False,False
+Clemson University,WFB,468,0,,False,False,False,False
+Clemson University,CH,1020,General Chemistry,,False,False,False,False
+Clemson University,CH,1021,General Chemistry Laboratory,,False,False,False,False
+Clemson University,CH,1040,Concepts in Chemistry,,False,False,False,False
+Clemson University,CHE,3190,Engineering Materials,,False,False,False,False
+Clemson University,CHE,4310,Chemical Process Design I,,False,False,False,False
+Clemson University,CH,1051,Chemistry in Context I Laboratory,,False,False,False,False
+Clemson University,CH,1410,Chemistry Orientation,,False,False,False,False
+Clemson University,CH,1520,Chemistry Communication,,False,False,False,False
+Clemson University,CH,1060,Chemistry in Context II,,False,False,False,False
+Clemson University,CH,1990,Creative Inquiry in Chemistry I,,False,False,False,False
+Clemson University,CH,2020,Survey of Organic Chemistry Laboratory,,False,False,False,False
+Clemson University,CHE,3950,Honors Research I,,False,False,False,False
+Clemson University,CHE,4150,Alternative Energy,,False,False,False,False
+Clemson University,CH,2240,Organic Chemistry,,False,False,False,False
+Clemson University,CH,2230,Organic Chemistry,,False,False,False,False
+Clemson University,CH,2270,Organic Chemistry Laboratory,,False,False,False,False
+Clemson University,CH,2280,Organic Chemistry Laboratory,,False,False,False,False
+Clemson University,CH,2290,Organic Chemistry Laboratory,,False,False,False,False
+Clemson University,CH,2990,Creative Inquiry in Chemistry II,,False,False,False,False
+Clemson University,CHE,4440,"Safety, Environmental and Professional Practice II",,False,False,False,False
+Clemson University,CHE,4500,Chemical Reaction Engineering,,False,False,False,False
+Clemson University,CH,3170,Quantitative Analysis Laboratory,,False,False,False,False
+Clemson University,CH,3320,Physical Chemistry,,False,False,False,False
+Clemson University,CH,3300,Introduction to Physical Chemistry,,False,False,False,False
+Clemson University,CHE,2300,Fluids/Heat Transfer,,False,False,False,False
+Clemson University,CH,3390,Physical Chemistry Laboratory,,False,False,False,False
+Clemson University,CH,3400,Physical Chemistry Laboratory,,False,False,False,False
+Clemson University,CH,3310,Physical Chemistry,,False,False,False,False
+Clemson University,CH,3410,Introduction to Research,,False,False,False,False
+Clemson University,CH,3990,Creative Inquiry in Chemistry III,,False,False,False,False
+Clemson University,CH,4010,Organometallic Chemistry,,False,False,False,False
+Clemson University,CH,1050,Chemistry in Context I,,False,False,False,False
+Clemson University,CH,4020,Inorganic Chemistry,,False,False,False,False
+Clemson University,CH,4030,Advanced Synthetic Techniques,,False,False,False,False
+Clemson University,CH,4060,Mechanisms of Inorganic Reactions,,False,False,False,False
+Clemson University,CH,4040,Bioinorganic Chemistry,,False,False,False,False
+Clemson University,CH,3130,Quantitative Analysis,,False,False,False,False
+Clemson University,CH,4110,Instrumental Analysis,,False,False,False,False
+Clemson University,CH,4120,Instrumental Analysis Laboratory,,False,False,False,False
+Clemson University,CH,2010,Survey of Organic Chemistry,,False,False,False,False
+Clemson University,CH,4140,Bioanalytical Chemistry,,False,False,False,False
+Clemson University,CH,4250,Medicinal Chemistry,,False,False,False,False
+Clemson University,CH,4270,Organic Spectroscopy,,False,False,False,False
+Clemson University,CH,4210,Advanced Organic Chemistry,,False,False,False,False
+Clemson University,CH,4430,Research Problems,,False,False,False,False
+Clemson University,CH,3600,Chemical Biology,,False,False,False,False
+Clemson University,CH,4000,Selected Topics in Chemistry,,False,False,False,False
+Clemson University,CH,4501,Chemistry Capstone Laboratory,,False,False,False,False
+Clemson University,CH,4510,Frontiers in Polymer Chemistry,,False,False,False,False
+Clemson University,CH,4520,Chemistry Communication II,,False,False,False,False
+Clemson University,CH,4710,Teaching Chemistry,,False,False,False,False
+Clemson University,CH,4271,Organic Spectroscopy Laboratory,,False,False,False,False
+Clemson University,CH,4990,Creative Inquiry in Chemistry IV,,False,False,False,False
+Clemson University,CH,2050,Introduction to Inorganic Chemistry,,False,False,False,False
+Clemson University,CH,4360,Computational Quantum Chemistry and Electronic Structure Methods,,False,False,False,False
+Clemson University,CHIN,1020,Elementary Chinese,,False,False,False,False
+Clemson University,CHIN,1021,Elementary Chinese Laboratory,,False,False,False,False
+Clemson University,CH,4350,Atomic and Molecular Structure,,False,False,False,False
+Clemson University,CH,1061,Chemistry in Context II Laboratory,,False,False,False,False
+Clemson University,CHIN,2010,Intermediate Chinese,,False,False,False,False
+Clemson University,CHIN,2011,Intermediate Chinese Laboratory,,False,False,False,False
+Clemson University,CH,4500,Chemistry Capstone,,False,False,False,False
+Clemson University,CH,4440,Research Problems,,False,False,False,False
+Clemson University,CHIN,2020,Intermediate Chinese,,False,False,False,False
+Clemson University,CHIN,2970,Creative Inquiry in Chinese,,False,False,False,False
+Clemson University,CHIN,3060,Chinese Conversation and Composition II,,False,False,False,False
+Clemson University,CHIN,3170,Chinese for Health Professionals I,,False,False,False,False
+Clemson University,CHIN,3160,Chinese for International Trade I,,False,False,False,False
+Clemson University,CHIN,4010,Pre-Modern Chinese Literature in Translation,,False,False,False,False
+Clemson University,CHIN,3050,Chinese Conversation and Composition I,,False,False,False,False
+Clemson University,CH,4130,Chemistry of Aqueous Systems,,False,False,False,False
+Clemson University,CHIN,4160,Chinese for International Trade II,,False,False,False,False
+Clemson University,CHIN,4970,Creative Inquiry in Chinese,,False,False,False,False
+Clemson University,CH,3150,Quantitative Analysis Laboratory,,False,False,False,False
+Clemson University,CHIN,4980,Independent Study,,False,False,False,False
+Clemson University,CHIN,4990,Selected Topics in Chinese Culture,,False,False,False,False
+Clemson University,CRP,4010,Introduction to City and Regional Planning,,False,False,False,False
+Clemson University,CRP,4030,Seminar on Planning Communication,,False,False,False,False
+Clemson University,CRP,4301,The Nature of Geographic Information Systems (GIS) Laboratory,,False,False,False,False
+Clemson University,CRP,4300,The Nature of Geographic Information Systems (GIS),,False,False,False,False
+Clemson University,CHIN,4120,Studies in the Chinese Language II: Social Issues,,False,False,False,False
+Clemson University,CE,2010,Statics,,False,False,False,False
+Clemson University,CHIN,2021,Intermediate Chinese Laboratory,,False,False,False,False
+Clemson University,CE,2060,Structural Mechanics,,False,False,False,False
+Clemson University,CHIN,1010,Elementary Chinese,,False,False,False,False
+Clemson University,CE,2061,Structural Mechanics Laboratory,,False,False,False,False
+Clemson University,CHIN,1011,Elementary Chinese Laboratory,,False,False,False,False
+Clemson University,CE,2550,Geomatics,,False,False,False,False
+Clemson University,CHIN,4170,Chinese for Health Professionals II,,False,False,False,False
+Clemson University,CE,3010,Structural Analysis,,False,False,False,False
+Clemson University,CE,2990,Creative Inquiry in Civil Engineering,,False,False,False,False
+Clemson University,CE,3210,Geotechnical Engineering,,False,False,False,False
+Clemson University,CHIN,3980,Directed Reading,,False,False,False,False
+Clemson University,CE,3211,Geotechnical Engineering Laboratory,,False,False,False,False
+Clemson University,CE,3110,Transportation Engineering Planning and Design,,False,False,False,False
+Clemson University,CE,2551,Geomatics Laboratory,,False,False,False,False
+Clemson University,WFB,468,0,,False,False,False,False
+Clemson University,CE,3410,Introduction to Fluid Mechanics,,False,False,False,False
+Clemson University,CE,3411,Introduction to Fluid Mechanics Laboratory,,False,False,False,False
+Clemson University,CE,3511,Civil Engineering Materials Laboratory,,False,False,False,False
+Clemson University,CE,3530,Professional Seminar,,False,False,False,False
+Clemson University,CE,3520,Economic Evaluation of Projects,,False,False,False,False
+Clemson University,CE,3870,Junior Honors Project,,False,False,False,False
+Clemson University,CE,3880,Honors Research Topics,,False,False,False,False
+Clemson University,CE,3990,Creative Inquiry in Civil Engineering,,False,False,False,False
+Clemson University,CE,4010,Matrix Structural Analysis,,False,False,False,False
+Clemson University,CHIN,3970,Creative Inquiry in Chinese,,False,False,False,False
+Clemson University,CE,4020,Reinforced Concrete Design,,False,False,False,False
+Clemson University,CE,4040,Masonry Structural Design,,False,False,False,False
+Clemson University,CE,3310,Construction Engineering and Management,,False,False,False,False
+Clemson University,CHIN,4110,Studies in the Chinese Language I: Literature,,False,False,False,False
+Clemson University,CE,4080,Structural Loads and Systems,,False,False,False,False
+Clemson University,BIOL,468,0,,False,False,False,False
+Clemson University,CE,4070,Wood Design,,False,False,False,False
+Clemson University,CE,4100,Traffic Engineering: Operations,,False,False,False,False
+Clemson University,CE,4110,Roadway Geometric Design,,False,False,False,False
+Clemson University,CE,4111,Roadway Geometric Design Laboratory,,False,False,False,False
+Clemson University,CE,1990,Creative Inquiry in Civil Engineering,,False,False,False,False
+Clemson University,CE,4060,Structural Steel Design,,False,False,False,False
+Clemson University,CE,4210,Geotechnical Engineering Design,,False,False,False,False
+Clemson University,CE,4250,Soil-Structure Interaction,,False,False,False,False
+Clemson University,CE,4240,Earth Slopes and Retaining Structures,,False,False,False,False
+Clemson University,CE,4350,Infrastructure Project Planning,,False,False,False,False
+Clemson University,CE,4340,Construction Estimating and Project Control,,False,False,False,False
+Clemson University,CE,4360,Sustainable Construction,,False,False,False,False
+Clemson University,CE,2080,Dynamics,,False,False,False,False
+Clemson University,CE,4370,Sustainable Energy Project Design and Analysis,,False,False,False,False
+Clemson University,CE,4460,Flood Hazards and Protective Design,,False,False,False,False
+Clemson University,CE,4390,Construction Equipment Selection and Maintenance,,False,False,False,False
+Clemson University,CE,4430,Water Resources Engineering,,False,False,False,False
+Clemson University,CE,4470,Stormwater Management,,False,False,False,False
+Clemson University,CE,4560,Pavement Design and Construction,,False,False,False,False
+Clemson University,CE,4590,Capstone Design Project,,False,False,False,False
+Clemson University,CE,4591,Capstone Design Project Laboratory,,False,False,False,False
+Clemson University,CE,4570,Materials Testing and Inspection,,False,False,False,False
+Clemson University,CE,4620,Coastal Engineering I,,False,False,False,False
+Clemson University,CE,4880,Honors Research I,,False,False,False,False
+Clemson University,CE,4890,Honors Research II,,False,False,False,False
+Clemson University,CE,4870,Senior Honors Project,,False,False,False,False
+Clemson University,CE,3420,Applied Hydraulics and Hydrology,,False,False,False,False
+Clemson University,CE,4910,Selected Topics in Civil Engineering,,False,False,False,False
+Clemson University,CE,4990,Creative Inquiry in Civil Engineering,,False,False,False,False
+Clemson University,CU,1000,Clemson Connect,,False,False,False,False
+Clemson University,CE,3890,Honors Research Skills,,False,False,False,False
+Clemson University,CE,4380,Construction Support Operations,,False,False,False,False
+Clemson University,CAAH,2010,Cultural Literacies Across Media,,False,False,False,False
+Clemson University,CES,1900,Creative Inquiry in Engineering and Science I,,False,False,False,False
+Clemson University,CE,3510,Civil Engineering Materials,,False,False,False,False
+Clemson University,CE,4330,Construction Planning and Scheduling,,False,False,False,False
+Clemson University,CES,3900,Creative Inquiry in Engineering and Science III,,False,False,False,False
+Clemson University,CU,1200,Introduction to Career Development,,False,False,False,False
+Clemson University,CE,4900,Special Projects,,False,False,False,False
+Clemson University,CU,2010,Sustainability Leadership,,False,False,False,True
+Clemson University,CU,1010,University Success Skills,,False,False,False,False
+Clemson University,COMM,1500,Introduction to Human Communication,,False,False,False,False
+Clemson University,COMM,1620,Forensic Laboratory,,False,False,False,False
+Clemson University,COMM,1630,Advanced Forensic Laboratory,,False,False,False,False
+Clemson University,COMM,1501,Introduction to Human Communication Laboratory,,False,False,False,False
+Clemson University,COMM,2011,Introduction to Communication Studies Laboratory,,False,False,False,False
+Clemson University,COMM,2010,Introduction to Communication Studies,,False,False,False,False
+Clemson University,COMM,2020,Communication Theory,,False,False,False,False
+Clemson University,COMM,2030,Mass Communication Theory,,False,False,False,False
+Clemson University,CES,4900,Creative Inquiry in Engineering and Science IV,,False,False,False,False
+Clemson University,COMM,2040,Critical-Cultural Communication Theory,,False,False,False,False
+Clemson University,COMM,2110,Qualitative Research Methods in Communication Studies,,False,False,False,False
+Clemson University,CU,1110,Introduction to Supplemental Instruction,,False,False,False,False
+Clemson University,COMM,2501,Public Speaking Laboratory,,False,False,False,False
+Clemson University,COMM,3010,Communication Theory,,False,False,False,False
+Clemson University,COMM,3020,Mass Communication Theory,,False,False,False,False
+Clemson University,COMM,1010,Communication Academic and Professional Development I,,False,False,False,False
+Clemson University,COMM,3030,Communication Law and Ethics,,False,False,False,False
+Clemson University,COMM,3050,Persuasion,,False,False,False,False
+Clemson University,COMM,3070,Public Communication of Science and Technology,,False,False,False,False
+Clemson University,COMM,2500,Public Speaking,,False,False,False,False
+Clemson University,COMM,3080,Public Communication and Popular Culture,,False,False,False,False
+Clemson University,COMM,3090,Visual Discourse and the Public,,False,False,False,False
+Clemson University,COMM,3150,Critical-Cultural Communication Theory,,False,False,False,False
+Clemson University,COMM,3201,Broadcast Production Laboratory,,False,False,False,False
+Clemson University,COMM,3210,Communication Across Media Platforms,,False,False,False,False
+Clemson University,COMM,3200,Broadcast Production,,False,False,False,False
+Clemson University,COMM,1800,Introduction to Cross-Cultural Communication,,False,False,False,False
+Clemson University,COMM,3240,"Communication, Sport and Society",,False,False,False,False
+Clemson University,COMM,2120,Critical-Cultural Research Methods in Communication Studies,,False,False,False,False
+Clemson University,COMM,3260,Public Relations in Sports,,False,False,False,False
+Clemson University,CU,1100,Introduction to Tutoring,,False,False,False,False
+Clemson University,COMM,3270,Sports Media Criticism,,False,False,False,False
+Clemson University,CU,1970,New Student Seminar,,False,False,False,False
+Clemson University,CES,2900,Creative Inquiry in Engineering and Science II,,False,False,False,False
+Clemson University,COMM,3551,Principles of Public Relations Laboratory,,False,False,False,False
+Clemson University,COMM,3500,Small Group and Team Communication,,False,False,False,False
+Clemson University,COMM,3550,Principles of Public Relations,,False,False,False,False
+Clemson University,BIOL,468,0,,False,False,False,False
+Clemson University,COMM,3560,Crisis Communication,,False,False,False,False
+Clemson University,COMM,3220,Communication Design,,False,False,False,False
+Clemson University,COMM,3570,Public Relations Writing,,False,False,False,False
+Clemson University,WFB,468,0,,False,False,False,False
+Clemson University,COMM,3620,Communication and Conflict Management,,False,False,False,False
+Clemson University,COMM,3610,Argumentation and Debate,,False,False,False,False
+Clemson University,COMM,3640,Organizational Communication,,False,False,False,False
+Clemson University,COMM,3571,Public Relations Writing Laboratory,,False,False,False,False
+Clemson University,COMM,3250,Survey of Sports Communication,,False,False,False,False
+Clemson University,COMM,3680,Applied Communication,,False,False,False,False
+Clemson University,COMM,3690,Political Communication,,False,False,False,False
+Clemson University,COMM,3700,Survey of Brand Communications,,False,False,False,False
+Clemson University,COMM,3710,Brand Creation and Communication,,False,False,False,False
+Clemson University,COMM,3740,Brand Communications and Media Strategy,,False,False,False,False
+Clemson University,COMM,1070,Media Representations of Science and Technology,,False,False,False,False
+Clemson University,COMM,3730,Media Management in Brand Communications,,False,False,False,False
+Clemson University,COMM,3750,Presentation Skills in Brand Communications,,False,False,False,False
+Clemson University,COMM,3720,Digital Analytics in Brand Communications,,False,False,False,False
+Clemson University,COMM,3221,Communication Design Laboratory,,False,False,False,False
+Clemson University,COMM,3760,Brand Communications Capstone Seminar,,False,False,False,False
+Clemson University,COMM,4000,Communication and Globalization,,False,False,False,False
+Clemson University,COMM,3990,Creative Inquiry in Communication,,False,False,False,False
+Clemson University,COMM,4020,Mass Communication: History and Criticism,,False,False,False,False
+Clemson University,COMM,4040,Media Communication and Social Identities,,False,False,False,False
+Clemson University,COMM,4050,Public Contest and Change,,False,False,False,False
+Clemson University,COMM,3900,Communication Internship,,False,False,False,False
+Clemson University,COMM,4250,Advanced Sports Communication,,False,False,False,False
+Clemson University,COMM,4270,Communication in Sports Organizations,,False,False,False,False
+Clemson University,COMM,4280,Interpersonal/Family Communication and Sport,,False,False,False,False
+Clemson University,COMM,4550,Gender Communication,,False,False,False,False
+Clemson University,COMM,4300,Legal Communication,,False,False,False,False
+Clemson University,COMM,4620,Communication and Negotiation,,False,False,False,False
+Clemson University,COMM,4660,Advanced Special Topics in Communication,,False,False,False,False
+Clemson University,COMM,3300,Nonverbal Communication,,False,False,False,False
+Clemson University,COMM,4640,Advanced Organizational Communication,,False,False,False,False
+Clemson University,COMM,4700,Communication and Health,,False,False,False,False
+Clemson University,COMM,4950,Senior Capstone Seminar,,False,False,False,False
+Clemson University,COMM,4960,Honors Creative Inquiry Capstone,,False,False,False,False
+Clemson University,COMM,4980,Communication Academic and Professional Development II,,False,False,False,False
+Clemson University,COMM,3660,Special Topics in Communication,,False,False,False,False
+Clemson University,COMM,3480,Interpersonal Communication,,False,False,False,False
+Clemson University,CPSC,1010,Computer Science I,,False,False,False,False
+Clemson University,CPSC,1011,Computer Science I Laboratory,,False,False,False,False
+Clemson University,CPSC,1020,Computer Science II,,False,False,False,False
+Clemson University,CPSC,1021,Computer Science II Laboratory,,False,False,False,False
+Clemson University,CPSC,1040,Introduction to the Concepts and Logic of Computer Programming,,False,False,False,False
+Clemson University,CPSC,1060,Introduction to Programming in Java,,False,False,False,False
+Clemson University,CPSC,1041,Introduction to the Concepts and Logic of Computer Programming Laboratory,,False,False,False,False
+Clemson University,CPSC,1061,Introduction to Programming in Java Laboratory,,False,False,False,False
+Clemson University,COMM,4990,Independent Study,,False,False,False,False
+Clemson University,CPSC,1070,Programming Methodology,,False,False,False,False
+Clemson University,CPSC,1111,Introduction to Programming in C Laboratory,,False,False,False,False
+Clemson University,CPSC,1110,Introduction to Programming in C,,False,False,False,False
+Clemson University,COMM,4800,Intercultural Communication,,False,False,False,False
+Clemson University,COMM,4710,Health Communication in Communities,,False,False,False,False
+Clemson University,CPSC,1071,Programming Methodology Laboratory,,False,False,False,False
+Clemson University,CPSC,1201,Introduction to Information Technology Laboratory,,False,False,False,False
+Clemson University,CPSC,1211,Computational Thinking Laboratory,,False,False,False,False
+Clemson University,CPSC,1611,Introduction to Visual Basic Programming Laboratory,,False,False,False,False
+Clemson University,COMM,2100,Quantitative Research Methods in Communication Studies,,False,False,False,False
+Clemson University,CPSC,1610,Introduction to Visual Basic Programming,,False,False,False,False
+Clemson University,CPSC,1200,Introduction to Information Technology,,False,False,False,False
+Clemson University,CPSC,2070,Discrete Structures for Computing,,False,False,False,False
+Clemson University,CPSC,1990,Creative Inquiry in Computing,,False,False,False,False
+Clemson University,CPSC,2121,Algorithms and Data Structures Laboratory,,False,False,False,False
+Clemson University,CPSC,2120,Algorithms and Data Structures,,False,False,False,False
+Clemson University,CPSC,2151,Software Development Foundations Laboratory,,False,False,False,False
+Clemson University,CPSC,2150,Software Development Foundations,,False,False,False,False
+Clemson University,CPSC,2311,Introduction to Computer Organization Laboratory,,False,False,False,False
+Clemson University,CPSC,2310,Introduction to Computer Organization,,False,False,False,False
+Clemson University,CPSC,2810,Selected Topics in Computer Science,,False,False,False,False
+Clemson University,CPSC,2910,Seminar in Professional Issues I,,False,False,False,False
+Clemson University,CPSC,2920,"Computing, Ethics and Global Society",,False,False,False,False
+Clemson University,CPSC,3300,Computer Systems Organization,,False,False,False,False
+Clemson University,CPSC,3120,Introduction to Design and Analysis of Algorithms,,False,False,False,False
+Clemson University,COMM,4720,Communication in Health Organizations,,False,False,False,False
+Clemson University,CPSC,3600,Networks and Network Programming,,False,False,False,False
+Clemson University,CPSC,2921,"Computing, Ethics and Global Society Recitation",,False,False,False,False
+Clemson University,CPSC,3620,Distributed and Cluster Computing,,False,False,False,False
+Clemson University,CPSC,3710,Systems Analysis,,False,False,False,False
+Clemson University,CPSC,3990,Advanced Creative Inquiry in Computing,,False,False,False,False
+Clemson University,CPSC,3950,Honors Seminar,,False,False,False,False
+Clemson University,CPSC,4050,Computer Graphics,,False,False,False,False
+Clemson University,CPSC,4040,Computer Graphics Images,,False,False,False,False
+Clemson University,CPSC,3720,Introduction to Software Engineering,,False,False,False,False
+Clemson University,CPSC,4110,Virtual Reality Systems,,False,False,False,False
+Clemson University,CPSC,1210,Computational Thinking,,False,False,False,False
+Clemson University,CPSC,4150,Mobile Device Software Development,,False,False,False,False
+Clemson University,CPSC,4180,Usable Privacy and Security,,False,False,False,False
+Clemson University,CPSC,4200,Computer Security Principles,,False,False,False,False
+Clemson University,COMM,4310,Legal Communication Trial,,False,False,False,False
+Clemson University,CPSC,4240,System Administration and Security,,False,False,False,False
+Clemson University,CPSC,4140,Human and Computer Interaction,,False,False,False,False
+Clemson University,CPSC,3500,Foundations of Computer Science,,False,False,False,False
+Clemson University,COMM,4560,Public Relations for Associations and Nonprofits,,False,False,False,False
+Clemson University,CPSC,4160,2-D Game Engine Construction,,False,False,False,False
+Clemson University,COMM,4260,Social Media and Sports Communication,,False,False,False,False
+Clemson University,CPSC,2200,Microcomputer Applications,,False,False,False,False
+Clemson University,CPSC,4280,Design and Implementation of Programming Languages,,False,False,False,False
+Clemson University,CPSC,4300,Applied Data Science,,False,False,False,False
+Clemson University,CPSC,4120,Eye Tracking Methodology and Applications,,False,False,False,False
+Clemson University,CPSC,1150,Introduction to Computational Science,,False,False,False,False
+Clemson University,CPSC,4550,Computational Science,,False,False,False,False
