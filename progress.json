@@ -1061,10 +1061,10 @@
       "id": 81,
       "status": "completed",
       "method": "wayback_acalog",
-      "courses_scraped": 194,
+      "courses_scraped": 1035,
       "descriptions_available": 0,
       "file": "data/courses/clemson_courses.csv",
-      "note": "Scraped via Wayback Machine (catoid=16, navoid=485, ts=20221129103811). 194 courses from pages 1-2, no descriptions (preview pages not archived). Direct access SSL-blocked by proxy."
+      "note": "Scraped via Wayback Machine (catoid=16, navoid=485, ts=20221129103811). 1035 courses from pages 1-11, no descriptions (preview pages not archived). Direct access SSL-blocked by proxy."
     },
     "unl": {
       "id": 82,
