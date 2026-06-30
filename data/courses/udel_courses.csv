@@ -1,0 +1,101 @@
+university,department_code,course_number,title,description,progressive_signal,western_canon_signal,climate_narrow_signal,climate_broad_signal
+University of Delaware,ACCT,208,Accounting II,,False,False,False,False
+University of Delaware,ACCT,267,SEMINAR,,False,False,False,False
+University of Delaware,ACCT,305,Information Security and Risk Management,,False,False,False,False
+University of Delaware,ACCT,302,Accounting Information Systems,,False,False,False,False
+University of Delaware,ACCT,166,SPECIAL PROBLEM,,False,False,False,False
+University of Delaware,ACCT,315,Intermediate Accounting I,,False,False,False,False
+University of Delaware,ACCT,350,Business Law I,,False,False,False,False
+University of Delaware,ACCT,316,Intermediate Accounting II,,False,False,False,False
+University of Delaware,ACCT,351,Business Law II,,False,False,False,False
+University of Delaware,ACCT,327,Cost Accounting,,False,False,False,False
+University of Delaware,ACCT,364,Accounting in Practice,,False,False,False,False
+University of Delaware,ACCT,363,Service Learning and Earned Income Tax Credit,,False,False,False,False
+University of Delaware,ACCT,366,Independent Study,,False,False,False,False
+University of Delaware,ACCT,413,Income Tax Accounting,,False,False,False,False
+University of Delaware,ACCT,415,Advanced Accounting,,False,False,False,False
+University of Delaware,ACCT,266,SPECIAL PROBLEM,,False,False,False,False
+University of Delaware,ACCT,352,Law and Social Issues in Business,,False,False,False,False
+University of Delaware,ACCT,395,Seminar: International Accounting,,False,False,False,False
+University of Delaware,ACCT,457,Legal Issues for Entrepreneurs,,False,False,False,False
+University of Delaware,ACCT,414,Advanced Federal Taxation,,False,False,False,False
+University of Delaware,ACCT,466,Independent Study,,False,False,False,False
+University of Delaware,AGED,167,SEMINAR,,False,False,False,False
+University of Delaware,ACCT,418,Estate Planning,,False,False,False,False
+University of Delaware,AGED,180,Introduction to Agricultural Education,,False,False,False,False
+University of Delaware,AGED,266,Special Problem,,False,False,False,False
+University of Delaware,ACCT,207,Accounting I,,False,False,False,False
+University of Delaware,AGED,280,FFA and Supervised Agricultural Experience,,False,False,False,False
+University of Delaware,AGED,366,Independent Study,,False,False,False,False
+University of Delaware,AGED,367,SEMINAR,,False,False,False,False
+University of Delaware,AGED,425,Agricultural Leadership: Tools and Techniques,,False,False,False,False
+University of Delaware,AGED,426,Global Leadership Perspectives in Agriculture,,False,False,False,False
+University of Delaware,ACCT,417,Auditing,,False,False,False,False
+University of Delaware,ACCT,410,Theory of External Reporting,,False,False,False,False
+University of Delaware,ACCT,467,SEMINAR,,False,False,False,False
+University of Delaware,AGED,430,Working with Advisory Councils,,False,False,False,False
+University of Delaware,AGED,480,Methods of Teaching Agriculture and Technology Education I,,False,False,False,False
+University of Delaware,AGED,448,Student Teaching Seminar,,False,False,False,False
+University of Delaware,AGED,481,Methods of Teaching Agriculture and Technology Education II,,False,False,False,False
+University of Delaware,AGRI,164,Practical Teamwork Experience,,False,False,False,False
+University of Delaware,AGRI,166,SPECIAL PROBLEM,,False,False,False,False
+University of Delaware,ACCT,425,Strategic Information Systems and Accounting,,False,False,False,False
+University of Delaware,AGRI,167,SEMINAR,,False,False,False,False
+University of Delaware,AGRI,211,Literature of the Agricultural and Life Sciences,,False,False,False,False
+University of Delaware,AGED,380,Program Planning / Management,,False,False,False,False
+University of Delaware,AGRI,212,Oral Communication in Agriculture and Natural Resources,,False,False,False,True
+University of Delaware,AGRI,267,SEMINAR,,False,False,False,False
+University of Delaware,ACCT,200,Survey of Accounting,,False,False,False,False
+University of Delaware,AGRI,366,INDEPENDENT STUDY,,False,False,False,False
+University of Delaware,AGED,467,SEMINAR,,False,False,False,False
+University of Delaware,AGRI,467,SEMINAR,,False,False,False,False
+University of Delaware,AFSC,110,Foundations of the United States Air Force I,,False,False,False,False
+University of Delaware,ACCT,483,Introduction to International Accounting,,False,False,False,False
+University of Delaware,AFSC,150,Initial Military Training I,,False,False,False,False
+University of Delaware,AFSC,151,Initial Military Training II,,False,False,False,False
+University of Delaware,AGRI,224,One Health: Zoonotic and Emerging Diseases,,False,False,False,False
+University of Delaware,AGED,267,SEMINAR,,False,False,False,False
+University of Delaware,AFSC,167,SEMINAR,,False,False,False,False
+University of Delaware,AFSC,211,Evolution of United States Air and Space Power II,,False,False,False,False
+University of Delaware,AGRI,399,Teaching Assistant,,False,False,False,False
+University of Delaware,AFSC,250,Field Training Preparation I,,False,False,False,False
+University of Delaware,AFSC,251,Field Training Preparation II,,False,False,False,False
+University of Delaware,ACCT,367,SEMINAR,,False,False,False,False
+University of Delaware,AGRI,266,SPECIAL PROBLEM,,False,False,False,False
+University of Delaware,AFSC,111,Foundations of the United States Air Force II,,False,False,False,False
+University of Delaware,AFSC,311,Leadership Studies II,,False,False,False,False
+University of Delaware,AFSC,310,Leadership Studies I,,False,False,False,False
+University of Delaware,AFSC,351,Intermediate Cadet Leader Training II,,False,False,False,False
+University of Delaware,AGRI,367,SEMINAR,,False,False,False,False
+University of Delaware,AFSC,267,SEMINAR,,False,False,False,False
+University of Delaware,AFSC,450,Senior Cadet Leader Training I,,False,False,False,False
+University of Delaware,AFSC,210,Evolution of United States Air and Space Power I,,False,False,False,False
+University of Delaware,AFSC,467,SEMINAR,,False,False,False,False
+University of Delaware,AGRI,165,Mastering the Freshman Year,,False,False,False,False
+University of Delaware,AFSC,266,SPECIAL PROBLEM,,False,False,False,False
+University of Delaware,ANFS,101,"Animals, Science and Society",,False,False,False,False
+University of Delaware,ANFS,102,Food for Thought,,False,False,False,False
+University of Delaware,AFSC,367,SEMINAR,,False,False,False,False
+University of Delaware,AFSC,350,Intermediate Cadet Leader Training I,,False,False,False,False
+University of Delaware,AFSC,410,National Security Affairs I,,False,False,False,False
+University of Delaware,AGED,466,Independent Study,,False,False,False,False
+University of Delaware,AFSC,166,SPECIAL PROBLEM,,False,False,False,False
+University of Delaware,ANFS,107,Snack Science,,False,False,False,False
+University of Delaware,ANFS,100,Animals and Human Culture,,False,False,False,False
+University of Delaware,ANFS,159,Topics in Food Science,,False,False,False,False
+University of Delaware,ANFS,111,Animal and Food Science Laboratory,,False,False,False,False
+University of Delaware,ANFS,218,Fermentation Sciences,,False,False,False,False
+University of Delaware,ANFS,166,Special Problem,,False,False,False,False
+University of Delaware,ANFS,167,SEMINAR,,False,False,False,False
+University of Delaware,ANFS,230,Foodborne Diseases: Investigating Outbreaks,,False,False,False,False
+University of Delaware,ANFS,240,Functional Anatomy of Domestic Animals,,False,False,False,False
+University of Delaware,ANFS,241,Introduction to Equine Nutrition,,False,False,False,False
+University of Delaware,ANFS,245,Introduction to Animal Physiology,,False,False,False,False
+University of Delaware,ANFS,165,Freshman First Year Experience,,False,False,False,False
+University of Delaware,AFSC,451,Senior Cadet Leader Training II,,False,False,False,False
+University of Delaware,ANFS,206,Farm to Table,,False,False,False,False
+University of Delaware,ANFS,112,Animal Handling,,False,False,False,False
+University of Delaware,ANFS,140,Functional Anatomy of Domestic Animals,,False,False,False,False
+University of Delaware,AFSC,411,National Security Affairs II,,False,False,False,False
+University of Delaware,ANFS,220,Introduction to Equine Science,,False,False,False,False
+University of Delaware,ANFS,181,From the Cow to the Cone: The Science and Business of Ice Cream,,False,False,False,False

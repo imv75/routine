@@ -1,0 +1,195 @@
+university,department_code,course_number,title,description,progressive_signal,western_canon_signal,climate_narrow_signal,climate_broad_signal
+Clemson University,ACCT,3110,Intermediate Financial Accounting I,,False,False,False,False
+Clemson University,BIOL,468,0,,False,False,False,False
+Clemson University,ACCT,2020,Managerial Accounting Concepts,,False,False,False,False
+Clemson University,ACCT,3030,Cost Accounting,,False,False,False,False
+Clemson University,ACCT,3220,Accounting Information Systems,,False,False,False,False
+Clemson University,ACCT,2900,Special Topics,,False,False,False,False
+Clemson University,ACCT,3990,Internship in Accounting,,False,False,False,False
+Clemson University,ACCT,4040,Individual Taxation,,False,False,False,False
+Clemson University,ACCT,4060,Business Taxation,,False,False,False,False
+Clemson University,ACCT,3130,Intermediate Financial Accounting III,,False,False,False,False
+Clemson University,ACCT,4100,Contemporary Reporting and Management Control Systems,,False,False,False,False
+Clemson University,ACCT,4080,Retirement and Estate Planning,,False,False,False,False
+Clemson University,AS,1090,Air Force Today I,,False,False,False,False
+Clemson University,AS,1091,Air Force Today I Laboratory,,False,False,False,False
+Clemson University,AMFG,4801,Practicum Laboratory in Advanced Manufacturing,,False,False,False,False
+Clemson University,ACCT,4150,Auditing,,False,False,False,False
+Clemson University,AMFG,4800,Practicum Experience in Advanced Manufacturing,,False,False,False,False
+Clemson University,AS,2091,Development of Air Power I Laboratory,,False,False,False,False
+Clemson University,AS,2090,Development of Air Power I,,False,False,False,False
+Clemson University,AS,1101,Air Force Today II Laboratory,,False,False,False,False
+Clemson University,AS,2101,Development of Air Power II Laboratory,,False,False,False,False
+Clemson University,AS,3090,Air Force Leadership and Management I,,False,False,False,False
+Clemson University,ACCT,3980,Creative Inquiry in Accounting,,False,False,False,False
+Clemson University,AS,3091,Air Force Leadership and Management I Laboratory,,False,False,False,False
+Clemson University,AS,3100,Air Force Leadership and Management II,,False,False,False,False
+Clemson University,AS,4091,National Security Policy I Laboratory,,False,False,False,False
+Clemson University,AS,4100,National Security Policy II,,False,False,False,False
+Clemson University,AS,4101,National Security Policy II Laboratory,,False,False,False,False
+Clemson University,AGRB,2050,Agriculture and Society,,False,False,False,False
+Clemson University,AGRB,2020,Agricultural Economics,,False,False,False,False
+Clemson University,ACCT,3120,Intermediate Financial Accounting II,,False,False,False,False
+Clemson University,AGRB,3020,Economics of Farm Management,,False,False,False,False
+Clemson University,AGRB,3090,Economics of Agricultural Marketing,,False,False,False,False
+Clemson University,AS,4090,National Security Policy I,,False,False,False,False
+Clemson University,AS,1100,Air Force Today II,,False,False,False,False
+Clemson University,AGRB,3510,Principles of Agricultural Sales and Advertising,,False,False,False,False
+Clemson University,AS,2100,Development of Air Power II,,False,False,False,False
+Clemson University,AGRB,3520,Public Finance,,False,False,False,False
+Clemson University,ACCT,2010,Financial Accounting Concepts,,False,False,False,False
+Clemson University,AGRB,4020,Production Economics,,False,False,False,False
+Clemson University,AGRB,4090,Commodity Futures Markets,,False,False,False,False
+Clemson University,AGRB,3190,Agribusiness Management,,False,False,False,False
+Clemson University,AGRB,4130,Advanced Real Estate Appraisal,,False,False,False,False
+Clemson University,AGRB,4080,Quantitative Agribusiness Analysis II,,False,False,False,False
+Clemson University,AGRB,3570,Natural Resources Economics,,False,False,False,True
+Clemson University,AGRB,4520,Agricultural Policy,,False,False,False,False
+Clemson University,AGRB,3080,Quantitative Agribusiness Analysis I,,False,False,False,False
+Clemson University,AGRB,4900,Selected Topics,,False,False,False,False
+Clemson University,AGRB,4910,"Internship, Agribusiness, and Community and Rural Development",,False,False,False,False
+Clemson University,AMFG,3800,Introduction to Manufacturing Systems and Processes,,False,False,False,False
+Clemson University,AS,3101,Air Force Leadership and Management II Laboratory,,False,False,False,False
+Clemson University,AGED,1000,Orientation and Field Experience,,False,False,False,False
+Clemson University,AGED,2000,Agricultural Applications of Educational Technology,,False,False,False,False
+Clemson University,AGED,1020,Agricultural Education Freshman Seminar,,False,False,False,False
+Clemson University,AGED,2001,Agricultural Applications of Educational Technology Laboratory,,False,False,False,False
+Clemson University,WFB,468,0,,False,False,False,False
+Clemson University,AGRB,4210,Globalization,,False,False,False,False
+Clemson University,AGED,2020,Agricultural Education Sophomore Seminar,,False,False,False,False
+Clemson University,AGRB,3130,Principles of Real Estate Appraisal,,False,False,False,False
+Clemson University,AGED,2031,Teaching Agriscience Laboratory,,False,False,False,False
+Clemson University,AGRB,4600,Agricultural Finance,,False,False,False,False
+Clemson University,AGED,2040,Applied Agriculture Calculations,,False,False,False,False
+Clemson University,AGED,3020,Agricultural Education Junior Seminar,,False,False,False,False
+Clemson University,AGED,3031,Mechanical Technology for Agriculture Education Laboratory,,False,False,False,False
+Clemson University,AGED,3650,Multiculturalism in Agricultural Education,,False,False,False,False
+Clemson University,AGED,3550,Team and Organizational Leadership in the Food and Fiber System,,False,False,False,False
+Clemson University,AGED,4000,Supervised Field Experience II,,False,False,False,False
+Clemson University,AGRB,4110,Regional Impact Analysis,,False,False,False,False
+Clemson University,AGRB,4120,Regional Economic Development Theory and Policy,,False,False,False,False
+Clemson University,AGRB,4940,Creative Inquiry: Community and Rural Development,,False,False,False,False
+Clemson University,AGED,4020,Agricultural Education Senior Seminar,,False,False,False,False
+Clemson University,AGRB,4560,Prices,,False,False,False,False
+Clemson University,AGED,4070,Internship in Extension and Leadership Education,,False,False,False,False
+Clemson University,AGED,2011,Introduction to Agricultural Education Laboratory,,False,False,False,False
+Clemson University,AGED,4120,Senior Agriculture Leadership Seminar,,False,False,False,False
+Clemson University,AGED,2010,Introduction to Agricultural Education,,False,False,False,False
+Clemson University,AGED,4150,Leadership of Volunteers,,False,False,False,False
+Clemson University,AGED,4251,Teaching Agricultural Mechanics Laboratory,,False,False,False,False
+Clemson University,AGED,4280,Special Studies in Agricultural Education,,False,False,False,False
+Clemson University,AGED,4230,Curriculum,,False,False,False,False
+Clemson University,AGED,3030,Mechanical Technology for Agriculture Education,,False,False,False,False
+Clemson University,AGED,4400,Program Development in Adult/Extension Education,,False,False,False,False
+Clemson University,AGED,4060,Directed Teaching,,False,False,False,False
+Clemson University,AGED,4500,Modern Topics and Issues,,False,False,False,False
+Clemson University,AGM,1010,Introduction to Agricultural Mechanization and Business,,False,False,False,False
+Clemson University,BIOL,468,0,,False,False,False,False
+Clemson University,AGED,4250,Teaching Agricultural Mechanics,,False,False,False,False
+Clemson University,AGED,4010,Instructional Methods in Agricultural Education,,False,False,False,False
+Clemson University,AGM,2060,Machinery Management,,False,False,False,False
+Clemson University,AGM,2050,Principles of Fabrication,,False,False,False,False
+Clemson University,AGM,2051,Principles of Fabrication Laboratory,,False,False,False,False
+Clemson University,AGM,2061,Machinery Management Laboratory,,False,False,False,False
+Clemson University,AGM,2200,Calculations for Mechanized Agriculture,,False,False,False,False
+Clemson University,AGM,2190,Agribusiness and Food Systems,,False,False,False,False
+Clemson University,AGM,2201,Calculations for Mechanized Agriculture Laboratory,,False,False,False,False
+Clemson University,AGM,2211,Surveying: Earthwork and Area Measurements Laboratory,,False,False,False,False
+Clemson University,AGED,2030,Teaching Agriscience,,False,False,False,False
+Clemson University,AGED,4810,Web Design for the Life Sciences and Agriculture,,False,False,False,False
+Clemson University,AGM,2210,Surveying: Earthwork and Area Measurements,,False,False,False,False
+Clemson University,AGED,4011,Instructional Methods in Agricultural Education Laboratory,,False,False,False,False
+Clemson University,AGED,4030,Principles of Adult/Extension Education,,False,False,False,False
+Clemson University,AGM,3190,Agribusiness Decision Analysis,,False,False,False,False
+Clemson University,AGM,4050,Environmental Control in Animal Structures,,False,False,False,False
+Clemson University,AGED,4811,Web Design for the Life Sciences and Agriculture Laboratory,,False,False,False,False
+Clemson University,AGM,4051,Environmental Control in Animal Structures Laboratory,,False,False,False,False
+Clemson University,AGED,4160,Ethics and Issues in Agriculture and the Food and Fiber System,,False,False,False,False
+Clemson University,AGM,4060,Mechanical and Hydraulic Systems,,False,False,False,False
+Clemson University,AGM,4100,Precision Agriculture Technology,,False,False,False,False
+Clemson University,AGM,3010,Soil and Water Conservation,,False,False,False,True
+Clemson University,WFB,468,0,,False,False,False,False
+Clemson University,AGM,4020,Irrigation System Design,,False,False,False,False
+Clemson University,AGM,4601,Electrical Systems Laboratory,,False,False,False,False
+Clemson University,AGM,4600,Electrical Systems,,False,False,False,False
+Clemson University,AGM,4720,Capstone,,False,False,False,False
+Clemson University,AGM,4721,Capstone Laboratory,,False,False,False,False
+Clemson University,AGM,4730,Special Topics in Agricultural Mechanization,,False,False,False,False
+Clemson University,AGM,4101,Precision Agriculture Technology Laboratory,,False,False,False,False
+Clemson University,ASL,1021,American Sign Language I Laboratory,,False,False,False,False
+Clemson University,AGM,4000,Senior Seminar in Agricultural Mechanization and Business,,False,False,False,False
+Clemson University,ASL,1020,American Sign Language I,,False,False,False,False
+Clemson University,AGM,4521,Mobile Power Laboratory,,False,False,False,False
+Clemson University,ASL,1010,American Sign Language I,,False,False,False,False
+Clemson University,AGM,3710,Agricultural Mechanization Practicum,,False,False,False,False
+Clemson University,ASL,3000,Fingerspelling and Numbers in American Sign Language,,False,False,False,False
+Clemson University,ASL,3020,Advanced American Sign Language II,,False,False,False,False
+Clemson University,ASL,3040,Internship in American Sign Language,,False,False,False,False
+Clemson University,AGM,4021,Irrigation System Design Laboratory,,False,False,False,False
+Clemson University,ASL,3150,Survey of Interpreting in Public Schools,,False,False,False,False
+Clemson University,ASL,3200,American Sign Language English Interpreting in Elementary Schools I,,False,False,False,False
+Clemson University,ASL,3250,American Sign Language English Interpreting in Secondary Schools I,,False,False,False,False
+Clemson University,AGM,4061,Mechanical and Hydraulic Systems Laboratory,,False,False,False,False
+Clemson University,ASL,1011,American Sign Language I Laboratory,,False,False,False,False
+Clemson University,ASL,3490,Advanced Applications in American Sign Language,,False,False,False,False
+Clemson University,ASL,3950,ASL-English Interpreting Field Observation,,False,False,False,False
+Clemson University,AGM,4520,Mobile Power,,False,False,False,False
+Clemson University,ASL,4050,Advanced Deaf Culture and History,,False,False,False,False
+Clemson University,ASL,4200,American Sign Language English Interpreting in Elementary Schools II,,False,False,False,False
+Clemson University,ASL,4010,Discourse in American Sign Language I,,False,False,False,False
+Clemson University,ASL,3010,Advanced American Sign Language I,,False,False,False,False
+Clemson University,ASL,4450,American Sign Language for Health Care Practitioners II,,False,False,False,False
+Clemson University,ASL,2010,American Sign Language II,,False,False,False,False
+Clemson University,ASL,4600,Deaf Literature and Folklore,,False,False,False,False
+Clemson University,ASL,4250,American Sign Language English Interpreting in Secondary Schools II,,False,False,False,False
+Clemson University,ASL,3450,American Sign Language for Health Care Practitioners I,,False,False,False,False
+Clemson University,AVS,1000,Orientation to Animal and Veterinary Sciences,,False,False,False,False
+Clemson University,AVS,1500,Introduction to Animal Science,,False,False,False,False
+Clemson University,AVS,1510,Introduction to Animal Science Laboratory,,False,False,False,False
+Clemson University,AVS,2010,Poultry Techniques,,False,False,False,False
+Clemson University,ASL,4980,Independent Study,,False,False,False,False
+Clemson University,ASL,3050,Deaf Studies in the United States,,False,False,False,False
+Clemson University,AVS,2020,CAFLS Plus,,False,False,False,False
+Clemson University,ASL,2020,American Sign Language II,,False,False,False,False
+Clemson University,AVS,2021,CAFLS Plus Laboratory,,False,False,False,False
+Clemson University,ASL,2970,Creative Inquiry: American Sign Language,,False,False,False,False
+Clemson University,AVS,2030,Dairy Science Techniques,,False,False,False,False
+Clemson University,ASL,3970,Creative Inquiry in American Sign Language,,False,False,False,False
+Clemson University,ASL,4020,Discourse in American Sign Language II,,False,False,False,False
+Clemson University,AVS,2040,Horse Care Techniques,,False,False,False,False
+Clemson University,AVS,2000,Beef Cattle Techniques,,False,False,False,False
+Clemson University,AVS,2041,Horse Care Techniques Laboratory,,False,False,False,False
+Clemson University,AVS,2090,Livestock Exhibition Techniques,,False,False,False,False
+Clemson University,AVS,2081,Techniques of Teaching Horsemanship Laboratory,,False,False,False,False
+Clemson University,AVS,2011,Poultry Techniques Laboratory,,False,False,False,False
+Clemson University,AVS,2001,Beef Cattle Techniques Laboratory,,False,False,False,False
+Clemson University,AVS,2050,Horsemanship Techniques,,False,False,False,False
+Clemson University,ASL,4970,Creative Inquiry in American Sign Language,,False,False,False,False
+Clemson University,AVS,3010,Anatomy and Physiology of Domestic Animals,,False,False,False,False
+Clemson University,AVS,3011,Anatomy and Physiology of Domestic Animals Laboratory,,False,False,False,False
+Clemson University,AVS,2080,Techniques of Teaching Horsemanship,,False,False,False,False
+Clemson University,AVS,2031,Dairy Science Techniques Laboratory,,False,False,False,False
+Clemson University,AVS,2061,Swine Techniques Laboratory,,False,False,False,False
+Clemson University,AVS,3090,Principles of Equine Evaluation,,False,False,False,False
+Clemson University,AVS,3100,Animal Health,,False,False,False,False
+Clemson University,AVS,2060,Swine Techniques,,False,False,False,False
+Clemson University,AVS,2091,Livestock Exhibition Techniques Laboratory,,False,False,False,False
+Clemson University,AVS,3111,Dairy Cattle Selection Laboratory,,False,False,False,False
+Clemson University,AVS,3230,Poultry and Poultry Products Evaluation,,False,False,False,False
+Clemson University,AVS,3700,Principles of Animal Nutrition,,False,False,False,False
+Clemson University,AVS,3750,Applied Animal Nutrition,,False,False,False,False
+Clemson University,AVS,3021,Livestock Selection and Evaluation I Laboratory,,False,False,False,False
+Clemson University,AVS,2120,Small Ruminant Techniques,,False,False,False,False
+Clemson University,AVS,3851,Equine Behavior and Training Laboratory,,False,False,False,False
+Clemson University,AVS,3150,Animal Welfare,,False,False,False,False
+Clemson University,AVS,3900,Practicum,,False,False,False,False
+Clemson University,AVS,3850,Equine Behavior and Training,,False,False,False,False
+Clemson University,AVS,3751,Applied Animal Nutrition Laboratory,,False,False,False,False
+Clemson University,AVS,3020,Livestock Selection and Evaluation I,,False,False,False,False
+Clemson University,AVS,2111,Meat Processing Techniques Laboratory,,False,False,False,False
+Clemson University,AVS,3860,Advanced Equine Behavior and Training,,False,False,False,False
+Clemson University,AVS,3600,Internship,,False,False,False,False
+Clemson University,AVS,4000,Animal and Veterinary Sciences Professional Development,,False,False,False,False
+Clemson University,AVS,2110,Meat Processing Techniques,,False,False,False,False
+Clemson University,AVS,2121,Small Ruminant Techniques Laboratory,,False,False,False,False
+Clemson University,AVS,3110,Dairy Cattle Selection,,False,False,False,False

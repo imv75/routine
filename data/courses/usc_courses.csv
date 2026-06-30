@@ -1,0 +1,101 @@
+university,department_code,course_number,title,description,progressive_signal,western_canon_signal,climate_narrow_signal,climate_broad_signal
+University of Southern California,ACAD,182,Case Studies in Innovation,,False,False,False,False
+University of Southern California,ACAD,178,Digital Toolbox: Motion Graphics,,False,False,False,False
+University of Southern California,ACAD,180,Digital Toolbox: Sound and Audio,,False,False,False,False
+University of Southern California,ACAD,188,Digital Toolbox: Modeling Products I,,False,False,False,False
+University of Southern California,ACAD,200,Advanced Sound and Audio,,False,False,False,False
+University of Southern California,ACAD,202,Modeling Physical Systems,,False,False,False,False
+University of Southern California,ACAD,187,Digital Toolbox: 3D Design,,False,False,False,False
+University of Southern California,ACAD,181,g Disruptive Innovation,,False,False,False,False
+University of Southern California,ACAD,176,Rapid Visualization,,False,False,False,False
+University of Southern California,ACAD,230,3D Design: Materials and Tools,,False,False,False,False
+University of Southern California,ACAD,189,Digital Toolbox: Modeling Products II,,False,False,False,False
+University of Southern California,ACAD,240,Materials: Denim to Nanotubes,,False,False,False,False
+University of Southern California,ACAD,251,Applied Statistics for Analytics,,False,False,False,False
+University of Southern California,ACAD,207,Multimedia for Designers and Entrepreneurs I,,False,False,False,False
+University of Southern California,ACAD,206,Communication and Culture,,False,False,False,False
+University of Southern California,ACAD,260,Introduction to Healthcare Innovation,,False,False,False,False
+University of Southern California,ACAD,179,Digital Toolbox: Excel for Business Management,,False,False,False,False
+University of Southern California,ACAD,276,Dev II,,False,False,False,False
+University of Southern California,ACAD,245,Product Design I,,False,False,False,False
+University of Southern California,ACAD,204,Strength of Materials,,False,False,False,False
+University of Southern California,ACAD,250,Database Systems for Analytics,,False,False,False,False
+University of Southern California,ACAD,275,Dev I,,False,False,False,False
+University of Southern California,ACAD,203,Statics,,False,False,False,False
+University of Southern California,ACAD,302,The Hacker Imagination: from Ancient Greece to Cupertino,,False,True,False,False
+University of Southern California,ACAD,306,"Innovation, Entertainment, and the Arts",,False,False,False,False
+University of Southern California,ACAD,277,Dev III: Advanced Topics,,False,False,False,False
+University of Southern California,ACAD,177,Digital Toolbox for Design,,False,False,False,False
+University of Southern California,ACAD,309,g Dreams & Madness: The Art of Japan’s Golden Age of Animation,,False,False,False,False
+University of Southern California,ACAD,300,x Database Web Development,,False,False,False,False
+University of Southern California,ACAD,311,Design for User Experience,,False,False,False,False
+University of Southern California,ACAD,315,x Basics of Project and Operations Management for Non-Majors,,False,False,False,False
+University of Southern California,ACAD,174,Innovators Forum,,False,False,False,False
+University of Southern California,ACAD,301,Understanding Play,,False,False,False,False
+University of Southern California,ACAD,307,Multimedia for Designers and Entrepreneurs II,,False,False,False,False
+University of Southern California,ACAD,308,Computer-Aided Design for Bio-Mechanical Systems,,False,False,False,False
+University of Southern California,ACAD,331,x Influence and Collaboration,,False,False,False,False
+University of Southern California,ACAD,303,Web Design,,False,False,False,False
+University of Southern California,ACAD,341,Android App Development,,False,False,False,False
+University of Southern California,ACAD,332,b Typography,,False,False,False,False
+University of Southern California,ACAD,343,Mobile Development for Content and Media,,False,False,False,False
+University of Southern California,ACAD,261,Human Health and Technology,,False,False,False,False
+University of Southern California,ACAD,325,Justice Innovation Startup Lab,,False,False,False,False
+University of Southern California,ACAD,310,Launching Disruptive Ventures,,False,False,False,False
+University of Southern California,ACAD,342,iOS App Development,,False,False,False,False
+University of Southern California,ACAD,350,International Experience,,False,False,False,False
+University of Southern California,ACAD,351,Technologies and Practices for Analytics,,False,False,False,False
+University of Southern California,ACAD,354,Synthesis and Sound Design,,False,False,False,False
+University of Southern California,ACAD,324,g The Practice of Design: Ideation to Innovation,,False,False,False,False
+University of Southern California,ACAD,356,Audio and Media Integration,,False,False,False,False
+University of Southern California,ACAD,312,Materials Behavior and Processing,,False,False,False,False
+University of Southern California,ACAD,365,Managing Data in C++,,False,False,False,False
+University of Southern California,ACAD,367,x Advanced Coding,,False,False,False,False
+University of Southern California,ACAD,375,Business and Professional Communication,,False,False,False,False
+University of Southern California,ACAD,376,Discerning and Making I: Concept and Feasibility,,False,False,False,False
+University of Southern California,ACAD,345,Product Design II,,False,False,False,False
+University of Southern California,ACAD,377,Discerning and Making II: Creation and Implementation,,False,False,False,False
+University of Southern California,ACAD,385,x Marketing of Creative Disruption and Innovation,,False,False,False,False
+University of Southern California,ACAD,387,x Cloud Architecture and Applications,,False,False,False,False
+University of Southern California,ACAD,362,Analytics for Health Innovators,,False,False,False,False
+University of Southern California,ACAD,344,Advanced iOS App Development,,False,False,False,False
+University of Southern California,ACAD,330,3D Design: Objects and Space,"The Keck Medical Center of USC is comprised of Keck Hospital of USC, USC Norris Cancer Hospital, USC Verdugo Hills Hospital and more than 500 faculty physicians of the renowned Keck School of Medicine of USC.",False,False,False,False
+University of Southern California,ACAD,332,a Typography,,False,False,False,False
+University of Southern California,ACAD,407,Multimedia for Designers and Entrepreneurs III,,False,False,False,False
+University of Southern California,ACAD,423,Management of Small Businesses,,False,False,False,False
+University of Southern California,ACAD,419,Professional Internship,,False,False,False,False
+University of Southern California,ACAD,280,Designing for Experiences,,False,False,False,False
+University of Southern California,ACAD,435,Professional C++,,False,False,False,False
+University of Southern California,ACAD,360,Design Consulting: Problem Solving for Organizations,,False,False,False,False
+University of Southern California,ACAD,404,Advanced Front-End Web Development,,False,False,False,False
+University of Southern California,ACAD,463,Evidence Based Medicine for Health Innovators,,False,False,False,False
+University of Southern California,ACAD,464,Mining Health Data Through Machine Learning,,False,False,False,False
+University of Southern California,ACAD,366,Designing Media and Communication Projects for Social Change,"The Keck Medical Center of USC is comprised of Keck Hospital of USC, USC Norris Cancer Hospital, USC Verdugo Hills Hospital and more than 500 faculty physicians of the renowned Keck School of Medicine of USC.",False,False,False,False
+University of Southern California,ACAD,449,Data Mining: Descriptive and Predictive,,False,False,False,False
+University of Southern California,ACAD,442,Mobile App Project,,False,False,False,False
+University of Southern California,ACAD,476,Technologies for Interactive Marketing,,False,False,False,False
+University of Southern California,ACAD,425,Web Application Security,,False,False,False,False
+University of Southern California,ACAD,467,Strategic Management of Innovation,,False,False,False,False
+University of Southern California,ACAD,480,Information Technology Internship,,False,False,False,False
+University of Southern California,ACAD,382,Mobile Game Development,,False,False,False,False
+University of Southern California,ACAD,490,Directed Research,,False,False,False,False
+University of Southern California,ACAD,491,Individual Instruction,,False,False,False,False
+University of Southern California,ACAD,475,a The Garage Experience,,False,False,False,False
+University of Southern California,ACAD,352,Digital Audio Recording and Processing,,False,False,False,False
+University of Southern California,ACAD,475,b The Garage Experience,,False,False,False,False
+University of Southern California,ACCT,372,Internal Reporting Issues,,False,False,False,False
+University of Southern California,ACCT,373,Introduction to Auditing and Assurance Services,,False,False,False,False
+University of Southern California,ACCT,374,Introduction to Tax Issues,,False,False,False,False
+University of Southern California,ACCT,377,Valuation for Financial Statement Purposes,,False,False,False,False
+University of Southern California,ACCT,369,Analytical Tools for Accountants,,False,False,False,False
+University of Southern California,ACAD,445,Product Design III,,False,False,False,False
+University of Southern California,ACAD,590,Directed Research,,False,False,False,False
+University of Southern California,ACAD,460,Web Application Project,,False,False,False,False
+University of Southern California,ACCT,387,"x Risk Management in Entertainment, Sports and the Arts",,False,False,False,False
+University of Southern California,ACAD,405,Advanced Back-End Web Development,,False,False,False,False
+University of Southern California,ACCT,385,x Introduction to Risk Management and Insurance,,False,False,False,False
+University of Southern California,ACCT,380,x Introduction to Enterprise Risk Management,,False,False,False,False
+University of Southern California,ACAD,499,Special Topics,,False,False,False,False
+University of Southern California,ACCT,371,Introduction to Accounting Systems,,False,False,False,False
+University of Southern California,ACAD,599,Special Topics,,False,False,False,False
+University of Southern California,ACCT,370,External Financial Reporting Issues,,False,False,False,False

@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-06-29",
+  "last_updated": "2026-06-30",
   "total_universities": 100,
-  "completed": 127,
+  "completed": 137,
   "in_progress": [],
   "failed": [],
   "blocked_by_network": [
@@ -11,7 +11,6 @@
     "bc",
     "brandeis",
     "rochester",
-    "clemson",
     "sc",
     "msu",
     "uky",
@@ -19,21 +18,12 @@
   ],
   "dynamic_js_only": [
     "osu",
-    "lsu",
     "ou",
-    "unlv",
-    "ttu",
-    "uh",
     "uc",
-    "udel",
     "asu",
     "ucla",
     "stonybrook",
-    "uva",
-    "rpi",
-    "wsu",
-    "utk",
-    "usc"
+    "wsu"
   ],
   "universities": {
     "stanford": {
@@ -352,9 +342,11 @@
       "notes": "Scraped via SOC Servlet (title-only, no descriptions). F24/S25 not accessible; 2026-27 available. 8,167 courses."
     },
     "usc": {
-      "id": 27,
-      "status": "dynamic_js_only",
-      "notes": "catalogue.usc.edu uses Acalog/ACMS returning 202 with JS-only content."
+      "status": "completed",
+      "method": "wayback_acalog",
+      "courses_scraped": 100,
+      "file": "data/courses/usc_courses.csv",
+      "note": "Scraped via Wayback Machine archived Acalog pages"
     },
     "brown": {
       "id": 28,
@@ -633,9 +625,11 @@
       "notes": "2026-27 catalog scraped."
     },
     "uva": {
-      "id": 45,
-      "status": "dynamic_js_only",
-      "notes": "records.ureg.virginia.edu uses Acalog (returns 202 for course content pages). louslist.org returns 403."
+      "status": "completed",
+      "method": "wayback_acalog",
+      "courses_scraped": 199,
+      "file": "data/courses/uva_courses.csv",
+      "note": "Scraped via Wayback Machine archived Acalog pages"
     },
     "tufts": {
       "id": 46,
@@ -982,13 +976,19 @@
     },
     "rpi": {
       "id": 72,
-      "status": "dynamic_js_only",
-      "notes": "catalog.rpi.edu uses Acalog/ACMS returning 202 with JS-only content."
+      "status": "completed",
+      "method": "wayback_acalog",
+      "courses_scraped": 1297,
+      "descriptions_available": 66,
+      "file": "data/courses/rpi_courses.csv",
+      "note": "Scraped via Wayback Machine (catoid=18, navoid=444, ts=20200213142349). 1297 courses, 66 with archived descriptions (preview pages mostly not crawled by Wayback)."
     },
     "utk": {
-      "id": 73,
-      "status": "dynamic_js_only",
-      "notes": "catalog.utk.edu uses Acalog/ACMS returning 202 with JS-only content."
+      "status": "completed",
+      "method": "wayback_acalog",
+      "courses_scraped": 1300,
+      "file": "data/courses/utk_courses.csv",
+      "note": "Scraped from Wayback Machine archived Acalog pages (catoid=1, navoid=104, pages 1-13)"
     },
     "uky": {
       "id": 74,
@@ -1026,9 +1026,11 @@
       "notes": "2026-27 catalog scraped. Previously blocked; bulletin.auburn.edu/coursesofinstruction/ now accessible. 162 departments. Custom courseblock format: div.courseblock > p > strong 'DEPT NNNN TITLE (N)' + description."
     },
     "lsu": {
-      "id": 77,
-      "status": "dynamic_js_only",
-      "notes": "catalog.lsu.edu uses Acalog/ACMS returning 202 with JS-only content."
+      "status": "completed",
+      "method": "wayback_acalog",
+      "courses_scraped": 910,
+      "file": "data/courses/lsu_courses.csv",
+      "note": "Scraped via Wayback Machine archived Acalog pages"
     },
     "ou": {
       "id": 78,
@@ -1057,8 +1059,12 @@
     },
     "clemson": {
       "id": 81,
-      "status": "blocked_by_network",
-      "notes": "SSL blocked from proxy environment."
+      "status": "completed",
+      "method": "wayback_acalog",
+      "courses_scraped": 194,
+      "descriptions_available": 0,
+      "file": "data/courses/clemson_courses.csv",
+      "note": "Scraped via Wayback Machine (catoid=16, navoid=485, ts=20221129103811). 194 courses from pages 1-2, no descriptions (preview pages not archived). Direct access SSL-blocked by proxy."
     },
     "unl": {
       "id": 82,
@@ -1201,9 +1207,11 @@
       "notes": "2026-27 catalog scraped."
     },
     "unlv": {
-      "id": 92,
-      "status": "dynamic_js_only",
-      "notes": "catalog.unlv.edu uses Acalog/ACMS returning 202 with JS-only content."
+      "status": "completed",
+      "method": "wayback_acalog",
+      "courses_scraped": 1395,
+      "file": "data/courses/unlv_courses.csv",
+      "note": "Scraped via Wayback Machine archived Acalog pages"
     },
     "baylor": {
       "id": 93,
@@ -1221,14 +1229,20 @@
       "notes": "Scraped UG+Grad course catalog from catalog.baylor.edu. 215 department pages."
     },
     "ttu": {
-      "id": 94,
-      "status": "dynamic_js_only",
-      "notes": "catalog.ttu.edu uses Acalog/ACMS returning 202 with JS-only content."
+      "status": "completed",
+      "method": "wayback_acalog",
+      "courses_scraped": 100,
+      "file": "data/courses/ttu_courses.csv",
+      "note": "Scraped via Wayback Machine archived Acalog pages"
     },
     "uh": {
       "id": 95,
-      "status": "dynamic_js_only",
-      "notes": "publications.uh.edu uses Acalog/ACMS returning 202 with JS-only content."
+      "status": "completed",
+      "method": "wayback_acalog",
+      "courses_scraped": 1600,
+      "descriptions_available": 0,
+      "file": "data/courses/uh_courses.csv",
+      "note": "Scraped via Wayback Machine (catoid=1, navoid=52, ts=20210418035350). 1600 courses from pages 1-5, no descriptions available (preview pages not archived)."
     },
     "louisville": {
       "id": 96,
@@ -1271,9 +1285,11 @@
       "notes": "catalog.stonybrook.edu uses Acalog/ACMS (returns 202 for content pages)."
     },
     "udel": {
-      "id": 100,
-      "status": "dynamic_js_only",
-      "notes": "catalog.udel.edu uses Acalog/ACMS returning 202 with JS-only content."
+      "status": "completed",
+      "method": "wayback_acalog",
+      "courses_scraped": 100,
+      "file": "data/courses/udel_courses.csv",
+      "note": "Scraped via Wayback Machine archived Acalog pages"
     },
     "uta": {
       "id": 101,
@@ -2039,9 +2055,9 @@
     "note": "berkeley/harvard/yale/princeton/uchicago/columbia/vanderbilt = dynamic-JS or proxy-blocked; utaustin/tamu = catalog soft-404. These 9 retain Marinovic (2026) published values."
   },
   "original_100_summary": {
-    "completed": 74,
-    "blocked_by_network": 11,
-    "dynamic_js_or_waf": 15,
-    "notes": "74/100 universities successfully scraped. 11 blocked by proxy (SSL/network policy): umich, duke, msu, tufts, bc, brandeis, rochester, clemson, sc, uky, olemiss. 15 inaccessible due to dynamic JS / WAF: osu (Acalog WAF), lsu (Acalog WAF), ou (HTTP redirect only), unlv (Acalog WAF), ttu (Acalog WAF), uh (proxy blocked), uc (proxy blocked), udel (Acalog WAF), asu (React SPA, auth-required API), ucla (CourseLoop API 403), stonybrook (Acalog WAF), uva (Acalog WAF + proxy blocked), rpi (Acalog WAF), usc (Angular SPA), utk (Acalog WAF). All alternatives exhausted: Coursedog probed, alternative subdomains tested, cookie-based WAF bypass attempted."
+    "completed": 84,
+    "blocked_by_network": 10,
+    "dynamic_js_or_waf": 6,
+    "notes": "84/100 universities scraped (10 added via Wayback Machine this session: utk, lsu, unlv, usc, uva, ttu, udel, rpi, uh, clemson). Remaining blocked by proxy (SSL/network): umich, duke, msu, tufts, bc, brandeis, rochester, sc, uky, olemiss (10). Still inaccessible (dynamic JS / WAF with no Wayback archives): osu, ou, uc, asu, stonybrook, wsu (6). CDX search confirmed 0 entries for uky, sc, olemiss, bc, brandeis, rochester. MSU, duke, tufts, umich CDX queries returned SSL errors (could not determine). UCLA is also blocked (CourseLoop API 403). Total inaccessible: 17 universities."
   }
 }
