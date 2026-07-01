@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-29",
+  "last_updated": "2026-07-01",
   "total_universities": 100,
   "completed": 127,
   "in_progress": [],
@@ -2042,6 +2042,7 @@
     "completed": 74,
     "blocked_by_network": 11,
     "dynamic_js_or_waf": 15,
-    "notes": "74/100 universities successfully scraped. 11 blocked by proxy (SSL/network policy): umich, duke, msu, tufts, bc, brandeis, rochester, clemson, sc, uky, olemiss. 15 inaccessible due to dynamic JS / WAF: osu (Acalog WAF), lsu (Acalog WAF), ou (HTTP redirect only), unlv (Acalog WAF), ttu (Acalog WAF), uh (proxy blocked), uc (proxy blocked), udel (Acalog WAF), asu (React SPA, auth-required API), ucla (CourseLoop API 403), stonybrook (Acalog WAF), uva (Acalog WAF + proxy blocked), rpi (Acalog WAF), usc (Angular SPA), utk (Acalog WAF). All alternatives exhausted: Coursedog probed, alternative subdomains tested, cookie-based WAF bypass attempted."
+    "notes": "74/100 universities successfully scraped. 11 blocked by proxy (SSL/network policy): umich, duke, msu, tufts, bc, brandeis, rochester, clemson, sc, uky, olemiss. 15 inaccessible due to dynamic JS / WAF: osu (Acalog WAF), lsu (Acalog WAF), ou (HTTP redirect only), unlv (Acalog WAF), ttu (Acalog WAF), uh (proxy blocked), uc (proxy blocked), udel (Acalog WAF), asu (React SPA, auth-required API), ucla (CourseLoop API 403), stonybrook (Acalog WAF), uva (Acalog WAF + proxy blocked), rpi (Acalog WAF), usc (Angular SPA), utk (Acalog WAF). All alternatives exhausted: Coursedog probed, alternative subdomains tested, cookie-based WAF bypass attempted.",
+    "session_2026_07_01_note": "Independently re-verified all 26 remaining as inaccessible from this proxy environment. Installed Playwright + real headless Chromium (now available in this environment) specifically to test whether a full browser could pass the Acalog WAF JS challenges and render the SPA-based catalogs (ucla, asu, usc, and the 8 Acalog-WAF schools). Root cause found: Chromium 141 (BoringSSL) TLS 1.3 ClientHello includes a post-quantum hybrid key share (X25519MLKEM768) that the session's TLS-intercepting egress proxy cannot handle -- every HTTPS navigation via headless Chrome through this proxy fails with net::ERR_CONNECTION_CLOSED (SSL error code 1), even for trivial sites like example.com. This reproduces a prior session's unsuccessful scrape_usc_playwright.py/test_playwright_acalog.py attempts (no data ever produced) and confirms it is an environment/proxy limitation, not fixable via scraper code, chrome flags, or Chrome enterprise policy (tried --disable-quic, --disable-http2, --disable-features=PostQuantumKyber/UseMLKEM/EncryptedClientHello, and a PostQuantumKeyAgreementEnabled=false managed policy -- none resolved it). Also re-probed Coursedog for the 26 remaining schools (checked catalog/registrar homepages for coursedog references) -- found none; consistent with the prior session's conclusion. No new completions possible this session. 74/100 remains the practical ceiling for this proxy environment."
   }
 }
