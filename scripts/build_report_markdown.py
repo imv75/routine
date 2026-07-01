@@ -1,14 +1,15 @@
 #!/usr/bin/env python3
-"""Assemble the comprehensive 100-university curriculum report (Markdown)."""
+"""Assemble the comprehensive multi-university curriculum report (Markdown)."""
 import json, statistics
 
 with open('/tmp/agg.json') as f:
     R = json.load(f)
-# "collected" = freshly scraped catalogs (84 original + 7 re-scraped reference)
+# "collected" = freshly scraped catalogs (original scrapes + re-scraped reference universities)
 collected = [r for r in R if r['source'] in ('scraped', 'rescraped')]
 rescraped = [r for r in R if r['source'] == 'rescraped']
 paper = [r for r in R if r['source'] == 'Marinovic (2026)']
 N_COLLECTED, N_RESCRAPED, N_PAPER = len(collected), len(rescraped), len(paper)
+N_TOTAL = len(R)
 
 def area_count(n):
     return n['courses'] if isinstance(n, dict) else n
@@ -21,6 +22,11 @@ mean_canon = statistics.mean(r['canon'] for r in R)
 med_prog = statistics.median(r['prog'] for r in R)
 med_canon = statistics.median(r['canon'] for r in R)
 sd_prog = statistics.pstdev(r['prog'] for r in R)
+min_prog = min(r['prog'] for r in R)
+max_prog = max(r['prog'] for r in R)
+
+canon_wins = sorted([r for r in R if r['canon'] > r['prog']], key=lambda r: r['name'])
+canon_wins_names = ', '.join(r['name'] for r in canon_wins)
 
 cn = [r['cn'] for r in collected if r['cn'] is not None]
 cb = [r['cb'] for r in collected if r['cb'] is not None]
@@ -37,23 +43,23 @@ above_diag = sum(1 for r in R if r['prog'] > r['canon'])
 L = []
 def w(s=''): L.append(s)
 
-w('# What 100 Universities (Say They) Teach')
+w(f'# What {N_TOTAL} Universities (Say They) Teach')
 w()
-w('### A cross-sectional extension of Marinovic (2026) to 100 U.S. institutions')
+w(f'### A cross-sectional extension of Marinovic (2026) to {N_TOTAL} U.S. institutions')
 w()
-w('*Generated automatically by the catalog-collection routine — June 2026*')
+w('*Generated automatically by the catalog-collection routine — July 2026*')
 w()
 w('---')
 w()
 w('## Abstract')
 w()
 w('This report extends the catalog-language analysis of Marinovic (2026), *What Universities '
-  '(Say They) Teach*, from its original 16-university comparison set to **100 U.S. '
-  'institutions**. Following the reference methodology, each course title and description is '
-  'searched for two keyword families: a **progressive signal** (race, gender, identity, '
-  'diversity, equity, social justice, decolonial, and related themes) and a **Western-canon '
-  'signal** (classical antiquity, the Western intellectual tradition, canonical authors and '
-  f'texts). The sample combines **{N_COLLECTED} freshly collected catalogs** — '
+  '(Say They) Teach*, from its original 16-university comparison set to '
+  f'**{N_TOTAL} U.S. institutions**. Following the reference methodology, each course title and '
+  'description is searched for two keyword families: a **progressive signal** (race, gender, '
+  'identity, diversity, equity, social justice, decolonial, and related themes) and a '
+  '**Western-canon signal** (classical antiquity, the Western intellectual tradition, canonical '
+  f'authors and texts). The sample combines **{N_COLLECTED} freshly collected catalogs** — '
   f'{N_COLLECTED - N_RESCRAPED} regional, public, and private institutions plus **{N_RESCRAPED} '
   'of the original reference universities re-scraped from their current 2026 catalogs** '
   '(Stanford, MIT, Cornell, Northwestern, NYU, UIUC, U. Iowa) — with the remaining '
@@ -62,11 +68,11 @@ w('This report extends the catalog-language analysis of Marinovic (2026), *What 
   f'**{tot_courses:,} deduplicated courses** — the course-weighted progressive signal is '
   f'**{cw_prog:.1f}%** and the Western-canon signal is **{cw_canon:.1f}%**. The central pattern '
   f'of the original paper holds: the progressive signal exceeds the Western-canon signal at '
-  f'**{above_diag} of 100** institutions, typically by a factor of three to four. The signal is '
-  'far from uniform — progressive shares range from under 1% to over 27% — and the few '
-  'institutions where the canon signal dominates are Christian colleges or low-signal outliers. '
-  'These measures are mechanical keyword counts, not judgments about course quality or what is '
-  'taught in classrooms.')
+  f'**{above_diag} of {N_TOTAL}** institutions, typically by a factor of three to four. The '
+  f'signal is far from uniform — progressive shares range from {min_prog:.1f}% to over '
+  f'{max_prog:.0f}% — and the few institutions where the canon signal dominates are Christian '
+  'colleges or low-signal outliers. These measures are mechanical keyword counts, not judgments '
+  'about course quality or what is taught in classrooms.')
 w()
 w('---')
 w()
@@ -79,7 +85,7 @@ w('Marinovic (2026) measures how often U.S. university course catalogs use langu
   'asks a simpler question: **what does the same measurement look like across a much wider slice '
   'of American higher education?**')
 w()
-w('The 100 institutions here are deliberately heterogeneous. They include private research '
+w(f'The {N_TOTAL} institutions here are deliberately heterogeneous. They include private research '
   'universities, large public flagships, regional public universities, technical institutes, '
   'religious colleges, and community colleges. This breadth is the point: the original sample '
   'explicitly omitted "community colleges, regional public universities, and most liberal-arts '
@@ -132,41 +138,41 @@ w()
 w('## 3. Headline Findings')
 w()
 w(f'- **The progressive signal dominates the canon signal almost everywhere.** At **{above_diag} '
-  f'of 100** institutions the progressive share exceeds the Western-canon share. Across the '
+  f'of {N_TOTAL}** institutions the progressive share exceeds the Western-canon share. Across the '
   f'{N_COLLECTED} collected catalogs the course-weighted progressive signal ({cw_prog:.1f}%) is '
   f'about **{cw_prog/cw_canon:.1f}×** the canon signal ({cw_canon:.1f}%).')
 w(f'- **Typical magnitudes are well below the elite tail.** The median institution carries the '
   f'progressive signal on **{med_prog:.1f}%** of courses and the canon signal on **{med_canon:.1f}%**. '
-  f'The simple mean across all 100 is **{mean_prog:.1f}%** progressive and **{mean_canon:.1f}%** '
+  f'The simple mean across all {N_TOTAL} is **{mean_prog:.1f}%** progressive and **{mean_canon:.1f}%** '
   'canon. The most progressive catalogs — Stanford and the elite privates — sit in the upper '
   'tail, not at the center.')
-w(f'- **Enormous dispersion.** Progressive shares span roughly **0.6% to 27%** (standard '
-  f'deviation {sd_prog:.1f} points). The spread is institutional, not just disciplinary: regional '
-  f'and technical schools cluster low, while research universities and several small private '
-  f'colleges cluster high.')
-w('- **Where the canon wins, it is usually religious.** Only three institutions carry more '
-  'canonical than progressive language: Biola and Cornerstone — both Christian colleges where '
-  'biblical and classical-author keywords are common — and Marshall, an outlier whose unusually '
-  'low progressive share (0.6%) reflects short, sparse catalog descriptions.')
+w(f'- **Enormous dispersion.** Progressive shares span roughly **{min_prog:.1f}% to {max_prog:.0f}%** '
+  f'(standard deviation {sd_prog:.1f} points). The spread is institutional, not just disciplinary: '
+  f'regional and technical schools cluster low, while research universities and several small '
+  f'private colleges cluster high.')
+w(f'- **Where the canon wins, it is usually religious.** Only {len(canon_wins)} institutions carry '
+  f'more canonical than progressive language: {canon_wins_names}. Biola and Cornerstone are '
+  'Christian colleges where biblical and classical-author keywords are common; Marshall is an '
+  'outlier whose unusually low progressive share reflects short, sparse catalog descriptions.')
 w(f'- **Climate language is modest but pervasive.** Across collected catalogs the narrow climate '
   f'signal averages **{mean_cn:.1f}%** of courses and the broad climate-or-sustainability signal '
   f'**{mean_cb:.1f}%**.')
 w()
-w('![Progressive vs. Western-canon signal across 100 universities](figures/fig1_scatter.png)')
+w(f'![Progressive vs. Western-canon signal across {N_TOTAL} universities](figures/fig1_scatter.png)')
 w()
 w('*Figure 1. Each point is one institution\'s latest catalog. Points above the dashed line '
-  'carry more progressive than canonical language. Blue = the 84 regional/public/private '
-  'catalogs; green = the 7 re-scraped 2026 reference catalogs; red = the 9 reference catalogs '
-  'still cited from Marinovic (2026).*')
+  f'carry more progressive than canonical language. Blue = the {N_COLLECTED - N_RESCRAPED} '
+  f'regional/public/private catalogs; green = the {N_RESCRAPED} re-scraped 2026 reference '
+  f'catalogs; red = the {N_PAPER} reference catalogs still cited from Marinovic (2026).*')
 w()
 w('![Distribution of signal shares](figures/fig3_distribution.png)')
 w()
-w('*Figure 2. Distribution of progressive and Western-canon shares across all 100 institutions. '
-  'Dashed lines mark the means.*')
+w(f'*Figure 2. Distribution of progressive and Western-canon shares across all {N_TOTAL} '
+  'institutions. Dashed lines mark the means.*')
 w()
 w('---')
 w()
-w('## 4. Cross-Sectional Comparison (all 100 institutions)')
+w(f'## 4. Cross-Sectional Comparison (all {N_TOTAL} institutions)')
 w()
 w('Table 1 reports every institution\'s latest-catalog progressive and Western-canon shares, the '
   'ratio between them, and the number of courses analyzed. As in Table 6 of the reference paper, '
@@ -187,7 +193,7 @@ for i, r in enumerate(ordered, 1):
     tot = f"{r['total']:,}{star}"
     w(f"| {i} | {r['name']} | {r['year']} | {tot} | {r['prog']:.1f} | {r['canon']:.1f} | {ratio} | {src} |")
 w()
-w('*\\* For the 9 paper-only institutions the course count is the total course-years in '
+w(f'*\\* For the {N_PAPER} paper-only institutions the course count is the total course-years in '
   'Marinovic (2026), not a single-year count; their shares are latest-year (2024/2025) values '
   'from that paper. Collected course counts are deduplicated single-year (mostly 2026–2027).*')
 w()
@@ -198,7 +204,8 @@ w()
 # ---- 4.4 Re-scraped reference comparison ----
 w('### 4.4 Re-scraped reference universities: 2026 catalog vs. published figures')
 w()
-w('Seven of the sixteen original reference universities could be re-scraped from their live 2026 '
+w(f'{N_RESCRAPED} of the sixteen original reference universities could be re-scraped from their '
+  'live 2026 '
   'catalogs. Table 2 places the freshly scraped shares next to the values Marinovic (2026) '
   'reported. The re-scraped numbers are consistently higher, for two structural reasons. First, '
   'this project scrapes the **entire published catalog**, whereas the paper restricts its '
@@ -279,18 +286,19 @@ w('- **Keyword lists are imperfect.** Substring matching produces false positive
 w('- **Population and matching differences.** The re-scraped reference values are not directly '
   'comparable to the paper\'s published figures (full catalog + substring here vs. offered-subset '
   '+ word-boundary there); they ARE comparable to the other collected catalogs in this report.')
-w('- **Uneven coverage.** Nine reference universities could not be re-scraped and retain paper '
-  'values; Northwestern is undergraduate-only; per-institution scrape failures are recorded in '
-  'each `data/<uni>/<uni>_summary.json`.')
+w(f'- **Uneven coverage.** {N_PAPER} reference universities could not be re-scraped and retain '
+  'paper values; Northwestern is undergraduate-only; per-institution scrape failures are '
+  'recorded in each `data/<uni>/<uni>_summary.json`.')
 w()
 w('---')
 w()
 w('## 8. Conclusion')
 w()
-w('Extending the catalog-language measurement from 16 to 100 institutions — and re-scraping '
-  'seven of the original reference universities from their 2026 catalogs — does not overturn the '
-  'central finding of Marinovic (2026): progressive language is far more common than '
-  f'Western-canon language in the stated curriculum, dominating at {above_diag} of 100 schools. '
+w(f'Extending the catalog-language measurement from 16 to {N_TOTAL} institutions — and '
+  f're-scraping {N_RESCRAPED} of the original reference universities from their 2026 catalogs — '
+  'does not overturn the central finding of Marinovic (2026): progressive language is far more '
+  'common than Western-canon language in the stated curriculum, dominating at '
+  f'{above_diag} of {N_TOTAL} schools. '
   'What the wider sample adds is **context for magnitude**. The very high progressive shares that '
   'characterize the most-discussed elite catalogs are not representative of American higher '
   f'education as a whole; the median institution sits near {med_prog:.0f}%, and a long tail of '
@@ -304,7 +312,7 @@ w('---')
 w()
 w('## Appendix: Data and Reproduction')
 w()
-w(f'- **Institutions:** 100 total — {N_COLLECTED} freshly collected ({N_COLLECTED - N_RESCRAPED} '
+w(f'- **Institutions:** {N_TOTAL} total — {N_COLLECTED} freshly collected ({N_COLLECTED - N_RESCRAPED} '
   f'this project + {N_RESCRAPED} re-scraped reference) and {N_PAPER} carried over from Marinovic '
   '(2026).')
 w(f'- **Courses analyzed (collected):** {tot_courses:,} deduplicated course records.')
@@ -322,5 +330,5 @@ text = '\n'.join(L)
 with open('reports/curriculum_report_100_universities.md', 'w') as f:
     f.write(text)
 print(f'Report written: reports/curriculum_report_100_universities.md ({len(text):,} chars)')
-print(f'Collected {N_COLLECTED} (incl {N_RESCRAPED} re-scraped) + paper {N_PAPER}')
-print(f'Progressive > canon at {above_diag}/100; course-wt prog {cw_prog:.1f}% canon {cw_canon:.1f}%')
+print(f'Collected {N_COLLECTED} (incl {N_RESCRAPED} re-scraped) + paper {N_PAPER} = {N_TOTAL} total')
+print(f'Progressive > canon at {above_diag}/{N_TOTAL}; course-wt prog {cw_prog:.1f}% canon {cw_canon:.1f}%')

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate figures for the 100-university comprehensive report."""
+"""Generate figures for the comprehensive multi-university report."""
 import json, os, statistics
 import matplotlib
 matplotlib.use('Agg')
@@ -18,8 +18,9 @@ def col(r): return COL.get(r['source'], '#888888')
 n_sc = sum(1 for r in R if r['source'] == 'scraped')
 n_re = sum(1 for r in R if r['source'] == 'rescraped')
 n_pa = sum(1 for r in R if r['source'] == 'Marinovic (2026)')
+N = len(R)
 
-# ---- Figure 1: Scatter prog vs canon, all 100 ----
+# ---- Figure 1: Scatter prog vs canon, all N ----
 fig, ax = plt.subplots(figsize=(8, 6))
 xs = [r['canon'] for r in R]
 ys = [r['prog'] for r in R]
@@ -28,7 +29,7 @@ lim = max(max(xs), max(ys)) + 2
 ax.plot([0, lim], [0, lim], '--', color='gray', linewidth=1, label='Progressive = Canon')
 ax.set_xlabel('Western-canon signal (% of courses)')
 ax.set_ylabel('Progressive signal (% of courses)')
-ax.set_title('Progressive vs. Western-Canon Signal, 100 Universities (latest catalog)')
+ax.set_title(f'Progressive vs. Western-Canon Signal, {N} Universities (latest catalog)')
 notable = {'uchicago','yale','nyu','princeton','stanford','biola','csp','marshall','tamucc','cornell'}
 for r in R:
     if r['key'] in notable:
@@ -60,7 +61,7 @@ for ax, grp, title in [(axes[0], top, 'Highest progressive share'),
     ax.set_title(title)
     ax.tick_params(axis='y', labelsize=7)
     ax.grid(True, axis='x', alpha=0.3)
-plt.suptitle('Progressive Signal Ranking, 100 Universities', y=1.00)
+plt.suptitle(f'Progressive Signal Ranking, {N} Universities', y=1.00)
 plt.tight_layout()
 plt.savefig('reports/figures/fig2_ranking.png', dpi=130)
 plt.close()
@@ -73,7 +74,7 @@ ax.axvline(statistics.mean(r['prog'] for r in R), color='#2c7fb8', linestyle='--
 ax.axvline(statistics.mean(r['canon'] for r in R), color='#c0392b', linestyle='--', linewidth=1.5)
 ax.set_xlabel('Share of courses (%)')
 ax.set_ylabel('Number of universities')
-ax.set_title('Distribution of Signal Shares Across 100 Universities')
+ax.set_title(f'Distribution of Signal Shares Across {N} Universities')
 ax.legend()
 ax.grid(True, alpha=0.3)
 plt.tight_layout()

@@ -1,11 +1,16 @@
 #!/usr/bin/env python3
-"""Aggregate all 100 universities' catalog signals for the comprehensive report."""
+"""Aggregate all completed universities' catalog signals for the comprehensive report."""
 import json, os, statistics
 
 with open('progress.json') as f:
     prog = json.load(f)
 unis = prog['universities']
 completed = {k: v for k, v in unis.items() if v.get('status') == 'completed'}
+
+# 'cu' and 'colorado' are two separate scrapes of the same institution (CU Boulder,
+# universities.csv id 62) from different sessions; drop the duplicate so it isn't
+# double-counted. 'colorado' is kept since it already has a DISPLAY entry.
+completed.pop('cu', None)
 
 # Published Table 6 values from Marinovic (2026) for the 16 reference-paper universities.
 PAPER = {
@@ -51,6 +56,12 @@ DISPLAY = {
     'csub':'CSU Bakersfield','keene':'Keene State','lamar':'Lamar','mwcc':'Mt. Wachusett CC',
     'snow':'Snow College','tamiu':'Texas A&M International','washburn':'Washburn',
     'tamucc':'Texas A&M–Corpus Christi','wku':'Western Kentucky','marshall':'Marshall','tsu':'Texas Southern',
+    'auburn':'Auburn','baylor':'Baylor','brown':'Brown','cmu':'Carnegie Mellon','emory':'Emory',
+    'fsu':'Florida State','georgetown':'Georgetown','iu':'Indiana University','jhu':'Johns Hopkins',
+    'kstate':'Kansas State','oit':'Oregon Tech','pitt':'U. Pittsburgh','purdue':'Purdue',
+    'rutgers':'Rutgers','uarizona':'U. Arizona','ucdavis':'UC Davis','uci':'UC Irvine','ucsb':'UCSB',
+    'ucsd':'UCSD','uga':'U. Georgia','umn':'U. Minnesota','unm':'U. New Mexico','utah':'U. Utah',
+    'washu':'WashU','wfu':'Wake Forest','wvu':'West Virginia',
 }
 
 records = []
@@ -59,12 +70,25 @@ for k, v in completed.items():
     if os.path.exists(sfile):
         with open(sfile) as f:
             s = json.load(f)
+        # Multi-year scrapes (purdue, georgetown, rutgers, cmu) store per-year stats
+        # under a nested "years" dict with no top-level progressive_pct; fall back to
+        # the latest year so they aren't silently counted as 0%.
+        if s.get('progressive_pct') is None and s.get('years'):
+            latest = max(s['years'].keys(), key=lambda y: int(y))
+            yd = s['years'][latest]
+            s = {
+                **s,
+                'academic_year': latest,
+                'total_courses': yd.get('courses', s.get('total_courses', 0)),
+                'progressive_pct': yd.get('progressive_pct', 0.0),
+                'canon_pct': yd.get('canon_pct', yd.get('western_canon_pct', 0.0)),
+            }
         rescraped = s.get('source') == 'rescraped_2026'
         rec = {
             'key': k, 'name': DISPLAY.get(k, k),
             'source': 'rescraped' if rescraped else 'scraped',
             'year': int(s.get('academic_year', 2026)),
-            'total': s.get('total_courses', 0),
+            'total': s.get('total_courses') or s.get('total_deduplicated') or 0,
             'prog': round(s.get('progressive_pct', 0.0), 1),
             'canon': round(s.get('canon_pct', 0.0), 1),
             'cn': s.get('climate_narrow_pct', 0.0),

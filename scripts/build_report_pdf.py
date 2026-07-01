@@ -10,6 +10,7 @@ rescraped = [r for r in R if r['source'] == 'rescraped']
 byk = {r['key']: r for r in R}
 N_COLLECTED = len(scraped); N_RESCRAPED = len(rescraped)
 N_PAPER = sum(1 for r in R if r['source'] == 'Marinovic (2026)')
+N_TOTAL = len(R)
 
 def area_count(n):
     return n['courses'] if isinstance(n, dict) else n
@@ -22,6 +23,11 @@ mean_canon = statistics.mean(r['canon'] for r in R)
 med_prog = statistics.median(r['prog'] for r in R)
 med_canon = statistics.median(r['canon'] for r in R)
 above = sum(1 for r in R if r['prog'] > r['canon'])
+sd_prog = statistics.pstdev(r['prog'] for r in R)
+min_prog = min(r['prog'] for r in R)
+max_prog = max(r['prog'] for r in R)
+canon_wins = sorted([r for r in R if r['canon'] > r['prog']], key=lambda r: r['name'])
+canon_wins_names = ', '.join(r['name'] for r in canon_wins)
 area_tot = {}
 for r in scraped:
     for a, n in r['by_area'].items():
@@ -40,7 +46,7 @@ class PDF(FPDF):
             return
         self.set_font('Helvetica', 'I', 8)
         self.set_text_color(120)
-        self.cell(0, 8, 'What 100 Universities (Say They) Teach', align='L')
+        self.cell(0, 8, f'What {N_TOTAL} Universities (Say They) Teach', align='L')
         self.cell(0, 8, f'p. {self.page_no()}', align='R', new_x='LMARGIN', new_y='NEXT')
         self.set_text_color(0)
     def footer(self):
@@ -73,17 +79,17 @@ def caption(t):
 
 # Title block
 pdf.set_font('Helvetica', 'B', 20); pdf.set_text_color(20,40,90)
-pdf.multi_cell(W, 9, clean('What 100 Universities (Say They) Teach'))
+pdf.multi_cell(W, 9, clean(f'What {N_TOTAL} Universities (Say They) Teach'))
 pdf.set_text_color(0)
 pdf.set_font('Helvetica', '', 12)
-pdf.multi_cell(W, 6, clean('A cross-sectional extension of Marinovic (2026) to 100 U.S. institutions'))
+pdf.multi_cell(W, 6, clean(f'A cross-sectional extension of Marinovic (2026) to {N_TOTAL} U.S. institutions'))
 pdf.set_font('Helvetica', 'I', 9.5); pdf.set_text_color(110)
-pdf.multi_cell(W, 5, clean('Generated automatically by the catalog-collection routine - June 2026'))
+pdf.multi_cell(W, 5, clean('Generated automatically by the catalog-collection routine - July 2026'))
 pdf.set_text_color(0); pdf.ln(3)
 
 h2('Abstract')
 para(f'This report extends the catalog-language analysis of Marinovic (2026), "What Universities '
-     f'(Say They) Teach," from its original 16-university comparison set to 100 U.S. institutions. '
+     f'(Say They) Teach," from its original 16-university comparison set to {N_TOTAL} U.S. institutions. '
      f'Following the reference methodology, each course title and description is searched for two '
      f'keyword families: a progressive signal (race, gender, identity, diversity, equity, social '
      f'justice, decolonial, and related themes) and a Western-canon signal (classical antiquity, '
@@ -95,9 +101,9 @@ para(f'This report extends the catalog-language analysis of Marinovic (2026), "W
      f'are dynamic-JS or proxy-blocked. Across the {N_COLLECTED} collected catalogs - {tot:,} '
      f'deduplicated courses - the course-weighted progressive signal is {cw_prog:.1f}% and the '
      f'Western-canon signal is {cw_canon:.1f}%. The central pattern of the original paper holds: '
-     f'the progressive signal exceeds the Western-canon signal at {above} of 100 institutions, '
+     f'the progressive signal exceeds the Western-canon signal at {above} of {N_TOTAL} institutions, '
      f'typically by a factor of three to four. The signal is far from uniform - progressive '
-     f'shares range from under 1% to over 27% - and the few institutions where the canon signal '
+     f'shares range from {min_prog:.1f}% to over {max_prog:.0f}% - and the few institutions where the canon signal '
      f'dominates are Christian colleges or low-signal outliers. These measures are mechanical '
      f'keyword counts, not judgments about course quality or what is taught in classrooms.')
 
@@ -108,7 +114,7 @@ para('Marinovic (2026) measures how often U.S. university course catalogs use la
      'comparisons from sixteen major research universities. This report keeps the method fixed '
      'and asks a simpler question: what does the same measurement look like across a much wider '
      'slice of American higher education?')
-para('The 100 institutions here are deliberately heterogeneous - private research universities, '
+para(f'The {N_TOTAL} institutions here are deliberately heterogeneous - private research universities, '
      'large public flagships, regional public universities, technical institutes, religious '
      'colleges, and community colleges. The original sample explicitly omitted community '
      'colleges, regional public universities, and most liberal-arts colleges; this extension '
@@ -142,21 +148,22 @@ para(f'Caveats: (1) Single-year snapshot - the collected catalogs are observed i
      '(quantified in section 4.4).')
 
 h1('3. Headline Findings')
-bullet(f'The progressive signal dominates the canon signal almost everywhere. At {above} of 100 '
-       f'institutions the progressive share exceeds the Western-canon share. Across the '
+bullet(f'The progressive signal dominates the canon signal almost everywhere. At {above} of '
+       f'{N_TOTAL} institutions the progressive share exceeds the Western-canon share. Across the '
        f'{N_COLLECTED} collected catalogs the course-weighted progressive signal ({cw_prog:.1f}%) '
        f'is about {cw_prog/cw_canon:.1f}x the canon signal ({cw_canon:.1f}%).')
 bullet(f'Typical magnitudes are well below the elite tail. The median institution carries the '
        f'progressive signal on {med_prog:.1f}% of courses and the canon signal on {med_canon:.1f}%. '
        f'The most progressive catalogs - Stanford and the elite privates - sit in the upper tail '
        f'of the full distribution, not at its center.')
-bullet('Enormous dispersion. Progressive shares span roughly 0.6% to 27%. The spread is '
-       'institutional, not just disciplinary: regional and technical schools cluster low, while '
-       'research universities and several small private colleges cluster high.')
-bullet('Where the canon wins, it is usually religious. Only three institutions carry more '
-       'canonical than progressive language: Biola and Cornerstone (Christian colleges), and '
-       'Marshall, an outlier whose 0.6% progressive share reflects short, sparse catalog '
-       'descriptions rather than a canon-heavy curriculum.')
+bullet(f'Enormous dispersion. Progressive shares span roughly {min_prog:.1f}% to {max_prog:.0f}% '
+       f'(standard deviation {sd_prog:.1f} points). The spread is institutional, not just '
+       f'disciplinary: regional and technical schools cluster low, while research universities and '
+       f'several small private colleges cluster high.')
+bullet(f'Where the canon wins, it is usually religious. Only {len(canon_wins)} institutions carry '
+       f'more canonical than progressive language: {canon_wins_names}. Biola and Cornerstone are '
+       f'Christian colleges; Marshall is an outlier whose unusually low progressive share reflects '
+       f'short, sparse catalog descriptions rather than a canon-heavy curriculum.')
 bullet(f'Climate language is modest but pervasive. Across collected catalogs the narrow climate '
        f'signal averages {statistics.mean([r["cn"] for r in scraped if r["cn"] is not None]):.1f}% '
        f'of courses and the broad climate-or-sustainability signal '
@@ -168,12 +175,12 @@ caption(f'Figure 1. Each point is one institution\'s latest catalog. Points abov
         f'regional/public/private catalogs; green = {N_RESCRAPED} re-scraped 2026 reference '
         f'catalogs; red = {N_PAPER} reference catalogs cited from Marinovic (2026).')
 img('reports/figures/fig3_distribution.png', w=W*0.8)
-caption('Figure 2. Distribution of progressive and Western-canon shares across all 100 '
+caption(f'Figure 2. Distribution of progressive and Western-canon shares across all {N_TOTAL} '
         'institutions. Dashed lines mark the means.')
 
 # ---- Cross-sectional table ----
 pdf.add_page()
-h1('4. Cross-Sectional Comparison (all 100 institutions)')
+h1(f'4. Cross-Sectional Comparison (all {N_TOTAL} institutions)')
 para('Table 1 reports every institution\'s latest-catalog progressive and Western-canon shares, '
      'the ratio between them, and the number of courses analyzed. As in Table 6 of the reference '
      'paper, institutions are sorted from the highest progressive-to-canon ratio to the lowest.')
@@ -292,12 +299,12 @@ para('Catalogs are not classrooms: keyword counts on public descriptions do not 
      'produces false positives (race in "race car," equity in finance, classical in physics) and '
      'false negatives. The re-scraped reference values are not directly comparable to the paper\'s '
      'published figures (full catalog + substring here vs. offered-subset + word-boundary there); '
-     'they ARE comparable to the other collected catalogs. Nine reference universities could not '
-     'be re-scraped and retain paper values; Northwestern is undergraduate-only.')
-para(f'Extending the measurement from 16 to 100 institutions - and re-scraping seven reference '
-     f'universities from their 2026 catalogs - does not overturn the central '
+     f'they ARE comparable to the other collected catalogs. {N_PAPER} reference universities could '
+     'not be re-scraped and retain paper values; Northwestern is undergraduate-only.')
+para(f'Extending the measurement from 16 to {N_TOTAL} institutions - and re-scraping '
+     f'{N_RESCRAPED} reference universities from their 2026 catalogs - does not overturn the central '
      f'finding of Marinovic (2026): progressive language is far more common than Western-canon '
-     f'language in the stated curriculum, dominating at {above} of 100 schools. What the wider '
+     f'language in the stated curriculum, dominating at {above} of {N_TOTAL} schools. What the wider '
      f'sample adds is context for magnitude. The very high progressive shares of the '
      f'most-discussed elite catalogs are not representative of American higher education as a '
      f'whole; the median institution sits near {med_prog:.0f}%, with a long tail of regional, '
